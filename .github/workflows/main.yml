@@ -39,9 +39,9 @@ jobs:
     - name: Build and Commit
       uses: sphinx-notes/pages@v2
       with:
-        requirements_path: './requirements.txt'
+        documentation_path: ./docs/source
+        requirements_path: ./requirements.txt
         target_branch: gh-pages
-        sphinx_version: 5.0.1
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
