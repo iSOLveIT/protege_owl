@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&family=Zilla+Slab:ital,wght@0,400;0,600;1,300&display=swap');
+/*font-family: 'Roboto Flex', sans-serif;@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,600&display=swap');*/
 body,
 input {
-    font-family: 'Recursive', sans-serif !important;
+    font-family: 'Zilla Slab', serif;
     font-size: 16px !important;
     font-weight: 400;
     line-height: 1.5 !important;
@@ -15,7 +15,7 @@ input {
 
 
 h1, h2, h3 {
-    font-family: 'Recursive', sans-serif !important;
+    font-family: 'Zilla Slab', serif;
     font-weight: 500 !important;
     line-height: 1.4 !important;
 }
