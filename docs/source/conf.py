@@ -111,15 +111,3 @@ html_theme_options = {
     ],
     "toc_title_is_page_title": True,
 }
-
-# from docutils import nodes
-# from sphinx.roles import XRefRole
-#
-#
-# class DocsHighlight(nodes.Inline, nodes.Element):
-#     ...
-#
-#
-# def setup(app):
-#     app.add_role("docshl", XRefRole(nodeclass=DocsHighlight,
-#                                             innernodeclass=nodes.emphasis, warn_dangling=True))
