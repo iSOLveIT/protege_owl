@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&family=Zilla+Slab:ital,wght@0,400;0,600;1,300&display=swap');
+@import url('./fonts-core.css');
 
 body,
 input {
-    font-family: 'Zilla Slab', serif;
+    font-family: Recursive-2019, NotoSerif;
+    --CASL: 1;
+    --slnt: 0;
+    --MONO: 0;
+    font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
+    border: none;
+    transition: 1s;
     font-size: 18px !important;
     font-weight: 400;
     line-height: 1.5 !important;
@@ -14,10 +20,16 @@ input {
 }
 
 
-h1, h2, h3 {
-    font-family: 'Zilla Slab', serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: ZillaSlab;
     font-weight: 600 !important;
     line-height: 1.4 !important;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    font-weight: 800;
+    --CRSV: 0;
+    transition: 1s;
 }
 
 h1 {
@@ -82,4 +94,12 @@ html .md-nav--primary .md-nav__title--site .md-nav__button {
         padding-top: 0!important;
         background-color: #fff !important;
     }*/
+}
+
+.centered {
+    text-align: center;
+}
+
+.special{
+    background-color: yellow !important;
 }
