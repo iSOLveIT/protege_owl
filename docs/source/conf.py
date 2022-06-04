@@ -73,7 +73,7 @@ html_theme_options = {
     "repo_url": "https://github.com/iSOLveIT/protege_owl",
     "repo_name": "Protégé",
     "repo_type": "github",
-    "edit_uri": "blob/main",
+    "edit_uri": "blob/main/docs/source/",
     "globaltoc_collapse": True,
     "features": [
         # "navigation.expand",
