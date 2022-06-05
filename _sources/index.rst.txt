@@ -75,7 +75,7 @@ Protégé and Web Protégé email list. This list has many people (including
 me) who monitor it and can contribute their knowledge to help you
 understand how to get the most out of this technology. To subscribe to
 the list, go to: https://protege.stanford.edu/support.php
-and click on the first orange ``Subscribe`` button. That
+and click on the first orange `Subscribe` button. That
 will enable he email to send questions to.
 
 This chapter covers licensing and describes conventions used in the
@@ -121,11 +121,11 @@ document is an *Entity*. Individuals and classes can also be referred to
 as objects.
 
 Names for user interface tabs, views, menu selections, buttons, and text
-entry are highlighted ``like this:``.
+entry are highlighted `like this:`.
 
 
-Any time you see highlighted text such as File>Preferences or OK or
-PizzaTopping it refers to something that you should or optionally could
+Any time you see highlighted text such as `File>Preferences` or `OK` or
+`PizzaTopping` it refers to something that you should or optionally could
 view or enter into the user interface. If you ever aren’t sure what to
 do to accomplish some task look for the highlighted text. Often, as with
 PizzaTopping the text you enter into a field in the Protégé UI will be
@@ -135,65 +135,55 @@ rather than highlighted and printed in Consolas font.
 
 Menu options are shown with the name of the top-level menu, followed by
 a > followed by the next level down to the desired selection. For
-example, to indicate how to open the Individuals by class tab under the
-Tabs section in the Window menu the following text would be used:
-Window>Tabs> Individuals by class.
+example, to indicate how to open the `Individuals by class` tab under the
+`Tabs` section in the `Window` menu the following text would be used:
+`Window>Tabs>Individuals by class`.
 
 | When a word or phrase is emphasized, it is *shown in italics like
-  this*. Exercises are presented like this:
-| **Exercise 1: Accomplish this**
+  this*.
 
-\____________________________________________________________________________________\_
+Exercises are presented like this:
+
+**Exercise 1: Accomplish this**
+
+---------------
+
 1. Do this.
+2. Then do this.
+3. Then do this.
 
-| 2. Then do this.
-| 3. Then do this.
+---------------
 
-\____________________________________________________________________________________\_
+.. admonition:: Warning
+   :class: pitfall
 
-   .. figure:: /_static/media/image1.png
-      :width: 0.47222in
-      :height: 0.43056in
+   Potential pitfalls and warnings are presented like this.
 
-.. figure:: /_static/media/image2.png
-   :width: 0.54167in
-   :height: 0.52778in
+.. admonition:: Tip
+   :class: suggest
 
-+-------------------------------------------------------------+
-|    Potential pitfalls and warnings are presented like this. |
-+-------------------------------------------------------------+
+   Tips and suggestions related to using Protégé are presented like this.
 
-+----------------------------------------------------------------------+
-|    Tips and suggestions related to using Protégé are presented like  |
-|    this.                                                             |
-+----------------------------------------------------------------------+
+.. admonition:: Explanation
+   :class: explain
 
-+-----------------------------------------------------------------+
-|    Explanations as to what things mean are presented like this. |
-+-----------------------------------------------------------------+
+   Explanations as to what things mean are presented like this.
 
-..
+.. admonition:: Note
+   :class: notes
 
-   .. figure:: /_static/media/image3.png
-      :width: 0.56944in
-      :height: 0.41667in
+   General notes are presented like this.
 
-   .. figure:: /_static/media/image4.png
-      :width: 0.5in
-      :height: 0.56944in
+.. admonition:: Vocab
+   :class: vocab
 
-+-------------------------------------------+
-|    General notes are presented like this. |
-+-------------------------------------------+
+   Vocabulary explanations and alternative names are presented like this.
 
-+----------------------------------------------------------------------+
-|    Vocabulary explanations and alternative names are presented like  |
-|    this.                                                             |
-+----------------------------------------------------------------------+
+.. _chap2:
 
-|image1|\ |image2|\ |image3|\ |image4|\ |image5|
-
-Chapter 2 Requirements and the Protégé User Interface
+*******************************************
+Requirements and the Protégé User Interface
+*******************************************
 
 In order to follow this tutorial, you must have Protégé 5, which is
 available from the Protégé website,1 and some of the Protégé Plugins
@@ -202,31 +192,35 @@ you have the latest version of Protégé. At the time this is being
 written the latest version is 5.5 although the tutorial should work for
 later versions as well.
 
-| The Protégé user interface is divided up into a set of major tabs.
-  These tabs can be seen in the
-| Window>Tabs option. This option shows all the UI tabs that are
-  currently loaded into the Protégé environment. Any tabs that are
-  currently opened have a check mark next to them. To see a tab that is
-  not visible just select it from the menu and it will be added to the
-  top with the other major tabs and its menu item will now be checked.
-  You can add additional major tabs to your environment by loading
-  plugins. For example, when we load the SHACL4Protégé plugin the
-  SHACLEditor will be added to the menu.
+The Protégé user interface is divided up into a set of major tabs.
+These tabs can be seen in the
+`Window>Tabs` option. This option shows all the UI tabs that are
+currently loaded into the Protégé environment. Any tabs that are
+currently opened have a check mark next to them. To see a tab that is
+not visible just select it from the menu and it will be added to the
+top with the other major tabs and its menu item will now be checked.
+You can add additional major tabs to your environment by loading
+plugins. For example, when we load the SHACL4Protégé plugin the
+SHACLEditor will be added to the menu.
 
 Each major tab consists of various panes or as Protégé calls them views.
 Each view can be resized or closed using the icons in the top right
 corner of every view. The views can also be nested as sub-tabs within
 each major tab. When there could potentially be confusion between a tab
-that is a screen all its own (is under the Window>Tabs option) and a
+that is a screen all its own (is under the `Window>Tabs` option) and a
 view that is a sub-tab we will call the screen tab a major tab.
 
-| There are many views that are not in the default version of Protégé
-  that can be added via the Window>Views option. The additional views
-  are divided into various categories such as
-| Window>Views>Individual views. Section 5.2 will show an example of
-  adding a new view to a major tab.
+There are many views that are not in the default version of Protégé
+that can be added via the `Window>Views` option. The additional views
+are divided into various categories such as
+`Window>Views>Individual views`. `Section 5.2 <#customizing-the-protégé-user-interface>`_ will show an example of
+adding a new view to a major tab.
 
-Chapter 3 What are OWL Ontologies?
+.. _chap3:
+
+************************
+What are OWL Ontologies?
+************************
 
 Ontologies are used to capture knowledge about some domain of interest.
 An ontology describes the concepts in the domain and also the
@@ -247,15 +241,16 @@ example, if two properties are inverses only one value needs to be
 asserted by the user and the inverse value will be automatically
 inferred by the reasoner.
 
-3.1 Components of OWL Ontologies
+Components of OWL Ontologies
+============================
 An OWL ontology consists of Classes, Properties, and Individuals. OWL
 ontologies are an implementation of Description Logic (DL) which is a decidable subset
 of First Order Logic. A class in OWL is a set, a property is a binary
 relation, and an individual is an element of a set. Other concepts
 from set theory are also implemented in OWL such as Disjoint sets, the
-Empty set (owl:Nothing), inverse relations, transitive relations, and many more.
-An understanding of the
-basic concepts of set theory will help the user get the most out of OWL
+Empty set (``owl:Nothing``), inverse relations, transitive relations, and many more.
+
+An understanding of the basic concepts of set theory will help the user get the most out of OWL
 but is not required. One of the benefits of Protégé is that it presents
 an intuitive GUI that enables domain experts to define models without a
 background in set theory. However, developers are encouraged to refresh
@@ -264,6 +259,8 @@ chapters in Elements of the Theory of Computation by Lewis and
 Papadamitrious. Another good source is the PDF document *Overview of Set
 Theory* available at: https://www.michaeldebellis.com/post/owl-theoretical-basics
 
+Individuals
+-----------
 Individuals represent objects in the domain of interest. An important
 difference between OWL and most programming and knowledge representation
 languages is that OWL does not use the Unique Name Assumption (UNA).
@@ -275,318 +272,289 @@ different from each other. Figure 3.1 shows a representation of some
 individuals in a domain of people, nations, and relations — in this
 tutorial we represent individuals as diamonds.
 
-========= ======== ========= ======== ======== ======
-|image6|     Diane |image7|     Italy |image8|    USA
-========= ======== ========= ======== ======== ======
-|image9|  Michael  |image10| India                Tim
-|image11|    Jenna                             
-========= ======== ========= ======== ======== ======
+.. figure:: /_static/media/chap_3/1.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 3.1: Representation of Individuals
+   *Figure 3.1: Representation of Individuals*
 
-.. figure:: /_static/media/image12.png
-   :width: 0.58333in
-   :height: 0.125in
+.. figure:: /_static/media/chap_3/2.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-livesIn
+   *Figure 3.2: Representation of Properties*
 
-India
+.. admonition:: Vocab
+   :class: vocab
 
-Biswanath
-
-   hasFriend Michael
-
-Figure 3.2: Representation of Properties
-
-+----------------------------------------------------------------------+
-|    Individuals are also known as *instances*. Individuals can be     |
-|    referred to as *instances of classes*.                            |
-+----------------------------------------------------------------------+
-
-|image12|\ |image13|\ |image14|\ |image15|\ |image16|\ |image17|\ |image18|\ |image19|\ |image20|\ |image21|\ |image22|\ |image23|\ |image24|\ |image25|\ |image26|\ |image27|\ |image28|
+   Individuals are also known as *instances*. Individuals can be
+   referred to as *instances of classes*.
 
 
-   | 3.1.2 Properties
-   | Properties are binary relations between individuals. I.e.,
-     properties link two individuals together. For example, the property
-     hasFriend might link the individual Biswanath to the individual
-     Michael, or the property hasChild might link the individual Michael
-     to the individual Oriana. Properties can have inverses. For
-     example, the inverse of hasChild is hasParent. Properties can be
-     limited to having a single value – i.e., to being functional. They
-     can also be transitive or symmetric. These property characteristics
-     are explained in detail in Section 4.8. Figure 3.2 shows a
-     representation of some properties.
+Properties
+----------
 
-.. figure:: /_static/media/image22.png
-   :width: 0.44444in
-   :height: 0.56944in
+Properties are binary relations between individuals. I.e.,
+properties link two individuals together. For example, the property
+``hasFriend`` might link the individual ``Biswanath`` to the individual
+``Michael``, or the property ``hasChild`` might link the individual ``Michael``
+to the individual ``Oriana``. Properties can have inverses. For
+example, the inverse of ``hasChild`` is ``hasParent``. Properties can be
+limited to having a single value – i.e., to being functional. They
+can also be transitive or symmetric. These property characteristics
+are explained in detail in `Section 4.8 <#owl-object-property-characteristics>`_. Figure 3.2 shows a
+representation of some properties.
 
-+----------------------------------------------------------------------+
-|    Properties are similar to properties in Object-Oriented           |
-|    Programming (OOP). However, there are important differences       |
-|    between properties in OWL and OOP. The most important difference  |
-|    is that OWL properties are first class entities that exist        |
-|    independent of classes. OOP developers are encouraged to read:    |
-|    https://www.w3.org/2001/sw/BestPractices/SE/ODSD/                 |
-+----------------------------------------------------------------------+
+.. figure:: /_static/media/chap_3/3.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-..
+   *Figure 3.3: Representation of Classes containing Individuals*
 
-   Oriana
+.. admonition:: Vocab
+   :class: vocab
 
-======= =========== ======= ===== ========
-Michael    hasChild livesIn Italy    India
-======= =========== ======= ===== ========
-\                           USA   
-======= =========== ======= ===== ========
+   Properties are similar to properties in Object-Oriented
+   Programming (OOP). However, there are important differences
+   between properties in OWL and OOP. The most important difference
+   is that OWL properties are first class entities that exist
+   independent of classes. OOP developers are encouraged to read:
+   https://www.w3.org/2001/sw/BestPractices/SE/ODSD/
 
-Person
 
-   hasPet\ |image29|\ |image30|\ |image31|\ |image32|\ |image33|\ |image34|\ |image35|\ |image36|\ |image37|\ |image38|\ |image39|\ |image40|\ |image41|\ |image42|\ |image43|\ |image44|
+Classes
+-------
 
-   | Dog
-   | Buddy
+OWL classes are sets that contain individuals. They are described
+using formal (mathematical) descriptions that rigorously define the requirements for membership
+of the class. For example, the class ``Cat`` would contain all the
+individuals that are cats in our domain of interest. Classes may
+be organized into a superclass-subclass hierarchy, which is also
+known as a taxonomy. However, taxonomies are often trees. I.e.,
+each node has only one parent node. Class hierarchies in OWL are
+not restricted to be trees and multiple inheritance can be a
+powerful tool to represent data in an intuitive manner.
 
-   Figure 3.3: Representation of Classes containing Individuals
-
-   | 3.1.3 Classes
-   | OWL classes are sets that contain individuals. They are described
-     using formal (mathematical)
-   | descriptions that rigorously define the requirements for membership
-     of the class. For example, the class Cat would contain all the
-     individuals that are cats in our domain of interest. Classes may
-     be organized into a superclass-subclass hierarchy, which is also
-     known as a taxonomy. However, taxonomies are often trees. I.e.,
-     each node has only one parent node. Class hierarchies in OWL are
-     not restricted to be trees and multiple inheritance can be a
-     powerful tool to represent data in an intuitive manner.
-
-   Subclasses specialize (aka *are subsumed by*) their superclasses. For
-   example, consider the classes Animal and Dog – Dog might be a
-   subclass of Animal (so Animal is the superclass of Dog). This says
-   that *All dogs are animals*, *All members of the class* Dog *are
-   members of the class* Animal. OWL and Protégé provide a language 
-   that is called Description Logic or DL for short. One
-   of the key features of DL is that these superclass-subclass
-   relationships (aka subsumption relationships) can be computed
-   automatically by a reasoner – more on this later. Figure 3.3 shows a
-   representation of some classes containing individuals – classes are
-   represented as ovals, like sets in Venn diagrams.
+Subclasses specialize (aka *are subsumed by*) their superclasses. For
+example, consider the classes ``Animal`` and ``Dog`` – ``Dog`` might be a
+subclass of ``Animal`` (so ``Animal`` is the superclass of ``Dog``). This says
+that *All dogs are animals*, *All members of the class* ``Dog`` *are
+members of the class* ``Animal``. OWL and Protégé provide a language
+that is called Description Logic or DL for short. One
+of the key features of DL is that these superclass-subclass
+relationships (aka subsumption relationships) can be computed
+automatically by a reasoner – more on this later. Figure 3.3 shows a
+representation of some classes containing individuals – classes are
+represented as ovals, like sets in Venn diagrams.
 
 In OWL classes can be built up of descriptions that specify the
 conditions that must be satisﬁed by an individual for it to be a member
 of the class. How to formulate these descriptions will be explained as
 the tutorial progresses.
 
-   Chapter 4 Building an OWL Ontology
+.. _chap4:
 
-   This chapter describes how to create an ontology of Pizzas. We use
-   Pizzas because it is something almost everyone is familiar with.
+************************
+Building an OWL Ontology
+************************
 
-   **Exercise 1: Create a new OWL Ontology**
+This chapter describes how to create an ontology of Pizzas. We use
+Pizzas because it is something almost everyone is familiar with.
 
-\____________________________________________________________________________________\_
+**Exercise 1: Create a new OWL Ontology**
 
-   1. Start Protégé. When Protégé opens for the first time each day it
-   puts up a screen of all the available plugins. You can also bring
-   this up at any time by using File>Check for plugins. You won’t need
-   any plugins at this point of the tutorial so just click the Not now
-   button.
+---------------
 
-   2. The Protégé user-interface consists of several tabs such as Active
-   ontology, Entities, etc. When you start Protégé you should be in the
-   Active Ontology tab. This is for overview information about the
-   entire ontology. Protégé always opens with a new untitled ontology
-   you can start with. Your ontology should have an IRI something like:
-   http://www.semanticweb.org/yourname/ontologies/2020/4/untitled-ontology-27
-   Edit the name of the ontology (the part after the last “/” in this
-   case untitled-ontology-27) and change it to something like
-   PizzaTutorial. Note: the Pizza ontology IRIs shown below (e.g.,
-   figure 4.3) show the IRI after I edited the default that Protégé
-   generated for me. Your IRI will look different and will be based on
-   your name or the name of your organization.
+1. Start Protégé. When Protégé opens for the first time each day it
+puts up a screen of all the available plugins. You can also bring
+this up at any time by using `File>Check for plugins`. You won’t need
+any plugins at this point of the tutorial so just click the `Not now
+button`.
 
-   3. Now you want to save your new ontology. Select File>Save. This
-   should bring up a window that says: Choose a format to use when
-   saving the ‘PizzaTutorial’ ontology. There is a drop down menu of
-   formats to use. The default RDF/XML Syntax should be selected by
-   clicking the OK button. This should bring up the standard dialog your
-   operating system uses for saving files. Navigate to the folder you
-   want to use and then type in the file name, something like Pizza
-   Tutorial and select Save.
+2. The Protégé user-interface consists of several tabs such as `Active
+ontology`, `Entities`, etc. When you start Protégé you should be in the
+`Active Ontology` tab. This is for overview information about the
+entire ontology. Protégé always opens with a new untitled ontology
+you can start with. Your ontology should have an IRI something like:
+http://www.semanticweb.org/yourname/ontologies/2020/4/untitled-ontology-27
+Edit the name of the ontology (the part after the last “/” in this
+case `untitled-ontology-27`) and change it to something like
+`PizzaTutorial`. Note: the Pizza ontology IRIs shown below (e.g.,
+figure 4.3) show the IRI after I edited the default that Protégé
+generated for me. Your IRI will look different and will be based on
+your name or the name of your organization.
 
-   \___________________________________________________________________________________\_
+3. Now you want to save your new ontology. Select `File>Save`. This
+should bring up a window that says: `Choose a format to use when
+saving the ‘PizzaTutorial’ ontology`. There is a drop down menu of
+formats to use. The default `RDF/XML Syntax` should be selected by
+clicking the `OK` button. This should bring up the standard dialog your
+operating system uses for saving files. Navigate to the folder you
+want to use and then type in the file name, something like `Pizza
+Tutorial` and select `Save`.
 
-.. figure:: /_static/media/image29.png
-   :width: 0.52778in
-   :height: 0.52778in
+---------------
 
-+----------------------------------------------------------------------+
-|    As with any file you work on it is a good idea to save your work  |
-|    at regular intervals so that if something goes wrong you don’t    |
-|    lose your work. At certain points in the tutorial where saving is |
-|    especially important the tutorial will prompt you to do so but it |
-|    is a good idea to save your work often, not just when prompted.   |
-+----------------------------------------------------------------------+
+.. admonition:: Tip
+   :class: suggest
 
-.. figure:: /_static/media/image30.png
-   :width: 6.18333in
-   :height: 0.91549in
+   As with any file you work on it is a good idea to save your work
+   at regular intervals so that if something goes wrong you don’t
+   lose your work. At certain points in the tutorial where saving is
+   especially important the tutorial will prompt you to do so but it
+   is a good idea to save your work often, not just when prompted.
+
 
 The next step is to set some preferences related to the names of new
 entities. Remember than in Protégé any class, individual, object
 property, data property, annotation property, or rule is referred to
 as an entity. The term name in OWL can actually refer to two
 different concepts. It can be the last part of the IRI or it can
-refer to the annotation property (usually rdfs:label) used to provide
+refer to the annotation property (usually ``rdfs:label``) used to provide
 a more user friendly name for the entity. We will discuss this in
-more detail below in chapter 7. For now, we just want to set the
+more detail below in :ref:`Chapter 7 <chap7>`. For now, we just want to set the
 parameters correctly so that future parts of the tutorial (especially
 the section on SPARQL queries) will work appropriately.
 
 
 **Exercise 2: Set the Preferences for New Entities and Rendering**
 
-\____________________________________________________________________________________\_
+---------------
 
-1. Go to File>Preferences in Protégé. This will bring up a new window
-with lots and lots of different tabs. Click on the New entities tab.
+1. Go to `File>Preferences` in Protégé. This will bring up a new window
+with lots and lots of different tabs. Click on the `New entities` tab.
 This will bring up a tab that looks similar to figure 4.1. The top part
 of that tab is a box labeled Entity IRI. It should be set with the
-parameters as shown in figure 4.1. I.e., Starts with Active ontology
-IRI. Followed by #. Ends with User supplied name. If the last parameter
-is set to Auto-generated name change it to User supplied name. That is
+parameters as shown in figure 4.1. I.e., `Starts with Active ontology
+IRI`. `Followed by #`. `Ends with User supplied name`. If the last parameter
+is set to `Auto-generated name` change it to `User supplied name`. That is
 the parameter most likely to be different but also check the other two
 as well.
 
-2. Now select the Renderer tab. It should look like figure 4.2. Most
-importantly, check that Entity rendering is set to Render by entity IRI
-short name (ID) rather than Render by annotation property. Don’t worry
+2. Now select the `Renderer` tab. It should look like figure 4.2. Most
+importantly, check that `Entity rendering` is set to `Render by entity IRI
+short name (ID)` rather than `Render by annotation property`. Don’t worry
 if this doesn’t completely make sense at this point. The issues here are
 a bit complex and subtle so we defer them until after you have an
 understanding of the basic concepts of what an OWL ontology is. We will
-have a discussion of these details below in chapter 7. For now you just
+have a discussion of these details below in :ref:`Chapter 7 <chap7>`. For now you just
 need to make sure that the preferences are set appropriately to work
 with the rest of the tutorial.
 
-\___________________________________________________________________________________\_
+----------------
 
-   .. figure:: /_static/media/image31.png
-      :width: 3.82222in
-      :height: 3.68056in
+.. figure:: /_static/media/chap_4/1.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.1: The New entities tab
-
-.. figure:: /_static/media/image32.png
-   :width: 3.56111in
-   :height: 3.42917in
-
-Figure 4.2 Renderer tab
-
-   |image45|\ Figure 4.3: The Active Ontology Tab with a New Comment
+   *Figure 4.1: The New entities tab*
 
 
-|image46|\ |image47|\ |image48|
+.. figure:: /_static/media/chap_4/2.png
+   :figclass: align-center
+   :class: no-scaled-link
+
+   *Figure 4.2 Renderer tab*
+
+.. figure:: /_static/media/chap_4/3.png
+   :figclass: align-center
+   :class: no-scaled-link
+
+   *Figure 4.3: The Active Ontology Tab with a New Comment*
 
 **Exercise 3: Add a Comment Annotation to Your Ontology**
 
-\____________________________________________________________________________________\_
+---------------
 
-1. Make sure you are in the Active Ontology tab. In the view just below
-the Ontology IRI and Ontology Version IRI fields find the Annotations
-option and click on the + sign. This will bring up a menu to create a
+1. Make sure you are in the `Active Ontology` tab. In the view just below
+the Ontology IRI and Ontology Version IRI fields find the `Annotations`
+option and click on the `+` sign. This will bring up a menu to create a
 new annotation on the ontology.
 
-2. The rdfs:comment annotation should be highlighted by default. If it
+2. The `rdfs:comment` annotation should be highlighted by default. If it
 isn’t highlighted click on it. Then type a new comment into the view to
-the right. Something like A tutorial ontology for the Pizza domain.
+the right. Something like `A tutorial ontology for the Pizza domain`.
 
-3. Click OK. Your Active Ontology tab should like Figure 4.3.
+3. Click `OK`. Your Active Ontology tab should like Figure 4.3.
 
-\____________________________________________________________________________________\_
+---------------
 
-Add Subclass
+.. figure:: /_static/media/chap_4/4.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Add Sibling Class
+   *Figure 4.4: The Class Hierarchy View Options*
 
-Delete Class
+Named Classes
+=============
 
-.. figure:: /_static/media/image34.png
-   :width: 3.45833in
-   :height: 1.23889in
-
-Figure 4.4: The Class Hierarchy View Options
-
-| 4.1 Named Classes
-| The main building blocks of an OWL ontology are classes. In Protégé 5,
-  editing of classes can be done in the Entities tab. The Entities tab
-  has a number of sub-tabs. When you select it, the default should be
-  the Class hierarchy view as shown in Figure 4.5. All empty ontologies
-  contains one class called owl:Thing. OWL classes are sets of
-  individuals. The class owl:Thing is the class that represents the set
-  containing all individuals. Because of this all classes are subclasses
-  of owl:Thing.
+The main building blocks of an OWL ontology are classes. In Protégé 5,
+editing of classes can be done in the `Entities` tab. The `Entities` tab
+has a number of sub-tabs. When you select it, the default should be
+the `Class hierarchy` view as shown in Figure 4.5. All empty ontologies
+contains one class called ``owl:Thing``. OWL classes are sets of
+individuals. The class ``owl:Thing`` is the class that represents the set
+containing all individuals. Because of this all classes are subclasses
+of ``owl:Thing``.
 
 
 **Exercise 4: Create classes: Pizza, PizzaTopping, and PizzaBase**
 
-\____________________________________________________________________________________\_
+----------------
 
-1. Navigate to the Entities tab with the Class hierarchy view selected.
-Make sure owl:Thing is selected.
+1. Navigate to the `Entities` tab with the `Class hierarchy` view selected.
+Make sure `owl:Thing` is selected.
 
-2. Press the Add Subclass icon shown in figure 4.4. This button creates
+2. Press the `Add Subclass` icon shown in figure 4.4. This button creates
 a new subclass of the selected class. In this case we want to create a
 subclass of owl:Thing.
 
-3. This should bring up a dialog titled Create a new class with a field
-for the name of the new class. Type in Pizza and then select OK.
+3. This should bring up a dialog titled `Create a new class` with a field
+for the name of the new class. Type in `Pizza` and then select `OK`.
 
-4. Repeat the previous steps to add the classes PizzaTopping and
-PizzaBase ensuring that owl:Thing is selected before using the add
-subclass icon so that all your classes are subclasses of owl:Thing. Your
+4. Repeat the previous steps to add the classes ``PizzaTopping`` and
+``PizzaBase`` ensuring that ``owl:Thing`` is selected before using the add
+subclass icon so that all your classes are subclasses of ``owl:Thing``. Your
 user interface should now look like figure 4.5. Don’t worry that some of
 the classes are highlighted in red. That is because the reasoner hasn’t
 run yet. We will address this shortly.
 
-\____________________________________________________________________________________\_
+---------------
 
-|image49|\ Figure 4.5 The Classes Sub-Tab in the Entities Tab
+.. figure:: /_static/media/chap_4/5.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-.. figure:: /_static/media/image39.png
-   :width: 0.52778in
-   :height: 0.52778in
+   *Figure 4.5 The Classes Sub-Tab in the Entities Tab*
 
-+----------------------------------------------------------------------+
-|    There are no mandatory naming conventions for OWL entities. In    |
-|    chapter 7, we will discuss names and labels in more detail. A     |
-|    best practice is to select one set of naming conventions and then |
-|    abide by that convention across your organization. For this       |
-|    tutorial we will follow the standard where class and individual   |
-|    names start with a capital letter for each word and do not        |
-|    contain spaces. This is known as CamelBack notation. For example: |
-|    Pizza, PizzaTopping, etc. Also, we will follow the standard that  |
-|    class names are always singular rather than plural. E.g., Pizza   |
-|    rather than Pizzas, PizzaTopping rather than PizzaToppings.       |
-+----------------------------------------------------------------------+
+.. admonition:: Tip
+   :class: suggest
 
-.. figure:: /_static/media/image40.png
-   :width: 6.18333in
-   :height: 1.52082in
+   There are no mandatory naming conventions for OWL entities. In
+   :ref:`Chapter 7<chap7>`, we will discuss names and labels in more detail. A
+   best practice is to select one set of naming conventions and then
+   abide by that convention across your organization. For this
+   tutorial we will follow the standard where class and individual
+   names start with a capital letter for each word and do not
+   contain spaces. This is known as CamelBack notation. For example:
+   ``Pizza``, ``PizzaTopping``, etc. Also, we will follow the standard that
+   class names are always singular rather than plural. E.g., ``Pizza``
+   rather than ``Pizzas``, ``PizzaTopping`` rather than ``PizzaToppings``.
 
-| 4.2 Using a Reasoner
-| You may notice that one or more of your classes is highlighted in red
-  as in Figure 4.5. This is because we haven’t run the reasoner yet so
-  Protégé has not been able to verify that our new classes have no
-| inconsistencies. When just creating classes and subclasses in a new
-  ontology there is little chance of an inconsistency. However, it is a
-  good idea to run the reasoner often. When there is an inconsistency
-  the sooner it is discovered the easier it is to fix. One common
-  mistake that new users make is to do a lot of development and then run
-  the reasoner only to find that there are multiple inconsistencies
-  which can make debugging significantly more difficult. So let’s get
-  into the good habit of running the reasoner often.
+
+Using a Reasoner
+================
+You may notice that one or more of your classes is highlighted in red
+as in Figure 4.5. This is because we haven’t run the reasoner yet so
+Protégé has not been able to verify that our new classes have no
+inconsistencies. When just creating classes and subclasses in a new
+ontology there is little chance of an inconsistency. However, it is a
+good idea to run the reasoner often. When there is an inconsistency
+the sooner it is discovered the easier it is to fix. One common
+mistake that new users make is to do a lot of development and then run
+the reasoner only to find that there are multiple inconsistencies
+which can make debugging significantly more difficult. So let’s get
+into the good habit of running the reasoner often.
 
 Protégé comes with some reasoners bundled in and others available as
 plugins. Since we are going to write some SWRL rules later in the
@@ -595,36 +563,36 @@ for SWRL at the time this tutorial is being written.
 
 **Exercise 5: Install and Run the Pellet Reasoner**
 
-\____________________________________________________________________________________\_
+---------------
 
 1. Check to see if the Pellet reasoner is installed. Click on the
-Reasoner menu. At the bottom of the menu there will be a list of the
-installed reasoners such as Hermit and possibly Pellet. If Pellet is
+`Reasoner` menu. At the bottom of the menu there will be a list of the
+installed reasoners such as `Hermit` and possibly `Pellet`. If Pellet is
 visible in that menu then select it and skip to step 3.
 
-2. If Pellet is not visible then do File>Check for plugins and select
-Pellet from the list of available plugins and then select Install. This
+2. If Pellet is not visible then do `File>Check for plugins` and select
+Pellet from the list of available plugins and then select `Install`. This
 will install Pellet and you should get a message that says it will take
-effect the next time you start Protégé. Do a File>Save to save your work
-then quit Protégé and restart it. Then go to File>Open recent. You
+effect the next time you start Protégé. Do a `File>Save` to save your work
+then quit Protégé and restart it. Then go to `File>Open recent`. You
 should see your saved Pizza tutorial in the list of recent ontologies.
-Select it to load it. Now you should see Pellet under the Reasoner menu
+Select it to load it. Now you should see Pellet under the `Reasoner` menu
 and be able to select it so do so.
 
 3. With Pellet selected in the Reasoner menu execute the command
-Reasoner>Start reasoner. The reasoner should run very quickly since the
+`Reasoner>Start reasoner`. The reasoner should run very quickly since the
 ontology is so simple. You will notice that the little text message in
 the lower right corner of the Protégé window has changed to now say
-Reasoner active. The next time you make a change to the ontology that
-text will change to say: Reasoner state out of sync with active
-ontology. With small ontologies the reasoner runs very quickly, and it
+`Reasoner active`. The next time you make a change to the ontology that
+text will change to say: `Reasoner state out of sync with active
+ontology`. With small ontologies the reasoner runs very quickly, and it
 is a good idea to get into the habit of running it often, as much as
 after every change.
 
 4. It is possible that one or more of your classes will still be
 highlighted in red after you run the reasoner.
 
-If that happens do: Window>Refresh user interface and any red highlights
+If that happens do: `Window>Refresh user interface` and any red highlights
 should go away. Whenever your user interface seems to show something you
 don’t expect the first thing to do is to try this command.
 
@@ -633,490 +601,474 @@ default, the reasoner does not perform all possible inferences because
 some inferences can take a long time for large and complex ontologies.
 In this tutorial we will always be dealing with small and simple
 ontologies so we want to see everything the reasoner can do. Go to:
-Reasoner>Configure. This will bring up a dialog with several check boxes
+`Reasoner>Configure`. This will bring up a dialog with several check boxes
 of inferences that the reasoner can perform. If they aren’t all checked
 then check them all. You may receive a warning that some inferences can
 take a lot of time, but you can ignore those since your ontology will be
 small.
 
-| \____________________________________________________________________________________\_
-  4.3 Disjoint Classes
-| Having added the classes Pizza, PizzaTopping, and PizzaBase to the
-  ontology, we now want to say that these classes are *disjoint*. I.e.,
-  no individual can be an instance of more than one of those classes. In
-  set theory terminology the intersection of these three classes is the
-  empty set: owl:Nothing.
+---------------
+
+
+Disjoint Classes
+================
+
+Having added the classes ``Pizza``, ``PizzaTopping``, and ``PizzaBase`` to the
+ontology, we now want to say that these classes are *disjoint*. I.e.,
+no individual can be an instance of more than one of those classes. In
+set theory terminology the intersection of these three classes is the
+empty set: ``owl:Nothing``.
 
 **Exercise 6: Make Pizza, PizzaTopping, and PizzaBase disjoint from each
 other**
 
-\____________________________________________________________________________________\_
-1. Select the class Pizza in the class hierarchy.
+----------------
 
-2. Find the Disjoint With option in the Description view and select the
-(+) sign next to it. See the red circle in figure 4.6.
+1. Select the class `Pizza` in the class hierarchy.
 
-3. This should bring up a dialog with two tabs: Class hierarchy and
-Expression editor. You want Class hierarchy for now (we will use the
+2. Find the `Disjoint With` option in the `Description` view and select the
+`(+)` sign next to it. See the red circle in figure 4.6.
+
+3. This should bring up a dialog with two tabs: `Class hierarchy` and
+`Expression editor`. You want `Class hierarchy` for now (we will use the
 expression editor later). This gives you an interface to select a class
-that is identical to the Class hierarchy view. Use it to navigate to
-PizzaBase. Hold down the shift key and select PizzaBase and
-PizzaTopping. Select OK.
+that is identical to the `Class hierarchy` view. Use it to navigate to
+`PizzaBase`. Hold down the shift key and select `PizzaBase` and
+`PizzaTopping`. Select `OK`.
 
-4. Do a Reasoner>Synchronize reasoner. Then look at PizzaBase and
-PizzaTopping. You should see that they each have the appropriate
+4. Do a `Reasoner>Synchronize reasoner`. Then look at ``PizzaBase`` and
+``PizzaTopping``. You should see that they each have the appropriate
 disjoint axioms defined to indicate that each of these classes is
 disjoint with the other two.
 
-\____________________________________________________________________________________\_
+---------------
 
-.. figure:: /_static/media/image43.png
-   :width: 6.18333in
-   :height: 1.31571in
+.. figure:: /_static/media/chap_4/6.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-.. figure:: /_static/media/image41.png
-   :width: 7.26667in
-   :height: 5.59028in
+   *Figure 4.6: The Disjoint Option in the Class Description View*
 
-   Figure 4.6: The Disjoint Option in the Class Description View
+.. admonition:: Explanation
+   :class: explain
 
-+----------------------------------------------------------------------+
-|    OWL classes are assumed to overlap, i.e., by default they are not |
-|    disjoint. This is often useful because in OWL, unlike in most     |
-|    object-oriented models, multiple inheritance is not discouraged   |
-|    and can be a powerful tool to model data. If we want classes to   |
-|    be disjoint, we must explicitly declare them to be so. It is      |
-|    often a good development strategy to start with classes that are  |
-|    not disjoint and then make them disjoint once the model is more   |
-|    fully fleshed out as it is not always obvious which classes are   |
-|    disjoint from the beginning.                                      |
-+----------------------------------------------------------------------+
+   OWL classes are assumed to overlap, i.e., by default they are not
+   disjoint. This is often useful because in OWL, unlike in most
+   object-oriented models, multiple inheritance is not discouraged
+   and can be a powerful tool to model data. If we want classes to
+   be disjoint, we must explicitly declare them to be so. It is
+   often a good development strategy to start with classes that are
+   not disjoint and then make them disjoint once the model is more
+   fully fleshed out as it is not always obvious which classes are
+   disjoint from the beginning.
 
-..
+Using Create Class Hierarchy
+============================
 
-   .. figure:: /_static/media/image42.png
-      :width: 0.56944in
-      :height: 0.41667in
+In this section we will use `Tools>Create class hierarchy` to create
+multiple classes at once.
 
-   | 4.4 Using Create Class Hierarchy
-   | In this section we will use Tools>Create class hierarchy to create
-     multiple classes at once.
+.. figure:: /_static/media/chap_4/7.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-.. figure:: /_static/media/image44.png
-   :width: 5.86528in
-   :height: 4.57361in
-
-Figure 4.7: The Create class hierarchy wizard
+   *Figure 4.7: The Create class hierarchy wizard*
 
 **Exercise 7: Use the Create class hierarchy tool to create subclasses
 of PizzaBase**
 
-\____________________________________________________________________________________\_
-1. Select the class PizzaBase in the class hierarchy.
+---------------
 
-2. With PizzaBase selected use the Tools>Create class hierarchy menu
+1. Select the class `PizzaBase` in the class hierarchy.
+
+2. With `PizzaBase` selected use the `Tools>Create class hierarchy` menu
 option.
 
 3. This should bring up a wizard that enables you to create a nested
-group of classes all at once. You should see a window labeled Enter
-hierarchy where you can enter one name on each line. You can also use
+group of classes all at once. You should see a window labeled `Enter
+hierarchy` where you can enter one name on each line. You can also use
 the tab key to indicate that a class is a subclass of the class above
-it. For now we just want to enter two subclasses of PizzaBase:
-ThinAndCrispyBase and DeepPanBase. One of the things the wizard does is
+it. For now we just want to enter two subclasses of ``PizzaBase``:
+``ThinAndCrispyBase`` and ``DeepPanBase``. One of the things the wizard does is
 to automatically add a prefix or suffix for us. So just enter
-ThinAndCrispy, hit return and enter DeepPan. Then in the Suffix field
-add Base. Your window should look like figure 4.7.
+`ThinAndCrispy`, hit return and enter `DeepPan`. Then in the Suffix field
+add `Base`. Your window should look like figure 4.7.
 
-4. Select Continue. This will take you to a window that asks if you want
+4. Select `Continue`. This will take you to a window that asks if you want
 to make sibling classes disjoint. The default should be checked (make
 them disjoint) which is what we want in this case (a base can’t be both
-deep pan and thin) so just select Finish. Synchronize the reasoner. Your
+deep pan and thin) so just select `Finish`. Synchronize the reasoner. Your
 class hierarchy should now look like figure 4.8.
 
-\____________________________________________________________________________________\_
+---------------
 
-.. figure:: /_static/media/image45.png
-   :width: 4.45833in
-   :height: 2.29167in
+.. figure:: /_static/media/chap_4/8.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.8: The New Class Hierarchy
+   *Figure 4.8: The New Class Hierarchy*
 
-| 4.5 Create a PizzaTopping Hierarchy
-| We will use Tools>Create class hierarchy again but this time to create
-  a more interesting hierarchy with additional subclasses to model the
-  subclasses of PizzaTopping.
+Create a PizzaTopping Hierarchy
+===============================
+
+We will use `Tools>Create class hierarchy` again but this time to create
+a more interesting hierarchy with additional subclasses to model the
+subclasses of ``PizzaTopping``.
 
 **Exercise 8: Create subclasses of PizzaTopping**
 
-\____________________________________________________________________________________\_
-1. Select the class PizzaTopping in the class hierarchy.
+---------------
 
-2. With PizzaTopping selected use the Tools>Create class hierarchy menu
+1. Select the class `PizzaTopping` in the class hierarchy.
+
+2. With `PizzaTopping` selected use the `Tools>Create class hierarchy` menu
 option.
 
 3. This will once again bring up the wizard. We want all our toppings to
-end in Topping so enter Topping in the Suffix field. Then create the
+end in Topping so enter `Topping` in the Suffix field. Then create the
 nested structure as shown in figure 4.9. Use the Tab key to indent
 classes where needed.
 
-4. Select Continue. This will take you to the window that asks if you
+4. Select `Continue`. This will take you to the window that asks if you
 want to make sibling classes disjoint. We do want this so leave the box
-checked and click Finish. Synchronize the reasoner. Your class hierarchy
+checked and click `Finish`. Synchronize the reasoner. Your class hierarchy
 should now look like figure 4.10.
 
-\____________________________________________________________________________________\_
+----------------
 
-|image50|\ Figure 4.9 Using Create class hieararchy to create
-PizzaTopping subclasses
+.. figure:: /_static/media/chap_4/9.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-.. figure:: /_static/media/image49.png
-   :width: 6.18333in
-   :height: 2.12114in
+   *Figure 4.9 Using Create class hierarchy to create PizzaTopping subclasses*
 
-.. figure:: /_static/media/image47.png
-   :width: 3.77222in
-   :height: 3.94861in
+.. figure:: /_static/media/chap_4/10.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.10 The New PizzaTopping Class Hierarchy
+   *Figure 4.10 The New PizzaTopping Class Hierarchy*
 
-+----------------------------------------------------------------------+
-|    | So far, we have created some simple named classes and           |
-|      subclasses which hopefully seem intuitive and obvious. However, |
-|      what does it actually mean to be a subclass of something in     |
-|      OWL? For example, what does it mean for VegetableTopping to be  |
-|      a subclass of                                                   |
-|    | PizzaTopping? In OWL subclass means *necessary implication*.    |
-|      I.e., if VegetableTopping is a subclass of PizzaTopping then    |
-|      *all* instances of VegetableTopping are also instances of       |
-|      PizzaTopping. It is for this reason that we try to have         |
-|      standards such as having all                                    |
-|    | PizzaTopping classes end with the word “Topping”. Otherwise, it |
-|      might seem we are saying that anything that is a kind of *Ham*  |
-|      like the *Ham* in your sandwich is a kind of MeatTopping or     |
-|      PizzaTopping which is not what we mean. For large ontologies    |
-|      strict attention to the naming of classes and other entities    |
-|      can prevent potential confusion and bugs.                       |
-+----------------------------------------------------------------------+
+.. admonition:: Explanation
+   :class: explain
 
-.. figure:: /_static/media/image48.png
-   :width: 0.56944in
-   :height: 0.41667in
 
-.. figure:: /_static/media/image30.png
-   :width: 6.18333in
-   :height: 0.91549in
+   So far, we have created some simple named classes and
+   subclasses which hopefully seem intuitive and obvious. However,
+   what does it actually mean to be a subclass of something in
+   OWL? For example, what does it mean for ``VegetableTopping`` to be
+   a subclass of ``PizzaTopping``? In OWL subclass means *necessary implication*.
+   I.e., if ``VegetableTopping`` is a subclass of ``PizzaTopping`` then
+   *all* instances of ``VegetableTopping`` are also instances of
+   ``PizzaTopping``. It is for this reason that we try to have
+   standards such as having all
+   ``PizzaTopping`` classes end with the word “Topping”. Otherwise, it
+   might seem we are saying that anything that is a kind of *Ham*
+   like the *Ham* in your sandwich is a kind of ``MeatTopping`` or
+   ``PizzaTopping`` which is not what we mean. For large ontologies
+   strict attention to the naming of classes and other entities
+   can prevent potential confusion and bugs.
 
-| 4.6 OWL Properties
-| OWL Properties represent relationships. There are three types of
-  properties, Object properties, Data properties and Annotation
-  properties. Object properties are relationships between two
-  individuals. Data properties are relations between an individual and a
-  datatype such as xsd:string or xsd:dateTime.
 
-| Annotation properties also usually have datatypes as values although
-  they can have objects. An
-| annotation property is usually meta-data such as a comment or a label.
-  In OWL only individuals can have values for object and data
-  properties, but any entity can have an annotation property value since
-  meta-data applies to all entities. Annotation properties usually can’t
-  be reasoned about. For example, SWRL rules which we will cover later
-  cannot view or change the value of annotation properties. In this
-  chapter we will focus on Object properties. Data properties are
-  described in Chapter 5. In the current version of the tutorial we are
-  only discussing the annotation property rdfs:label (see chapter 7)
-  however they are fairly intuitive.
+OWL Properties
+==============
 
-Properties may be created using the Object Properties sub-tab of the
-Entities tab shown in figure 4.11.
+OWL Properties represent relationships. There are three types of
+properties, Object properties, Data properties and Annotation
+properties. Object properties are relationships between two
+individuals. Data properties are relations between an individual and a
+datatype such as xsd:string or xsd:dateTime.
 
-Just as all OWL classes ultimately are a subclass of owl:Thing, all
-properties are ultimately a subproperty of owl:topObjectProperty. A
+Annotation properties also usually have datatypes as values although
+they can have objects. An
+annotation property is usually meta-data such as a comment or a label.
+In OWL only individuals can have values for object and data
+properties, but any entity can have an annotation property value since
+meta-data applies to all entities. Annotation properties usually can’t
+be reasoned about. For example, SWRL rules which we will cover later
+cannot view or change the value of annotation properties. In this
+chapter we will focus on Object properties. Data properties are
+described in Chapter 5. In the current version of the tutorial we are
+only discussing the annotation property ``rdfs:label`` (see :ref:`Chapter 7 <chap7>`)
+however they are fairly intuitive.
+
+Properties may be created using the `Object Properties` sub-tab of the
+`Entities` tab shown in figure 4.11.
+
+Just as all OWL classes ultimately are a subclass of ``owl:Thing``, all
+properties are ultimately a sub-property of ``owl:topObjectProperty``. A
 sub-property is similar to a subclass except it is about the tuples in a
-property. For example, hasFather would be a sub-property of hasParent
-because all the tuples in hasFather are in hasParent but not vice versa.
-E.g., if SashahasFatherBarack then she also hasParentBarack. However,
-she also hasParentMichelle but it is not the case that she
-hasFatherMichelle. Rather she hasMotherMichelle, i.e., hasMother is also
-a sub-property of hasParent.
+property. For example, ``hasFather`` would be a sub-property of ``hasParent``
+because all the tuples in ``hasFather`` are in ``hasParent`` but not vice versa.
+E.g., if ``Sasha hasFather Barack`` then she also ``hasParent Barack``. However,
+she also ``hasParent Michelle`` but it is not the case that she
+``hasFather Michelle``. Rather she ``hasMother Michelle``, i.e., ``hasMother`` is also
+a sub-property of ``hasParent``.
 
 The GUI for entering properties is also similar to that for entering
 classes. The first icon with one box under another creates a
 sub-property of the selected property. The second icon showing two boxes
 at the same level creates a sibling property to the selected property
-and the icon with an X through a box deletes the selected property.
+and the icon with an `X` through a box deletes the selected property.
 
 **Exercise 9: Create some properties**
 
-\____________________________________________________________________________________\_
+---------------
+
 1. Select the Object properties sub-tab of the Entities tab (see figure
 4.11).
 
-2. Make sure owl:topObjectPropertyis selected\ **.** Click on the nested
+2. Make sure ``owl:topObjectProperty`` is selected\ **.** Click on the nested
 box icon at the left to create a new sub-property of
-owl:topObjectProperty. When prompted for the name of the new property
-type in hasIngredient.
+``owl:topObjectProperty``. When prompted for the name of the new property
+type in `hasIngredient`.
 
 3. Just as you can use a wizard to create multiple classes you can also
-use one to create multiple properties. Select hasIngredient and then
-select Tools>Create object property hierarchy. Enter the new property
-names hasTopping and hasBase. Select Continue and accept the default
+use one to create multiple properties. Select `hasIngredient` and then
+select `Tools>Create object property hierarchy`. Enter the new property
+names `hasTopping` and `hasBase`. Select Continue and accept the default
 that the object properties are *not* disjoint.
 
 4. Synchronize the reasoner. Your window should now look like figure
 4.11.
 
-\____________________________________________________________________________________\_
+---------------
 
-+-----------+
-| |image51| |
-+-----------+
+.. admonition:: Explanation
+   :class: explain
 
-+----------------------------------------------------------------------+
-|    For those familiar with the Entity-Relationship model, OWL object |
-|    properties are similar to relations and data properties are       |
-|    similar to attributes. Object properties are similar to           |
-|    properties with a range of some class in OOP and data properties  |
-|    are similar to OOP properties with a range that is a datatype.    |
-+----------------------------------------------------------------------+
+   For those familiar with the Entity-Relationship model, OWL object
+   properties are similar to relations and data properties are
+   similar to attributes. Object properties are similar to
+   properties with a range of some class in OOP and data properties
+   are similar to OOP properties with a range that is a datatype.
 
-.. figure:: /_static/media/image51.png
-   :width: 6.5in
-   :height: 4.45556in
+.. figure:: /_static/media/chap_4/11.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.11 Adding Some Object Properties
+   *Figure 4.11 Adding Some Object Properties*
 
-| 4.7 Inverse Properties
-| Each object property may have a corresponding inverse property. If
-  some property links individual a to individual b then its inverse
-  property will link individual b to individual a. For example, in
-  figure 3.3 the individual MichaelhasPetBuddy. In this example hasPet
-  is an object property that maps from a Person to their Pet which are
-  known as the domain and range of the property. Michael is an instance
-  of the Person class and Buddy is an instance of the Pet class. The
-  hasPet property points from a Person to that person’s Pet. The inverse
-  property could be isPetOf which would be represented by a link between
-  the two individuals going the other way, from Buddy to Michael.
-  Whenever possible it is desirable to adhere to this type of naming
-  standard with properties. Properties going in one direction as
-  *hasProperty* and their inverses as *isPropertyOf*.
+Inverse Properties
+==================
+
+Each object property may have a corresponding inverse property. If
+some property links individual a to individual b then its inverse
+property will link individual b to individual a. For example, in
+figure 3.3 the individual ``MichaelhasPetBuddy``. In this example ``hasPet``
+is an object property that maps from a ``Person`` to their ``Pet`` which are
+known as the domain and range of the property. ``Michael`` is an instance
+of the ``Person`` class and ``Buddy`` is an instance of the ``Pet`` class. The
+``hasPet`` property points from a ``Person`` to that person’s ``Pet``. The inverse
+property could be ``isPetOf`` which would be represented by a link between
+the two individuals going the other way, from ``Buddy`` to ``Michael``.
+Whenever possible it is desirable to adhere to this type of naming
+standard with properties. Properties going in one direction as
+*hasProperty* and their inverses as *isPropertyOf*.
 
 **Exercise 10: Create some inverse properties**
 
-\____________________________________________________________________________________\_
+---------------
 
-1. Use the Object properties tab to create a new object property called
+1. Use the `Object properties` tab to create a new object property called
 isIngredientOf (this will be the inverse property of hasIngredient).
 Make sure that isIngredientOf is asibling property if hasIngredient and
 a sub-property of owl:topObjectProperty.
 
-2. Click on the Add icon (+) next to Inverse Of in the Description view
+2. Click on the Add icon `(+)` next to `Inverse Of` in the `Description` view
 for hasIngredient. You will be presented with a window that shows a
-nested view of all the current properties. Select hasIngredient to make
+nested view of all the current properties. Select `hasIngredient` to make
 it the inverse of isIngredientOf.
 
-3. Select isIngredientOf and then Tools>Create object property
-hierarchy. Enter isToppingOf then on a new line enter isBaseOf. As
-before, select Continue and leave the box for disjoint properties
-unchecked and select Finish. Repeat step 2 to make isToppingOf the
-inverse of hasTopping and isBaseOf the inverse of hasBase.
+3. Select `isIngredientOf` and then `Tools>Create object property
+hierarchy`. Enter `isToppingOf` then on a new line enter `isBaseOf`. As
+before, select `Continue` and leave the box for disjoint properties
+unchecked and select `Finish`. Repeat step 2 to make ``isToppingOf`` the
+inverse of ``hasTopping`` and ``isBaseOf`` the inverse of ``hasBase``.
 
 4. Synchronize the reasoner. Your window should now look like figure
 4.12.
 
-\____________________________________________________________________________________\_
 
-.. figure:: /_static/media/image52.png
-   :width: 6.5in
-   :height: 4.25555in
+.. figure:: /_static/media/chap_4/12.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.12 Inverse Properties
+   *Figure 4.12 Inverse Properties*
 
-| 4.8 OWL Object Property Characteristics
-| OWL allows the meaning of properties to be enriched through the use of
-  property characteristics. The following sections discuss the various
-  characteristics that properties may have. If you are familiar with
-  basic concepts of relations in set theory these characteristics will
-  already be familiar to you. In figure 4.12 you can see the
-  Characteristics: view for a property as a list of check boxes:
-  Functional, Inverse functional, Transitive, etc.
+OWL Object Property Characteristics
+===================================
 
-| 4.8.1 Functional Properties
-| If a property is functional, for a given individual, there can be at
-  most one individual that is related to the individual via the
-  property. For example the property hasBirthMother -- someone can only
-  have one birth mother. If we say that the individual
-  JeanhasBirthMotherPeggy and we also say that the individual
-  JeanhasBirthMotherMargaret, then because hasBirthMother is a
-  functional property, we can infer that Peggy and Margaret must be the
-  same individual. This can happen in OWL because unlike many languages it does not have a unique names assumption. Unless
-  specifically stated otherwise, the reasoner can infer that two
-  individuals with different names are actually the same individual. It
-  should be noted however, that if Peggy and Margaret were explicitly
-  stated to be two diﬀerent individuals then the above statements would
-  lead the reasoner to infer that there was an inconsistency in the
-  ontology. We will discuss names more in chapter 7.
+OWL allows the meaning of properties to be enriched through the use of
+property characteristics. The following sections discuss the various
+characteristics that properties may have. If you are familiar with
+basic concepts of relations in set theory these characteristics will
+already be familiar to you. In figure 4.12 you can see the
+`Characteristics`: view for a property as a list of check boxes:
+`Functional`, `Inverse functional`, `Transitive`, etc.
 
-In section 4.16 we will discuss cardinality restrictions on properties.
-E.g., that the hasWheel property of the Bicycle class has a minimum of 2
-(allowing for training wheels) whereas hasWheel for the Unicycle class
+Functional Properties
+---------------------
+If a property is functional, for a given individual, there can be at
+most one individual that is related to the individual via the
+property. For example the property ``hasBirthMother`` -- someone can only
+have one birth mother. If we say that the individual
+``Jean hasBirthMother Peggy`` and we also say that the individual
+``Jean hasBirthMother Margaret``, then because ``hasBirthMother`` is a
+functional property, we can infer that ``Peggy`` and ``Margaret`` must be the
+same individual. This can happen in OWL because unlike many languages it does not have a unique names assumption. Unless
+specifically stated otherwise, the reasoner can infer that two
+individuals with different names are actually the same individual. It
+should be noted however, that if ``Peggy`` and ``Margaret`` were explicitly
+stated to be two diﬀerent individuals then the above statements would
+lead the reasoner to infer that there was an inconsistency in the
+ontology. We will discuss names more in :ref:`Chapter 7 <chap7>`.
+
+In `section 4.16 <#cardinality-restrictions>`_ we will discuss cardinality restrictions on properties.
+E.g., that the ``hasWheel`` property of the ``Bicycle`` class has a minimum of 2
+(allowing for training wheels) whereas ``hasWheel`` for the ``Unicycle`` class
 is defined to be exactly 1. A functional property is equivalent to a
 property with a cardinality restriction that says it has a maximum of 1
 value. The term functional is from mathematics where a function is
 defined as a relation where each member of the domain has at most one
-value. For example, the greaterThan relation is not functional since for
-any number X many (in fact an infinite number) can be greaterThan X but
-the plusOne relation is functional since for any number X plusOne always
+value. For example, the ``greaterThan`` relation is not functional since for
+any number ``X`` many (in fact an infinite number) can be ``greaterThan`` ``X`` but
+the ``plusOne`` relation is functional since for any number ``X`` ``plusOne`` always
 results in one unique value.
 
-| 4.8.2 Inverse Functional Properties
-| If a property is inverse functional then it means that the inverse
-  property is functional. For a given individual, there can be at most
-  one individual related to that individual via the property. Following
-  our example from section 4.8.1 the inverse of hasBirthMother would be
-  isBirthMotherOf. The isBirthMotherOf property would not be functional
-  since a woman can be the birth mother of several children. However, it
-  would be inverse functional since each person has exactly one mother.
+Inverse Functional Properties
+-----------------------------
+If a property is inverse functional then it means that the inverse
+property is functional. For a given individual, there can be at most
+one individual related to that individual via the property. Following
+our example from `section 4.8.1 <#functional-properties>`_ the inverse of ``hasBirthMother`` would be
+``isBirthMotherOf``. The ``isBirthMotherOf`` property would not be functional
+since a woman can be the birth mother of several children. However, it
+would be inverse functional since each person has exactly one mother.
 
-4.8.3 Transitive Properties
+Transitive Properties
+---------------------
 
-+----------------+----------------+----------------------------------+
-|    hasAncestor | Diya           |    If a property P is            |
-|                |                |    transitive, and P relates     |
-|                |                |    individual a to               |
-+================+================+==================================+
-|                |                | individual b, and also           |
-|                |                | individual b to individual c,    |
-|                |                | then we can                      |
-+----------------+----------------+----------------------------------+
-|                |    hasAncestor | infer that individual a is       |
-|                |                | related to individual c via      |
-|                |                | property P.                      |
-+----------------+----------------+----------------------------------+
-|                |                |    For example, Figure 4.13      |
-|                |                |    shows an example of the       |
-|                |                |    transitive                    |
-+----------------+----------------+----------------------------------+
-|                |                |    property hasAncestor. If the  |
-|                |                |    individual Diya has an        |
-|                |                |    ancestor                      |
-+----------------+----------------+----------------------------------+
-|                | Fatima         |    that is Fatima, and Fatima    |
-|                |                |    has an ancestor that is       |
-|                |                |    Arjun, then                   |
-+----------------+----------------+----------------------------------+
-|                |                | we can infer that Diya has an    |
-|                |                | ancestor that is Arjun – this is |
-+----------------+----------------+----------------------------------+
-|                |                |    indicated by the curved line  |
-|                |                |    in Figure 4.13.               |
-+----------------+----------------+----------------------------------+
+.. table::
+   :widths: 30 70
 
-hasAncestor
+   +-----------------------------------------------------+-------------------------------------------------------------------------------+
+   | |trans_prop_img|                                    | If a property P is transitive, and P relates individual a to individual b,    |
+   |                                                     | individual b, and also individual b to individual c, then we can infer that   |
+   | .. centered:: *Figure 4.13 Transitive Properties*   | individual a is related to individual c via property P.                       |
+   |                                                     |                                                                               |
+   |                                                     | For example, Figure 4.13 shows an example of the transitive property          |
+   |                                                     | ``hasAncestor``. If the individual ``Diya`` has an ancestor that is ``Fatima``|
+   |                                                     | , and ``Fatima`` has an ancestor that is ``Arjun``, then we can infer that    |
+   |                                                     | ``Diya`` has an ancestor that is ``Arjun`` – this is indicated by the curved  |
+   |                                                     | line in Figure 4.13.                                                          |
+   |                                                     +-------------------------------------------------------------------------------+
+   |                                                     | An example of the transitive property in mathematics is the *>* relation.     |
+   |                                                     | If x > y and y > z then x > z.                                                |
+   |                                                     +-------------------------------------------------------------------------------+
+   |                                                     | Note that if a property is transitive it cannot be functional. Also,          |
+   |                                                     | if a property is transitive then its inverse property must also be            |
+   |                                                     | transitive. E.g., the inverse of > is < and < is also transitive. We          |
+   |                                                     | will see an example of this in :ref:`Chapter 6 <chap6>`.                      |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------+
 
-Arjun
+.. |trans_prop_img| image:: /_static/media/chap_4/13.png
+   :class: no-scaled-link
 
-Figure 4.13 Transitive
+Symmetric and Asymmetric Properties
+-----------------------------------
+If a property P is symmetric, and the property relates individual a to
+individual b then individual b is also related to individual a via
+property P. The ``hasSibling`` property or ``hasSpouse`` are examples of symmetric properties.
+If ``Michelle hasSpouse Barack``, then
+``Barack hasSpouse Michelle``. A symmetric property is its own inverse.
 
-Properties
+An asymmetric property is a property that can never have symmetric
+values. If a property P is asymmetric then if a is related to b via that property b cannot be
+related to a via that property. An example of an asymmetric property
+is ``hasBirthMother``. If ``Diya hasBirthMother Fatima``, then it can’t be the
+case that ``Fatima hasBirthMother Diya``.
 
-   An example of the transitive property in mathematics is the *>*
-   relation. If x > y and y > z then x > z.
+Reflexive and Irreflexive Properties
+------------------------------------
+A reflexive property is a property that always relates an individual
+to itself. If a property P is reflexive then for all individuals a P
+will always relate a to a. Equality is the most common example of a
+reflexive property. For any object a, a is always equal to a. An
+irreflexive property is... you guessed it... a property that can never
+relate an individual to itself. The property ``hasBirthMother`` is an
+example of an irreflexive property since no person can be their own
+mother. You should use reflexive properties with care.
+The domain of a reflexive property is *always* ``owl:Thing``. The reasons are
+complex, see the W3C Owl 2 Specification in the bibliography for more
+details. The important thing is that if you make a property reflexive
+that means its domain is ``owl:Thing``. For example, if you have a
+reflexive property and declare its domain to be some class such as
+``Person`` the reasoner will infer that ``Person`` is equivalent to ``owl:Thing``
+which can cause problems.
 
-   Note that if a property is transitive it cannot be functional. Also,
-   if a property is transitive then its inverse property must also be
-   transitive. E.g., the inverse of > is < and < is also transitive. We
-   will see an example of this in chapter 6.
-   |image52|\ |image53|\ |image54|\ |image55|\ |image56|\ |image57|\ |image58|\ |image59|
+Reasoners Automatically Enforce Property Characteristics
+--------------------------------------------------------
+The reasoners that work with Protégé automatically enforce all the
+characteristics that are described above. For example, if the user
+enters the fact that ``Diya hasBirthMother Fatima`` and ``isBirthMotherOf``
+is the inverse of ``hasBirthMother``, the reasoner will
+infer that ``Fatima isBirthMotherOf Diya``. These types of characteristics
+can significantly reduce the amount of effort needed to populate an
+ontology with data about individuals.
 
-| 4.8.4 Symmetric and Asymmetric Properties
-| If a property P is symmetric, and the property relates individual a to
-  individual b then individual b is also related to individual a via
-  property P. The hasSibling property or hasSpouse are examples of symmetric properties. If MichellehasSpouseBarack, then
-  BarackhasSpouseMichelle. A symmetric property is its own inverse.
+OWL Property Domains and Ranges
+===============================
+Properties may have a *domain* and *range* defined. These terms have
+the same meaning in OWL as they do in mathematics and set theory. The
+domain of a property is the set of all objects that can have that
+property asserted about it. The range is the set of all objects that
+can be the value of the property. Both the domain and range are
+optional. In general, it is a good idea to define them because doing
+so can catch modeling mistakes while defining the model rather than at
+run time when trying to use it.
+The domain for an object property must
+always be a class. For data properties the range is a simple datatype
+such as ``xsd:decimal``. The most common predefined datatypes already
+exist in Protégé. It is also possible to define new data types
+although most users will seldom need to do that. For most cases if you
+are considering defining a new datatype you should probably consider
+making the property an object property instead and defining a class as
+the range. For people familiar with Entity-Relation modeling an object
+property is similar to a relation and a data property is similar to an
+attribute. For those familiar with set theory a property is identical
+to a binary relation in set theory.
 
-| An Asymmetric property is a property that can never have symmetric
-  values. If a property P is
-| asymmetric then if a is related to b via that property b cannot be
-  related to a via that property. An example of an asymmetric property
-  is hasBirthMother. If Diya hasBirthMotherFatima, then it can’t be the
-  case that FatimahasBirthMotherDiya.
+As an example, in our pizza ontology, the property ``hasTopping`` would link
+individuals belonging to the class ``Pizza`` to individuals belonging to the
+class ``PizzaTopping``. The domain of ``hasTopping`` is ``Pizza`` and the range is
+``PizzaTopping``. Inverse properties have their domains and range swapped.
+In this example, the inverse of ``hasTopping`` will be called ``isToppingOf``.
+Thus, the domain for ``isToppingOf`` is the range of ``hasTopping``
+(``PizzaTopping``) and the range for ``isToppingOf`` is the domain of ``hasTopping``
+(``Pizza``).
 
-| 4.8.5 Reflexive and Irreflexive Properties
-| A reflexive property is a property that always relates an individual
-  to itself. If a property P is reflexive then for all individuals a P
-  will always relate a to a. Equality is the most common example of a
-  reflexive property. For any object a, a is always equal to a. An
-  irreflexive property is… you guessed it… a property that can never
-  relate an individual to itself. The property hasBirthMother is an
-  example of an irreflexive property since no person can be their own
-  mother. Note: you should use reflexive properties with care. The
-  domain of a reflexive property is *always*\ owl:Thing. The reasons are
-  complex, see the W3C Owl 2 Specification in the bibliography for more
-  details. The important thing is that if you make a property reflexive
-  that means its domain is owl:Thing. For example, if you have a
-  reflexive property and declare its domain to be some class such as
-  Person the reasoner will infer that Person is equivalent to owl:Thing
-  which can cause problems.
-
-| 4.8.6 Reasoners Automatically Enforce Property Characteristics
-| The reasoners that work with Protégé automatically enforce all the
-  characteristics that are described above. For example, if the user
-  enters the fact that DiyahasBirthMotherFatima and
-| isBirthMotherOf is the inverse of hasBirthMother, the reasoner will
-  infer that Fatima isBirthMotherOfDiya. These types of characteristics
-  can significantly reduce the amount of effort needed to populate an
-  ontology with data about individuals.
-
-| 4.9 OWL Property Domains and Ranges
-| Properties may have a *domain* and *range* defined. These terms have
-  the same meaning in OWL as they do in mathematics and set theory. The
-  domain of a property is the set of all objects that can have that
-  property asserted about it. The range is the set of all objects that
-  can be the value of the property. Both the domain and range are
-  optional. In general, it is a good idea to define them because doing
-  so can catch modeling mistakes while defining the model rather than at
-  run time when trying to use it. The domain for an object property must
-  always be a class. For data properties the range is a simple datatype
-  such as xsd:decimal. The most common predefined datatypes already
-  exist in Protégé. It is also possible to define new data types
-  although most users will seldom need to do that. For most cases if you
-  are considering defining a new datatype you should probably consider
-  making the property an object property instead and defining a class as
-  the range. For people familiar with Entity-Relation modeling an object
-  property is similar to a relation and a data property is similar to an
-  attribute. For those familiar with set theory a property is identical
-  to a binary relation in set theory.
-
-As an example, in our pizza ontology, the property hasTopping would link
-individuals belonging to the class Pizza to individuals belonging to the
-class PizzaTopping. The domain of hasTopping is Pizza and the range is
-PizzaTopping. Inverse properties have their domains and range swapped.
-In this example, the inverse of hasTopping will be called isToppingOf.
-Thus, the domain for isToppingOf is the range of hasTopping
-(PizzaTopping) and the range for isToppingOf is the domain of hasTopping
-(Pizza).
 
 **Exercise 11: Define the domain and range of the hasTopping property**
 
-\____________________________________________________________________________________\_
-1. Navigate to the Object properties tab. Select the hasTopping
+---------------
+
+1. Navigate to the `Object properties` tab. Select the `hasTopping`
 property.
 
-| 2. Click on the Add icon (+) next to Domains (intersection) in the
-  Description view for hasTopping. You will be presented with a window
-  that shows several tabs. There are multiple ways to define domain and
-  range. For now we will use the simplest method (and the one most often
-  used). Select the
-| ClassHierarchy tab. Then select Pizza from the class hierarchy. Your
-  UI should look like figure 4.14. Click on OK. You should now see Pizza
-  underneath the Domains in the Description view.
+2. Click on the Add icon `(+)` next to `Domains (intersection)` in the
+`Description` view for ``hasTopping``. You will be presented with a window
+that shows several tabs. There are multiple ways to define domain and
+range. For now we will use the simplest method (and the one most often
+used). Select the `ClassHierarchy` tab. Then select `Pizza` from the class hierarchy. Your
+UI should look like figure 4.14. Click on `OK`. You should now see `Pizza`
+underneath the `Domains` in the `Description` view.
 
-3. Repeat step 2 but this time start by using the (+) icon next to the
-Ranges (intersection) in the Description for hasTopping. This time
-select the class PizzaTopping as the range.
+3. Repeat step 2 but this time start by using the `(+)` icon next to the
+`Ranges (intersection)` in the `Description` for ``hasTopping``. This time
+select the class `PizzaTopping` as the range.
 
-4. Synchronize the reasoner. Now select isToppingOf. You should see that
-the Domain and Range for isToppingOf have been filled in by the reasoner
+4. Synchronize the reasoner. Now select `isToppingOf`. You should see that
+the Domain and Range for ``isToppingOf`` have been filled in by the reasoner
 (see figure 4.15). Since the two properties are inverses the reasoner
 knows that the domain for one is the range for the other and vice versa.
 This is another example of why frequently running the reasoner can save
@@ -1124,75 +1076,70 @@ time and help maintain a valid model. Note that these values are
 highlighted in yellow. Any information supplied by the reasoner rather
 than by the user is highlighted in this way.
 
-\____________________________________________________________________________________\_
+---------------
 
-   .. figure:: /_static/media/image60.png
-      :width: 4.375in
-      :height: 3.35417in
+.. figure:: /_static/media/chap_4/14.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.14 Defining the Domain for hasTopping
+   *Figure 4.14 Defining the Domain for hasTopping*
 
-   .. figure:: /_static/media/image61.png
-      :width: 5.52083in
-      :height: 4.99167in
+.. figure:: /_static/media/chap_4/15.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-   Figure 4.15 Domain and Range inferred by the reasoner
+   *Figure 4.15 Domain and Range inferred by the reasoner*
 
-.. figure:: /_static/media/image62.png
-   :width: 0.47222in
-   :height: 0.43056in
+.. admonition:: Warning
+   :class: pitfall
 
-+----------------------------------------------------------------------+
-|    | It is possible to specify more than one class as the domain or  |
-|      range of a property. One of the most common mistakes of new     |
-|      users is to do this and expect that the resulting domain/range  |
-|      is the union of the two classes. However, note that next to the |
-|      Domain and Range in the                                         |
-|    | Description view it says (intersection). This is because the    |
-|      semantics of having 2 or more classes as the domain or range is |
-|      the *intersection* of those classes *not* the union. E.g., if   |
-|      one defined the domain for a property to be Pizza and then      |
-|      added another domain IceCream that would mean that for          |
-|      something to be in the domain of that property it would have to |
-|      be an instance of *both*\ Pizza\ *and*\ IceCream not (as people |
-|      often expect) the *union* of those two sets which would be      |
-|      *either* the class Pizza\ *or* the class IceCream. Also, note   |
-|      that the domain and range are for inferencing, they are not     |
-|      data integrity constraints. This distinction will be explained  |
-|      in more detail below in the section on SHACL.                   |
-+----------------------------------------------------------------------+
+   It is possible to specify more than one class as the domain or
+   range of a property. One of the most common mistakes of new
+   users is to do this and expect that the resulting domain/range
+   is the union of the two classes. However, note that next to the
+   `Domain` and `Range` in the
+   `Description` view it says (`intersection`). This is because the
+   semantics of having 2 or more classes as the domain or range is
+   the *intersection* of those classes *not* the union. E.g., if
+   one defined the domain for a property to be ``Pizza`` and then
+   added another domain ``IceCream`` that would mean that for
+   something to be in the domain of that property it would have to
+   be an instance of *both* ``Pizza`` *and* ``IceCream`` not (as people
+   often expect) the *union* of those two sets which would be
+   *either* the class ``Pizza`` *or* the class ``IceCream``. Also, note
+   that the domain and range are for inferencing, they are not
+   data integrity constraints. This distinction will be explained
+   in more detail below in the section on SHACL.
 
-.. figure:: /_static/media/image63.png
-   :width: 6.18333in
-   :height: 2.32125in
 
 **Exercise 12: Define the domain and range for the hasBase property**
 
-\____________________________________________________________________________________\_
+---------------
 
 1. Now we are going to repeat the same activities as in the previous
-exercise but for another property: hasBase. Make sure you are still on
-the Object properties tab. Select the hasBase property.
+exercise but for another property: ``hasBase``. Make sure you are still on
+the `Object properties` tab. Select the `hasBase` property.
 
-2. Click on the Add icon (+) next to Domains (intersection) in the
-Description view for hasBase. Select the ClassHierarchy tab. Then select
-Pizza from the class hierarchy..
+2. Click on the Add icon `(+)` next to `Domains (intersection)` in the
+`Description` view for ``hasBase``. Select the `ClassHierarchy` tab. Then select
+`Pizza` from the class hierarchy.
 
-3. Repeat step 2 but this time start by using the (+) icon next to the
-Ranges (intersection) in the Description for hasBase. This time select
-the class PizzaBase as the range.
+3. Repeat step 2 but this time start by using the `(+)` icon next to the
+`Ranges (intersection)` in the `Description` for hasBase. This time select
+the class `PizzaBase` as the range.
 
-4. Synchronize the reasoner. Now select isBaseOf You should see that the
-Domain and Range for isBaseOf have been filled in by the reasoner.
+4. Synchronize the reasoner. Now select `isBaseOf` You should see that the
+Domain and Range for ``isBaseOf`` have been filled in by the reasoner.
 
-\____________________________________________________________________________________\_
+---------------
 
-| 4.10 Describing and Defining Classes
-| Now that we have defined some properties, we can use these properties
-  to define some more interesting classes. There are 3 types of classes
-  in OWL:
+Describing and Defining Classes
+===============================
+Now that we have defined some properties, we can use these properties
+to define some more interesting classes. There are 3 types of classes
+in OWL:
 
-   1.Primitive classes. These are classes that are defined by conditions
+#. Primitive classes. These are classes that are defined by conditions
    that are *necessary* (but not sufficient) to hold for any individuals
    that are instances of that class or its subclasses. The condition may
    be as simple as: *Class A is a subclass of class B*. To start with we
@@ -1201,9 +1148,8 @@ Domain and Range for isBaseOf have been filled in by the reasoner.
    primitive class it infers that all the conditions defined for that
    class must hold for that individual.
 
-2.Defined classes. These are classes that are defined by both
-*necessary* and *sufficient* conditions.
-
+#. Defined classes. These are classes that are defined by both
+   *necessary* and *sufficient* conditions.
    When the reasoner encounters an individual that satisfies all the
    conditions for a defined class it will make the inference that the
    individual is an instance of that class. The reasoner can also use
@@ -1211,124 +1157,85 @@ Domain and Range for isBaseOf have been filled in by the reasoner.
    e.g., to infer that *Class A is a subclass of Class B*. We will see
    examples of this later in the tutorial.
 
-   3.Anonymous classes. These are classes that you won’t encounter much
+#. Anonymous classes. These are classes that you won’t encounter much
    and that won’t be discussed much in this tutorial, but it is good to
    know about them. They are created by the reasoner when you use class
    expressions. For example, if you define the range of a property to be
-   PizzaTopping or PizzaBase then the reasoner will create an anonymous
+   ``PizzaTopping`` or ``PizzaBase`` then the reasoner will create an anonymous
    class representing the intersection of those two classes.
 
-| 4.10.1 Property restrictions
-| In OWL properties define binary relations with the same semantics and
-  characteristics as binary relations in First Order Logic. There are
-  two types of OWL properties for describing a domain: Object properties
-  and Data properties. Object properties have classes as their domain
-  and range. Data properties have classes as their domain and simple
-  datatypes such as xsd:string or xsd:dateTime as their range. In figure
-  3.3 the individual Michael is related to the individual USA by the
-  property livesIn. Consider all the individuals who are an instance of
-  Person and also have the same relation, that each livesIn the USA.
-  This group is a set or OWL class such as USAResidents. In OWL a class
-  can be defined by describing the various properties and values that
-  hold for all individuals in the class. Such definitions are called
-  *restrictions* in OWL.
+Property restrictions
+---------------------
+In OWL properties define binary relations with the same semantics and
+characteristics as binary relations in First Order Logic. There are
+two types of OWL properties for describing a domain: Object properties
+and Data properties. Object properties have classes as their domain
+and range. Data properties have classes as their domain and simple
+datatypes such as ``xsd:string`` or ``xsd:dateTime`` as their range. In figure
+3.3 the individual ``Michael`` is related to the individual ``USA`` by the
+property ``livesIn``. Consider all the individuals who are an instance of
+``Person`` and also have the same relation, that each ``livesIn`` the ``USA``.
+This group is a set or OWL class such as ``USAResidents``. In OWL a class
+can be defined by describing the various properties and values that
+hold for all individuals in the class. Such definitions are called
+*restrictions* in OWL.
 
 The following are some examples of classes of individuals that we might
 want to define via property restrictions:
 
-+---+-----------------------------------------------------------------+
-| • |    The class of individuals with at least one hasChild          |
-|   |    relation.                                                    |
-+===+=================================================================+
-| • |    The class of individuals with 2 or more hasChild relations.  |
-+---+-----------------------------------------------------------------+
-| • |    The class of individuals that have at least one hasTopping   |
-|   |    relationship to individuals that are                         |
-+---+-----------------------------------------------------------------+
-| • |    members of MozzarellaTopping – i.e. the class of things that |
-|   |    have at least a mozzarella                                   |
-+---+-----------------------------------------------------------------+
-|   |    topping.                                                     |
-+---+-----------------------------------------------------------------+
-|   | The class of individuals that are Pizzas and only have          |
-|   | hasTopping relations to instances of the                        |
-+---+-----------------------------------------------------------------+
-|   |    class VegetableTopping (i.e., VegetarianPizza).              |
-+---+-----------------------------------------------------------------+
+* The class of individuals with at least one ``hasChild`` relation.
+* The class of individuals with 2 or more ``hasChild`` relations.
+* The class of individuals that have at least one ``hasTopping`` relationship to individuals that are  members of ``MozzarellaTopping`` – i.e. the class of things that have at least a mozzarella topping.
+* The class of individuals that are ``Pizzas`` and only have ``hasTopping`` relations to instances of the class ``VegetableTopping`` (i.e., ``VegetarianPizza``).
 
 In OWL we can describe all of the above classes using restrictions. OWL
 restrictions fall into three main categories:
 
-   1.Quantifier restrictions. These describe that a property must have
-   some or all values that are of a
+#. Quantifier restrictions. These describe that a property must have some or all values that are of a particular class.
 
-   particular class.
+#. Cardinality restrictions. These describe the number of individuals that must be related to a class by a specific property.
 
-   2.Cardinality restrictions. These describe the number of individuals
-   that must be related to a class
-
-   by a specific property.
-
-   3.hasValue restrictions. These describe specific values that a
-   property must have.
+#. hasValue restrictions. These describe specific values that a property must have.
 
 We will initially use quantifier restrictions. Quantifier restrictions
 can be further categorized as *existential* restrictions and *universal*
 restrictions6. Both types of restrictions will be illustrated with
 examples in this tutorial.
 
-+---+-----------------------------------------------------------------+
-| • | Existential restrictions describe classes of individuals that   |
-|   | participate in at least one relation along                      |
-+===+=================================================================+
-| • |    a specified property. For example, the class of individuals  |
-|   |    who have at least one (or some)                              |
-+---+-----------------------------------------------------------------+
-|   |    hasTopping relation to instances of VegetableTopping. In OWL |
-|   |    the keyword some is used                                     |
-+---+-----------------------------------------------------------------+
-|   |    to denote existential restrictions.                          |
-+---+-----------------------------------------------------------------+
-|   |    Universal restrictions describe classes of individuals that  |
-|   |    for a given property *only* have relations                   |
-+---+-----------------------------------------------------------------+
-|   |    along a property to individuals that are members of a        |
-|   |    specific class. For example, the class of                    |
-+---+-----------------------------------------------------------------+
-|   |    individuals that only have hasTopping relations to instances |
-|   |    of the class VegetableTopping.                               |
-+---+-----------------------------------------------------------------+
-|   |    In OWL they keyword only is used for universal restrictions. |
-+---+-----------------------------------------------------------------+
+* Existential restrictions describe classes of individuals that
+  participate in at least one relation along
+  a specified property. For example, the class of individuals
+  who have at least one (or some)
+  ``hasTopping`` relation to instances of ``VegetableTopping``. In OWL
+  the keyword some is used to denote existential restrictions.
+* Universal restrictions describe classes of individuals that
+  for a given property *only* have relations
+  along a property to individuals that are members of a
+  specific class. For example, the class of
+  individuals that only have ``hasTopping`` relations to instances of the class ``VegetableTopping``.
+  In OWL they keyword only is used for universal restrictions.
 
 Let’s take a closer look at an example of an existential restriction.
-The restriction hasToppingsome MozzarellaTopping is an existential
+The restriction ``hasTopping some MozzarellaTopping`` is an existential
 restriction (as indicated by the some keyword), which restricts the
-hasTopping property, and has a filler MozzarellaTopping. This
+``hasTopping`` property, and has a filler ``MozzarellaTopping``. This
 restriction describes the class of individuals that have at least one
-hasTopping relationship to an individual that is a member of the class
-MozzarellaTopping.
+``hasTopping`` relationship to an individual that is a member of the class
+``MozzarellaTopping``.
 
-+----------------------------------------------------------------------+
-| A restriction always describes a class. Sometimes (as we will soon   |
-| see) it can be a defined class.                                      |
-|                                                                      |
-|    Other times it may be an anonymous class. In all cases the class  |
-|    contains all of the individuals that satisfy the restriction,     |
-|    i.e., all of the individuals that have the relationships required |
-|    to be a member of the class. In section 9.2 one of our SPARQL     |
-|    queries will return several anonymous classes.                    |
-+----------------------------------------------------------------------+
+.. admonition:: Vocab
+   :class: vocab
 
-.. figure:: /_static/media/image64.png
-   :width: 6.17917in
-   :height: 1.11575in
+   A restriction always describes a class. Sometimes (as we will soon
+   see) it can be a defined class.
+   Other times it may be an anonymous class. In all cases the class
+   contains all of the individuals that satisfy the restriction,
+   i.e., all of the individuals that have the relationships required
+   to be a member of the class. In `section 9.2 <#sparql-queries>`_ one of our SPARQL
+   queries will return several anonymous classes.
 
-6 These have the same meaning as existential and universal
-quantification in First Order Logic.
-
-The restrictions for a class are displayed and edited using the Class
-Description View shown in Figure 4.17. The Class Description View holds
+The restrictions for a class are displayed and edited using the `Class
+Description View` shown in Figure 4.17. The Class Description View holds
 most of the information used to describe a class. The Class Description
 View is a powerful way of describing and defining classes. It is one of
 the most important differences between describing classes in OWL and in
@@ -1339,256 +1246,252 @@ can actually redefine the class hierarchy based on the logical
 restrictions defined by the user. We will see an example of this later
 in the tutorial.
 
-   .. figure:: /_static/media/image65.png
-      :width: 0.44444in
-      :height: 0.56944in
+.. admonition:: Vocab
+   :class: vocab
 
-+----------------------------------------------------------------------+
-|    Restrictions are also called axioms in OWL. This has the same     |
-|    meaning as in logic. An axiom is a logical formula defined by the |
-|    user rather than deduced by the reasoner. As described above, in  |
-|    Protégé all axioms are shown in normal font whereas all           |
-|    inferences inferred by the reasoner are highlighted in yellow.    |
-+----------------------------------------------------------------------+
 
-.. figure:: /_static/media/image66.png
-   :width: 6.17917in
-   :height: 0.91061in
+   Restrictions are also called axioms in OWL. This has the same
+   meaning as in logic. An axiom is a logical formula defined by the
+   user rather than deduced by the reasoner. As described above, in
+   Protégé all axioms are shown in normal font whereas all
+   inferences inferred by the reasoner are highlighted in yellow.
 
-| 4.10.2 Existential Restrictions
-| An existential restriction describes a class of individuals that have
-  at least one (some) relationship along a specified property to an
-  individual that is a member of a specified class or datatype. For
-  example, hasBasesomePizzaBase describes all of the individuals that
-  have at least one relationship along the hasBase property to an
-  individual that is a member of the class PizzaBase — in more natural
-  English, all of the individuals that have at least one pizza base.
+Existential Restrictions
+------------------------
+An existential restriction describes a class of individuals that have
+at least one (some) relationship along a specified property to an
+individual that is a member of a specified class or datatype. For
+example, ``hasBase some PizzaBase`` describes all of the individuals that
+have at least one relationship along the hasBase property to an
+individual that is a member of the class ``PizzaBase`` — in more natural
+English, all of the individuals that have at least one pizza base.
 
-**Exercise 13: Add a restriction to Pizza that specifies a Pizza must
-have a PizzaBase**
+**Exercise 13: Add a restriction to Pizza that specifies a Pizza must have a PizzaBase**
 
-\____________________________________________________________________________________\_
-1. Select Pizza from the class hierarchy on the Classes tab.
+----------------
 
-2. Click on the Add icon (+) next to the SubClass Of field in the
-Description view for Pizza.
+1. Select `Pizza` from the class hierarchy on the `Classes` tab.
+
+2. Click on the Add icon `(+)` next to the `SubClass Of` field in the
+   `Description` view for Pizza.
 
 3. This will bring up a new window with several tab options to define a
-new restriction. Select the Object restriction creator. This tab has the
-Restricted property on the left and the Restriction filler on the right.
+   new restriction. Select the `Object restriction creator`. This tab has the
+   `Restricted property` on the left and the `Restriction filler` on the right.
 
-4. Expand the property hierarchy on the left and select hasBase as the
-property to restrict. Then in the Restriction filler on the right select
-the class PizzaBase. Finally, the Restriction type at the bottom should
-be set to Some (existential). This should be the default so you
-shouldn’t have to change anything but double check that this is the
-case. Your window should look like figure 4.16 now.
+4. Expand the property hierarchy on the left and select `hasBase` as the
+   property to restrict. Then in the Restriction filler on the right select
+   the class `PizzaBase`. Finally, the Restriction type at the bottom should
+   be set to `Some (existential)`. This should be the default so you
+   shouldn't have to change anything but double check that this is the
+   case. Your window should look like figure 4.16 now.
 
-5. When your UI looks like figure 4.16 click on the OK button. That
-should close the window. Run the reasoner to make sure things are
-consistent. Your main window should now look like figure 4.17.
+5. When your UI looks like figure 4.16 click on the `OK` button. That
+   should close the window. Run the reasoner to make sure things are
+   consistent. Your main window should now look like figure 4.17.
 
-\____________________________________________________________________________________\_
+----------------
 
-.. figure:: /_static/media/image67.png
-   :width: 4.44861in
-   :height: 3.32083in
+.. figure:: /_static/media/chap_4/16.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.16 The Object Restriction Creator Tab
+   *Figure 4.16 The Object Restriction Creator Tab*
 
-.. figure:: /_static/media/image68.png
-   :width: 4.44722in
-   :height: 4.825in
+.. figure:: /_static/media/chap_4/17.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.17 The Pizza Class with hasBase Restriction
+   *Figure 4.17 The Pizza Class with hasBase Restriction*
 
-We have described the class Pizza to be to be a subclass of Thing and a
-subclass of the things that have a base which is some kind of PizzaBase.
-Notice that these are necessary conditions — if something is a Pizza it
-is *necessary* for it to be a member of the class Thing (in OWL,
+We have described the class ``Pizza`` to be to be a subclass of ``Thing`` and a
+subclass of the things that have a base which is some kind of ``PizzaBase``.
+Notice that these are necessary conditions — if something is a ``Pizza`` it
+is *necessary* for it to be a member of the class ``Thing`` (in OWL,
 everything is a member of the class Thing) and *necessary* for it to
-have a kind of PizzaBase. More formally, for something to be a Pizza it
+have a kind of ``PizzaBase``. More formally, for something to be a ``Pizza`` it
 is necessary for it to be in a relationship with an individual that is a
-member of the class PizzaBase via the property hasBase.
+member of the class ``PizzaBase`` via the property ``hasBase``.
 
-| 4.10.3 Creating Subclasses of Pizza
-| It’s now time to add some different kinds of pizzas to our ontology.
-  We will start off by adding a MargheritaPizza, which is a pizza that
-  has toppings of mozzarella and tomato. In order to keep our ontology
-  tidy, we will group our different pizzas under the class NamedPizza.
+Creating Subclasses of Pizza
+----------------------------
+It’s now time to add some different kinds of pizzas to our ontology.
+We will start off by adding a ``MargheritaPizza``, which is a pizza that
+has toppings of mozzarella and tomato. In order to keep our ontology
+tidy, we will group our different pizzas under the class ``NamedPizza``.
 
-**Exercise 14: Create Subclasses of Pizza: NamedPizza and
-MargheritaPizza**
+**Exercise 14: Create Subclasses of Pizza: NamedPizza and MargheritaPizza**
 
-\____________________________________________________________________________________\_
-1. Select Pizza from the class hierarchy on the Classes tab.
+------------------
+
+1. Select `Pizza` from the class hierarchy on the `Classes` tab.
 
 2. Click on the Add subclass icon at the top left of the Classes tab
-(look back at figure 4.4 if you aren’t certain). You can also move your
-mouse over the icons and you will see a little pop-up hint for each
-icon.
+   (look back at figure 4.4 if you aren’t certain). You can also move your
+   mouse over the icons and you will see a little pop-up hint for each
+   icon.
 
-3. Protégé will prompt you for the name of the new subclass. Call it
-NamedPizza.
+3. Protégé will prompt you for the name of the new subclass. Call it `NamedPizza`.
 
-4. Repeat steps 1-3 this time starting with NamedPizza to create a
-subclass of NamedPizza. Call it MargheritaPizza.
+4. Repeat steps 1-3 this time starting with `NamedPizza` to create a
+   subclass of `NamedPizza`. Call it MargheritaPizza.
 
-5. Add a comment to the class MargheritaPizza using the Annotations
-view. This is above the Description view. Add the comment: A pizza that
-only has Mozzarella and Tomato toppings. Remember that annotation
-properties are meta-data that can be asserted about any entity whereas
-object and data properties can only be asserted about individuals. There
-are a few predefined annotation properties that are included in all
-Protégé ontologies such as the comment property.
+5. Add a comment to the class MargheritaPizza using the `Annotations`
+   view. This is above the `Description` view. Add the comment:
+   `A pizza that only has Mozzarella and Tomato toppings`. Remember that annotation
+   properties are meta-data that can be asserted about any entity whereas
+   object and data properties can only be asserted about individuals. There
+   are a few predefined annotation properties that are included in all
+   Protégé ontologies such as the comment property.
 
-\____________________________________________________________________________________\_
+------------------
 
 Having created the class MargheritaPizza we now need to specify the
 toppings that it has. To do this we will add two restrictions to say
-that a MargheritaPizza has the toppings MozzarellaTopping and
-TomatoTopping.
+that a MargheritaPizza has the toppings `MozzarellaTopping` and
+`TomatoTopping`.
 
 **Exercise 15: Create Restrictions that define a MargheritaPizza**
 
-\____________________________________________________________________________________\_
-1. Select MargheritaPizza from the class hierarchy on the Classes tab.
+------------------
 
-2. Click on the Add icon (+) next to the SubClass Of field in the
-Description view for Pizza.
+1. Select `MargheritaPizza` from the class hierarchy on the `Classes` tab.
+
+2. Click on the Add icon `(+)` next to the `SubClass Of` field in the
+   `Description` view for `Pizza`.
 
 3. This again brings up the restriction dialogue. This time rather than
-use the Object restriction creator we will use the Class expression
-editor tab. Select that tab.
+   use the `Object restriction creator` we will use the `Class expression editor` tab.
+   Select that tab.
 
-4. Type hasTopping some Mo into the field. Rather than type the rest of
-the name of the topping now hit <control><space> (hold down the control
-key and hit the space bar). Protégé should auto-complete the name for
-you and the field should now contain: hasTopping some MozzarellaTopping.
-This is a useful technique for any part of the Protégé UI. Whenever you
-enter the name of some entity you can do
-<control><space>. If there is only one possible completion for the
-string then Protégé will fill in the appropriate name. If there are
-multiple possible completions Protégé will create a menu with all the
-possible completions and allow you to select the one you want.
+4. Type `hasTopping some Mo` into the field. Rather than type the rest of
+   the name of the topping now hit <control><space> (hold down the control
+   key and hit the space bar). Protégé should auto-complete the name for
+   you and the field should now contain: `hasTopping some MozzarellaTopping`.
+   This is a useful technique for any part of the Protégé UI. Whenever you
+   enter the name of some entity you can do
+   <control><space>. If there is only one possible completion for the
+   string then Protégé will fill in the appropriate name. If there are
+   multiple possible completions Protégé will create a menu with all the
+   possible completions and allow you to select the one you want.
 
-5. Click on OK to enter the new restriction.
+5. Click on `OK` to enter the new restriction.
 
-6. Repeat steps 1-5 only this time add the restriction hasTopping some
-TomatoTopping. Remember to use <control><space> to save time typing.
-Synchronize the reasoner to make sure things are consistent. Your UI
-should now look similar to figure 4.18.
+6. Repeat steps 1-5 only this time add the restriction `hasTopping some TomatoTopping`.
+   Remember to use <control><space> to save time typing.
+   Synchronize the reasoner to make sure things are consistent. Your UI
+   should now look similar to figure 4.18.
 
-\____________________________________________________________________________________\_
+------------------
 
-.. figure:: /_static/media/image69.png
-   :width: 6.5in
-   :height: 6.44861in
+.. figure:: /_static/media/chap_4/18.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.18 Definition for the class MargheritaPizza
+   *Figure 4.18 Definition for the class MargheritaPizza*
 
-Note in figure 4.18 the two classes listed under Disjoint With and
+Note in figure 4.18 the two classes listed under `Disjoint With` and
 highlighted in yellow. This is an example of an inference from the
-reasoner. When we defined Pizza, PizzaBase, and PizzaTopping we made
+reasoner. When we defined ``Pizza``, ``PizzaBase``, and ``PizzaTopping`` we made
 those 3 classes disjoint. I.e., no individual can be a member of more
 than one of those classes.
+| Since ``MargheritaPizza`` is a subclass of ``Pizza`` it is also disjoint with
+``PizzaBase`` and
+``PizzaTopping``, so the reasoner has added this information to the
+definition of ``MargheritaPizza`` and as with all inferences from the
+reasoner highlighted the new information in yellow.
 
-| Since MargheritaPizza is a subclass of Pizza it is also disjoint with
-  PizzaBase and
-| PizzaTopping, so the reasoner has added this information to the
-  definition of MargheritaPizza and as with all inferences from the
-  reasoner highlighted the new information in yellow.
-
-We will now create the class to represent an AmericanaPizza, which has
+We will now create the class to represent an ``AmericanaPizza``, which has
 toppings of pepperoni, mozzarella and tomato. Because the class
-AmericanaPizza is similar to the class MargheritaPizza (i.e., an
-AmericanaPizza is almost the same as a MargheritaPizza but with an extra
-topping of pepperoni) we will make a clone of the MargheritaPizza class
+``AmericanaPizza`` is similar to the class ``MargheritaPizza`` (i.e., an
+``AmericanaPizza`` is almost the same as a ``MargheritaPizza`` but with an extra
+topping of pepperoni) we will make a clone of the ``MargheritaPizza`` class
 and then add an extra restriction to say that it has a topping of
 pepperoni.
 
-**Exercise 16: Create AmericanaPizza by Cloning MargheritaPizza and
-Adding Additional Restrictions**
+**Exercise 16: Create AmericanaPizza by Cloning MargheritaPizza and Adding Additional Restrictions**
 
-\____________________________________________________________________________________\_
+---------------
 
-1. Select MargheritaPizza from the class hierarchy on the Classes tab.
+1. Select `MargheritaPizza` from the class hierarchy on the `Classes` tab.
 
-2. Select Edit>Duplicate selected class. This will bring up a dialogue
-for you to duplicate the class. The default is the name of the existing
-class so there will be a red error message when you start because you
-need to enter a new name. Change the name from MargheritaPizza to
-AmericanaPizza. Leave all the other options as they are and then select
-OK.
+2. Select `Edit>Duplicate selected class`. This will bring up a dialogue
+   for you to duplicate the class. The default is the name of the existing
+   class so there will be a red error message when you start because you
+   need to enter a new name. Change the name from `MargheritaPizza` to
+   `AmericanaPizza`. Leave all the other options as they are and then select
+   `OK`.
 
-3. Make sure that AmericanaPizza is still selected. Click on the Add
-icon (+) next to the SubClass Of field in the Description view for
-AmericanaPizza.
+3. Make sure that `AmericanaPizza` is still selected. Click on the Add
+   icon `(+)` next to the `SubClass Of` field in the `Description` view for
+   AmericanaPizza.
 
-4. Use either the Object restriction creator tab or the Class expression
-editor tab to add the additional restriction: hasTopping some
-PepperoniTopping.
+4. Use either the `Object restriction creator` tab or the `Class expression editor` tab
+   to add the additional restriction: `hasTopping some PepperoniTopping`.
 
-5. Click on OK to enter the new restriction.
+5. Click on `OK` to enter the new restriction.
 
 6. Edit the comment annotation on AmericanaPizza. It should currently
-be: A pizza that only has Mozzarella and Tomato toppings since it was
-copied over from MargheritaPizza. Note that at the top right of the
-comment there are three little icons, an @ sign, an X and an O. Click on
-the O. This icon is the one you use to edit any existing data in
-Protégé. This should bring up a window where you can edit the comment.
-Change it to something appropriate such as: A pizza that only has
-Mozzarella, Tomato, and Pepperoni toppings. Then click on OK to enter
-the edit to the comment.
+   be: `A pizza that only has Mozzarella and Tomato toppings` since it was
+   copied over from MargheritaPizza. Note that at the top right of the
+   comment there are three little icons, an `@` sign, an `X` and an `O`. Click on
+   the O. This icon is the one you use to edit any existing data in
+   Protégé. This should bring up a window where you can edit the comment.
+   Change it to something appropriate such as: `A pizza that only has Mozzarella, Tomato, and Pepperoni toppings`.
+   Then click on `OK` to enter the edit to the comment.
 
-\____________________________________________________________________________________\_
+---------------
 
 **Exercise 17: Create AmericanaHotPizza and SohoPizza**
 
-\____________________________________________________________________________________\_
+---------------
 
-| 1. An AmericanaHotPizza is almost the same as an AmericanaPizza but
-  has Jalapeno peppers on it. Create this by cloning the class
-  AmericanaPizza and adding an existential restriction along the
-| hasTopping property with a filler of JalapenoPepperTopping.
+1. An AmericanaHotPizza is almost the same as an AmericanaPizza but
+   has Jalapeno peppers on it. Create this by cloning the class
+   `AmericanaPizza` and adding an existential restriction along the
+   `hasTopping` property with a filler of `JalapenoPepperTopping`.
 
-   2. A SohoPizza is almost the same as a MargheritaPizza but has
+2. A SohoPizza is almost the same as a MargheritaPizza but has
    additional toppings of olives and parmesan cheese — create this by
-   cloning MargheritaPizza and adding two existential restrictions along
-   the property hasTopping, one with a filler of OliveTopping, and one
-   with a filler of ParmesanTopping.
-   \____________________________________________________________________________________\_
+   cloning `MargheritaPizza` and adding two existential restrictions along
+   the property `hasTopping`, one with a filler of `OliveTopping`, and one
+   with a filler of `ParmesanTopping`.
 
-   **Exercise 18: Make Subclasses of NamedPizza Disjoint**
+---------------
 
-\____________________________________________________________________________________\_
+**Exercise 18: Make Subclasses of NamedPizza Disjoint**
 
-   1. We want to make these subclasses of NamedPizza disjoint from each
+---------------
+
+1. We want to make these subclasses of NamedPizza disjoint from each
    other. I.e., any individual can belong to at most one of these
-   classes. To do that first select MargheritaPizza (or any other
+   classes. To do that first select `MargheritaPizza` (or any other
    subclass of NamedPizza).
 
-   2. Click on the (+) sign next to Disjoint With near the bottom of the
-   Description view. This will bring up a Class hierarchy view. Use this
-   to navigate to the subclasses of NamedPizza and use <control><left
-   click> to select all of the other sibling classes to the one you
-   selected. Then select OK. You should now see the appropriate disjoint
+2. Click on the `(+)` sign next to `Disjoint With` near the bottom of the
+   `Description` view. This will bring up a Class hierarchy view. Use this
+   to navigate to the subclasses of NamedPizza and use `<control><leftclick>`
+   to select all of the other sibling classes to the one you
+   selected. Then select `OK`. You should now see the appropriate disjoint
    axioms showing up on each subclass of NamedPizza. Synchronize the
    reasoner. Your UI should look similar to figure 4.19 now.
 
-.. figure:: /_static/media/image70.png
-   :width: 6.5in
-   :height: 5.34583in
+---------------
 
-Figure 4.19 Subclasses of NamedPizza are Disjoint
+.. figure:: /_static/media/chap_4/19.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-| 4.10.4 Detecting a Class that can’t Have Members
-| Next, we are going to use the reasoner to detect a class with a
-  definition that means it can never have any members. In the current
-  version of Protégé when the reasoner detects an inconsistency or
-  problem on some operating systems the UI can occasionally lock up and
-  be hard to use. So to make sure you don’t lose any of your work save
-  your ontology using File>Save.
+   *Figure 4.19 Subclasses of NamedPizza are Disjoint*
+
+Detecting a Class that can’t Have Members
+-----------------------------------------
+Next, we are going to use the reasoner to detect a class with a
+definition that means it can never have any members. In the current
+version of Protégé when the reasoner detects an inconsistency or
+problem on some operating systems the UI can occasionally lock up and
+be hard to use. So to make sure you don’t lose any of your work save
+your ontology using `File>Save`.
 
 Sometimes it can be useful to create a class that we think should be
 impossible to instantiate to make sure the ontology is modeled as we
@@ -1596,57 +1499,52 @@ think it is. Such a class is called a Probe Class.
 
 **Exercise 19: Add a Probe Class called ProbeInconsistentTopping**
 
-\____________________________________________________________________________________\_
-1. Select the class CheeseTopping from the class hierarchy.
+---------------
 
-2. Create a subclass of CheeseTopping called ProbeInconsistentTopping.
+1. Select the class `CheeseTopping` from the class hierarchy.
 
-3. Click on the Add icon (+) next to the SubClass Of field in the
-Description view for ProbeInconsistentTopping.
+2. Create a subclass of `CheeseTopping` called `ProbeInconsistentTopping`.
 
-4. Select the Class hierarchy tab from the dialogue that pops up. This
-will bring up a small view that looks like the class hierarchy tab you
-have been using to add new classes. Use this to navigate to and select
-the class VegetableTopping. Click on OK.
+3. Click on the Add icon `(+)` next to the `SubClass Of` field in the
+   `Description` view for ``ProbeInconsistentTopping``.
+
+4. Select the `Class hierarchy tab` from the dialogue that pops up. This
+   will bring up a small view that looks like the class hierarchy tab you
+   have been using to add new classes. Use this to navigate to and select
+   the class `VegetableTopping`. Click on `OK`.
 
 5. Make sure to save your current ontology file. Now run the reasoner.
-You should see that ProbeInconsistentTopping is now highlighted in red
-indicating it is inconsistent.
+   You should see that ``ProbeInconsistentTopping`` is now highlighted in red
+   indicating it is inconsistent.
 
-6. Click on ProbeInconsistentTopping to see why it is highlighted in
-red. Notice that at the top of the Description view you should now see
-owl:Nothing under the Equivalent To field. This means that the probe
-class is equivalent to owl:Nothing. The owl:Nothing class is the
-opposite of owl:Thing.
+6. Click on `ProbeInconsistentTopping` to see why it is highlighted in
+   red. Notice that at the top of the Description view you should now see
+   `owl:Nothing` under the `Equivalent To` field. This means that the probe
+   class is equivalent to ``owl:Nothing``. The ``owl:Nothing`` class is the
+   opposite of ``owl:Thing``. Whereas all individuals are instances of ``owl:Thing``, no individual can
+   ever be an instance of ``owl:Nothing``. The ``owl:Nothing`` class is equivalent
+   to the empty set in set theory.
 
-Whereas all individuals are instances of owl:Thing, no individual can
-ever be an instance of owl:Nothing. The owl:Nothing class is equivalent
-to the empty set in set theory.
+7. There should be a `?` icon just to the right of `owl:Nothing`. As with
+   any inference of the reasoner it is possible to click on the new
+   information and generate an explanation for it. Do that now, click on
+   the `?` icon. This should generate a new window that looks like figure 4.20.
+   The explanation is that ``ProbeInconsistentTopping`` is a subclass of ``CheeseTopping`` and
+   ``VegetableTopping`` but those two classes are disjoint.
 
-7. There should be a ? icon just to the right of owl:Nothing. As with
-any inference of the reasoner it is possible to click on the new
-information and generate an explanation for it. Do that now, click on
-the ?
-
-| icon. This should generate a new window that looks like figure 4.20.
-  The explanation is that
-| ProbeInconsistentTopping is a subclass of CheeseTopping and
-  VegetableTopping but those two classes are disjoint.
-
-8. Click OK to dismiss the window. Delete the class
-ProbeInconsistentTopping by selecting it and then clicking on the delete
-class icon at the top of the classes view (see figure 4.4).
+8. Click `OK` to dismiss the window. Delete the class
+   ProbeInconsistentTopping by selecting it and then clicking on the delete
+   class icon at the top of the classes view (see figure 4.4).
 
 9. Synchronize the reasoner.
 
-\____________________________________________________________________________________\_
+---------------
 
-.. figure:: /_static/media/image71.png
-   :width: 6.5in
-   :height: 3.05694in
+.. figure:: /_static/media/chap_4/20.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.20 Explanation for why ProbeInconsistentTopping is equivalent
-to owl:Nothing
+   *Figure 4.20 Explanation for why ProbeInconsistentTopping is equivalent to owl:Nothing*
 
 | 4.11 Primitive and Defined Classes (Necessary and Sufficient Axioms)
 | All of the classes that we have created so far have only used
@@ -4081,23 +3979,8 @@ Top Quadrant: https://www.topquadrant.com/
    :width: 6.18333in
    :height: 1.52082in
 
-.. _chap2:
 
-*********
-Chapter 2
-*********
 
-.. _chap3:
-
-*********
-Chapter 3
-*********
-
-.. _chap4:
-
-*********
-Chapter 4
-*********
 
 .. _chap5:
 

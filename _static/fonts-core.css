@@ -81,12 +81,12 @@ h4 {
     --MONO: 0;
     font-feature-settings: "ss01" on, "ss02" on, "ss08" on;
     border: none;
-    transition: 1s;
+    transition: .5s;
 }
 
 h4:hover {
     font-weight: 800;
     --CRSV: 0;
-    transition: 1s;
+    transition: .5s;
 }
 
