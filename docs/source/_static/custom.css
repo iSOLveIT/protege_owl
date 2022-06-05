@@ -1,5 +1,13 @@
 @import url('./fonts-core.css');
 
+:root {
+  --md-admonition-icon--pitfall: url('./media/warn.svg');
+  --md-admonition-icon--suggest: url('./media/suggest.svg');
+  --md-admonition-icon--explain: url('./media/explain.svg');
+  --md-admonition-icon--notes: url('./media/note.svg');
+  --md-admonition-icon--vocab: url('./media/vocab.svg');
+}
+
 body,
 input {
     font-family: Recursive-2019, NotoSerif;
@@ -13,7 +21,15 @@ input {
     font-weight: 400;
     line-height: 1.5 !important;
 }
+/*
+[data-md-color-scheme=default] {
+    --cite-text-color: #000;
+}
 
+[data-md-color-scheme=slate] {
+    --img-filter: brightness(0) invert(1);
+}
+*/
 .md-typeset, .md-nav, .md-typeset table:not([class]) {
     font-size: 18px !important;
     line-height: 1.5 !important;
@@ -100,6 +116,91 @@ html .md-nav--primary .md-nav__title--site .md-nav__button {
     text-align: center;
 }
 
-.special{
-    background-color: yellow !important;
+cite {
+    background-color: #ffff00!important;
+    color:#000!important;
 }
+
+/* Begin Custom Admonitions */
+
+/*Pitfall*/
+.md-typeset .admonition.pitfall {
+  border-color: rgb(255, 145, 0);
+}
+
+.md-typeset .pitfall>.admonition-title {
+  background-color: rgba(255, 145, 0, 0.1);
+  border-color: rgb(255, 145, 0);
+}
+
+.md-typeset .pitfall>.admonition-title::before {
+  background-color: rgb(255, 145, 0);
+  -webkit-mask-image: var(--md-admonition-icon--pitfall);
+  mask-image: var(--md-admonition-icon--pitfall);
+}
+
+/*Suggest*/
+.md-typeset .admonition.suggest {
+  border-color: rgb(171, 71, 189);
+}
+
+.md-typeset .suggest>.admonition-title {
+  background-color: rgb(171, 71, 189, 0.1);
+  border-color: rgb(171, 71, 189);
+}
+
+.md-typeset .suggest>.admonition-title::before {
+  background-color: rgb(171, 71, 189);
+  -webkit-mask-image: var(--md-admonition-icon--suggest);
+  mask-image: var(--md-admonition-icon--suggest);
+}
+
+/*Explain*/
+.md-typeset .admonition.explain {
+  border-color: rgb(31,100,255);
+}
+
+.md-typeset .explain>.admonition-title {
+  background-color: rgba(31, 100, 255, 0.1);
+  border-color: rgb(31, 100, 255);
+}
+
+.md-typeset .explain>.admonition-title::before {
+  background-color: rgb(31, 100, 255);
+  -webkit-mask-image: var(--md-admonition-icon--explain);
+  mask-image: var(--md-admonition-icon--explain);
+}
+
+/*General Notes*/
+.md-typeset .admonition.notes {
+  border-color: rgb(2, 166, 242);
+}
+
+.md-typeset .notes>.admonition-title {
+  background-color: rgba(2, 166, 242, 0.1);
+  border-color: rgb(2, 166, 242);
+}
+
+.md-typeset .notes>.admonition-title::before {
+  background-color: rgb(2, 166, 242);
+  -webkit-mask-image: var(--md-admonition-icon--notes);
+  mask-image: var(--md-admonition-icon--notes);
+}
+
+/*Vocab*/
+.md-typeset .admonition.vocab {
+  border-color: rgb(0, 148, 133);
+}
+
+.md-typeset .vocab>.admonition-title {
+  background-color: rgba(0, 148, 133, 0.1);
+  border-color: rgb(0, 148, 133);
+}
+
+.md-typeset .vocab>.admonition-title::before {
+  background-color: rgb(0, 148, 133);
+  -webkit-mask-image: var(--md-admonition-icon--vocab);
+  mask-image: var(--md-admonition-icon--vocab);
+}
+
+/* End Custom Admonitions */
