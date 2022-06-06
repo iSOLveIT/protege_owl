@@ -443,7 +443,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#detecting-a-class-that-cant-have-members" class="md-nav__link">
+  <a href="#detecting-a-class-that-can-t-have-members" class="md-nav__link">
     <span class="md-ellipsis">4.<wbr>10.<wbr>4.<wbr>   Detecting a Class that can’t Have Members</span>
   </a>
   
@@ -454,14 +454,56 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#primitive-and-defined-classes-necessary-and-sufficient-axioms" class="md-nav__link">
+    <span class="md-ellipsis">4.<wbr>11.<wbr>   Primitive and Defined Classes <wbr>(Necessary and Sufficient Axioms)</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#universal-restrictions" class="md-nav__link">
+    <span class="md-ellipsis">4.<wbr>12.<wbr>   Universal Restrictions</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automated-classification-and-open-world-reasoning" class="md-nav__link">
+    <span class="md-ellipsis">4.<wbr>13.<wbr>   Automated Classification and Open World Reasoning</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defining-an-enumerated-class" class="md-nav__link">
+    <span class="md-ellipsis">4.<wbr>14.<wbr>   Defining an Enumerated Class</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-spiciness-as-a-property" class="md-nav__link">
+    <span class="md-ellipsis">4.<wbr>15.<wbr>   Adding Spiciness as a Property</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardinality-restrictions" class="md-nav__link">
+    <span class="md-ellipsis">4.<wbr>16.<wbr>   Cardinality Restrictions</span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-5" class="md-nav__link">
-    <span class="md-ellipsis">5.<wbr>   Chapter 5</span>
+  <a href="#datatype-properties" class="md-nav__link">
+    <span class="md-ellipsis">5.<wbr>   Datatype Properties</span>
   </a>
   
 </li>
@@ -642,7 +684,7 @@ example, to indicate how to open the <cite>Individuals by class</cite> tab under
 this</em>.</div>
 </div>
 <p>Exercises are presented like this:</p>
-<p><strong>Exercise 1: Accomplish this</strong></p>
+<p><strong>Exercise X: Accomplish this</strong></p>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Do this.</p></li>
@@ -818,12 +860,13 @@ the tutorial progresses.</p>
 Pizzas because it is something almost everyone is familiar with.</p>
 <p><strong>Exercise 1: Create a new OWL Ontology</strong></p>
 <hr class="docutils" />
-<p>1. Start Protégé. When Protégé opens for the first time each day it
+<ol class="arabic simple">
+<li><p>Start Protégé. When Protégé opens for the first time each day it
 puts up a screen of all the available plugins. You can also bring
 this up at any time by using <cite>File&gt;Check for plugins</cite>. You won’t need
 any plugins at this point of the tutorial so just click the <cite>Not now
-button</cite>.</p>
-<p>2. The Protégé user-interface consists of several tabs such as <cite>Active
+button</cite>.</p></li>
+<li><p>The Protégé user-interface consists of several tabs such as <cite>Active
 ontology</cite>, <cite>Entities</cite>, etc. When you start Protégé you should be in the
 <cite>Active Ontology</cite> tab. This is for overview information about the
 entire ontology. Protégé always opens with a new untitled ontology
@@ -834,15 +877,16 @@ case <cite>untitled-ontology-27</cite>) and change it to something like
 <cite>PizzaTutorial</cite>. Note: the Pizza ontology IRIs shown below (e.g.,
 figure 4.3) show the IRI after I edited the default that Protégé
 generated for me. Your IRI will look different and will be based on
-your name or the name of your organization.</p>
-<p>3. Now you want to save your new ontology. Select <cite>File&gt;Save</cite>. This
+your name or the name of your organization.</p></li>
+<li><p>Now you want to save your new ontology. Select <cite>File&gt;Save</cite>. This
 should bring up a window that says: <cite>Choose a format to use when
 saving the ‘PizzaTutorial’ ontology</cite>. There is a drop down menu of
 formats to use. The default <cite>RDF/XML Syntax</cite> should be selected by
 clicking the <cite>OK</cite> button. This should bring up the standard dialog your
 operating system uses for saving files. Navigate to the folder you
 want to use and then type in the file name, something like <cite>Pizza
-Tutorial</cite> and select <cite>Save</cite>.</p>
+Tutorial</cite> and select <cite>Save</cite>.</p></li>
+</ol>
 <hr class="docutils" />
 <div class="suggest admonition">
 <p class="admonition-title">Tip</p>
@@ -864,7 +908,8 @@ parameters correctly so that future parts of the tutorial (especially
 the section on SPARQL queries) will work appropriately.</p>
 <p><strong>Exercise 2: Set the Preferences for New Entities and Rendering</strong></p>
 <hr class="docutils" />
-<p>1. Go to <cite>File&gt;Preferences</cite> in Protégé. This will bring up a new window
+<ol class="arabic simple">
+<li><p>Go to <cite>File&gt;Preferences</cite> in Protégé. This will bring up a new window
 with lots and lots of different tabs. Click on the <cite>New entities</cite> tab.
 This will bring up a tab that looks similar to figure 4.1. The top part
 of that tab is a box labeled Entity IRI. It should be set with the
@@ -872,8 +917,8 @@ parameters as shown in figure 4.1. I.e., <cite>Starts with Active ontology
 IRI</cite>. <cite>Followed by #</cite>. <cite>Ends with User supplied name</cite>. If the last parameter
 is set to <cite>Auto-generated name</cite> change it to <cite>User supplied name</cite>. That is
 the parameter most likely to be different but also check the other two
-as well.</p>
-<p>2. Now select the <cite>Renderer</cite> tab. It should look like figure 4.2. Most
+as well.</p></li>
+<li><p>Now select the <cite>Renderer</cite> tab. It should look like figure 4.2. Most
 importantly, check that <cite>Entity rendering</cite> is set to <cite>Render by entity IRI
 short name (ID)</cite> rather than <cite>Render by annotation property</cite>. Don’t worry
 if this doesn’t completely make sense at this point. The issues here are
@@ -881,7 +926,8 @@ a bit complex and subtle so we defer them until after you have an
 understanding of the basic concepts of what an OWL ontology is. We will
 have a discussion of these details below in <a class="reference internal" href="#chap7"><span class="std std-ref">Chapter 7</span></a>. For now you just
 need to make sure that the preferences are set appropriately to work
-with the rest of the tutorial.</p>
+with the rest of the tutorial.</p></li>
+</ol>
 <hr class="docutils" />
 <figure class="align-center align-default" id="id4">
 <img alt="_images/11.png" class="no-scaled-link" src="_images/11.png" />
@@ -906,14 +952,14 @@ with the rest of the tutorial.</p>
 </figure>
 <p><strong>Exercise 3: Add a Comment Annotation to Your Ontology</strong></p>
 <hr class="docutils" />
-<p>1. Make sure you are in the <cite>Active Ontology</cite> tab. In the view just below
+<ol class="arabic simple">
+<li><p>Make sure you are in the <cite>Active Ontology</cite> tab. In the view just below
 the Ontology IRI and Ontology Version IRI fields find the <cite>Annotations</cite>
 option and click on the <cite>+</cite> sign. This will bring up a menu to create a
-new annotation on the ontology.</p>
-<p>2. The <cite>rdfs:comment</cite> annotation should be highlighted by default. If it
+new annotation on the ontology.</p></li>
+<li><p>The <cite>rdfs:comment</cite> annotation should be highlighted by default. If it
 isn’t highlighted click on it. Then type a new comment into the view to
-the right. Something like <cite>A tutorial ontology for the Pizza domain</cite>.</p>
-<ol class="arabic simple" start="3">
+the right. Something like <cite>A tutorial ontology for the Pizza domain</cite>.</p></li>
 <li><p>Click <cite>OK</cite>. Your Active Ontology tab should like Figure 4.3.</p></li>
 </ol>
 <hr class="docutils" />
@@ -935,19 +981,21 @@ containing all individuals. Because of this all classes are subclasses
 of <code class="docutils literal notranslate"><span class="pre">owl:Thing</span></code>.</p>
 <p><strong>Exercise 4: Create classes: Pizza, PizzaTopping, and PizzaBase</strong></p>
 <hr class="docutils" />
-<p>1. Navigate to the <cite>Entities</cite> tab with the <cite>Class hierarchy</cite> view selected.
-Make sure <cite>owl:Thing</cite> is selected.</p>
-<p>2. Press the <cite>Add Subclass</cite> icon shown in figure 4.4. This button creates
+<ol class="arabic simple">
+<li><p>Navigate to the <cite>Entities</cite> tab with the <cite>Class hierarchy</cite> view selected.
+Make sure <cite>owl:Thing</cite> is selected.</p></li>
+<li><p>Press the <cite>Add Subclass</cite> icon shown in figure 4.4. This button creates
 a new subclass of the selected class. In this case we want to create a
-subclass of owl:Thing.</p>
-<p>3. This should bring up a dialog titled <cite>Create a new class</cite> with a field
-for the name of the new class. Type in <cite>Pizza</cite> and then select <cite>OK</cite>.</p>
-<p>4. Repeat the previous steps to add the classes <code class="docutils literal notranslate"><span class="pre">PizzaTopping</span></code> and
+subclass of owl:Thing.</p></li>
+<li><p>This should bring up a dialog titled <cite>Create a new class</cite> with a field
+for the name of the new class. Type in <cite>Pizza</cite> and then select <cite>OK</cite>.</p></li>
+<li><p>Repeat the previous steps to add the classes <code class="docutils literal notranslate"><span class="pre">PizzaTopping</span></code> and
 <code class="docutils literal notranslate"><span class="pre">PizzaBase</span></code> ensuring that <code class="docutils literal notranslate"><span class="pre">owl:Thing</span></code> is selected before using the add
 subclass icon so that all your classes are subclasses of <code class="docutils literal notranslate"><span class="pre">owl:Thing</span></code>. Your
 user interface should now look like figure 4.5. Don’t worry that some of
 the classes are highlighted in red. That is because the reasoner hasn’t
-run yet. We will address this shortly.</p>
+run yet. We will address this shortly.</p></li>
+</ol>
 <hr class="docutils" />
 <figure class="align-center align-default" id="id8">
 <img alt="_images/5.png" class="no-scaled-link" src="_images/5.png" />
@@ -987,19 +1035,20 @@ tutorial, we want to use the Pellet reasoner. It has the best support
 for SWRL at the time this tutorial is being written.</p>
 <p><strong>Exercise 5: Install and Run the Pellet Reasoner</strong></p>
 <hr class="docutils" />
-<p>1. Check to see if the Pellet reasoner is installed. Click on the
+<ol class="arabic simple">
+<li><p>Check to see if the Pellet reasoner is installed. Click on the
 <cite>Reasoner</cite> menu. At the bottom of the menu there will be a list of the
 installed reasoners such as <cite>Hermit</cite> and possibly <cite>Pellet</cite>. If Pellet is
-visible in that menu then select it and skip to step 3.</p>
-<p>2. If Pellet is not visible then do <cite>File&gt;Check for plugins</cite> and select
+visible in that menu then select it and skip to step 3.</p></li>
+<li><p>If Pellet is not visible then do <cite>File&gt;Check for plugins</cite> and select
 Pellet from the list of available plugins and then select <cite>Install</cite>. This
 will install Pellet and you should get a message that says it will take
 effect the next time you start Protégé. Do a <cite>File&gt;Save</cite> to save your work
 then quit Protégé and restart it. Then go to <cite>File&gt;Open recent</cite>. You
 should see your saved Pizza tutorial in the list of recent ontologies.
 Select it to load it. Now you should see Pellet under the <cite>Reasoner</cite> menu
-and be able to select it so do so.</p>
-<p>3. With Pellet selected in the Reasoner menu execute the command
+and be able to select it so do so.</p></li>
+<li><p>With Pellet selected in the Reasoner menu execute the command
 <cite>Reasoner&gt;Start reasoner</cite>. The reasoner should run very quickly since the
 ontology is so simple. You will notice that the little text message in
 the lower right corner of the Protégé window has changed to now say
@@ -1007,13 +1056,13 @@ the lower right corner of the Protégé window has changed to now say
 text will change to say: <cite>Reasoner state out of sync with active
 ontology</cite>. With small ontologies the reasoner runs very quickly, and it
 is a good idea to get into the habit of running it often, as much as
-after every change.</p>
-<p>4. It is possible that one or more of your classes will still be
-highlighted in red after you run the reasoner.</p>
-<p>If that happens do: <cite>Window&gt;Refresh user interface</cite> and any red highlights
+after every change.</p></li>
+<li><p>It is possible that one or more of your classes will still be
+highlighted in red after you run the reasoner.
+If that happens do: <cite>Window&gt;Refresh user interface</cite> and any red highlights
 should go away. Whenever your user interface seems to show something you
-don’t expect the first thing to do is to try this command.</p>
-<p>5. One last thing we want to do is to configure the reasoner. By
+don’t expect the first thing to do is to try this command.</p></li>
+<li><p>One last thing we want to do is to configure the reasoner. By
 default, the reasoner does not perform all possible inferences because
 some inferences can take a long time for large and complex ontologies.
 In this tutorial we will always be dealing with small and simple
@@ -1022,7 +1071,8 @@ ontologies so we want to see everything the reasoner can do. Go to:
 of inferences that the reasoner can perform. If they aren’t all checked
 then check them all. You may receive a warning that some inferences can
 take a lot of time, but you can ignore those since your ontology will be
-small.</p>
+small.</p></li>
+</ol>
 <hr class="docutils" />
 <h2 id="disjoint-classes"><span class="sectnum">4.3.</span> Disjoint Classes<a class="headerlink" href="#disjoint-classes" title="Permalink to this headline">¶</a></h2>
 <p>Having added the classes <code class="docutils literal notranslate"><span class="pre">Pizza</span></code>, <code class="docutils literal notranslate"><span class="pre">PizzaTopping</span></code>, and <code class="docutils literal notranslate"><span class="pre">PizzaBase</span></code> to the
@@ -1030,24 +1080,23 @@ ontology, we now want to say that these classes are <em>disjoint</em>. I.e.,
 no individual can be an instance of more than one of those classes. In
 set theory terminology the intersection of these three classes is the
 empty set: <code class="docutils literal notranslate"><span class="pre">owl:Nothing</span></code>.</p>
-<p><strong>Exercise 6: Make Pizza, PizzaTopping, and PizzaBase disjoint from each
-other</strong></p>
+<p><strong>Exercise 6: Make Pizza, PizzaTopping, and PizzaBase disjoint from each other</strong></p>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Select the class <cite>Pizza</cite> in the class hierarchy.</p></li>
-</ol>
-<p>2. Find the <cite>Disjoint With</cite> option in the <cite>Description</cite> view and select the
-<cite>(+)</cite> sign next to it. See the red circle in figure 4.6.</p>
-<p>3. This should bring up a dialog with two tabs: <cite>Class hierarchy</cite> and
+<li><p>Find the <cite>Disjoint With</cite> option in the <cite>Description</cite> view and select the
+<cite>(+)</cite> sign next to it. See the red circle in figure 4.6.</p></li>
+<li><p>This should bring up a dialog with two tabs: <cite>Class hierarchy</cite> and
 <cite>Expression editor</cite>. You want <cite>Class hierarchy</cite> for now (we will use the
 expression editor later). This gives you an interface to select a class
 that is identical to the <cite>Class hierarchy</cite> view. Use it to navigate to
 <cite>PizzaBase</cite>. Hold down the shift key and select <cite>PizzaBase</cite> and
-<cite>PizzaTopping</cite>. Select <cite>OK</cite>.</p>
-<p>4. Do a <cite>Reasoner&gt;Synchronize reasoner</cite>. Then look at <code class="docutils literal notranslate"><span class="pre">PizzaBase</span></code> and
+<cite>PizzaTopping</cite>. Select <cite>OK</cite>.</p></li>
+<li><p>Do a <cite>Reasoner&gt;Synchronize reasoner</cite>. Then look at <code class="docutils literal notranslate"><span class="pre">PizzaBase</span></code> and
 <code class="docutils literal notranslate"><span class="pre">PizzaTopping</span></code>. You should see that they each have the appropriate
 disjoint axioms defined to indicate that each of these classes is
-disjoint with the other two.</p>
+disjoint with the other two.</p></li>
+</ol>
 <hr class="docutils" />
 <figure class="align-center align-default" id="id9">
 <img alt="_images/6.png" class="no-scaled-link" src="_images/6.png" />
@@ -1078,15 +1127,12 @@ multiple classes at once.</p>
 <em>Figure 4.7: The Create class hierarchy wizard</em></span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<p><strong>Exercise 7: Use the Create class hierarchy tool to create subclasses
-of PizzaBase</strong></p>
+<p><strong>Exercise 7: Use the Create class hierarchy tool to create subclasses of PizzaBase</strong></p>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Select the class <cite>PizzaBase</cite> in the class hierarchy.</p></li>
-</ol>
-<p>2. With <cite>PizzaBase</cite> selected use the <cite>Tools&gt;Create class hierarchy</cite> menu
-option.</p>
-<p>3. This should bring up a wizard that enables you to create a nested
+<li><p>With <cite>PizzaBase</cite> selected use the <cite>Tools&gt;Create class hierarchy</cite> menu option.</p></li>
+<li><p>This should bring up a wizard that enables you to create a nested
 group of classes all at once. You should see a window labeled <cite>Enter
 hierarchy</cite> where you can enter one name on each line. You can also use
 the tab key to indicate that a class is a subclass of the class above
@@ -1094,12 +1140,13 @@ it. For now we just want to enter two subclasses of <code class="docutils litera
 <code class="docutils literal notranslate"><span class="pre">ThinAndCrispyBase</span></code> and <code class="docutils literal notranslate"><span class="pre">DeepPanBase</span></code>. One of the things the wizard does is
 to automatically add a prefix or suffix for us. So just enter
 <cite>ThinAndCrispy</cite>, hit return and enter <cite>DeepPan</cite>. Then in the Suffix field
-add <cite>Base</cite>. Your window should look like figure 4.7.</p>
-<p>4. Select <cite>Continue</cite>. This will take you to a window that asks if you want
+add <cite>Base</cite>. Your window should look like figure 4.7.</p></li>
+<li><p>Select <cite>Continue</cite>. This will take you to a window that asks if you want
 to make sibling classes disjoint. The default should be checked (make
 them disjoint) which is what we want in this case (a base can’t be both
 deep pan and thin) so just select <cite>Finish</cite>. Synchronize the reasoner. Your
-class hierarchy should now look like figure 4.8.</p>
+class hierarchy should now look like figure 4.8.</p></li>
+</ol>
 <hr class="docutils" />
 <figure class="align-center align-default" id="id11">
 <img alt="_images/8.png" class="no-scaled-link" src="_images/8.png" />
@@ -1116,17 +1163,16 @@ subclasses of <code class="docutils literal notranslate"><span class="pre">Pizza
 <hr class="docutils" />
 <ol class="arabic simple">
 <li><p>Select the class <cite>PizzaTopping</cite> in the class hierarchy.</p></li>
-</ol>
-<p>2. With <cite>PizzaTopping</cite> selected use the <cite>Tools&gt;Create class hierarchy</cite> menu
-option.</p>
-<p>3. This will once again bring up the wizard. We want all our toppings to
+<li><p>With <cite>PizzaTopping</cite> selected use the <cite>Tools&gt;Create class hierarchy</cite> menu option.</p></li>
+<li><p>This will once again bring up the wizard. We want all our toppings to
 end in Topping so enter <cite>Topping</cite> in the Suffix field. Then create the
 nested structure as shown in figure 4.9. Use the Tab key to indent
-classes where needed.</p>
-<p>4. Select <cite>Continue</cite>. This will take you to the window that asks if you
+classes where needed.</p></li>
+<li><p>Select <cite>Continue</cite>. This will take you to the window that asks if you
 want to make sibling classes disjoint. We do want this so leave the box
 checked and click <cite>Finish</cite>. Synchronize the reasoner. Your class hierarchy
-should now look like figure 4.10.</p>
+should now look like figure 4.10.</p></li>
+</ol>
 <hr class="docutils" />
 <figure class="align-center align-default" id="id12">
 <img alt="_images/9.png" class="no-scaled-link" src="_images/9.png" />
@@ -1196,19 +1242,19 @@ at the same level creates a sibling property to the selected property
 and the icon with an <cite>X</cite> through a box deletes the selected property.</p>
 <p><strong>Exercise 9: Create some properties</strong></p>
 <hr class="docutils" />
-<p>1. Select the Object properties sub-tab of the Entities tab (see figure
-4.11).</p>
-<p>2. Make sure <code class="docutils literal notranslate"><span class="pre">owl:topObjectProperty</span></code> is selected<strong>.</strong> Click on the nested
+<ol class="arabic simple">
+<li><p>Select the Object properties sub-tab of the Entities tab (see figure 4.11).</p></li>
+<li><p>Make sure <code class="docutils literal notranslate"><span class="pre">owl:topObjectProperty</span></code> is selected<strong>.</strong> Click on the nested
 box icon at the left to create a new sub-property of
 <code class="docutils literal notranslate"><span class="pre">owl:topObjectProperty</span></code>. When prompted for the name of the new property
-type in <cite>hasIngredient</cite>.</p>
-<p>3. Just as you can use a wizard to create multiple classes you can also
+type in <cite>hasIngredient</cite>.</p></li>
+<li><p>Just as you can use a wizard to create multiple classes you can also
 use one to create multiple properties. Select <cite>hasIngredient</cite> and then
 select <cite>Tools&gt;Create object property hierarchy</cite>. Enter the new property
 names <cite>hasTopping</cite> and <cite>hasBase</cite>. Select Continue and accept the default
-that the object properties are <em>not</em> disjoint.</p>
-<p>4. Synchronize the reasoner. Your window should now look like figure
-4.11.</p>
+that the object properties are <em>not</em> disjoint.</p></li>
+<li><p>Synchronize the reasoner. Your window should now look like figure 4.11.</p></li>
+</ol>
 <hr class="docutils" />
 <div class="explain admonition">
 <p class="admonition-title">Explanation</p>
@@ -1241,21 +1287,22 @@ standard with properties. Properties going in one direction as
 <em>hasProperty</em> and their inverses as <em>isPropertyOf</em>.</p>
 <p><strong>Exercise 10: Create some inverse properties</strong></p>
 <hr class="docutils" />
-<p>1. Use the <cite>Object properties</cite> tab to create a new object property called
-isIngredientOf (this will be the inverse property of hasIngredient).
-Make sure that isIngredientOf is asibling property if hasIngredient and
-a sub-property of owl:topObjectProperty.</p>
-<p>2. Click on the Add icon <cite>(+)</cite> next to <cite>Inverse Of</cite> in the <cite>Description</cite> view
-for hasIngredient. You will be presented with a window that shows a
+<ol class="arabic simple">
+<li><p>Use the <cite>Object properties</cite> tab to create a new object property called
+<code class="docutils literal notranslate"><span class="pre">isIngredientOf</span></code> (this will be the inverse property of <code class="docutils literal notranslate"><span class="pre">hasIngredient</span></code>).
+Make sure that <code class="docutils literal notranslate"><span class="pre">isIngredientOf</span></code> is a sibling property if <code class="docutils literal notranslate"><span class="pre">hasIngredient</span></code> and
+a sub-property of <code class="docutils literal notranslate"><span class="pre">owl:topObjectProperty</span></code>.</p></li>
+<li><p>Click on the Add icon <cite>(+)</cite> next to <cite>Inverse Of</cite> in the <cite>Description</cite> view
+for <code class="docutils literal notranslate"><span class="pre">hasIngredient</span></code>. You will be presented with a window that shows a
 nested view of all the current properties. Select <cite>hasIngredient</cite> to make
-it the inverse of isIngredientOf.</p>
-<p>3. Select <cite>isIngredientOf</cite> and then <cite>Tools&gt;Create object property
+it the inverse of <code class="docutils literal notranslate"><span class="pre">isIngredientOf</span></code>.</p></li>
+<li><p>Select <cite>isIngredientOf</cite> and then <cite>Tools&gt;Create object property
 hierarchy</cite>. Enter <cite>isToppingOf</cite> then on a new line enter <cite>isBaseOf</cite>. As
 before, select <cite>Continue</cite> and leave the box for disjoint properties
 unchecked and select <cite>Finish</cite>. Repeat step 2 to make <code class="docutils literal notranslate"><span class="pre">isToppingOf</span></code> the
-inverse of <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> and <code class="docutils literal notranslate"><span class="pre">isBaseOf</span></code> the inverse of <code class="docutils literal notranslate"><span class="pre">hasBase</span></code>.</p>
-<p>4. Synchronize the reasoner. Your window should now look like figure
-4.12.</p>
+inverse of <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> and <code class="docutils literal notranslate"><span class="pre">isBaseOf</span></code> the inverse of <code class="docutils literal notranslate"><span class="pre">hasBase</span></code>.</p></li>
+<li><p>Synchronize the reasoner. Your window should now look like figure 4.12.</p></li>
+</ol>
 <figure class="align-center align-default" id="id15">
 <img alt="_images/12.png" class="no-scaled-link" src="_images/12.png" />
 <figcaption>
@@ -1400,26 +1447,27 @@ Thus, the domain for <code class="docutils literal notranslate"><span class="pre
 (<code class="docutils literal notranslate"><span class="pre">Pizza</span></code>).</p>
 <p><strong>Exercise 11: Define the domain and range of the hasTopping property</strong></p>
 <hr class="docutils" />
-<p>1. Navigate to the <cite>Object properties</cite> tab. Select the <cite>hasTopping</cite>
-property.</p>
-<p>2. Click on the Add icon <cite>(+)</cite> next to <cite>Domains (intersection)</cite> in the
+<ol class="arabic simple">
+<li><p>Navigate to the <cite>Object properties</cite> tab. Select the <cite>hasTopping</cite> property.</p></li>
+<li><p>Click on the Add icon <cite>(+)</cite> next to <cite>Domains (intersection)</cite> in the
 <cite>Description</cite> view for <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code>. You will be presented with a window
 that shows several tabs. There are multiple ways to define domain and
 range. For now we will use the simplest method (and the one most often
 used). Select the <cite>ClassHierarchy</cite> tab. Then select <cite>Pizza</cite> from the class hierarchy. Your
 UI should look like figure 4.14. Click on <cite>OK</cite>. You should now see <cite>Pizza</cite>
-underneath the <cite>Domains</cite> in the <cite>Description</cite> view.</p>
-<p>3. Repeat step 2 but this time start by using the <cite>(+)</cite> icon next to the
+underneath the <cite>Domains</cite> in the <cite>Description</cite> view.</p></li>
+<li><p>Repeat step 2 but this time start by using the <cite>(+)</cite> icon next to the
 <cite>Ranges (intersection)</cite> in the <cite>Description</cite> for <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code>. This time
-select the class <cite>PizzaTopping</cite> as the range.</p>
-<p>4. Synchronize the reasoner. Now select <cite>isToppingOf</cite>. You should see that
+select the class <cite>PizzaTopping</cite> as the range.</p></li>
+<li><p>Synchronize the reasoner. Now select <cite>isToppingOf</cite>. You should see that
 the Domain and Range for <code class="docutils literal notranslate"><span class="pre">isToppingOf</span></code> have been filled in by the reasoner
 (see figure 4.15). Since the two properties are inverses the reasoner
 knows that the domain for one is the range for the other and vice versa.
 This is another example of why frequently running the reasoner can save
 time and help maintain a valid model. Note that these values are
 highlighted in yellow. Any information supplied by the reasoner rather
-than by the user is highlighted in this way.</p>
+than by the user is highlighted in this way.</p></li>
+</ol>
 <hr class="docutils" />
 <figure class="align-center align-default" id="id16">
 <img alt="_images/14.png" class="no-scaled-link" src="_images/14.png" />
@@ -1457,15 +1505,17 @@ in more detail below in the section on SHACL.</p>
 </div>
 <p><strong>Exercise 12: Define the domain and range for the hasBase property</strong></p>
 <hr class="docutils" />
-<p>1. Now we are going to repeat the same activities as in the previous
+<ol class="arabic simple">
+<li><p>Now we are going to repeat the same activities as in the previous
 exercise but for another property: <code class="docutils literal notranslate"><span class="pre">hasBase</span></code>. Make sure you are still on
-the <cite>Object properties</cite> tab. Select the <cite>hasBase</cite> property.</p>
-<p>2. Click on the Add icon <cite>(+)</cite> next to <cite>Domains (intersection)</cite> in the
+the <cite>Object properties</cite> tab. Select the <cite>hasBase</cite> property.</p></li>
+<li><p>Click on the Add icon <cite>(+)</cite> next to <cite>Domains (intersection)</cite> in the
 <cite>Description</cite> view for <code class="docutils literal notranslate"><span class="pre">hasBase</span></code>. Select the <cite>ClassHierarchy</cite> tab. Then select
-<cite>Pizza</cite> from the class hierarchy.</p>
-<p>3. Repeat step 2 but this time start by using the <cite>(+)</cite> icon next to the
+<cite>Pizza</cite> from the class hierarchy.</p></li>
+<li><p>Repeat step 2 but this time start by using the <cite>(+)</cite> icon next to the
 <cite>Ranges (intersection)</cite> in the <cite>Description</cite> for hasBase. This time select
-the class <cite>PizzaBase</cite> as the range.</p>
+the class <cite>PizzaBase</cite> as the range.</p></li>
+</ol>
 <p>4. Synchronize the reasoner. Now select <cite>isBaseOf</cite> You should see that the
 Domain and Range for <code class="docutils literal notranslate"><span class="pre">isBaseOf</span></code> have been filled in by the reasoner.</p>
 <hr class="docutils" />
@@ -1772,7 +1822,7 @@ reasoner. Your UI should look similar to figure 4.19 now.</p></li>
 <em>Figure 4.19 Subclasses of NamedPizza are Disjoint</em></span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<h3 id="detecting-a-class-that-cant-have-members"><span class="sectnum">4.10.4.</span> Detecting a Class that can’t Have Members<a class="headerlink" href="#detecting-a-class-that-cant-have-members" title="Permalink to this headline">¶</a></h3>
+<h3 id="detecting-a-class-that-can-t-have-members"><span class="sectnum">4.10.4.</span> Detecting a Class that can’t Have Members<a class="headerlink" href="#detecting-a-class-that-can-t-have-members" title="Permalink to this headline">¶</a></h3>
 <p>Next, we are going to use the reasoner to detect a class with a
 definition that means it can never have any members. In the current
 version of Protégé when the reasoner detects an inconsistency or
@@ -1822,267 +1872,215 @@ class icon at the top of the classes view (see figure 4.4).</p></li>
 <em>Figure 4.20 Explanation for why ProbeInconsistentTopping is equivalent to owl:Nothing</em></span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<div class="line-block">
-<div class="line">4.11 Primitive and Defined Classes (Necessary and Sufficient Axioms)</div>
-<div class="line">All of the classes that we have created so far have only used
+<h2 id="primitive-and-defined-classes-necessary-and-sufficient-axioms"><span class="sectnum">4.11.</span> Primitive and Defined Classes (Necessary and Sufficient Axioms)<a class="headerlink" href="#primitive-and-defined-classes-necessary-and-sufficient-axioms" title="Permalink to this headline">¶</a></h2>
+<p>All of the classes that we have created so far have only used
 necessary axioms to describe them. Necessary axioms can be read as,
 <em>If something is a member of this class then it is necessary to fulfil
 these conditions</em>. With necessary axioms alone, we <em>cannot</em> say that:
 <em>If something fulfils these conditions then it must be a member of
-this class</em>.</div>
-</div>
+this class</em>.</p>
 <p>Let’s illustrate this with an example. We will create a subclass of
-Pizza called CheesyPizza, which will be a Pizza that has at least one
-kind of CheeseTopping.</p>
+<code class="docutils literal notranslate"><span class="pre">Pizza</span></code> called <code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code>, which will be a <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> that has at least one
+kind of <code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code>.</p>
 <p><strong>Exercise 20: Create the CheesyPizza class</strong></p>
-<p>_____________________________________________________________________________________
-1. Select Pizza in the class hierarchy on the Classes tab.</p>
-<p>2. Select the Add Subclass icon (see figure 4.4). Name the new subclass
-CheesyPizza.</p>
-<p>3. Make sure CheesyPizza is selected. Click on the Add icon (+) next to
-the SubClass Of field in the Description view.</p>
-<div class="line-block">
-<div class="line">4. Select the Class expression editor tab. Type in the new axiom:
-hasTopping some CheeseTopping. Remember you can use &lt;control&gt;&lt;space&gt;
-to auto-complete each word in the axiom, e.g., type hasT and then
-&lt;control&gt;&lt;space&gt; to auto-complete the rest. If you haven’t typed
-enough for Protégé to</div>
-<div class="line">unambiguously choose one entity or Description Logic keyword you will
-be prompted with a menu of possible completions. Click OK to enter the
-new restriction axiom.</div>
-</div>
-<p>_____________________________________________________________________________________</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image72.png"><img alt="_images/image72.png" src="_images/image72.png" style="width: 0.48611in; height: 0.43056in;" /></a>
-</figure>
-<table class="docutils data align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>Note that if you just type a few characters, the number of
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Select <cite>Pizza</cite> in the class hierarchy on the Classes tab.</p></li>
+<li><p>Select the Add Subclass icon (see figure 4.4). Name the new subclass <cite>CheesyPizza</cite>.</p></li>
+<li><p>Make sure CheesyPizza is selected. Click on the Add icon <cite>(+)</cite> next to
+the <cite>SubClass Of</cite> field in the <cite>Description</cite> view.</p></li>
+<li><p>Select the Class expression editor tab. Type in the new axiom:
+<cite>hasTopping some CheeseTopping</cite>. Remember you can use <cite>&lt;control&gt;&lt;space&gt;</cite>
+to auto-complete each word in the axiom, e.g., type <cite>hasT</cite> and then
+<cite>&lt;control&gt;&lt;space&gt;</cite> to auto-complete the rest. If you haven’t typed
+enough for Protégé to
+unambiguously choose one entity or Description Logic keyword you will
+be prompted with a menu of possible completions. Click <cite>OK</cite> to enter the
+new restriction axiom.</p></li>
+</ol>
+<hr class="docutils" />
+<div class="pitfall admonition">
+<p class="admonition-title">Warning</p>
+<p>Note that if you just type a few characters, the number of
 possible completions may be large resulting in an unwieldy menu.
 Also, Protégé doesn’t do things like type checking on possible
 completions. For example, if you type “Chee” and do
-&lt;control&gt;&lt;space&gt; you will be prompted with CheeseTopping and
-CheesyPizza as possible completions even though a Pizza is not in
-the range of hasTopping. This is where the reasoner can also
-help. If you enter a class that is not in the range of hasTopping
-the reasoner will signal an inconsistency.</p></td>
-</tr>
-</tbody>
-</table>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image43.png"><img alt="_images/image43.png" src="_images/image43.png" style="width: 6.18333in; height: 1.31571in;" /></a>
-</figure>
-<p>Our current description of CheesyPizza says that if something is a
-CheesyPizza it is <em>necessarily</em> a Pizza and it is <em>necessary</em> for it
-to have at least one topping that is a kind of CheeseTopping. Now
+&lt;control&gt;&lt;space&gt; you will be prompted with <code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code> and
+<code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code> as possible completions even though a <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> is not in
+the range of <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code>. This is where the reasoner can also
+help. If you enter a class that is not in the range of <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code>
+the reasoner will signal an inconsistency.</p>
+</div>
+<p>Our current description of <code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code> says that if something is a
+<code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code> it is <em>necessarily</em> a <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> and it is <em>necessary</em> for it
+to have at least one topping that is a kind of <code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code>. Now
 consider some random individual. Suppose that we know that this
-individual is a member of the class Pizza. We also know that this
-individual has at least one kind of CheeseTopping. However, given our
-current description of CheesyPizza this knowledge is not sufficient
+individual is a member of the class <code class="docutils literal notranslate"><span class="pre">Pizza</span></code>. We also know that this
+individual has at least one kind of <code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code>. However, given our
+current description of <code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code> this knowledge is not sufficient
 to determine that the individual is a member of the class
-CheesyPizza. To make this possible we need to change the conditions
-for CheesyPizza from <em>necessary</em> conditions to <em>necessary AND
+<code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code>. To make this possible we need to change the conditions
+for <code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code> from <em>necessary</em> conditions to <em>necessary AND
 sufficient</em> conditions. This means that not only are the conditions
-<em>necessary</em> for membership of the class CheesyPizza, they are also
+<em>necessary</em> for membership of the class <code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code>, they are also
 <em>sufficient</em> to determine that any random individual that satisfies
-them must be a member of the class CheesyPizza.</p>
+them must be a member of the class <code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code>.</p>
 <p>A class (such as all the classes we have defined so far) that only
 has necessary conditions is called a <em>primitive class</em>. A class that
 has necessary and sufficient conditions is known as a <em>defined
 class</em>. In order to convert necessary conditions to necessary and
 sufficient conditions, the conditions must be moved from under the
-SubClass Of header in the class description view to be under the
-Equivalent To header. This can be done with the menu option:
-Edit&gt;Convert to defined class.</p>
-<p><strong>Exercise 21: Convert CheesyPizza from a Primitive Class to a
-Defined Class</strong></p>
-<p>_____________________________________________________________________________________
-1. Make sure CheesyPizza is selected.</p>
-<ol class="arabic simple" start="2">
-<li><p>Select the menu option: Edit&gt;Convert to defined class.</p></li>
+<cite>SubClass Of</cite> header in the class description view to be under the
+<cite>Equivalent To</cite> header. This can be done with the menu option:
+<cite>Edit&gt;Convert to defined class</cite>.</p>
+<p><strong>Exercise 21: Convert CheesyPizza from a Primitive Class to a Defined Class</strong></p>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Make sure <cite>CheesyPizza</cite> is selected.</p></li>
+<li><p>Select the menu option: <cite>Edit&gt;Convert to defined class</cite>.</p></li>
 <li><p>Synchronize the reasoner.</p></li>
 </ol>
-<p>_____________________________________________________________________________________
-Your screen should now look similar to figure 4.21. Note that when a
+<hr class="docutils" />
+<p>Your screen should now look similar to figure 4.21. Note that when a
 class is a defined class it is shown in the UI with three horizontal
 stripes in the circle next to its name.</p>
 <p>So far we have seen the reasoner do simple things such as propagate
 disjoint axioms from super classes down to subclasses. However, the
 reasoner is capable of doing much more. Now that we have a defined
 class we can see an example of this. Notice that there are two tabs
-in the Class hierarchy view. The one shown in figure 4.21 is the
+in the <cite>Class hierarchy</cite> view. The one shown in figure 4.21 is the
 asserted hierarchy. This is the hierarchy as defined by user declared
 axioms.</p>
-<p>The other tab is the Class hierarchy (inferred) tab. This is the
+<p>The other tab is the <cite>Class hierarchy (inferred)</cite> tab. This is the
 hierarchy as inferred by the reasoner. Up until we created a defined
 class the two tabs would be identical because we had only primitive
 classes in the ontology. Now that we have a defined class the
-inferred hierarchy will look different. Select the Class hierarchy
-(inferred) tab. Make sure that the reasoner is synchronized (it
-should say Reasoner active as in figure 4.21). Also, make sure to
-expand the CheesyPizza class in this tab. You should see a screen
+inferred hierarchy will look different. Select the <cite>Class hierarchy
+(inferred)</cite> tab. Make sure that the reasoner is synchronized (it
+should say <cite>Reasoner active</cite> as in figure 4.21). Also, make sure to
+expand the <code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code> class in this tab. You should see a screen
 similar to figure 4.22. As you should see in the inferred tab the
-reasoner has inferred that all the Pizza classes with a cheese
-topping are subclasses of CheesyPizza.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image73.png"><img alt="_images/image73.png" src="_images/image73.png" style="width: 6.5in; height: 4.11806in;" /></a>
+reasoner has inferred that all the <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> classes with a cheese
+topping are subclasses of <code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code>.</p>
+<figure class="align-center align-default" id="id23">
+<img alt="_images/211.png" class="no-scaled-link" src="_images/211.png" />
+<figcaption>
+<p><span class="caption-text"><span class="caption-text">
+<strong>Figure 4.21 CheesyPizza as a Defined Class</strong></span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
+</figcaption>
 </figure>
-<p>Figure 4.21 CheesyPizza as a Defined Class</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image74.png"><img alt="_images/image74.png" src="_images/image74.png" style="width: 6.5in; height: 4.11806in;" /></a>
+<figure class="align-center align-default" id="id24">
+<img alt="_images/22.png" class="no-scaled-link" src="_images/22.png" />
+<figcaption>
+<p><span class="caption-text"><span class="caption-text">
+<strong>Figure 4.22 Classes Inferred by the Reasoner to be subclasses of CheesyPizza</strong></span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+</figcaption>
 </figure>
-<p>Figure 4.22 Classes Inferred by the Reasoner to be subclasses of
-CheesyPizza</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image40.png"><img alt="_images/image40.png" src="_images/image40.png" style="width: 6.18333in; height: 1.52082in;" /></a>
-</figure>
-<div class="line-block">
-<div class="line">4.12 Universal Restrictions</div>
-<div class="line">All of the restrictions we have created so far have been existential
-restrictions (defined using the some DL keyword). Existential
+<h2 id="universal-restrictions"><span class="sectnum">4.12.</span> Universal Restrictions<a class="headerlink" href="#universal-restrictions" title="Permalink to this headline">¶</a></h2>
+<p>All of the restrictions we have created so far have been existential
+restrictions (defined using the <code class="docutils literal notranslate"><span class="pre">some</span></code> DL keyword). Existential
 restrictions specify the existence of at least one relationship along
 a given property to an individual that is a member of a specific class
 (specified by the filler). However, existential restrictions do not
 mandate that the only relationships for the given property that can
 exist must be to individuals that are members of the specified filler
-class.</div>
-</div>
-<div class="line-block">
-<div class="line">For example, we could use an existential restriction hasTopping some
-MozzarellaTopping to describe the individuals that have at least one
-relationship along the property hasTopping to an individual that is a
-member of the class MozzarellaTopping. This restriction does not imply
-that all of the hasTopping relationships must be to a member of the
-class MozzarellaTopping. To restrict the relationships for a given
+class.</p>
+<p>For example, we could use an existential restriction <code class="docutils literal notranslate"><span class="pre">hasTopping</span> <span class="pre">some</span> <span class="pre">MozzarellaTopping</span></code>
+to describe the individuals that have at least one
+relationship along the property <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> to an individual that is a
+member of the class <code class="docutils literal notranslate"><span class="pre">MozzarellaTopping</span></code>. This restriction does not imply
+that all of the <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> relationships must be to a member of the
+class <code class="docutils literal notranslate"><span class="pre">MozzarellaTopping</span></code>. To restrict the relationships for a given
 property to individuals that are members of a specific class we must
 use a universal restriction. Universal restrictions correspond to the
-symbol ∀ in First Order Logic. They constrain the relationships along
+symbol <code class="docutils literal notranslate"><span class="pre">∀</span></code> in First Order Logic. They constrain the relationships along
 a given property to individuals that are members of a specific class.
-For example, the universal restriction ∀ hasTopping VegetableTopping
-describes the individuals all of whose hasTopping relationships are to
-members of the class VegetableTopping — the individuals do not have a
-hasTopping relationship to individuals that aren’t members of the
-class</div>
-<div class="line">VegetableTopping.</div>
-</div>
-<p>Suppose we want to create a class called VegetarianPizza. Individuals
+For example, the universal restriction <code class="docutils literal notranslate"><span class="pre">∀</span> <span class="pre">hasTopping</span> <span class="pre">VegetableTopping</span></code>
+describes the individuals all of whose <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> relationships are to
+members of the class <code class="docutils literal notranslate"><span class="pre">VegetableTopping</span></code> — the individuals do not have a
+<code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> relationship to individuals that aren’t members of the
+class <code class="docutils literal notranslate"><span class="pre">VegetableTopping</span></code>.</p>
+<p>Suppose we want to create a class called <code class="docutils literal notranslate"><span class="pre">VegetarianPizza</span></code>. Individuals
 that are members of this class can only have toppings that are a
-CheeseTopping or VegetableTopping. To do this we can use a universal
+<code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code> or <code class="docutils literal notranslate"><span class="pre">VegetableTopping</span></code>. To do this we can use a universal
 restriction:</p>
 <p><strong>Exercise 22: Create a Defined Class called VegetarianPizza</strong></p>
-<p>_____________________________________________________________________________________
-1. Select the Pizza in the Classes tab. Create a subclass of Pizza and
-name it VegetarianPizza. 2. Make sure VegetarianPizza is selected. Click
-on the Add icon (+) next to the SubClass Of field in the Description
-view.</p>
-<p>3. Select the Class expression editor tab from the pop-up window. Type
-in the Description Logic axiom: hasTopping only (VegetableTopping or
-CheeseTopping). Click on OK.</p>
-<p>4. Make sure VegetarianPizza is still selected. Run the Edit&gt;Convert to
-defined class command.</p>
-<p>5. VegetarianPizza should now have three horizontal lines through it
-just as CheesyPizza does.</p>
-<p>Also, the Equivalent To field in the Description view should have: Pizza
-and (hasTopping only (CheeseTopping or VegetableTopping)). Note that
-another way to create defined classes is to enter the Description Logic
-axiom directly into the Equivalent To field.</p>
-<ol class="arabic simple" start="6">
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Select the <cite>Pizza</cite> in the <cite>Classes</cite> tab. Create a subclass of <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> and
+name it <code class="docutils literal notranslate"><span class="pre">VegetarianPizza</span></code>.</p></li>
+<li><p>Make sure <cite>VegetarianPizza</cite> is selected. Click
+on the Add icon <cite>(+)</cite> next to the <cite>SubClass Of</cite> field in the <cite>Description</cite>
+view.</p></li>
+<li><p>Select the <cite>Class expression editor</cite> tab from the pop-up window. Type
+in the Description Logic axiom:
+<cite>hasTopping only (VegetableTopping or CheeseTopping).</cite> Click on <cite>OK</cite>.</p></li>
+<li><p>Make sure <cite>VegetarianPizza</cite> is still selected.
+Run the <cite>Edit&gt;Convert to defined class</cite> command.</p></li>
+<li><p><cite>VegetarianPizza</cite> should now have three horizontal lines through it
+just as <cite>CheesyPizza</cite> does.
+Also, the <cite>Equivalent To</cite> field in the Description view should have:
+<cite>Pizza and (hasTopping only (CheeseTopping or VegetableTopping))</cite>.
+Note that another way to create defined classes is to enter the Description Logic
+axiom directly into the <cite>Equivalent To</cite> field.</p></li>
 <li><p>Synchronize the reasoner.</p></li>
 </ol>
-<p>_____________________________________________________________________________________</p>
-<table class="docutils data align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><div class="line-block">
-<div class="line">This means that if something is a member of the class
-VegetarianPizza it is necessary for it to be a kind of Pizza
-and it is necessary for it to only (∀ universal quantifier)
-have toppings that are kinds of CheeseTopping or kinds of
-VegetableTopping. In other words, all</div>
-<div class="line">hasTopping relationships that individuals which are members of
-the class VegetarianPizza participate in must be to individuals
-that are either members of the class CheeseTopping or
-VegetableTopping. The class VegetarianPizza also contains
-individuals that are Pizzas and do not participate in any
-hasTopping relationships.</div>
+<hr class="docutils" />
+<div class="explain admonition">
+<p class="admonition-title">Explanation</p>
+<p>This means that if something is a member of the class
+<code class="docutils literal notranslate"><span class="pre">VegetarianPizza</span></code> it is necessary for it to be a kind of <code class="docutils literal notranslate"><span class="pre">Pizza</span></code>
+and it is necessary for it to only (<code class="docutils literal notranslate"><span class="pre">∀</span></code> universal quantifier)
+have toppings that are kinds of <code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code> or kinds of
+<code class="docutils literal notranslate"><span class="pre">VegetableTopping</span></code>. In other words, all
+<code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> relationships that individuals which are members of
+the class <code class="docutils literal notranslate"><span class="pre">VegetarianPizza</span></code> participate in must be to individuals
+that are either members of the class <code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code> or
+<code class="docutils literal notranslate"><span class="pre">VegetableTopping</span></code>. The class <code class="docutils literal notranslate"><span class="pre">VegetarianPizza</span></code> also contains
+individuals that are <code class="docutils literal notranslate"><span class="pre">Pizzas</span></code> and do not participate in any
+<code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> relationships.</p>
 </div>
-</td>
-</tr>
-</tbody>
-</table>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image75.png"><img alt="_images/image75.png" src="_images/image75.png" style="width: 0.56944in; height: 0.41667in;" /></a>
-</figure>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image76.png"><img alt="_images/image76.png" src="_images/image76.png" style="width: 0.47222in; height: 0.43056in;" /></a>
-</figure>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image77.png"><img alt="_images/image77.png" src="_images/image77.png" style="width: 0.47222in; height: 0.43056in;" /></a>
-</figure>
-<table class="docutils data align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>In situations like the above example, a common mistake is to use
+<div class="pitfall admonition">
+<p class="admonition-title">Warning</p>
+<p>In situations like the above example, a common mistake is to use
 an intersection instead of a union. For example,
-CheeseTopping<em>and</em>VegetableTopping. Although CheeseTopping
-and Vegetable might be a natural thing to say in English, this
+<code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code> <em>and</em> <code class="docutils literal notranslate"><span class="pre">VegetableTopping</span></code>. Although <code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code>
+and <code class="docutils literal notranslate"><span class="pre">Vegetable</span></code> might be a natural thing to say in English, this
 logically means something that is simultaneously a kind of
-CheeseTopping and VegetableTopping. This is incorrect because we
-have stated that CheeseTopping and VegetableTopping are disjoint
+<code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code> and <code class="docutils literal notranslate"><span class="pre">VegetableTopping</span></code>. This is incorrect because we
+have stated that <code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code> and <code class="docutils literal notranslate"><span class="pre">VegetableTopping</span></code> are disjoint
 classes and hence no individual can be an instance of both. If we
 used such a definition the reasoner would detect the
-inconsistency.</p></td>
-</tr>
-</tbody>
-</table>
-<table class="docutils data align-default">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><div class="line-block">
-<div class="line">In the above example it might have been tempting to create two
-universal restrictions — one for CheeseTopping(∀ hasTopping
-CheeseTopping) and one for</div>
-<div class="line">VegetableTopping (∀ hasTopping VegetableTopping). However, when
+inconsistency.</p>
+</div>
+<div class="pitfall admonition">
+<p class="admonition-title">Warning</p>
+<p>In the above example it might have been tempting to create two
+universal restrictions — one for <code class="docutils literal notranslate"><span class="pre">CheeseTopping</span></code>
+(<code class="docutils literal notranslate"><span class="pre">∀</span> <span class="pre">hasTopping</span> <span class="pre">CheeseTopping</span></code>) and one for
+<code class="docutils literal notranslate"><span class="pre">VegetableTopping</span></code> (<code class="docutils literal notranslate"><span class="pre">∀</span> <span class="pre">hasTopping</span> <span class="pre">VegetableTopping</span></code>). However, when
 multiple restrictions are used (for any type of restriction)
 the total description is taken to be the intersection of the
 individual restrictions. This would have therefore been
 equivalent to one restriction with a filler that is the
-intersection of MozzarellaTopping<em>and</em>TomatoTopping— as
-explained above this would have been logically incorrect.</div>
+intersection of <code class="docutils literal notranslate"><span class="pre">MozzarellaTopping</span></code> <em>and</em> <code class="docutils literal notranslate"><span class="pre">TomatoTopping</span></code>— as
+explained above this would have been logically incorrect.</p>
 </div>
-</td>
-</tr>
-</tbody>
-</table>
-<p><a class="reference internal" href="_images/image40.png"><img alt="image60" src="_images/image40.png" style="width: 6.18333in; height: 1.52082in;" /></a><a class="reference internal" href="_images/image40.png"><img alt="image61" src="_images/image40.png" style="width: 6.18333in; height: 1.52082in;" /></a></p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">4.13 Automated Classification and Open World Reasoning</div>
-<div class="line">Make sure that the reasoner is synchronized (the little text in the
-lower right corner should say Reasoner active). Now switch from the
-Class hierarchy tab to the Class hierarchy (inferred) tab. You may
-notice something that seems perplexing. The classes MargheritaPizza
-and SohoPizza both only have vegetable and cheese toppings. So one
+<h2 id="automated-classification-and-open-world-reasoning"><span class="sectnum">4.13.</span> Automated Classification and Open World Reasoning<a class="headerlink" href="#automated-classification-and-open-world-reasoning" title="Permalink to this headline">¶</a></h2>
+<p>Make sure that the reasoner is synchronized (the little text in the
+lower right corner should say <cite>Reasoner active</cite>). Now switch from the
+<cite>Class hierarchy</cite> tab to the <cite>Class hierarchy (inferred)`tab. You may
+notice something that seems perplexing. The classes ``MargheritaPizza`</cite>
+and <code class="docutils literal notranslate"><span class="pre">SohoPizza</span></code> both only have vegetable and cheese toppings. So one
 might expect that the reasoner would classify them as subclasses of
-VegetarianPizza as it recently (in section 4.11) classified them
-and others as subclasses of CheesyPizza. The reason this didn’t
-happen is something called the Open World Assumption (OWA).</div>
-</div>
-<p>This is one of the concepts of OWL that can be most confusing for new
+<code class="docutils literal notranslate"><span class="pre">VegetarianPizza</span></code> as it recently (in <a class="reference external" href="#primitive-and-defined-classes-necessary-and-sufficient-axioms">section 4.11</a>) classified them
+and others as subclasses of <code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code>. The reason this didn’t
+happen is something called the Open World Assumption (OWA).
+This is one of the concepts of OWL that can be most confusing for new
 and even experienced users because it is different than the Close
 World Assumption (CWA) used in most other programming and knowledge
 representation languages.</p>
-<div class="line-block">
-<div class="line">In most languages using the CWA we assume that everything that is
+<p>In most languages using the CWA we assume that everything that is
 currently known about the system is already in the database.
 However, OWL was meant to be a language to bring semantics to the
 Internet so the language designers chose the OWA. The open world
@@ -2095,76 +2093,66 @@ stated that it does not exist</em>. In other words, because something
 hasn’t been stated to be true, it cannot be assumed to be false —
 it is assumed that the knowledge just hasn’t been added to the
 knowledge base. In the case of our pizza ontology, we have stated
-that MargheritaPizza has toppings that are kinds of
-MozzarellaTopping and also kinds of TomatoTopping. Because of the
+that <code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code> has toppings that are kinds of
+<code class="docutils literal notranslate"><span class="pre">MozzarellaTopping</span></code> and also kinds of <code class="docutils literal notranslate"><span class="pre">TomatoTopping</span></code>. Because of the
 open world assumption, until we explicitly say that a
-MargheritaPizza only has these kinds of toppings, it is assumed by
-the reasoner that a</div>
-<div class="line">MargheritaPizza could have other toppings. To specify explicitly
-that a MargheritaPizza has toppings that are kinds of
-MozzarellaTopping or kinds of TomatoTopping and only kinds of
-MozzarellaTopping or TomatoTopping, we must add what is known as a
-closure axiom on the hasTopping property.</div>
-</div>
-</div></blockquote>
-<div class="line-block">
-<div class="line">A closure axiom on a property consists of a universal restriction that
+<code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code> only has these kinds of toppings, it is assumed by
+the reasoner that a
+<code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code> could have other toppings. To specify explicitly
+that a <code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code> has toppings that are kinds of
+<code class="docutils literal notranslate"><span class="pre">MozzarellaTopping</span></code> or kinds of <code class="docutils literal notranslate"><span class="pre">TomatoTopping</span></code> and only kinds of
+<code class="docutils literal notranslate"><span class="pre">MozzarellaTopping</span></code> or <code class="docutils literal notranslate"><span class="pre">TomatoTopping</span></code>, we must add what is known as a
+closure axiom on the <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> property.</p>
+<p>A closure axiom on a property consists of a universal restriction that
 says that a property can only be filled by specified fillers. The
 restriction has a filler that is the union of the fillers that occur
 in the existential restrictions for the property. For example, the
-closure axiom on the hasTopping property for MargheritaPizza is a
-universal restriction that acts along the hasTopping property, with a
-filler that is the union of MozzarellaTopping and also TomatoTopping.
-i.e. hasTopping only</div>
-<div class="line">(MozzarellaTopping or TomatoTopping).</div>
-</div>
-<p><strong>Exercise 23: Add a Closure Axiom on the hasTopping Property for
-MargheritaPizza</strong></p>
-<p>_____________________________________________________________________________________
-1. Make sure that MargheritaPizza is selected in the class hierarchy in
-the Classes tab.</p>
-<p>2. Click on the Add icon (+) next to the SubClass Of field in the
-Description view.</p>
-<p>3. Select the Class expression editor tab from the pop-up window. Type
-in the Description Logic axiom: hasTopping only (MozzarellaTopping or
-TomatoTopping).</p>
-<ol class="arabic simple" start="4">
-<li><p>Click on OK.</p></li>
-</ol>
-<p>5. Repeat steps 1-4 but this time click on SohoPizza and use the axiom:
-hasTopping only (MozzarellaTopping or TomatoTopping or ParmesanTopping
-or OliveTopping).</p>
-<ol class="arabic simple" start="6">
+closure axiom on the <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> property for <code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code> is a
+universal restriction that acts along the <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> property, with a
+filler that is the union of <code class="docutils literal notranslate"><span class="pre">MozzarellaTopping</span></code> and also <code class="docutils literal notranslate"><span class="pre">TomatoTopping</span></code>.
+i.e. <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> only (<code class="docutils literal notranslate"><span class="pre">MozzarellaTopping</span></code> or <code class="docutils literal notranslate"><span class="pre">TomatoTopping</span></code>).</p>
+<p><strong>Exercise 23: Add a Closure Axiom on the hasTopping Property for MargheritaPizza</strong></p>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Make sure that <code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code> is selected in the class hierarchy in
+the <cite>Classes</cite> tab.</p></li>
+<li><p>Click on the Add icon <cite>(+)</cite> next to the <cite>SubClass Of</cite> field in the
+<cite>Description</cite> view.</p></li>
+<li><p>Select the <cite>Class expression editor</cite> tab from the pop-up window. Type
+in the Description Logic axiom:
+<cite>hasTopping only (MozzarellaTopping or TomatoTopping)</cite>.</p></li>
+<li><p>Click on <cite>OK</cite>.</p></li>
+<li><p>Repeat steps 1-4 but this time click on <cite>SohoPizza</cite> and use the axiom:
+<cite>hasTopping only (MozzarellaTopping or TomatoTopping or ParmesanTopping or OliveTopping)</cite>.</p></li>
 <li><p>Synchronize the reasoner.</p></li>
 </ol>
-<div class="line-block">
-<div class="line">_____________________________________________________________________________________
-The previous axioms said that for example that it was necessary for
-any Pizza that was a</div>
-<div class="line">MargheritaPizza to have a MozzarellaTopping and a TomatoTopping. The
-new axioms say that a MargheritaPizza can <em>only</em> have these toppings
-and similarly for SohoPizza and its toppings. This should supply the
+<hr class="docutils" />
+<p>The previous axioms said that for example that it was necessary for
+any <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> that was a
+<code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code> to have a <code class="docutils literal notranslate"><span class="pre">MozzarellaTopping</span></code> and a <code class="docutils literal notranslate"><span class="pre">TomatoTopping</span></code>. The
+new axioms say that a <code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code> can <em>only</em> have these toppings
+and similarly for <code class="docutils literal notranslate"><span class="pre">SohoPizza</span></code> and its toppings. This should supply the
 needed information for the reasoner to now make them both subclasses
-of</div>
-<div class="line">VegetarianPizza. Go to the Class hierarchy (inferred) tab. You should
-now see that</div>
-<div class="line">MargheritaPizza and SohoPizza are both classified as subclasses of
-VegetarianPizza. Your UI should now look similar to figure 4.23. Note
+of
+<code class="docutils literal notranslate"><span class="pre">VegetarianPizza</span></code>. Go to the <cite>Class hierarchy (inferred)</cite> tab. You should
+now see that
+<code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code> and <code class="docutils literal notranslate"><span class="pre">SohoPizza</span></code> are both classified as subclasses of
+<code class="docutils literal notranslate"><span class="pre">VegetarianPizza</span></code>. Your UI should now look similar to figure 4.23. Note
 the various axioms highlighted in yellow. Those are all additional
 inferences supplied by the reasoner. For experience you might want to
-click on some of the ?</div>
-</div>
-<p>icons next to these inferences to see the explanations generated by the
+click on some of the <cite>?</cite>
+icons next to these inferences to see the explanations generated by the
 reasoner. As you develop more complex ontologies this is a powerful tool
 to debug and design your ontology.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image78.png"><img alt="_images/image78.png" src="_images/image78.png" style="width: 6.5in; height: 5.51389in;" /></a>
+<figure class="align-center align-default" id="id25">
+<img alt="_images/23.png" class="no-scaled-link" src="_images/23.png" />
+<figcaption>
+<p><span class="caption-text"><span class="caption-text">
+<em>Figure 4.23 The Reasoner Inferred that Margherita and Soho Pizzas are subclasses of VegetarianPizza</em></span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+</figcaption>
 </figure>
-<p>Figure 4.23 The Reasoner Inferred that Margherita and Soho Pizzas are
-subclasses of VegetarianPizza</p>
-<div class="line-block">
-<div class="line">4.14 Defining an Enumerated Class</div>
-<div class="line">A powerful tool in the object-oriented programming (OOP) community is
+<h2 id="defining-an-enumerated-class"><span class="sectnum">4.14.</span> Defining an Enumerated Class<a class="headerlink" href="#defining-an-enumerated-class" title="Permalink to this headline">¶</a></h2>
+<p>A powerful tool in the object-oriented programming (OOP) community is
 the concept of design patterns. The idea of a design pattern is to
 capture a reusable model that is at a higher level of abstraction than
 a specific code library. One of the first and most common design
@@ -2177,80 +2165,82 @@ recent than OOP there does not yet exist the excellent documentation
 of OWL patterns that the OOP community has. However, there are already
 many design patterns that have been documented for OWL and that can
 provide users with ways to save time and to standardize their designs
-according to best practices.</div>
-</div>
+according to best practices.</p>
 <p>One of the most common OWL design patterns is an enumerated class. When
 a property has only a few possible values it can be useful to create a
 class to represent those values and to explicitly define the class by
 listing each possible value. We will show an example of such an
 enumerated class by creating a new
-property called hasSpiciness with only a few possible values ranging
-from Mild to Hot. In this section we will also create the first
+property called <code class="docutils literal notranslate"><span class="pre">hasSpiciness</span></code> with only a few possible values ranging
+from <code class="docutils literal notranslate"><span class="pre">Mild</span></code> to <code class="docutils literal notranslate"><span class="pre">Hot</span></code>. In this section we will also create the first
 individuals in our ontology.</p>
-<p><strong>Exercise 24: Create an Enumerated Class to Represent the Spiciness of
-a Pizza</strong></p>
-<p>_____________________________________________________________________________________
-1. Create a new subclass of owl:Thing called Spiciness.</p>
-<p>2. Make sure that Spiciness is selected. Click on the Add icon (+) next
-to the Instances field in the Description view.</p>
-<p>3. You will be prompted with a window that looks like figure 4.24. The
+<p><strong>Exercise 24: Create an Enumerated Class to Represent the Spiciness of a Pizza</strong></p>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Create a new subclass of <code class="docutils literal notranslate"><span class="pre">owl:Thing</span></code> called <code class="docutils literal notranslate"><span class="pre">Spiciness</span></code>.</p></li>
+<li><p>Make sure that <cite>Spiciness</cite> is selected. Click on the Add icon <cite>(+)</cite> next
+to the <cite>Instances</cite> field in the <cite>Description</cite> view.</p></li>
+<li><p>You will be prompted with a window that looks like figure 4.24. The
 diamond icon at the top is for creating a new individual. The circle
-with an X through it is for deleting an individual. Use the diamond icon
-to create 3 individuals: Hot, Medium, and Mild, so your UI looks like
-figure 4.24, then click on OK.</p>
-<p>4. You may notice that only one of the new individuals was actually
-created as an instance of Spiciness. That’s okay. The next step will
+with an <cite>X</cite> through it is for deleting an individual. Use the diamond icon
+to create 3 individuals: <cite>Hot</cite>, <cite>Medium</cite>, and <cite>Mild</cite>, so your UI looks like
+figure 4.24, then click on <cite>OK</cite>.</p></li>
+<li><p>You may notice that only one of the new individuals was actually
+created as an instance of <code class="docutils literal notranslate"><span class="pre">Spiciness</span></code>. That’s okay. The next step will
 supply the reasoner with enough information to make the other two also
-be instances of Spiciness.</p>
-<p>5. Make sure that Spiciness is still selected. Click on the Add icon (+)
-next to the Equivalent To field in the Description view. This time we
+be instances of <code class="docutils literal notranslate"><span class="pre">Spiciness</span></code>.</p></li>
+<li><p>Make sure that <cite>Spiciness</cite> is still selected. Click on the Add icon <cite>(+)</cite>
+next to the <cite>Equivalent To</cite> field in the <cite>Description</cite> view. This time we
 will create a defined class by directly entering the definition for the
 class into this field. Select the Class expression editor tab and enter
-the DL axiom: {Hot, Medium, Mild}. Select OK.</p>
-<p>6. Now run the reasoner. You should see that Spiciness is now a defined
-class and all three individuals: Hot, Medium, and Mild, are now
-instances of that class.</p>
-<p>_____________________________________________________________________________________</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image79.png"><img alt="_images/image79.png" src="_images/image79.png" style="width: 3.20833in; height: 2.75972in;" /></a>
+the DL axiom: <cite>{Hot, Medium, Mild}</cite>. Select <cite>OK</cite>.</p></li>
+<li><p>Now run the reasoner. You should see that Spiciness is now a defined
+class and all three individuals: <code class="docutils literal notranslate"><span class="pre">Hot</span></code>, <code class="docutils literal notranslate"><span class="pre">Medium</span></code>, and <code class="docutils literal notranslate"><span class="pre">Mild</span></code>, are now
+instances of that class.</p></li>
+</ol>
+<hr class="docutils" />
+<figure class="align-center align-default" id="id26">
+<img alt="_images/24.png" class="no-scaled-link" src="_images/24.png" />
+<figcaption>
+<p><span class="caption-text"><span class="caption-text">
+<em>Figure 4.24 Creating Individuals for an Enumerated Class</em></span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
+</figcaption>
 </figure>
-<p>Figure 4.24 Creating Individuals for an Enumerated Class</p>
-<div class="line-block">
-<div class="line">4.15 Adding Spiciness as a Property</div>
-<div class="line">Next we need to add a property that will define the spiciness of a
-PizzaTopping.</div>
-</div>
+<h2 id="adding-spiciness-as-a-property"><span class="sectnum">4.15.</span> Adding Spiciness as a Property<a class="headerlink" href="#adding-spiciness-as-a-property" title="Permalink to this headline">¶</a></h2>
+<p>Next we need to add a property that will define the spiciness of a <code class="docutils literal notranslate"><span class="pre">PizzaTopping</span></code>.</p>
 <p><strong>Exercise 25: Create and Use the hasSpiciness Property</strong></p>
-<p>_____________________________________________________________________________________</p>
-<p>1. Go to the Object properties tab. Create a new property called
-hasSpiciness. Define its domain to be PizzaTopping and its range to be
-Spiciness. Run the reasoner so that it knows about the new property.</p>
-<p>2. Go back to the Classes tab and select the class
-JalapenoPepperTopping. Click on the Add icon (+) next to the SubClass Of
-field. Enter the DL axiom: hasSpiciness value Hot. Remember you can use
-&lt;control&gt;&lt;space&gt; to auto-complete. Click on OK.</p>
-<p>3. Note that this is a different kind of restriction than before. Before
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Go to the <cite>Object properties</cite> tab. Create a new property called
+<cite>hasSpiciness</cite>. Define its domain to be <cite>PizzaTopping</cite> and its range to be
+<cite>Spiciness</cite>. Run the reasoner so that it knows about the new property.</p></li>
+<li><p>Go back to the Classes tab and select the class
+<cite>JalapenoPepperTopping</cite>. Click on the Add icon <cite>(+)</cite> next to the <cite>SubClass Of</cite>
+field. Enter the DL axiom: <cite>hasSpiciness value Hot</cite>. Remember you can use
+&lt;control&gt;&lt;space&gt; to auto-complete. Click on <cite>OK</cite>.</p></li>
+<li><p>Note that this is a different kind of restriction than before. Before
 we were defining abstract restrictions such as some. I.e., some value
 from a class but the specific individual was not specified, as long as
 it was an individual from that class the restriction was satisfied. Now
 we are defining a restriction that relates to a specific individual,
-hence we use the value keyword rather than the some or only keywords.</p>
-<p>4. Now we will use this property to define a new class of Pizza. Start
-by creating a new subclass of Pizza called SpicyPizza.</p>
-<p>5. Make sure that SpicyPizza is selected. Click on the Add icon (+) next
-to the SubClass Of field. Enter the DL axiom: hasTopping some
-(hasSpiciness value Hot). This says that a SpicyPizza must have a
-topping that hasSpiciness value of Hot.</p>
-<p>6. Convert SpicyPizza to a defined class by selecting it and using
-Edit&gt;Convert to defined class. Run the reasoner.</p>
-<p>_____________________________________________________________________________________</p>
-<p>Now go to the Class hierarchy (inferred) tab in the Classes tab (see
-figure 4.25). You should see that AmericanHotPizza is now classified as
-a subclass of SpicyPizza because it has a topping
-(JalapenoPepperTopping) that has a spiciness value of Hot.</p>
-<div class="line-block">
-<div class="line">4.16 Cardinality Restrictions</div>
-<div class="line">In OWL we can describe the class of individuals that have at least, at
+hence we use the value keyword rather than the some or only keywords.</p></li>
+<li><p>Now we will use this property to define a new class of <code class="docutils literal notranslate"><span class="pre">Pizza</span></code>. Start
+by creating a new subclass of <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> called <cite>SpicyPizza</cite>.</p></li>
+<li><p>Make sure that <cite>SpicyPizza</cite> is selected. Click on the Add icon <cite>(+)</cite> next
+to the <cite>SubClass Of</cite> field. Enter the DL axiom:
+<cite>hasTopping some (hasSpiciness value Hot)</cite>.
+This says that a <code class="docutils literal notranslate"><span class="pre">SpicyPizza</span></code> must have a
+topping that <code class="docutils literal notranslate"><span class="pre">hasSpiciness</span></code> value of <code class="docutils literal notranslate"><span class="pre">Hot</span></code>.</p></li>
+<li><p>Convert <cite>SpicyPizza</cite> to a defined class by selecting it and using
+<cite>Edit&gt;Convert to defined class</cite>. Run the reasoner.</p></li>
+</ol>
+<hr class="docutils" />
+<p>Now go to the <cite>Class hierarchy (inferred)</cite> tab in the <cite>Classes</cite> tab (see
+figure 4.25). You should see that <code class="docutils literal notranslate"><span class="pre">AmericanHotPizza</span></code> is now classified as
+a subclass of <code class="docutils literal notranslate"><span class="pre">SpicyPizza</span></code> because it has a topping
+(<code class="docutils literal notranslate"><span class="pre">JalapenoPepperTopping</span></code>) that has a spiciness value of <code class="docutils literal notranslate"><span class="pre">Hot</span></code>.</p>
+<h2 id="cardinality-restrictions"><span class="sectnum">4.16.</span> Cardinality Restrictions<a class="headerlink" href="#cardinality-restrictions" title="Permalink to this headline">¶</a></h2>
+<p>In OWL we can describe the class of individuals that have at least, at
 most, or exactly a specified number of relationships with other
 individuals or datatype values. The restrictions that describe these
 classes are known as Cardinality Restrictions. For a given property P,
@@ -2262,33 +2252,35 @@ Restriction specifies the exact number of P relationships that an
 individual must participate in. Relationships (for example between two
 individuals) are only counted as separate relationships if it can be
 determined that the individuals that are the fillers for the
-relationships are different from each other.</div>
-</div>
+relationships are different from each other.</p>
 <p>Let’s add a cardinality restriction to our Pizza Ontology. We will
-create a new subclass of Pizza called InterestingPizza which will be
+create a new subclass of <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> called <code class="docutils literal notranslate"><span class="pre">InterestingPizza</span></code> which will be
 defined to have 3 or more toppings.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image80.png"><img alt="_images/image80.png" src="_images/image80.png" style="width: 6.5in; height: 4.37639in;" /></a>
+<figure class="align-center align-default" id="id27">
+<img alt="_images/25.png" class="no-scaled-link" src="_images/25.png" />
+<figcaption>
+<p><span class="caption-text"><span class="caption-text">
+<em>Figure 4.25 AmericanHotPizza classified as SpicyPizza</em></span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
+</figcaption>
 </figure>
-<p>Figure 4.25 AmericanHotPizza classified as SpicyPizza</p>
-<p><strong>Exercise 26: Create an InterestingPizza that has at least three
-toppings</strong></p>
-<p>_____________________________________________________________________________________
-1. Create a subclass of Pizza called InterestingPizza.</p>
-<p>2. Click on the Add icon (+) next to the SubClass Of field. Use the
-Class expression editor tab and enter hasTopping min 3 PizzaTopping and
-click on OK.</p>
-<p>3. Make sure InterestingPizza is still selected and use the Edit&gt;Convert
-to defined class option to turn InterestingPizza into a defined class.</p>
-<ol class="arabic simple" start="4">
+<p><strong>Exercise 26: Create an InterestingPizza that has at least three toppings</strong></p>
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>Create a subclass of <cite>Pizza</cite> called <cite>InterestingPizza</cite>.</p></li>
+<li><p>Click on the Add icon <cite>(+)</cite> next to the <cite>SubClass Of</cite> field. Use the
+<cite>Class expression editor</cite> tab and enter <cite>hasTopping min 3 PizzaTopping</cite> and
+click on <cite>OK</cite>.</p></li>
+<li><p>Make sure <cite>InterestingPizza</cite> is still selected and use the
+<cite>Edit&gt;Convert to defined class</cite> option to turn <code class="docutils literal notranslate"><span class="pre">InterestingPizza</span></code>
+into a defined class.</p></li>
 <li><p>Run the reasoner.</p></li>
 </ol>
-<p>_____________________________________________________________________________________</p>
-<p>Go to the Class hierarchy (inferred) tab in the Classes tab and click on
-InterestingPizza. You should see that there are three Pizza classes that
-are classified as interesting: AmericanaHotPizza, AmericanaPizza, and
-SohoPizza.</p>
-<p>Chapter 5 Datatype Properties</p>
+<hr class="docutils" />
+<p>Go to the <cite>Class hierarchy (inferred)</cite> tab in the <cite>Classes</cite> tab and click on
+<cite>InterestingPizza</cite>. You should see that there are three <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> classes that
+are classified as interesting: <cite>AmericanaHotPizza</cite>, <cite>AmericanaPizza</cite>, and
+<cite>SohoPizza</cite>.</p>
+<h1 id="datatype-properties"><span id="chap5"></span><span class="sectnum">5.</span> Datatype Properties<a class="headerlink" href="#datatype-properties" title="Permalink to this headline">¶</a></h1>
 <p>So far we have been describing object properties. These are properties
 that have a range that is some class. As with most other object-oriented
 languages OWL also has the capability to define properties with the
@@ -2525,8 +2517,7 @@ AmericanaPizza1 that hasCaloricContent 723.</p>
 <li><p>Make sure to run the reasoner after creating all your instances.</p></li>
 </ol>
 <p>_____________________________________________________________________________________</p>
-<p><strong>Exercise 31: Create a Datatype Restriction that Every Pizza
-hasCaloricContent</strong></p>
+<p><strong>Exercise 31: Create a Datatype Restriction that Every Pizza hasCaloricContent</strong></p>
 <p>_____________________________________________________________________________________
 1. Navigate to the Classes major tab.</p>
 <ol class="arabic simple" start="2">
@@ -2924,11 +2915,11 @@ under each class because neither is a subclass of the other. It is
 possible for a Pizza to be a LowCaloriePizza and not be a
 MargheritaPizza and vice-versa.</div>
 </div>
-<figure class="align-default" id="id23">
+<figure class="align-default" id="id28">
 <a class="reference internal image-reference" href="_images/image94.png"><img alt="_images/image94.png" src="_images/image94.png" style="width: 6.5in; height: 5.21389in;" /></a>
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-Figure 8.2 Viewing the New Instances in the Individuals by Class tab</span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
+Figure 8.2 Viewing the New Instances in the Individuals by Class tab</span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="line-block">
@@ -3919,7 +3910,6 @@ Ontotext: https://www.ontotext.com/
 Pool Party: https://www.poolparty.biz/
 Stardog: https://www.stardog.com/
 Top Quadrant: https://www.topquadrant.com/</p>
-<h1 id="chapter-5"><span id="chap5"></span><span class="sectnum">5.</span> Chapter 5<a class="headerlink" href="#chapter-5" title="Permalink to this headline">¶</a></h1>
 <h1 id="chapter-6"><span id="chap6"></span><span class="sectnum">6.</span> Chapter 6<a class="headerlink" href="#chapter-6" title="Permalink to this headline">¶</a></h1>
 <h1 id="chapter-7"><span id="chap7"></span><span class="sectnum">7.</span> Chapter 7<a class="headerlink" href="#chapter-7" title="Permalink to this headline">¶</a></h1>
 <h1 id="chapter-8"><span id="chap8"></span><span class="sectnum">8.</span> Chapter 8<a class="headerlink" href="#chapter-8" title="Permalink to this headline">¶</a></h1>

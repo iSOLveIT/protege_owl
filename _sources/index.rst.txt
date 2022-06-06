@@ -29,7 +29,7 @@ Sciences of the United States National Institutes of Health.
 
 Chapters 3-5 are based on the original tutorial. I have updated the
 tutorial to be consistent with Protégé 5. I have also made some changes
-to address some of the most common issues I’ve seen new users grapple
+to address some of the most common issues I've seen new users grapple
 with, to remove some of the dated information about older frame-based
 versions of Protégé, and various miscellaneous changes.
 
@@ -126,7 +126,7 @@ entry are highlighted `like this:`.
 
 Any time you see highlighted text such as `File>Preferences` or `OK` or
 `PizzaTopping` it refers to something that you should or optionally could
-view or enter into the user interface. If you ever aren’t sure what to
+view or enter into the user interface. If you ever aren't sure what to
 do to accomplish some task look for the highlighted text. Often, as with
 PizzaTopping the text you enter into a field in the Protégé UI will be
 the name of a class, property, etc. In those cases, where the name is meant
@@ -144,7 +144,7 @@ example, to indicate how to open the `Individuals by class` tab under the
 
 Exercises are presented like this:
 
-**Exercise 1: Accomplish this**
+**Exercise X: Accomplish this**
 
 ---------------
 
@@ -366,32 +366,32 @@ Pizzas because it is something almost everyone is familiar with.
 ---------------
 
 1. Start Protégé. When Protégé opens for the first time each day it
-puts up a screen of all the available plugins. You can also bring
-this up at any time by using `File>Check for plugins`. You won’t need
-any plugins at this point of the tutorial so just click the `Not now
-button`.
+   puts up a screen of all the available plugins. You can also bring
+   this up at any time by using `File>Check for plugins`. You won't need
+   any plugins at this point of the tutorial so just click the `Not now
+   button`.
 
 2. The Protégé user-interface consists of several tabs such as `Active
-ontology`, `Entities`, etc. When you start Protégé you should be in the
-`Active Ontology` tab. This is for overview information about the
-entire ontology. Protégé always opens with a new untitled ontology
-you can start with. Your ontology should have an IRI something like:
-http://www.semanticweb.org/yourname/ontologies/2020/4/untitled-ontology-27
-Edit the name of the ontology (the part after the last “/” in this
-case `untitled-ontology-27`) and change it to something like
-`PizzaTutorial`. Note: the Pizza ontology IRIs shown below (e.g.,
-figure 4.3) show the IRI after I edited the default that Protégé
-generated for me. Your IRI will look different and will be based on
-your name or the name of your organization.
+   ontology`, `Entities`, etc. When you start Protégé you should be in the
+   `Active Ontology` tab. This is for overview information about the
+   entire ontology. Protégé always opens with a new untitled ontology
+   you can start with. Your ontology should have an IRI something like:
+   http://www.semanticweb.org/yourname/ontologies/2020/4/untitled-ontology-27
+   Edit the name of the ontology (the part after the last “/” in this
+   case `untitled-ontology-27`) and change it to something like
+   `PizzaTutorial`. Note: the Pizza ontology IRIs shown below (e.g.,
+   figure 4.3) show the IRI after I edited the default that Protégé
+   generated for me. Your IRI will look different and will be based on
+   your name or the name of your organization.
 
 3. Now you want to save your new ontology. Select `File>Save`. This
-should bring up a window that says: `Choose a format to use when
-saving the ‘PizzaTutorial’ ontology`. There is a drop down menu of
-formats to use. The default `RDF/XML Syntax` should be selected by
-clicking the `OK` button. This should bring up the standard dialog your
-operating system uses for saving files. Navigate to the folder you
-want to use and then type in the file name, something like `Pizza
-Tutorial` and select `Save`.
+   should bring up a window that says: `Choose a format to use when
+   saving the ‘PizzaTutorial' ontology`. There is a drop down menu of
+   formats to use. The default `RDF/XML Syntax` should be selected by
+   clicking the `OK` button. This should bring up the standard dialog your
+   operating system uses for saving files. Navigate to the folder you
+   want to use and then type in the file name, something like `Pizza
+   Tutorial` and select `Save`.
 
 ---------------
 
@@ -399,7 +399,7 @@ Tutorial` and select `Save`.
    :class: suggest
 
    As with any file you work on it is a good idea to save your work
-   at regular intervals so that if something goes wrong you don’t
+   at regular intervals so that if something goes wrong you don't
    lose your work. At certain points in the tutorial where saving is
    especially important the tutorial will prompt you to do so but it
    is a good idea to save your work often, not just when prompted.
@@ -422,24 +422,24 @@ the section on SPARQL queries) will work appropriately.
 ---------------
 
 1. Go to `File>Preferences` in Protégé. This will bring up a new window
-with lots and lots of different tabs. Click on the `New entities` tab.
-This will bring up a tab that looks similar to figure 4.1. The top part
-of that tab is a box labeled Entity IRI. It should be set with the
-parameters as shown in figure 4.1. I.e., `Starts with Active ontology
-IRI`. `Followed by #`. `Ends with User supplied name`. If the last parameter
-is set to `Auto-generated name` change it to `User supplied name`. That is
-the parameter most likely to be different but also check the other two
-as well.
+   with lots and lots of different tabs. Click on the `New entities` tab.
+   This will bring up a tab that looks similar to figure 4.1. The top part
+   of that tab is a box labeled Entity IRI. It should be set with the
+   parameters as shown in figure 4.1. I.e., `Starts with Active ontology
+   IRI`. `Followed by #`. `Ends with User supplied name`. If the last parameter
+   is set to `Auto-generated name` change it to `User supplied name`. That is
+   the parameter most likely to be different but also check the other two
+   as well.
 
 2. Now select the `Renderer` tab. It should look like figure 4.2. Most
-importantly, check that `Entity rendering` is set to `Render by entity IRI
-short name (ID)` rather than `Render by annotation property`. Don’t worry
-if this doesn’t completely make sense at this point. The issues here are
-a bit complex and subtle so we defer them until after you have an
-understanding of the basic concepts of what an OWL ontology is. We will
-have a discussion of these details below in :ref:`Chapter 7 <chap7>`. For now you just
-need to make sure that the preferences are set appropriately to work
-with the rest of the tutorial.
+   importantly, check that `Entity rendering` is set to `Render by entity IRI
+   short name (ID)` rather than `Render by annotation property`. Don't worry
+   if this doesn't completely make sense at this point. The issues here are
+   a bit complex and subtle so we defer them until after you have an
+   understanding of the basic concepts of what an OWL ontology is. We will
+   have a discussion of these details below in :ref:`Chapter 7 <chap7>`. For now you just
+   need to make sure that the preferences are set appropriately to work
+   with the rest of the tutorial.
 
 ----------------
 
@@ -467,13 +467,13 @@ with the rest of the tutorial.
 ---------------
 
 1. Make sure you are in the `Active Ontology` tab. In the view just below
-the Ontology IRI and Ontology Version IRI fields find the `Annotations`
-option and click on the `+` sign. This will bring up a menu to create a
-new annotation on the ontology.
+   the Ontology IRI and Ontology Version IRI fields find the `Annotations`
+   option and click on the `+` sign. This will bring up a menu to create a
+   new annotation on the ontology.
 
 2. The `rdfs:comment` annotation should be highlighted by default. If it
-isn’t highlighted click on it. Then type a new comment into the view to
-the right. Something like `A tutorial ontology for the Pizza domain`.
+   isn't highlighted click on it. Then type a new comment into the view to
+   the right. Something like `A tutorial ontology for the Pizza domain`.
 
 3. Click `OK`. Your Active Ontology tab should like Figure 4.3.
 
@@ -503,21 +503,21 @@ of ``owl:Thing``.
 ----------------
 
 1. Navigate to the `Entities` tab with the `Class hierarchy` view selected.
-Make sure `owl:Thing` is selected.
+   Make sure `owl:Thing` is selected.
 
 2. Press the `Add Subclass` icon shown in figure 4.4. This button creates
-a new subclass of the selected class. In this case we want to create a
-subclass of owl:Thing.
+   a new subclass of the selected class. In this case we want to create a
+   subclass of owl:Thing.
 
 3. This should bring up a dialog titled `Create a new class` with a field
-for the name of the new class. Type in `Pizza` and then select `OK`.
+   for the name of the new class. Type in `Pizza` and then select `OK`.
 
 4. Repeat the previous steps to add the classes ``PizzaTopping`` and
-``PizzaBase`` ensuring that ``owl:Thing`` is selected before using the add
-subclass icon so that all your classes are subclasses of ``owl:Thing``. Your
-user interface should now look like figure 4.5. Don’t worry that some of
-the classes are highlighted in red. That is because the reasoner hasn’t
-run yet. We will address this shortly.
+   ``PizzaBase`` ensuring that ``owl:Thing`` is selected before using the add
+   subclass icon so that all your classes are subclasses of ``owl:Thing``. Your
+   user interface should now look like figure 4.5. Don't worry that some of
+   the classes are highlighted in red. That is because the reasoner hasn't
+   run yet. We will address this shortly.
 
 ---------------
 
@@ -545,7 +545,7 @@ run yet. We will address this shortly.
 Using a Reasoner
 ================
 You may notice that one or more of your classes is highlighted in red
-as in Figure 4.5. This is because we haven’t run the reasoner yet so
+as in Figure 4.5. This is because we haven't run the reasoner yet so
 Protégé has not been able to verify that our new classes have no
 inconsistencies. When just creating classes and subclasses in a new
 ontology there is little chance of an inconsistency. However, it is a
@@ -553,7 +553,7 @@ good idea to run the reasoner often. When there is an inconsistency
 the sooner it is discovered the easier it is to fix. One common
 mistake that new users make is to do a lot of development and then run
 the reasoner only to find that there are multiple inconsistencies
-which can make debugging significantly more difficult. So let’s get
+which can make debugging significantly more difficult. So let's get
 into the good habit of running the reasoner often.
 
 Protégé comes with some reasoners bundled in and others available as
@@ -566,46 +566,45 @@ for SWRL at the time this tutorial is being written.
 ---------------
 
 1. Check to see if the Pellet reasoner is installed. Click on the
-`Reasoner` menu. At the bottom of the menu there will be a list of the
-installed reasoners such as `Hermit` and possibly `Pellet`. If Pellet is
-visible in that menu then select it and skip to step 3.
+   `Reasoner` menu. At the bottom of the menu there will be a list of the
+   installed reasoners such as `Hermit` and possibly `Pellet`. If Pellet is
+   visible in that menu then select it and skip to step 3.
 
 2. If Pellet is not visible then do `File>Check for plugins` and select
-Pellet from the list of available plugins and then select `Install`. This
-will install Pellet and you should get a message that says it will take
-effect the next time you start Protégé. Do a `File>Save` to save your work
-then quit Protégé and restart it. Then go to `File>Open recent`. You
-should see your saved Pizza tutorial in the list of recent ontologies.
-Select it to load it. Now you should see Pellet under the `Reasoner` menu
-and be able to select it so do so.
+   Pellet from the list of available plugins and then select `Install`. This
+   will install Pellet and you should get a message that says it will take
+   effect the next time you start Protégé. Do a `File>Save` to save your work
+   then quit Protégé and restart it. Then go to `File>Open recent`. You
+   should see your saved Pizza tutorial in the list of recent ontologies.
+   Select it to load it. Now you should see Pellet under the `Reasoner` menu
+   and be able to select it so do so.
 
 3. With Pellet selected in the Reasoner menu execute the command
-`Reasoner>Start reasoner`. The reasoner should run very quickly since the
-ontology is so simple. You will notice that the little text message in
-the lower right corner of the Protégé window has changed to now say
-`Reasoner active`. The next time you make a change to the ontology that
-text will change to say: `Reasoner state out of sync with active
-ontology`. With small ontologies the reasoner runs very quickly, and it
-is a good idea to get into the habit of running it often, as much as
-after every change.
+   `Reasoner>Start reasoner`. The reasoner should run very quickly since the
+   ontology is so simple. You will notice that the little text message in
+   the lower right corner of the Protégé window has changed to now say
+   `Reasoner active`. The next time you make a change to the ontology that
+   text will change to say: `Reasoner state out of sync with active
+   ontology`. With small ontologies the reasoner runs very quickly, and it
+   is a good idea to get into the habit of running it often, as much as
+   after every change.
 
 4. It is possible that one or more of your classes will still be
-highlighted in red after you run the reasoner.
-
-If that happens do: `Window>Refresh user interface` and any red highlights
-should go away. Whenever your user interface seems to show something you
-don’t expect the first thing to do is to try this command.
+   highlighted in red after you run the reasoner.
+   If that happens do: `Window>Refresh user interface` and any red highlights
+   should go away. Whenever your user interface seems to show something you
+   don't expect the first thing to do is to try this command.
 
 5. One last thing we want to do is to configure the reasoner. By
-default, the reasoner does not perform all possible inferences because
-some inferences can take a long time for large and complex ontologies.
-In this tutorial we will always be dealing with small and simple
-ontologies so we want to see everything the reasoner can do. Go to:
-`Reasoner>Configure`. This will bring up a dialog with several check boxes
-of inferences that the reasoner can perform. If they aren’t all checked
-then check them all. You may receive a warning that some inferences can
-take a lot of time, but you can ignore those since your ontology will be
-small.
+   default, the reasoner does not perform all possible inferences because
+   some inferences can take a long time for large and complex ontologies.
+   In this tutorial we will always be dealing with small and simple
+   ontologies so we want to see everything the reasoner can do. Go to:
+   `Reasoner>Configure`. This will bring up a dialog with several check boxes
+   of inferences that the reasoner can perform. If they aren't all checked
+   then check them all. You may receive a warning that some inferences can
+   take a lot of time, but you can ignore those since your ontology will be
+   small.
 
 ---------------
 
@@ -619,27 +618,26 @@ no individual can be an instance of more than one of those classes. In
 set theory terminology the intersection of these three classes is the
 empty set: ``owl:Nothing``.
 
-**Exercise 6: Make Pizza, PizzaTopping, and PizzaBase disjoint from each
-other**
+**Exercise 6: Make Pizza, PizzaTopping, and PizzaBase disjoint from each other**
 
 ----------------
 
 1. Select the class `Pizza` in the class hierarchy.
 
 2. Find the `Disjoint With` option in the `Description` view and select the
-`(+)` sign next to it. See the red circle in figure 4.6.
+   `(+)` sign next to it. See the red circle in figure 4.6.
 
 3. This should bring up a dialog with two tabs: `Class hierarchy` and
-`Expression editor`. You want `Class hierarchy` for now (we will use the
-expression editor later). This gives you an interface to select a class
-that is identical to the `Class hierarchy` view. Use it to navigate to
-`PizzaBase`. Hold down the shift key and select `PizzaBase` and
-`PizzaTopping`. Select `OK`.
+   `Expression editor`. You want `Class hierarchy` for now (we will use the
+   expression editor later). This gives you an interface to select a class
+   that is identical to the `Class hierarchy` view. Use it to navigate to
+   `PizzaBase`. Hold down the shift key and select `PizzaBase` and
+   `PizzaTopping`. Select `OK`.
 
 4. Do a `Reasoner>Synchronize reasoner`. Then look at ``PizzaBase`` and
-``PizzaTopping``. You should see that they each have the appropriate
-disjoint axioms defined to indicate that each of these classes is
-disjoint with the other two.
+   ``PizzaTopping``. You should see that they each have the appropriate
+   disjoint axioms defined to indicate that each of these classes is
+   disjoint with the other two.
 
 ---------------
 
@@ -674,31 +672,29 @@ multiple classes at once.
 
    *Figure 4.7: The Create class hierarchy wizard*
 
-**Exercise 7: Use the Create class hierarchy tool to create subclasses
-of PizzaBase**
+**Exercise 7: Use the Create class hierarchy tool to create subclasses of PizzaBase**
 
 ---------------
 
 1. Select the class `PizzaBase` in the class hierarchy.
 
-2. With `PizzaBase` selected use the `Tools>Create class hierarchy` menu
-option.
+2. With `PizzaBase` selected use the `Tools>Create class hierarchy` menu option.
 
 3. This should bring up a wizard that enables you to create a nested
-group of classes all at once. You should see a window labeled `Enter
-hierarchy` where you can enter one name on each line. You can also use
-the tab key to indicate that a class is a subclass of the class above
-it. For now we just want to enter two subclasses of ``PizzaBase``:
-``ThinAndCrispyBase`` and ``DeepPanBase``. One of the things the wizard does is
-to automatically add a prefix or suffix for us. So just enter
-`ThinAndCrispy`, hit return and enter `DeepPan`. Then in the Suffix field
-add `Base`. Your window should look like figure 4.7.
+   group of classes all at once. You should see a window labeled `Enter
+   hierarchy` where you can enter one name on each line. You can also use
+   the tab key to indicate that a class is a subclass of the class above
+   it. For now we just want to enter two subclasses of ``PizzaBase``:
+   ``ThinAndCrispyBase`` and ``DeepPanBase``. One of the things the wizard does is
+   to automatically add a prefix or suffix for us. So just enter
+   `ThinAndCrispy`, hit return and enter `DeepPan`. Then in the Suffix field
+   add `Base`. Your window should look like figure 4.7.
 
 4. Select `Continue`. This will take you to a window that asks if you want
-to make sibling classes disjoint. The default should be checked (make
-them disjoint) which is what we want in this case (a base can’t be both
-deep pan and thin) so just select `Finish`. Synchronize the reasoner. Your
-class hierarchy should now look like figure 4.8.
+   to make sibling classes disjoint. The default should be checked (make
+   them disjoint) which is what we want in this case (a base can't be both
+   deep pan and thin) so just select `Finish`. Synchronize the reasoner. Your
+   class hierarchy should now look like figure 4.8.
 
 ---------------
 
@@ -721,18 +717,17 @@ subclasses of ``PizzaTopping``.
 
 1. Select the class `PizzaTopping` in the class hierarchy.
 
-2. With `PizzaTopping` selected use the `Tools>Create class hierarchy` menu
-option.
+2. With `PizzaTopping` selected use the `Tools>Create class hierarchy` menu option.
 
 3. This will once again bring up the wizard. We want all our toppings to
-end in Topping so enter `Topping` in the Suffix field. Then create the
-nested structure as shown in figure 4.9. Use the Tab key to indent
-classes where needed.
+   end in Topping so enter `Topping` in the Suffix field. Then create the
+   nested structure as shown in figure 4.9. Use the Tab key to indent
+   classes where needed.
 
 4. Select `Continue`. This will take you to the window that asks if you
-want to make sibling classes disjoint. We do want this so leave the box
-checked and click `Finish`. Synchronize the reasoner. Your class hierarchy
-should now look like figure 4.10.
+   want to make sibling classes disjoint. We do want this so leave the box
+   checked and click `Finish`. Synchronize the reasoner. Your class hierarchy
+   should now look like figure 4.10.
 
 ----------------
 
@@ -783,7 +778,7 @@ they can have objects. An
 annotation property is usually meta-data such as a comment or a label.
 In OWL only individuals can have values for object and data
 properties, but any entity can have an annotation property value since
-meta-data applies to all entities. Annotation properties usually can’t
+meta-data applies to all entities. Annotation properties usually can't
 be reasoned about. For example, SWRL rules which we will cover later
 cannot view or change the value of annotation properties. In this
 chapter we will focus on Object properties. Data properties are
@@ -814,22 +809,20 @@ and the icon with an `X` through a box deletes the selected property.
 
 ---------------
 
-1. Select the Object properties sub-tab of the Entities tab (see figure
-4.11).
+1. Select the Object properties sub-tab of the Entities tab (see figure 4.11).
 
 2. Make sure ``owl:topObjectProperty`` is selected\ **.** Click on the nested
-box icon at the left to create a new sub-property of
-``owl:topObjectProperty``. When prompted for the name of the new property
-type in `hasIngredient`.
+   box icon at the left to create a new sub-property of
+   ``owl:topObjectProperty``. When prompted for the name of the new property
+   type in `hasIngredient`.
 
 3. Just as you can use a wizard to create multiple classes you can also
-use one to create multiple properties. Select `hasIngredient` and then
-select `Tools>Create object property hierarchy`. Enter the new property
-names `hasTopping` and `hasBase`. Select Continue and accept the default
-that the object properties are *not* disjoint.
+   use one to create multiple properties. Select `hasIngredient` and then
+   select `Tools>Create object property hierarchy`. Enter the new property
+   names `hasTopping` and `hasBase`. Select Continue and accept the default
+   that the object properties are *not* disjoint.
 
-4. Synchronize the reasoner. Your window should now look like figure
-4.11.
+4. Synchronize the reasoner. Your window should now look like figure 4.11.
 
 ---------------
 
@@ -858,7 +851,7 @@ figure 3.3 the individual ``MichaelhasPetBuddy``. In this example ``hasPet``
 is an object property that maps from a ``Person`` to their ``Pet`` which are
 known as the domain and range of the property. ``Michael`` is an instance
 of the ``Person`` class and ``Buddy`` is an instance of the ``Pet`` class. The
-``hasPet`` property points from a ``Person`` to that person’s ``Pet``. The inverse
+``hasPet`` property points from a ``Person`` to that person's ``Pet``. The inverse
 property could be ``isPetOf`` which would be represented by a link between
 the two individuals going the other way, from ``Buddy`` to ``Michael``.
 Whenever possible it is desirable to adhere to this type of naming
@@ -870,23 +863,22 @@ standard with properties. Properties going in one direction as
 ---------------
 
 1. Use the `Object properties` tab to create a new object property called
-isIngredientOf (this will be the inverse property of hasIngredient).
-Make sure that isIngredientOf is asibling property if hasIngredient and
-a sub-property of owl:topObjectProperty.
+   ``isIngredientOf`` (this will be the inverse property of ``hasIngredient``).
+   Make sure that ``isIngredientOf`` is a sibling property if ``hasIngredient`` and
+   a sub-property of ``owl:topObjectProperty``.
 
 2. Click on the Add icon `(+)` next to `Inverse Of` in the `Description` view
-for hasIngredient. You will be presented with a window that shows a
-nested view of all the current properties. Select `hasIngredient` to make
-it the inverse of isIngredientOf.
+   for ``hasIngredient``. You will be presented with a window that shows a
+   nested view of all the current properties. Select `hasIngredient` to make
+   it the inverse of ``isIngredientOf``.
 
 3. Select `isIngredientOf` and then `Tools>Create object property
-hierarchy`. Enter `isToppingOf` then on a new line enter `isBaseOf`. As
-before, select `Continue` and leave the box for disjoint properties
-unchecked and select `Finish`. Repeat step 2 to make ``isToppingOf`` the
-inverse of ``hasTopping`` and ``isBaseOf`` the inverse of ``hasBase``.
+   hierarchy`. Enter `isToppingOf` then on a new line enter `isBaseOf`. As
+   before, select `Continue` and leave the box for disjoint properties
+   unchecked and select `Finish`. Repeat step 2 to make ``isToppingOf`` the
+   inverse of ``hasTopping`` and ``isBaseOf`` the inverse of ``hasBase``.
 
-4. Synchronize the reasoner. Your window should now look like figure
-4.12.
+4. Synchronize the reasoner. Your window should now look like figure 4.12.
 
 
 .. figure:: /_static/media/chap_4/12.png
@@ -985,7 +977,7 @@ If ``Michelle hasSpouse Barack``, then
 An asymmetric property is a property that can never have symmetric
 values. If a property P is asymmetric then if a is related to b via that property b cannot be
 related to a via that property. An example of an asymmetric property
-is ``hasBirthMother``. If ``Diya hasBirthMother Fatima``, then it can’t be the
+is ``hasBirthMother``. If ``Diya hasBirthMother Fatima``, then it can't be the
 case that ``Fatima hasBirthMother Diya``.
 
 Reflexive and Irreflexive Properties
@@ -1052,29 +1044,28 @@ Thus, the domain for ``isToppingOf`` is the range of ``hasTopping``
 
 ---------------
 
-1. Navigate to the `Object properties` tab. Select the `hasTopping`
-property.
+1. Navigate to the `Object properties` tab. Select the `hasTopping` property.
 
 2. Click on the Add icon `(+)` next to `Domains (intersection)` in the
-`Description` view for ``hasTopping``. You will be presented with a window
-that shows several tabs. There are multiple ways to define domain and
-range. For now we will use the simplest method (and the one most often
-used). Select the `ClassHierarchy` tab. Then select `Pizza` from the class hierarchy. Your
-UI should look like figure 4.14. Click on `OK`. You should now see `Pizza`
-underneath the `Domains` in the `Description` view.
+   `Description` view for ``hasTopping``. You will be presented with a window
+   that shows several tabs. There are multiple ways to define domain and
+   range. For now we will use the simplest method (and the one most often
+   used). Select the `ClassHierarchy` tab. Then select `Pizza` from the class hierarchy. Your
+   UI should look like figure 4.14. Click on `OK`. You should now see `Pizza`
+   underneath the `Domains` in the `Description` view.
 
 3. Repeat step 2 but this time start by using the `(+)` icon next to the
-`Ranges (intersection)` in the `Description` for ``hasTopping``. This time
-select the class `PizzaTopping` as the range.
+   `Ranges (intersection)` in the `Description` for ``hasTopping``. This time
+   select the class `PizzaTopping` as the range.
 
 4. Synchronize the reasoner. Now select `isToppingOf`. You should see that
-the Domain and Range for ``isToppingOf`` have been filled in by the reasoner
-(see figure 4.15). Since the two properties are inverses the reasoner
-knows that the domain for one is the range for the other and vice versa.
-This is another example of why frequently running the reasoner can save
-time and help maintain a valid model. Note that these values are
-highlighted in yellow. Any information supplied by the reasoner rather
-than by the user is highlighted in this way.
+   the Domain and Range for ``isToppingOf`` have been filled in by the reasoner
+   (see figure 4.15). Since the two properties are inverses the reasoner
+   knows that the domain for one is the range for the other and vice versa.
+   This is another example of why frequently running the reasoner can save
+   time and help maintain a valid model. Note that these values are
+   highlighted in yellow. Any information supplied by the reasoner rather
+   than by the user is highlighted in this way.
 
 ---------------
 
@@ -1117,16 +1108,16 @@ than by the user is highlighted in this way.
 ---------------
 
 1. Now we are going to repeat the same activities as in the previous
-exercise but for another property: ``hasBase``. Make sure you are still on
-the `Object properties` tab. Select the `hasBase` property.
+   exercise but for another property: ``hasBase``. Make sure you are still on
+   the `Object properties` tab. Select the `hasBase` property.
 
 2. Click on the Add icon `(+)` next to `Domains (intersection)` in the
-`Description` view for ``hasBase``. Select the `ClassHierarchy` tab. Then select
-`Pizza` from the class hierarchy.
+   `Description` view for ``hasBase``. Select the `ClassHierarchy` tab. Then select
+   `Pizza` from the class hierarchy.
 
 3. Repeat step 2 but this time start by using the `(+)` icon next to the
-`Ranges (intersection)` in the `Description` for hasBase. This time select
-the class `PizzaBase` as the range.
+   `Ranges (intersection)` in the `Description` for hasBase. This time select
+   the class `PizzaBase` as the range.
 
 4. Synchronize the reasoner. Now select `isBaseOf` You should see that the
 Domain and Range for ``isBaseOf`` have been filled in by the reasoner.
@@ -1157,8 +1148,8 @@ in OWL:
    e.g., to infer that *Class A is a subclass of Class B*. We will see
    examples of this later in the tutorial.
 
-#. Anonymous classes. These are classes that you won’t encounter much
-   and that won’t be discussed much in this tutorial, but it is good to
+#. Anonymous classes. These are classes that you won't encounter much
+   and that won't be discussed much in this tutorial, but it is good to
    know about them. They are created by the reasoner when you use class
    expressions. For example, if you define the range of a property to be
    ``PizzaTopping`` or ``PizzaBase`` then the reasoner will create an anonymous
@@ -1215,7 +1206,7 @@ examples in this tutorial.
   individuals that only have ``hasTopping`` relations to instances of the class ``VegetableTopping``.
   In OWL they keyword only is used for universal restrictions.
 
-Let’s take a closer look at an example of an existential restriction.
+Let's take a closer look at an example of an existential restriction.
 The restriction ``hasTopping some MozzarellaTopping`` is an existential
 restriction (as indicated by the some keyword), which restricts the
 ``hasTopping`` property, and has a filler ``MozzarellaTopping``. This
@@ -1315,7 +1306,7 @@ member of the class ``PizzaBase`` via the property ``hasBase``.
 
 Creating Subclasses of Pizza
 ----------------------------
-It’s now time to add some different kinds of pizzas to our ontology.
+It's now time to add some different kinds of pizzas to our ontology.
 We will start off by adding a ``MargheritaPizza``, which is a pizza that
 has toppings of mozzarella and tomato. In order to keep our ontology
 tidy, we will group our different pizzas under the class ``NamedPizza``.
@@ -1327,7 +1318,7 @@ tidy, we will group our different pizzas under the class ``NamedPizza``.
 1. Select `Pizza` from the class hierarchy on the `Classes` tab.
 
 2. Click on the Add subclass icon at the top left of the Classes tab
-   (look back at figure 4.4 if you aren’t certain). You can also move your
+   (look back at figure 4.4 if you aren't certain). You can also move your
    mouse over the icons and you will see a little pop-up hint for each
    icon.
 
@@ -1484,13 +1475,13 @@ pepperoni.
 
    *Figure 4.19 Subclasses of NamedPizza are Disjoint*
 
-Detecting a Class that can’t Have Members
+Detecting a Class that can't Have Members
 -----------------------------------------
 Next, we are going to use the reasoner to detect a class with a
 definition that means it can never have any members. In the current
 version of Protégé when the reasoner detects an inconsistency or
 problem on some operating systems the UI can occasionally lock up and
-be hard to use. So to make sure you don’t lose any of your work save
+be hard to use. So to make sure you don't lose any of your work save
 your ontology using `File>Save`.
 
 Sometimes it can be useful to create a class that we think should be
@@ -1546,95 +1537,91 @@ think it is. Such a class is called a Probe Class.
 
    *Figure 4.20 Explanation for why ProbeInconsistentTopping is equivalent to owl:Nothing*
 
-| 4.11 Primitive and Defined Classes (Necessary and Sufficient Axioms)
-| All of the classes that we have created so far have only used
-  necessary axioms to describe them. Necessary axioms can be read as,
-  *If something is a member of this class then it is necessary to fulfil
-  these conditions*. With necessary axioms alone, we *cannot* say that:
-  *If something fulfils these conditions then it must be a member of
-  this class*.
+Primitive and Defined Classes (Necessary and Sufficient Axioms)
+===============================================================
 
-Let’s illustrate this with an example. We will create a subclass of
-Pizza called CheesyPizza, which will be a Pizza that has at least one
-kind of CheeseTopping.
+All of the classes that we have created so far have only used
+necessary axioms to describe them. Necessary axioms can be read as,
+*If something is a member of this class then it is necessary to fulfil
+these conditions*. With necessary axioms alone, we *cannot* say that:
+*If something fulfils these conditions then it must be a member of
+this class*.
+
+Let's illustrate this with an example. We will create a subclass of
+``Pizza`` called ``CheesyPizza``, which will be a ``Pizza`` that has at least one
+kind of ``CheeseTopping``.
 
 **Exercise 20: Create the CheesyPizza class**
 
-\____________________________________________________________________________________\_
-1. Select Pizza in the class hierarchy on the Classes tab.
+---------------
 
-2. Select the Add Subclass icon (see figure 4.4). Name the new subclass
-CheesyPizza.
+1. Select `Pizza` in the class hierarchy on the Classes tab.
 
-3. Make sure CheesyPizza is selected. Click on the Add icon (+) next to
-the SubClass Of field in the Description view.
+2. Select the Add Subclass icon (see figure 4.4). Name the new subclass `CheesyPizza`.
 
-| 4. Select the Class expression editor tab. Type in the new axiom:
-  hasTopping some CheeseTopping. Remember you can use <control><space>
-  to auto-complete each word in the axiom, e.g., type hasT and then
-  <control><space> to auto-complete the rest. If you haven’t typed
-  enough for Protégé to
-| unambiguously choose one entity or Description Logic keyword you will
-  be prompted with a menu of possible completions. Click OK to enter the
-  new restriction axiom.
+3. Make sure CheesyPizza is selected. Click on the Add icon `(+)` next to
+   the `SubClass Of` field in the `Description` view.
 
-\____________________________________________________________________________________\_
+4. Select the Class expression editor tab. Type in the new axiom:
+   `hasTopping some CheeseTopping`. Remember you can use `<control><space>`
+   to auto-complete each word in the axiom, e.g., type `hasT` and then
+   `<control><space>` to auto-complete the rest. If you haven't typed
+   enough for Protégé to
+   unambiguously choose one entity or Description Logic keyword you will
+   be prompted with a menu of possible completions. Click `OK` to enter the
+   new restriction axiom.
 
-.. figure:: /_static/media/image72.png
-   :width: 0.48611in
-   :height: 0.43056in
+---------------
 
-+----------------------------------------------------------------------+
-|    Note that if you just type a few characters, the number of        |
-|    possible completions may be large resulting in an unwieldy menu.  |
-|    Also, Protégé doesn’t do things like type checking on possible    |
-|    completions. For example, if you type “Chee” and do               |
-|    <control><space> you will be prompted with CheeseTopping and      |
-|    CheesyPizza as possible completions even though a Pizza is not in |
-|    the range of hasTopping. This is where the reasoner can also      |
-|    help. If you enter a class that is not in the range of hasTopping |
-|    the reasoner will signal an inconsistency.                        |
-+----------------------------------------------------------------------+
+.. admonition:: Warning
+   :class: pitfall
 
-.. figure:: /_static/media/image43.png
-   :width: 6.18333in
-   :height: 1.31571in
+   Note that if you just type a few characters, the number of
+   possible completions may be large resulting in an unwieldy menu.
+   Also, Protégé doesn't do things like type checking on possible
+   completions. For example, if you type “Chee” and do
+   <control><space> you will be prompted with ``CheeseTopping`` and
+   ``CheesyPizza`` as possible completions even though a ``Pizza`` is not in
+   the range of ``hasTopping``. This is where the reasoner can also
+   help. If you enter a class that is not in the range of ``hasTopping``
+   the reasoner will signal an inconsistency.
 
-Our current description of CheesyPizza says that if something is a
-CheesyPizza it is *necessarily* a Pizza and it is *necessary* for it
-to have at least one topping that is a kind of CheeseTopping. Now
+Our current description of ``CheesyPizza`` says that if something is a
+``CheesyPizza`` it is *necessarily* a ``Pizza`` and it is *necessary* for it
+to have at least one topping that is a kind of ``CheeseTopping``. Now
 consider some random individual. Suppose that we know that this
-individual is a member of the class Pizza. We also know that this
-individual has at least one kind of CheeseTopping. However, given our
-current description of CheesyPizza this knowledge is not sufficient
+individual is a member of the class ``Pizza``. We also know that this
+individual has at least one kind of ``CheeseTopping``. However, given our
+current description of ``CheesyPizza`` this knowledge is not sufficient
 to determine that the individual is a member of the class
-CheesyPizza. To make this possible we need to change the conditions
-for CheesyPizza from *necessary* conditions to *necessary AND
+``CheesyPizza``. To make this possible we need to change the conditions
+for ``CheesyPizza`` from *necessary* conditions to *necessary AND
 sufficient* conditions. This means that not only are the conditions
-*necessary* for membership of the class CheesyPizza, they are also
+*necessary* for membership of the class ``CheesyPizza``, they are also
 *sufficient* to determine that any random individual that satisfies
-them must be a member of the class CheesyPizza.
+them must be a member of the class ``CheesyPizza``.
 
 A class (such as all the classes we have defined so far) that only
 has necessary conditions is called a *primitive class*. A class that
 has necessary and sufficient conditions is known as a *defined
 class*. In order to convert necessary conditions to necessary and
 sufficient conditions, the conditions must be moved from under the
-SubClass Of header in the class description view to be under the
-Equivalent To header. This can be done with the menu option:
-Edit>Convert to defined class.
+`SubClass Of` header in the class description view to be under the
+`Equivalent To` header. This can be done with the menu option:
+`Edit>Convert to defined class`.
 
-**Exercise 21: Convert CheesyPizza from a Primitive Class to a
-Defined Class**
+**Exercise 21: Convert CheesyPizza from a Primitive Class to a Defined Class**
 
-\____________________________________________________________________________________\_
-1. Make sure CheesyPizza is selected.
+---------------
 
-2. Select the menu option: Edit>Convert to defined class.
+1. Make sure `CheesyPizza` is selected.
+
+2. Select the menu option: `Edit>Convert to defined class`.
 
 3. Synchronize the reasoner.
 
-\____________________________________________________________________________________\_
+---------------
+
 Your screen should now look similar to figure 4.21. Note that when a
 class is a defined class it is shown in the UI with three horizontal
 stripes in the circle next to its name.
@@ -1643,404 +1630,396 @@ So far we have seen the reasoner do simple things such as propagate
 disjoint axioms from super classes down to subclasses. However, the
 reasoner is capable of doing much more. Now that we have a defined
 class we can see an example of this. Notice that there are two tabs
-in the Class hierarchy view. The one shown in figure 4.21 is the
+in the `Class hierarchy` view. The one shown in figure 4.21 is the
 asserted hierarchy. This is the hierarchy as defined by user declared
 axioms.
 
-The other tab is the Class hierarchy (inferred) tab. This is the
+The other tab is the `Class hierarchy (inferred)` tab. This is the
 hierarchy as inferred by the reasoner. Up until we created a defined
 class the two tabs would be identical because we had only primitive
 classes in the ontology. Now that we have a defined class the
-inferred hierarchy will look different. Select the Class hierarchy
-(inferred) tab. Make sure that the reasoner is synchronized (it
-should say Reasoner active as in figure 4.21). Also, make sure to
-expand the CheesyPizza class in this tab. You should see a screen
+inferred hierarchy will look different. Select the `Class hierarchy
+(inferred)` tab. Make sure that the reasoner is synchronized (it
+should say `Reasoner active` as in figure 4.21). Also, make sure to
+expand the ``CheesyPizza`` class in this tab. You should see a screen
 similar to figure 4.22. As you should see in the inferred tab the
-reasoner has inferred that all the Pizza classes with a cheese
-topping are subclasses of CheesyPizza.
+reasoner has inferred that all the ``Pizza`` classes with a cheese
+topping are subclasses of ``CheesyPizza``.
 
-.. figure:: /_static/media/image73.png
-   :width: 6.5in
-   :height: 4.11806in
+.. figure:: /_static/media/chap_4/21.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.21 CheesyPizza as a Defined Class
+   **Figure 4.21 CheesyPizza as a Defined Class**
 
-.. figure:: /_static/media/image74.png
-   :width: 6.5in
-   :height: 4.11806in
+.. figure:: /_static/media/chap_4/22.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.22 Classes Inferred by the Reasoner to be subclasses of
-CheesyPizza
+   **Figure 4.22 Classes Inferred by the Reasoner to be subclasses of CheesyPizza**
 
-.. figure:: /_static/media/image40.png
-   :width: 6.18333in
-   :height: 1.52082in
 
-| 4.12 Universal Restrictions
-| All of the restrictions we have created so far have been existential
-  restrictions (defined using the some DL keyword). Existential
-  restrictions specify the existence of at least one relationship along
-  a given property to an individual that is a member of a specific class
-  (specified by the filler). However, existential restrictions do not
-  mandate that the only relationships for the given property that can
-  exist must be to individuals that are members of the specified filler
-  class.
+Universal Restrictions
+======================
+All of the restrictions we have created so far have been existential
+restrictions (defined using the ``some`` DL keyword). Existential
+restrictions specify the existence of at least one relationship along
+a given property to an individual that is a member of a specific class
+(specified by the filler). However, existential restrictions do not
+mandate that the only relationships for the given property that can
+exist must be to individuals that are members of the specified filler
+class.
 
-| For example, we could use an existential restriction hasTopping some
-  MozzarellaTopping to describe the individuals that have at least one
-  relationship along the property hasTopping to an individual that is a
-  member of the class MozzarellaTopping. This restriction does not imply
-  that all of the hasTopping relationships must be to a member of the
-  class MozzarellaTopping. To restrict the relationships for a given
-  property to individuals that are members of a specific class we must
-  use a universal restriction. Universal restrictions correspond to the
-  symbol ∀ in First Order Logic. They constrain the relationships along
-  a given property to individuals that are members of a specific class.
-  For example, the universal restriction ∀ hasTopping VegetableTopping
-  describes the individuals all of whose hasTopping relationships are to
-  members of the class VegetableTopping — the individuals do not have a
-  hasTopping relationship to individuals that aren’t members of the
-  class
-| VegetableTopping.
+For example, we could use an existential restriction ``hasTopping some MozzarellaTopping``
+to describe the individuals that have at least one
+relationship along the property ``hasTopping`` to an individual that is a
+member of the class ``MozzarellaTopping``. This restriction does not imply
+that all of the ``hasTopping`` relationships must be to a member of the
+class ``MozzarellaTopping``. To restrict the relationships for a given
+property to individuals that are members of a specific class we must
+use a universal restriction. Universal restrictions correspond to the
+symbol ``∀`` in First Order Logic. They constrain the relationships along
+a given property to individuals that are members of a specific class.
+For example, the universal restriction ``∀ hasTopping VegetableTopping``
+describes the individuals all of whose ``hasTopping`` relationships are to
+members of the class ``VegetableTopping`` — the individuals do not have a
+``hasTopping`` relationship to individuals that aren't members of the
+class ``VegetableTopping``.
 
-Suppose we want to create a class called VegetarianPizza. Individuals
+Suppose we want to create a class called ``VegetarianPizza``. Individuals
 that are members of this class can only have toppings that are a
-CheeseTopping or VegetableTopping. To do this we can use a universal
+``CheeseTopping`` or ``VegetableTopping``. To do this we can use a universal
 restriction:
 
 **Exercise 22: Create a Defined Class called VegetarianPizza**
 
-\____________________________________________________________________________________\_
-1. Select the Pizza in the Classes tab. Create a subclass of Pizza and
-name it VegetarianPizza. 2. Make sure VegetarianPizza is selected. Click
-on the Add icon (+) next to the SubClass Of field in the Description
-view.
+---------------
 
-3. Select the Class expression editor tab from the pop-up window. Type
-in the Description Logic axiom: hasTopping only (VegetableTopping or
-CheeseTopping). Click on OK.
+1. Select the `Pizza` in the `Classes` tab. Create a subclass of ``Pizza`` and
+   name it ``VegetarianPizza``.
+2. Make sure `VegetarianPizza` is selected. Click
+   on the Add icon `(+)` next to the `SubClass Of` field in the `Description`
+   view.
+3. Select the `Class expression editor` tab from the pop-up window. Type
+   in the Description Logic axiom:
+   `hasTopping only (VegetableTopping or CheeseTopping).` Click on `OK`.
 
-4. Make sure VegetarianPizza is still selected. Run the Edit>Convert to
-defined class command.
+4. Make sure `VegetarianPizza` is still selected.
+   Run the `Edit>Convert to defined class` command.
 
-5. VegetarianPizza should now have three horizontal lines through it
-just as CheesyPizza does.
-
-Also, the Equivalent To field in the Description view should have: Pizza
-and (hasTopping only (CheeseTopping or VegetableTopping)). Note that
-another way to create defined classes is to enter the Description Logic
-axiom directly into the Equivalent To field.
-
-6. Synchronize the reasoner.
-
-\____________________________________________________________________________________\_
-
-+----------------------------------------------------------------------+
-|    | This means that if something is a member of the class           |
-|      VegetarianPizza it is necessary for it to be a kind of Pizza    |
-|      and it is necessary for it to only (∀ universal quantifier)     |
-|      have toppings that are kinds of CheeseTopping or kinds of       |
-|      VegetableTopping. In other words, all                           |
-|    | hasTopping relationships that individuals which are members of  |
-|      the class VegetarianPizza participate in must be to individuals |
-|      that are either members of the class CheeseTopping or           |
-|      VegetableTopping. The class VegetarianPizza also contains       |
-|      individuals that are Pizzas and do not participate in any       |
-|      hasTopping relationships.                                       |
-+----------------------------------------------------------------------+
-
-.. figure:: /_static/media/image75.png
-   :width: 0.56944in
-   :height: 0.41667in
-
-.. figure:: /_static/media/image76.png
-   :width: 0.47222in
-   :height: 0.43056in
-
-.. figure:: /_static/media/image77.png
-   :width: 0.47222in
-   :height: 0.43056in
-
-+----------------------------------------------------------------------+
-|    In situations like the above example, a common mistake is to use  |
-|    an intersection instead of a union. For example,                  |
-|    CheeseTopping\ *and*\ VegetableTopping. Although CheeseTopping    |
-|    and Vegetable might be a natural thing to say in English, this    |
-|    logically means something that is simultaneously a kind of        |
-|    CheeseTopping and VegetableTopping. This is incorrect because we  |
-|    have stated that CheeseTopping and VegetableTopping are disjoint  |
-|    classes and hence no individual can be an instance of both. If we |
-|    used such a definition the reasoner would detect the              |
-|    inconsistency.                                                    |
-+----------------------------------------------------------------------+
-
-+----------------------------------------------------------------------+
-|    | In the above example it might have been tempting to create two  |
-|      universal restrictions — one for CheeseTopping(∀ hasTopping     |
-|      CheeseTopping) and one for                                      |
-|    | VegetableTopping (∀ hasTopping VegetableTopping). However, when |
-|      multiple restrictions are used (for any type of restriction)    |
-|      the total description is taken to be the intersection of the    |
-|      individual restrictions. This would have therefore been         |
-|      equivalent to one restriction with a filler that is the         |
-|      intersection of MozzarellaTopping\ *and*\ TomatoTopping— as     |
-|      explained above this would have been logically incorrect.       |
-+----------------------------------------------------------------------+
-
-|image60|\ |image61|
-
-   | 4.13 Automated Classification and Open World Reasoning
-   | Make sure that the reasoner is synchronized (the little text in the
-     lower right corner should say Reasoner active). Now switch from the
-     Class hierarchy tab to the Class hierarchy (inferred) tab. You may
-     notice something that seems perplexing. The classes MargheritaPizza
-     and SohoPizza both only have vegetable and cheese toppings. So one
-     might expect that the reasoner would classify them as subclasses of
-     VegetarianPizza as it recently (in section 4.11) classified them
-     and others as subclasses of CheesyPizza. The reason this didn’t
-     happen is something called the Open World Assumption (OWA).
-
-   This is one of the concepts of OWL that can be most confusing for new
-   and even experienced users because it is different than the Close
-   World Assumption (CWA) used in most other programming and knowledge
-   representation languages.
-
-   | In most languages using the CWA we assume that everything that is
-     currently known about the system is already in the database.
-     However, OWL was meant to be a language to bring semantics to the
-     Internet so the language designers chose the OWA. The open world
-     assumption means that we cannot assume something doesn’t exist just
-     because it isn’t currently in the ontology. The Internet is an open
-     system. The information could be out there in some data source that
-     hasn’t yet been integrated into our ontology. Thus, we can’t
-     conclude some information doesn’t exist unless it is *explicitly
-     stated that it does not exist*. In other words, because something
-     hasn’t been stated to be true, it cannot be assumed to be false —
-     it is assumed that the knowledge just hasn’t been added to the
-     knowledge base. In the case of our pizza ontology, we have stated
-     that MargheritaPizza has toppings that are kinds of
-     MozzarellaTopping and also kinds of TomatoTopping. Because of the
-     open world assumption, until we explicitly say that a
-     MargheritaPizza only has these kinds of toppings, it is assumed by
-     the reasoner that a
-   | MargheritaPizza could have other toppings. To specify explicitly
-     that a MargheritaPizza has toppings that are kinds of
-     MozzarellaTopping or kinds of TomatoTopping and only kinds of
-     MozzarellaTopping or TomatoTopping, we must add what is known as a
-     closure axiom on the hasTopping property.
-
-| A closure axiom on a property consists of a universal restriction that
-  says that a property can only be filled by specified fillers. The
-  restriction has a filler that is the union of the fillers that occur
-  in the existential restrictions for the property. For example, the
-  closure axiom on the hasTopping property for MargheritaPizza is a
-  universal restriction that acts along the hasTopping property, with a
-  filler that is the union of MozzarellaTopping and also TomatoTopping.
-  i.e. hasTopping only
-| (MozzarellaTopping or TomatoTopping).
-
-**Exercise 23: Add a Closure Axiom on the hasTopping Property for
-MargheritaPizza**
-
-\____________________________________________________________________________________\_
-1. Make sure that MargheritaPizza is selected in the class hierarchy in
-the Classes tab.
-
-2. Click on the Add icon (+) next to the SubClass Of field in the
-Description view.
-
-3. Select the Class expression editor tab from the pop-up window. Type
-in the Description Logic axiom: hasTopping only (MozzarellaTopping or
-TomatoTopping).
-
-4. Click on OK.
-
-5. Repeat steps 1-4 but this time click on SohoPizza and use the axiom:
-hasTopping only (MozzarellaTopping or TomatoTopping or ParmesanTopping
-or OliveTopping).
+5. `VegetarianPizza` should now have three horizontal lines through it
+   just as `CheesyPizza` does.
+   Also, the `Equivalent To` field in the Description view should have:
+   `Pizza and (hasTopping only (CheeseTopping or VegetableTopping))`.
+   Note that another way to create defined classes is to enter the Description Logic
+   axiom directly into the `Equivalent To` field.
 
 6. Synchronize the reasoner.
 
-| \____________________________________________________________________________________\_
-  The previous axioms said that for example that it was necessary for
-  any Pizza that was a
-| MargheritaPizza to have a MozzarellaTopping and a TomatoTopping. The
-  new axioms say that a MargheritaPizza can *only* have these toppings
-  and similarly for SohoPizza and its toppings. This should supply the
-  needed information for the reasoner to now make them both subclasses
-  of
-| VegetarianPizza. Go to the Class hierarchy (inferred) tab. You should
-  now see that
-| MargheritaPizza and SohoPizza are both classified as subclasses of
-  VegetarianPizza. Your UI should now look similar to figure 4.23. Note
-  the various axioms highlighted in yellow. Those are all additional
-  inferences supplied by the reasoner. For experience you might want to
-  click on some of the ?
+---------------
 
+.. admonition:: Explanation
+   :class: explain
+
+   This means that if something is a member of the class
+   ``VegetarianPizza`` it is necessary for it to be a kind of ``Pizza``
+   and it is necessary for it to only (``∀`` universal quantifier)
+   have toppings that are kinds of ``CheeseTopping`` or kinds of
+   ``VegetableTopping``. In other words, all
+   ``hasTopping`` relationships that individuals which are members of
+   the class ``VegetarianPizza`` participate in must be to individuals
+   that are either members of the class ``CheeseTopping`` or
+   ``VegetableTopping``. The class ``VegetarianPizza`` also contains
+   individuals that are ``Pizzas`` and do not participate in any
+   ``hasTopping`` relationships.
+
+
+.. admonition:: Warning
+   :class: pitfall
+
+   In situations like the above example, a common mistake is to use
+   an intersection instead of a union. For example,
+   ``CheeseTopping`` *and* ``VegetableTopping``. Although ``CheeseTopping``
+   and ``Vegetable`` might be a natural thing to say in English, this
+   logically means something that is simultaneously a kind of
+   ``CheeseTopping`` and ``VegetableTopping``. This is incorrect because we
+   have stated that ``CheeseTopping`` and ``VegetableTopping`` are disjoint
+   classes and hence no individual can be an instance of both. If we
+   used such a definition the reasoner would detect the
+   inconsistency.
+
+.. admonition:: Warning
+   :class: pitfall
+
+   In the above example it might have been tempting to create two
+   universal restrictions — one for ``CheeseTopping``
+   (``∀ hasTopping CheeseTopping``) and one for
+   ``VegetableTopping`` (``∀ hasTopping VegetableTopping``). However, when
+   multiple restrictions are used (for any type of restriction)
+   the total description is taken to be the intersection of the
+   individual restrictions. This would have therefore been
+   equivalent to one restriction with a filler that is the
+   intersection of ``MozzarellaTopping`` *and* ``TomatoTopping``— as
+   explained above this would have been logically incorrect.
+
+
+Automated Classification and Open World Reasoning
+=================================================
+Make sure that the reasoner is synchronized (the little text in the
+lower right corner should say `Reasoner active`). Now switch from the
+`Class hierarchy` tab to the `Class hierarchy (inferred)`tab. You may
+notice something that seems perplexing. The classes ``MargheritaPizza``
+and ``SohoPizza`` both only have vegetable and cheese toppings. So one
+might expect that the reasoner would classify them as subclasses of
+``VegetarianPizza`` as it recently (in `section 4.11 <#primitive-and-defined-classes-necessary-and-sufficient-axioms>`_) classified them
+and others as subclasses of ``CheesyPizza``. The reason this didn't
+happen is something called the Open World Assumption (OWA).
+This is one of the concepts of OWL that can be most confusing for new
+and even experienced users because it is different than the Close
+World Assumption (CWA) used in most other programming and knowledge
+representation languages.
+
+In most languages using the CWA we assume that everything that is
+currently known about the system is already in the database.
+However, OWL was meant to be a language to bring semantics to the
+Internet so the language designers chose the OWA. The open world
+assumption means that we cannot assume something doesn't exist just
+because it isn't currently in the ontology. The Internet is an open
+system. The information could be out there in some data source that
+hasn't yet been integrated into our ontology. Thus, we can't
+conclude some information doesn't exist unless it is *explicitly
+stated that it does not exist*. In other words, because something
+hasn't been stated to be true, it cannot be assumed to be false —
+it is assumed that the knowledge just hasn't been added to the
+knowledge base. In the case of our pizza ontology, we have stated
+that ``MargheritaPizza`` has toppings that are kinds of
+``MozzarellaTopping`` and also kinds of ``TomatoTopping``. Because of the
+open world assumption, until we explicitly say that a
+``MargheritaPizza`` only has these kinds of toppings, it is assumed by
+the reasoner that a
+``MargheritaPizza`` could have other toppings. To specify explicitly
+that a ``MargheritaPizza`` has toppings that are kinds of
+``MozzarellaTopping`` or kinds of ``TomatoTopping`` and only kinds of
+``MozzarellaTopping`` or ``TomatoTopping``, we must add what is known as a
+closure axiom on the ``hasTopping`` property.
+
+A closure axiom on a property consists of a universal restriction that
+says that a property can only be filled by specified fillers. The
+restriction has a filler that is the union of the fillers that occur
+in the existential restrictions for the property. For example, the
+closure axiom on the ``hasTopping`` property for ``MargheritaPizza`` is a
+universal restriction that acts along the ``hasTopping`` property, with a
+filler that is the union of ``MozzarellaTopping`` and also ``TomatoTopping``.
+i.e. ``hasTopping`` only (``MozzarellaTopping`` or ``TomatoTopping``).
+
+**Exercise 23: Add a Closure Axiom on the hasTopping Property for MargheritaPizza**
+
+--------------
+
+1. Make sure that ``MargheritaPizza`` is selected in the class hierarchy in
+   the `Classes` tab.
+
+2. Click on the Add icon `(+)` next to the `SubClass Of` field in the
+   `Description` view.
+
+3. Select the `Class expression editor` tab from the pop-up window. Type
+   in the Description Logic axiom:
+   `hasTopping only (MozzarellaTopping or TomatoTopping)`.
+
+4. Click on `OK`.
+
+5. Repeat steps 1-4 but this time click on `SohoPizza` and use the axiom:
+   `hasTopping only (MozzarellaTopping or TomatoTopping or ParmesanTopping or OliveTopping)`.
+
+6. Synchronize the reasoner.
+
+--------------
+
+The previous axioms said that for example that it was necessary for
+any ``Pizza`` that was a
+``MargheritaPizza`` to have a ``MozzarellaTopping`` and a ``TomatoTopping``. The
+new axioms say that a ``MargheritaPizza`` can *only* have these toppings
+and similarly for ``SohoPizza`` and its toppings. This should supply the
+needed information for the reasoner to now make them both subclasses
+of
+``VegetarianPizza``. Go to the `Class hierarchy (inferred)` tab. You should
+now see that
+``MargheritaPizza`` and ``SohoPizza`` are both classified as subclasses of
+``VegetarianPizza``. Your UI should now look similar to figure 4.23. Note
+the various axioms highlighted in yellow. Those are all additional
+inferences supplied by the reasoner. For experience you might want to
+click on some of the `?`
 icons next to these inferences to see the explanations generated by the
 reasoner. As you develop more complex ontologies this is a powerful tool
 to debug and design your ontology.
 
-.. figure:: /_static/media/image78.png
-   :width: 6.5in
-   :height: 5.51389in
+.. figure:: /_static/media/chap_4/23.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.23 The Reasoner Inferred that Margherita and Soho Pizzas are
-subclasses of VegetarianPizza
+   *Figure 4.23 The Reasoner Inferred that Margherita and Soho Pizzas are subclasses of VegetarianPizza*
 
-| 4.14 Defining an Enumerated Class
-| A powerful tool in the object-oriented programming (OOP) community is
-  the concept of design patterns. The idea of a design pattern is to
-  capture a reusable model that is at a higher level of abstraction than
-  a specific code library. One of the first and most common design
-  patterns was the Model-View-Controller pattern first used in Smalltalk
-  and now almost the default standard for good user interface design.
-  Since there are significant differences between OWL and standard OOP
-  the many excellent books on OOP design patterns don’t directly
-  translate into OWL design patterns. Also, since the use of OWL is more
-  recent than OOP there does not yet exist the excellent documentation
-  of OWL patterns that the OOP community has. However, there are already
-  many design patterns that have been documented for OWL and that can
-  provide users with ways to save time and to standardize their designs
-  according to best practices.
+Defining an Enumerated Class
+============================
+A powerful tool in the object-oriented programming (OOP) community is
+the concept of design patterns. The idea of a design pattern is to
+capture a reusable model that is at a higher level of abstraction than
+a specific code library. One of the first and most common design
+patterns was the Model-View-Controller pattern first used in Smalltalk
+and now almost the default standard for good user interface design.
+Since there are significant differences between OWL and standard OOP
+the many excellent books on OOP design patterns don't directly
+translate into OWL design patterns. Also, since the use of OWL is more
+recent than OOP there does not yet exist the excellent documentation
+of OWL patterns that the OOP community has. However, there are already
+many design patterns that have been documented for OWL and that can
+provide users with ways to save time and to standardize their designs
+according to best practices.
 
 One of the most common OWL design patterns is an enumerated class. When
 a property has only a few possible values it can be useful to create a
 class to represent those values and to explicitly define the class by
 listing each possible value. We will show an example of such an
 enumerated class by creating a new
-property called hasSpiciness with only a few possible values ranging
-from Mild to Hot. In this section we will also create the first
+property called ``hasSpiciness`` with only a few possible values ranging
+from ``Mild`` to ``Hot``. In this section we will also create the first
 individuals in our ontology.
 
-**Exercise 24: Create an Enumerated Class to Represent the Spiciness of
-a Pizza**
+**Exercise 24: Create an Enumerated Class to Represent the Spiciness of a Pizza**
 
-\____________________________________________________________________________________\_
-1. Create a new subclass of owl:Thing called Spiciness.
+--------------
 
-2. Make sure that Spiciness is selected. Click on the Add icon (+) next
-to the Instances field in the Description view.
+1. Create a new subclass of ``owl:Thing`` called ``Spiciness``.
+
+2. Make sure that `Spiciness` is selected. Click on the Add icon `(+)` next
+   to the `Instances` field in the `Description` view.
 
 3. You will be prompted with a window that looks like figure 4.24. The
-diamond icon at the top is for creating a new individual. The circle
-with an X through it is for deleting an individual. Use the diamond icon
-to create 3 individuals: Hot, Medium, and Mild, so your UI looks like
-figure 4.24, then click on OK.
+   diamond icon at the top is for creating a new individual. The circle
+   with an `X` through it is for deleting an individual. Use the diamond icon
+   to create 3 individuals: `Hot`, `Medium`, and `Mild`, so your UI looks like
+   figure 4.24, then click on `OK`.
 
 4. You may notice that only one of the new individuals was actually
-created as an instance of Spiciness. That’s okay. The next step will
-supply the reasoner with enough information to make the other two also
-be instances of Spiciness.
+   created as an instance of ``Spiciness``. That's okay. The next step will
+   supply the reasoner with enough information to make the other two also
+   be instances of ``Spiciness``.
 
-5. Make sure that Spiciness is still selected. Click on the Add icon (+)
-next to the Equivalent To field in the Description view. This time we
-will create a defined class by directly entering the definition for the
-class into this field. Select the Class expression editor tab and enter
-the DL axiom: {Hot, Medium, Mild}. Select OK.
+5. Make sure that `Spiciness` is still selected. Click on the Add icon `(+)`
+   next to the `Equivalent To` field in the `Description` view. This time we
+   will create a defined class by directly entering the definition for the
+   class into this field. Select the Class expression editor tab and enter
+   the DL axiom: `{Hot, Medium, Mild}`. Select `OK`.
 
 6. Now run the reasoner. You should see that Spiciness is now a defined
-class and all three individuals: Hot, Medium, and Mild, are now
-instances of that class.
+   class and all three individuals: ``Hot``, ``Medium``, and ``Mild``, are now
+   instances of that class.
 
-\____________________________________________________________________________________\_
+--------------
 
-.. figure:: /_static/media/image79.png
-   :width: 3.20833in
-   :height: 2.75972in
+.. figure:: /_static/media/chap_4/24.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.24 Creating Individuals for an Enumerated Class
+   *Figure 4.24 Creating Individuals for an Enumerated Class*
 
-| 4.15 Adding Spiciness as a Property
-| Next we need to add a property that will define the spiciness of a
-  PizzaTopping.
+Adding Spiciness as a Property
+==============================
+Next we need to add a property that will define the spiciness of a ``PizzaTopping``.
 
 **Exercise 25: Create and Use the hasSpiciness Property**
 
-\____________________________________________________________________________________\_
+--------------
 
-1. Go to the Object properties tab. Create a new property called
-hasSpiciness. Define its domain to be PizzaTopping and its range to be
-Spiciness. Run the reasoner so that it knows about the new property.
+1. Go to the `Object properties` tab. Create a new property called
+   `hasSpiciness`. Define its domain to be `PizzaTopping` and its range to be
+   `Spiciness`. Run the reasoner so that it knows about the new property.
 
 2. Go back to the Classes tab and select the class
-JalapenoPepperTopping. Click on the Add icon (+) next to the SubClass Of
-field. Enter the DL axiom: hasSpiciness value Hot. Remember you can use
-<control><space> to auto-complete. Click on OK.
+   `JalapenoPepperTopping`. Click on the Add icon `(+)` next to the `SubClass Of`
+   field. Enter the DL axiom: `hasSpiciness value Hot`. Remember you can use
+   <control><space> to auto-complete. Click on `OK`.
 
 3. Note that this is a different kind of restriction than before. Before
-we were defining abstract restrictions such as some. I.e., some value
-from a class but the specific individual was not specified, as long as
-it was an individual from that class the restriction was satisfied. Now
-we are defining a restriction that relates to a specific individual,
-hence we use the value keyword rather than the some or only keywords.
+   we were defining abstract restrictions such as some. I.e., some value
+   from a class but the specific individual was not specified, as long as
+   it was an individual from that class the restriction was satisfied. Now
+   we are defining a restriction that relates to a specific individual,
+   hence we use the value keyword rather than the some or only keywords.
 
-4. Now we will use this property to define a new class of Pizza. Start
-by creating a new subclass of Pizza called SpicyPizza.
+4. Now we will use this property to define a new class of ``Pizza``. Start
+   by creating a new subclass of ``Pizza`` called `SpicyPizza`.
 
-5. Make sure that SpicyPizza is selected. Click on the Add icon (+) next
-to the SubClass Of field. Enter the DL axiom: hasTopping some
-(hasSpiciness value Hot). This says that a SpicyPizza must have a
-topping that hasSpiciness value of Hot.
+5. Make sure that `SpicyPizza` is selected. Click on the Add icon `(+)` next
+   to the `SubClass Of` field. Enter the DL axiom:
+   `hasTopping some (hasSpiciness value Hot)`.
+   This says that a ``SpicyPizza`` must have a
+   topping that ``hasSpiciness`` value of ``Hot``.
 
-6. Convert SpicyPizza to a defined class by selecting it and using
-Edit>Convert to defined class. Run the reasoner.
+6. Convert `SpicyPizza` to a defined class by selecting it and using
+   `Edit>Convert to defined class`. Run the reasoner.
 
-\____________________________________________________________________________________\_
+--------------
 
-Now go to the Class hierarchy (inferred) tab in the Classes tab (see
-figure 4.25). You should see that AmericanHotPizza is now classified as
-a subclass of SpicyPizza because it has a topping
-(JalapenoPepperTopping) that has a spiciness value of Hot.
+Now go to the `Class hierarchy (inferred)` tab in the `Classes` tab (see
+figure 4.25). You should see that ``AmericanHotPizza`` is now classified as
+a subclass of ``SpicyPizza`` because it has a topping
+(``JalapenoPepperTopping``) that has a spiciness value of ``Hot``.
 
-| 4.16 Cardinality Restrictions
-| In OWL we can describe the class of individuals that have at least, at
-  most, or exactly a specified number of relationships with other
-  individuals or datatype values. The restrictions that describe these
-  classes are known as Cardinality Restrictions. For a given property P,
-  a Minimum Cardinality Restriction specifies the minimum number of P
-  relationships that an individual must participate in. A Maximum
-  Cardinality Restriction specifies the maximum number of P
-  relationships that an individual can participate in. A Cardinality
-  Restriction specifies the exact number of P relationships that an
-  individual must participate in. Relationships (for example between two
-  individuals) are only counted as separate relationships if it can be
-  determined that the individuals that are the fillers for the
-  relationships are different from each other.
+Cardinality Restrictions
+========================
+In OWL we can describe the class of individuals that have at least, at
+most, or exactly a specified number of relationships with other
+individuals or datatype values. The restrictions that describe these
+classes are known as Cardinality Restrictions. For a given property P,
+a Minimum Cardinality Restriction specifies the minimum number of P
+relationships that an individual must participate in. A Maximum
+Cardinality Restriction specifies the maximum number of P
+relationships that an individual can participate in. A Cardinality
+Restriction specifies the exact number of P relationships that an
+individual must participate in. Relationships (for example between two
+individuals) are only counted as separate relationships if it can be
+determined that the individuals that are the fillers for the
+relationships are different from each other.
 
-Let’s add a cardinality restriction to our Pizza Ontology. We will
-create a new subclass of Pizza called InterestingPizza which will be
+Let's add a cardinality restriction to our Pizza Ontology. We will
+create a new subclass of ``Pizza`` called ``InterestingPizza`` which will be
 defined to have 3 or more toppings.
 
-.. figure:: /_static/media/image80.png
-   :width: 6.5in
-   :height: 4.37639in
+.. figure:: /_static/media/chap_4/25.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 4.25 AmericanHotPizza classified as SpicyPizza
+   *Figure 4.25 AmericanHotPizza classified as SpicyPizza*
 
-**Exercise 26: Create an InterestingPizza that has at least three
-toppings**
+**Exercise 26: Create an InterestingPizza that has at least three toppings**
 
-\____________________________________________________________________________________\_
-1. Create a subclass of Pizza called InterestingPizza.
+---------------
 
-2. Click on the Add icon (+) next to the SubClass Of field. Use the
-Class expression editor tab and enter hasTopping min 3 PizzaTopping and
-click on OK.
+1. Create a subclass of `Pizza` called `InterestingPizza`.
 
-3. Make sure InterestingPizza is still selected and use the Edit>Convert
-to defined class option to turn InterestingPizza into a defined class.
+2. Click on the Add icon `(+)` next to the `SubClass Of` field. Use the
+   `Class expression editor` tab and enter `hasTopping min 3 PizzaTopping` and
+   click on `OK`.
+
+3. Make sure `InterestingPizza` is still selected and use the
+   `Edit>Convert to defined class` option to turn ``InterestingPizza``
+   into a defined class.
 
 4. Run the reasoner.
 
-\____________________________________________________________________________________\_
+---------------
 
-Go to the Class hierarchy (inferred) tab in the Classes tab and click on
-InterestingPizza. You should see that there are three Pizza classes that
-are classified as interesting: AmericanaHotPizza, AmericanaPizza, and
-SohoPizza.
+Go to the `Class hierarchy (inferred)` tab in the `Classes` tab and click on
+`InterestingPizza`. You should see that there are three ``Pizza`` classes that
+are classified as interesting: `AmericanaHotPizza`, `AmericanaPizza`, and
+`SohoPizza`.
 
-Chapter 5 Datatype Properties
+.. _chap5:
+
+*******************
+Datatype Properties
+*******************
 
 So far we have been describing object properties. These are properties
 that have a range that is some class. As with most other object-oriented
@@ -2055,7 +2034,7 @@ large library of pre-existing datatypes that are mostly imported from
 XML. That is why many of the predefined datatypes in Protégé have a
 prefix of *xsd* for example xsd:string and xsd:integer. It is also
 possible to create new basic datatypes. However, for the majority of use
-cases, if one needs a datatype that doesn’t map to one of the predefined
+cases, if one needs a datatype that doesn't map to one of the predefined
 types the best solution is to usually just define a class.
 
 A property with a range that is a simple datatype is known as a datatype
@@ -2066,9 +2045,9 @@ UML attribute is similar to an OWL datatype property. It is also
 analogous to the distinction between relations and attributes in
 entity-relation modeling. A relation in an E/R model is similar to an
 object property in OWL and an attribute is similar to a datatype
-property. Because datatypes don’t have all the power of OWL objects,
+property. Because datatypes don't have all the power of OWL objects,
 many of the capabilities for object properties described in section 4.8
-such as having an inverse or being transitive aren’t available for
+such as having an inverse or being transitive aren't available for
 datatype properties.
 
 | 5.1 Defining a Data Property
@@ -2145,7 +2124,7 @@ run time.
   some instances of the Pizza class and set the value of the data
   property hasCaloricContent. One of the advantages of Protégé is that
   it is highly customizable to your specific requirements and work
-  style. There are many views that are available that aren’t included in
+  style. There are many views that are available that aren't included in
   the default Protégé environment because it would be too cluttered. In
   addition, all of the views that you have already used can be resized,
   removed, or added to existing tabs. You can also create completely new
@@ -2178,8 +2157,8 @@ after you do it a few times it becomes very easy to position new views.
 
 With this new view you can see the instances of each class displayed
 beneath the class. Each class can be expanded or contracted to view or
-hide its particular instances. Since we don’t have many instances in our
-ontology yet the usefulness of this new view isn’t that obvious but as
+hide its particular instances. Since we don't have many instances in our
+ontology yet the usefulness of this new view isn't that obvious but as
 we add more instances and as you deal with larger real ontologies in the
 future, this view can be very helpful to find specific instances of a
 class. Note that the UI just shows the most direct class (or classes)
@@ -2245,7 +2224,7 @@ Property assertions view in the lower right.
 
 3. Use the pop-up window to select the data property hasCaloricContent.
 Then enter 263 as the value and use the menu at the bottom to define the
-value’s datatype to be xsd:integer. Note: this is different than what
+value's datatype to be xsd:integer. Note: this is different than what
 you did in exercise 27. In exercise 27 you defined the datatype for the
 *property*. Here you are defining the datatype for *a specific value*.
 It would be nice if Protégé could just infer the datatypes for you but
@@ -2297,7 +2276,7 @@ create instances of them (apx. 5-10) and then fill in their caloric
 content with values ranging from 200 to 800. Try to have about half
 of your pizzas higher than 400 calories and half less than 400. The
 UI retains the datatype from the previous use so once you define the
-first caloric content you shouldn’t need to set the datatype again
+first caloric content you shouldn't need to set the datatype again
 but it is always a good idea to make sure it is correct, in this
 case: xsd:integer.
 
@@ -2313,8 +2292,7 @@ AmericanaPizza1 that hasCaloricContent 723.
 
 \____________________________________________________________________________________\_
 
-**Exercise 31: Create a Datatype Restriction that Every Pizza
-hasCaloricContent**
+**Exercise 31: Create a Datatype Restriction that Every Pizza hasCaloricContent**
 
 \____________________________________________________________________________________\_
 1. Navigate to the Classes major tab.
@@ -2322,16 +2300,16 @@ hasCaloricContent**
 2. Select the Pizza class.
 
 3 Click on the (+) icon next to the SubClass Of field in the Description
-view. This time let’s use the Data restriction tab. Navigate to and
+view. This time let's use the Data restriction tab. Navigate to and
 select hasCaloricContent in the Restricted property view. In the
 Restriction filler view scroll down to xsd:integer and select it. The
-Restriction type should be set to the default which is Some. If it isn’t
+Restriction type should be set to the default which is Some. If it isn't
 use the menu to change it. Your UI should look like figure 5.6. Click
 OK.
 
 4. Note that you also could have selected Exactly 1 because a Pizza can
 only have one caloric content but since you already defined the property
-to be functional this isn’t necessary and either Some or Exactly 1 have
+to be functional this isn't necessary and either Some or Exactly 1 have
 the same effect. Just as Protégé usually provides several ways to enter
 the same information in the user interface OWL often provides different
 ways to provide the same information in your model. The nice thing is
@@ -2404,7 +2382,7 @@ to model spiciness in chapter 4.14.
   Transitive means that if X isSpicierThan Y and Y isSpicierThan Z then
   X isSpicierThan Z. This is of course similar to the greater than and
   less than relations in math. Create another property called
-  isMilderThan. Make one property the inverse of the other. It doesn’t
+  isMilderThan. Make one property the inverse of the other. It doesn't
   matter which one, you only have to specify that one property is the
   inverse of another, and the reasoner will realize that both are
   inverses. Run the reasoner. You will see that the reasoner has
@@ -2441,7 +2419,7 @@ tab
   see that all the additional isSpicierThan and isMilderThan values have
   been filled in for you because the reasoner knows that the two
   properties are inverses and transitive. For example, Mild, which we
-  didn’t edit at all, should have two values for isMilderThan filled in
+  didn't edit at all, should have two values for isMilderThan filled in
   by the reasoner.
 
 We can use these properties in various ways to reason about the relative
@@ -2464,7 +2442,7 @@ spiciness of things. We will show some examples in chapter 8.
 |    validate the ontology. See chapter 12 for more on Web Protégé.    |
 +----------------------------------------------------------------------+
 
-Chapter 7 Names: IRI’s, Labels, and Namespaces
+Chapter 7 Names: IRI's, Labels, and Namespaces
 
 In exercise 2 we set up some parameters regarding new entity names and
 rendering without much of an explanation. The concept of a *name* in OWL
@@ -2483,7 +2461,7 @@ all entities have in common. In addition, each entity has a subsequent
 part that comes after the base IRI that uniquely identifies the IRI for
 the entity.
 
-You can see this by clicking on any entity and starting (but don’t
+You can see this by clicking on any entity and starting (but don't
 complete) the Refactor>Rename entity command. Click on the Pizza class.
 Then select Refactor>Rename entity. You will get a pop-up window with
 the current name: Pizza. However, this is only the final part of the
@@ -2522,7 +2500,7 @@ exercise 2.
 There are advantages and disadvantages to both options and there are
 options in between such as using both user supplied names for IRIs and
 using rdfs:label for more intuitive names. The details can get
-complicated and there also isn’t universal agreement within the
+complicated and there also isn't universal agreement within the
 community as to which is generally better. For your first ontology and
 since you will be using SPARQL I chose to use user supplied entity names
 because it is the simpler option and is especially better for SPARQL
@@ -2587,7 +2565,7 @@ In addition to using Cellfie, you can use the Individuals by class tab introduce
 to create new instances and to create object and
 data property values for those instances as you did with the Hot and
 Medium individuals in chapter 6. However, that can be tedious so to
-spare you that uninteresting work I’ve developed a version of the Pizza
+spare you that uninteresting work I've developed a version of the Pizza
 ontology that has many individuals already created. That ontology should
 be identical to the ontology you have developed so far except with many
 additional individuals.
@@ -2683,13 +2661,13 @@ Individuals by type (inferred) view in the upper right corner.
 | Now with more instances you can see the value of the Individuals by
   type (inferred) view. You can expand and contract various classes and
   see the instances for them. Notice that the 4
-| HighCaloriePizzas are also instances of Pizza but they aren’t shown
+| HighCaloriePizzas are also instances of Pizza but they aren't shown
   under Pizza because all instances of HighCaloriePizza are always
   instances of the Pizza class. There is only one instance of the Pizza
   class displayed because all the other instances of Pizza are also
   instances of subclasses of Pizza so they are shown under those
   subclasses rather than under Pizza. If there are two or more classes
-  that an Individual is an instance of that aren’t subclasses of each
+  that an Individual is an instance of that aren't subclasses of each
   other then they will all be shown. For example, MargheritaPizza1 is an
   instance of both MargheritaPizza and LowCaloriePizza and it shows up
   under each class because neither is a subclass of the other. It is
@@ -2718,7 +2696,7 @@ Individuals by type (inferred) view in the upper right corner.
 
 \____________________________________________________________________________________\_
 
-1. To begin with navigate to the DL Query tab. If it doesn’t exist
+1. To begin with navigate to the DL Query tab. If it doesn't exist
 create it using: Window>Tabs>DL Query.
 
 2. At the top right of this tab you should see a view that says DL
@@ -2728,17 +2706,17 @@ query: and below it Query (class expression).
 the entities that are subclasses, superclasses, and instances of it. As
 an example, enter: Customer and purchasedPizza some (hasTopping some
 (hasSpiciness value Hot)). I.e., all Customers who have purchased a
-Pizza that hasSpiciness Hot. At first you may not see anything but don’t
+Pizza that hasSpiciness Hot. At first you may not see anything but don't
 worry there is one more step.
 
 4. Look at the check boxes on the right under Query for. Check
 Superclasses, Subclasses (although it should already be checked by
 default) and Instances. Now your UI should look like figure 9.1. You may
-notice that owl:Nothing shows up as a subclass. Don’t worry that is
+notice that owl:Nothing shows up as a subclass. Don't worry that is
 actually expected. Remember that owl:Nothing is the empty set and the
 empty set is a subset of every set (including itself) so just as
 owl:Thing is a superclass of every class owl:Nothing is a subclass of
-every class. If you don’t want to see owl:Nothing you can uncheck the
+every class. If you don't want to see owl:Nothing you can uncheck the
 box toward the bottom right that says Display owl:Nothing.
 
 | 5. Try some additional DL queries such as: hasTopping some
@@ -2764,30 +2742,30 @@ Figure 9.1 The DL Query Tab
 | 9.2 SPARQL Queries
 | SPARQL is a powerful language, and one could write a whole book about
   it. In fact, there are books written about it. The best one I have
-  seen is the O’Reilly book Learning SPARQL by Bob DuCharme.
+  seen is the O'Reilly book Learning SPARQL by Bob DuCharme.
 
 This is an excellent book that not only goes into SPARQL but into topics
 such as RDF/RDFS and how triples are used to represent all information
 in OWL. I will only touch on those issues here, there is much more to
-say about them and DuCharme’s book is a great place to learn more. If
-some of the following is a bit hard to understand don’t be discouraged.
+say about them and DuCharme's book is a great place to learn more. If
+some of the following is a bit hard to understand don't be discouraged.
 This is just an attempt to give a very high level introduction to
 something that requires significant study to really understand.
 
 Essentially SPARQL is to the Semantic Web and Knowledge Graphs as SQL is
 to relational databases. Just as SQL can do more than just query, it can
 also assert new information into a database, so SPARQL can as well. The
-current SPARQL plugins for Protégé are somewhat limited and don’t
+current SPARQL plugins for Protégé are somewhat limited and don't
 support the statements such as INSERT for entering new data so we will
 just cover the basics of using SPARQL as a query language but keep in
 mind there is a lot more to it than what we briefly cover here.
 
 | 9.21 Some SPARQL Pizza Queries
-| To start with go to the SPARQL Query tab. If it isn’t already there
+| To start with go to the SPARQL Query tab. If it isn't already there
   you can as always add it using Window>Tabs>SPARQL Query. This tab
   consists of two views, the top which holds the query and the bottom
   which holds the results. There should be some text already there. It
-  may look confusing, but we’ll explain it. Just to start with hit the
+  may look confusing, but we'll explain it. Just to start with hit the
   Execute button at the bottom of the tab. You should see a bunch of
   classes and class expressions returned.
 
@@ -2797,7 +2775,7 @@ consists of several namespace prefixes. These statements consist of the
 prefix used for a particular namespace as well as the IRI associated
 with this namespace. Recall that these concepts were described in
 chapter 7. You may be wondering where all these prefixes came from since
-you didn’t add them to your ontology. The answer is that every OWL
+you didn't add them to your ontology. The answer is that every OWL
 ontology comes with a set of namespaces and prefixes that are required
 to define the ontology.
 
@@ -2858,7 +2836,7 @@ PREFIX statement:
 PREFIX pizza: <http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#>
 
 We are almost ready to query the actual ontology. For our first query
-let’s find all the Pizzas purchased by a Customer. The SPARQL code for
+let's find all the Pizzas purchased by a Customer. The SPARQL code for
 this is:
 
 SELECT \* WHERE { ?customer pizza:purchasedPizza ?pizza }
@@ -2877,12 +2855,12 @@ If you examine the output carefully you may notice an issue. Customer4
 only seems to have purchased 2 Pizzas. However, if you examine the data
 in the Individuals by class tab you will see that she purchased 3.
 
-The reason that one of them doesn’t show up is that when the data was
+The reason that one of them doesn't show up is that when the data was
 entered, I typically entered it on the Customer instances. However, for
-one of Customer4’sPizzas I entered the data on the Pizza instead. I.e.,
+one of Customer4'sPizzas I entered the data on the Pizza instead. I.e.,
 I asserted on HotVeggiePizza2 that it was purchasedByCustomerCustomer4.
 Since purchasedPizza and purchasedByCustomer are inverses, the reasoner
-filled in the additional information for me. However, SPARQL doesn’t pay
+filled in the additional information for me. However, SPARQL doesn't pay
 attention to information asserted by the reasoner only information
 asserted by the user. Note: this depends on the implementation of
 SPARQL. For example, there is another SPARQL implementation available as
@@ -2927,7 +2905,7 @@ would look like:
 | SELECT (COUNT(?pizza) AS ?pcount)
 | WHERE {?customer pizza:purchasedPizza ?pizza}
 | Paste that into the SPARQL query view and hit Execute and you should
-  see the returned value: 15. However, remember this isn’t really all
+  see the returned value: 15. However, remember this isn't really all
   the Pizzas because a few of the purchases were recorded on the Pizza
   rather than on the Customer. To get the full number we can take
   advantage of the fact that we have recorded the number of pizzas that
@@ -2974,7 +2952,7 @@ software on time and on budget than the alternative waterfall approach.
 For more on Agile methods see: https://www.agilealliance.org/agile101/
 
 This just gives you a basic overview of some of the here is a lot more
-and if you are interested you should check out DuCharme’s book or some
+and if you are interested you should check out DuCharme's book or some
 of the many SPARQL tools and tutorials on the web. Some of these are in
 the bibliography.
 
@@ -2997,7 +2975,7 @@ and can take actions if that property does not exist.
   to my blog at some point in the future that provide examples of this.
   For an example of how SPARQL can be used to get around the OWA see the
   ontology and instructions I recently added to my blog at: https://www.michaeldebellis.com/post/the-people_example-ontology
-| In that example I show how the HermitPersonial relations can’t be
+| In that example I show how the HermitPersonial relations can't be
   recognized by the reasoner due to the OWA. However, a simple SPARQL
   query can both recognize instances of the People class with no social
   relations and can change the type of such instances (?p) by adding the
@@ -3011,12 +2989,12 @@ and can take actions if that property does not exist.
 Chapter 10 SWRL and SQWRL
 
 The Semantic Web Rule Language (SWRL) was created because there are
-certain kinds of inferences that can’t be done by Description Logic (DL)
+certain kinds of inferences that can't be done by Description Logic (DL)
 axioms. Also, in my experience there are also times where an inference
 can be done using DL, but it can be more intuitive to define that
 inference as a rule.
 
-There are actually two UI’s for SWRL in Protégé. There is the SWRL tab
+There are actually two UI's for SWRL in Protégé. There is the SWRL tab
 and there is also a Rules view that can be added to the UI as we added a
 view in section 8.2. The SWRL tab is the one that is being more actively
 developed and I recommend you always use that. This chapter will focus
@@ -3064,23 +3042,23 @@ this chapter.
 
 We are going to add two simple SWRL rules to our Pizza ontology to
 compute discounts for some Customers. We are assuming that our Pizza
-restaurant hasn’t been in business long, so they want to give a discount
+restaurant hasn't been in business long, so they want to give a discount
 to anyone who has purchased more than one Pizza. Also, their manager
 overestimated the love of spicy ingredients of their customers, and they
 have a lot of Jalapeno peppers that they want to use before they go bad,
 so they are offering a larger discount to customers who prefer Hot
 pizzas rather than those who prefer Medium or Mild.
 
-To begin with let’s write the first rule to give a 20% discount to all
+To begin with let's write the first rule to give a 20% discount to all
 customers who have purchased more than 2 Pizzas and prefer Hot Pizzas.
 
 **Exercise 34: Write Your First SWRL Rule**
 
 \____________________________________________________________________________________\_
 
-| 1. To begin with navigate to or create the SWRLTab. If it doesn’t
+| 1. To begin with navigate to or create the SWRLTab. If it doesn't
   already exist use
-| Window>Tabs>SWRLTab to create and select it. If you don’t have the
+| Window>Tabs>SWRLTab to create and select it. If you don't have the
   SWRLTab under the
 | Window>Tabs menu then use File>Check for plugins and select the
   SWRLTab plugin. Remember if you do this you need to restart Protégé
@@ -3089,10 +3067,10 @@ customers who have purchased more than 2 Pizzas and prefer Hot Pizzas.
 2. The SWRLTab is divided into two main views and then some buttons on
 the bottom of the tab that relate to DROOLS. The question of when and
 how to use DROOLS confuses many new users but there is a simple answer:
-don’t use it! As you get more experience with SWRL you will start to
+don't use it! As you get more experience with SWRL you will start to
 understand how and when DROOLS is used but for beginners the answer is
 simple. Think of all those DROOLS buttons as things for power users
-only. You don’t need to use them at all. That is why we installed the
+only. You don't need to use them at all. That is why we installed the
 Pellet reasoner in section 4.2. The Pellet reasoner supports SWRL and
 when you run the reasoner it will also automatically run any SWRL rules
 you have. See the bibliography for a paper on DROOLS.
@@ -3112,9 +3090,9 @@ for customers who prefer hot pizzas.
   sometimes it may not and you may need to type the complete name. Also,
   you will see various hints or error messages in the Status field as
   you type which you can mostly ignore for now. E.g., as you type out
-  Customer you will see messages like: Invalid SWRL atom predicate ‘Cus’
+  Customer you will see messages like: Invalid SWRL atom predicate ‘Cus'
   until you complete the name of the Customer class. Those messages can
-  help you understand why your rule won’t parse as you develop more
+  help you understand why your rule won't parse as you develop more
   rules but for now you should be able to ignore them.
 
 5. Now you want to bind a parameter to the number of Pizzas that each
@@ -3163,12 +3141,12 @@ the new rule show up at the top of the top most view.
 Note that there is a minor bug in SWRL where sometimes the prefix for
 the current ontology will be added to all the expressions without a
 prefix. So at some point you may see that your expressions end up
-looking like this: pizza:Customer(?c). If this happens don’t worry it
-won’t affect the way the rule works at all. If at some point this
+looking like this: pizza:Customer(?c). If this happens don't worry it
+won't affect the way the rule works at all. If at some point this
 happens and you want to remove the prefixes there is a way to do this
 described in my blog:
 
-Next, we we Pizza but don’t prefer Hot Pizzas.
+Next, we we Pizza but don't prefer Hot Pizzas.
 
 **Exercise 35: Write Another SWRL Rule**
 
@@ -3181,7 +3159,7 @@ and select Clone
 rule with the code for that rule in the window. Change the name of this
 rule from S1 to LessSpicyDiscountRule.
 
-3. Next edit the test for the Customer’s spiciness preference. Rather
+3. Next edit the test for the Customer's spiciness preference. Rather
 than just testing if it is Hot we want to test this time if it
 isMilderThan Hot. This is an example of using the order relation we
 defined in chapter 6. Change hasSpicinessPreference(?c, Hot) to
@@ -3232,11 +3210,11 @@ every time the rule fires.
 
 \____________________________________________________________________________________\_
 
-1. Bring up the SQWRLTab if it doesn’t already exist using
+1. Bring up the SQWRLTab if it doesn't already exist using
 Windows>Tabs>SQWRLTab. You will see it looks almost identical to the
 SWRLTab.
 
-2. Let’s say we want to see how often the HotDiscountRule fires. We can
+2. Let's say we want to see how often the HotDiscountRule fires. We can
 find this out very easily. To start select the HotDiscountRule and clone
 it. This creates a copy of the rule called S1. Select that rule and then
 select the Edit button.
@@ -3273,7 +3251,7 @@ Logic or SWRL which are more high level and a bit easier to use. So why
 even bother with SHACL? There are two reasons that SHACL is essential
 for real world use of Semantic Web and Knowledge Graph technology:
 
-1.The need to define constraints that aren’t limited by the Open World
+1.The need to define constraints that aren't limited by the Open World
 Assumption (OWA) and Monotonic reasoning.
 
 2.The fact that real world data is *messy!*
@@ -3286,11 +3264,11 @@ Assumption (OWA) and Monotonic reasoning.
   employees must have a social security number. While such an axiom can
   be defined in OWL it will seldom work when we want it to because of
   the OWA. The OWA means that there may be a social security number out
-  there somewhere in the Internet but that the system just hasn’t found
+  there somewhere in the Internet but that the system just hasn't found
   it yet. While this is true, to validate the integrity of corporate
-  data just saying “well it is out there somewhere” won’t do. To
+  data just saying “well it is out there somewhere” won't do. To
   validate data integrity we need to be able to fire off warnings when
-  required data isn’t there so we need to use the Closed World
+  required data isn't there so we need to use the Closed World
   Assumption (CWA).
 
 Monotonic reasoning is a byproduct of the fact that OWL and SWRL are
@@ -3301,7 +3279,7 @@ variable has two different values. E.g., if our theorem implies that p =
 True and p = False then we have a contradiction. Each variable can only
 have one value. This is why SWRL rules can only add values to variables
 rather than change them. For more on this see the excellent presentation
-on SWRL by Martin O’Connor: https://protege.stanford.edu/conference/2009/slides/SWRL2009ProtegeConference.pdf
+on SWRL by Martin O'Connor: https://protege.stanford.edu/conference/2009/slides/SWRL2009ProtegeConference.pdf
 
 This is why SPARQL often needs to be used rather than SWRL even though SWRL is more abstract and powerful. SWRL does not support non-monotonic reasoning whereas SPARQL does. Similarly, when validating data, we may want to take actions to change it, e.g., to coerce it into a proper standard format. To do that we need to change rather than add a value, i.e., we need non-monotonic reasoning.
 
@@ -3309,11 +3287,11 @@ This is why SPARQL often needs to be used rather than SWRL even though SWRL is m
 | The other reason for SHACL is that real world data is messy. Over the
   span of this tutorial, you may have experienced a point where you made
   an error, and the reasoner marked your ontology as invalid. If you
-  haven’t, congratulations, but as you work with Protégé more you will
+  haven't, congratulations, but as you work with Protégé more you will
   experience it. This is another by product of using a logic-based
   language. Simply having one inconsistency makes the entire model
   invalid. For small examples this is not a problem. When one has tens,
-  hundreds, or even thousands of individuals it isn’t that difficult to
+  hundreds, or even thousands of individuals it isn't that difficult to
   find the problem and fix it. However, when dealing with Big Data where
   one has tens of thousands, millions, or more individuals the
   prevalence of bad data may be huge.
@@ -3363,7 +3341,7 @@ the bibliography.
 
 | 11.4 The Protégé SHACL Plug-In
 | To start go to Windows>Tabs and see if you have SHACL Editor as an
-  option. If you don’t then go to File>Check for plugins and select the
+  option. If you don't then go to File>Check for plugins and select the
   SHACL4Protege Constraint Validator. You need to restart Protégé to see
   the new plugin so save your work and then quit and start Protégé and
   load the Pizza ontology with data.
@@ -3376,7 +3354,7 @@ local hard drive. This file can be found at: https://tinyurl.com/pizzatshapes
 Once you have downloaded the file open the SHACL Editor: Window>
 
 You will see an example shapes file in the editor when it opens but that
-isn’t the shapes file you are looking for. From the editor click on the
+isn't the shapes file you are looking for. From the editor click on the
 Open button at the top of the tab and navigate to the PizzaShapes.txt
 file you downloaded.
 
@@ -3451,17 +3429,17 @@ Figure 11.2 Constraint Violation for the Chef Individual
 If you click on the Manager individual, you will see that he has a
 constraint violation because his phone number is not in the proper
 format. Waiter1 has a similar problem. Waiter2 has missing data. Her
-hasPhone and ssn data properties both must have values but don’t.
+hasPhone and ssn data properties both must have values but don't.
 
 If you move your focus to the Customer class, you can see the remaining
 3 constraint violations.
 
-Customer10’shasDiscount property is greater than 1 which is not allowed.
+Customer10'shasDiscount property is greater than 1 which is not allowed.
 This is defined by the CustomerShape in the hasDiscount node with
 sh:minInclusive 0.0 and sh:maxInclusive 1.0. This is the way you define
 a minimum and maximum value for a numeric property (note: this applies
 to the value not to the number of values). Customer2 also has a hasPhone
-value that doesn’t match the defined format and finally Customer3 does
+value that doesn't match the defined format and finally Customer3 does
 not have a value for hasPhone when at least one is required.
 
 Recall that the SHACL constraints themselves are essentially RDF graphs.
@@ -3489,11 +3467,11 @@ Figure 11.4 Gruff Visualization of the CustomerShape
 Chapter 12 Web Protégé
 
 This tutorial has primarily focused on the desktop version of Protégé
-because as of this writing Web Protégé doesn’t support any reasoners so
+because as of this writing Web Protégé doesn't support any reasoners so
 the majority of the sophisticated capabilities of OWL and Protégé such
-as defined classes and SWRL rules can’t be created in Web Protégé.
+as defined classes and SWRL rules can't be created in Web Protégé.
 However, one of my goals in creating this tutorial was to address
-questions that I’ve seen frequently asked on the Protégé user support
+questions that I've seen frequently asked on the Protégé user support
 email list and one of the most common question is the difference between
 Protégé and Web Protégé. We are all used to using tools as services
 rather than applications installed on our local machines, so people
@@ -3525,9 +3503,9 @@ Figure 12.1 Web Protégé Projects
 
 Unless you have security requirements at your organization that prohibit
 you from using the hosted version at Stanford it is best to start with
-the Stanford server. I won’t go into the details of how to install a
+the Stanford server. I won't go into the details of how to install a
 local Web Protégé server because either way the functionality is the
-same. To start, let’s create a project in Web Protégé for the Pizza
+same. To start, let's create a project in Web Protégé for the Pizza
 tutorial with data ontology. When you first go to
 *webprotege.stanford.edu* you will be prompted to create a user ID (your email address) and a
 password. Once you do that you should have a fresh Web Protégé
@@ -3562,7 +3540,7 @@ Before you make changes to the ontology you need to make sure the
 settings for new entities and rendering are consistent with the settings
 you used for the Pizza ontology. The default in Web Protégé as with
 Protégé is to use Auto-Generated UUIDs rather than user supplied names.
-If you aren’t sure about these settings you can go back to exercise 2 at
+If you aren't sure about these settings you can go back to exercise 2 at
 the beginning of chapter 4 and chapter 7 to refresh your memory. There
 are excellent reasons to use auto-generated UUIDs but for beginners,
 especially for those who want to learn SPARQL, I think they make
@@ -3576,7 +3554,7 @@ they are and select the Apply button at the bottom right corner of the
 screen.
 
 When you select Apply, you should return to the main Web Protégé view
-with the Class hierarchy tab selected. If it doesn’t select that tab.
+with the Class hierarchy tab selected. If it doesn't select that tab.
 Select the Pizza class. Your UI should look like figure 12.3.
 
 .. figure:: /_static/media/image103.png
@@ -3627,7 +3605,7 @@ To see what threaded discussions look like click on the new comment and
 select Reply. Add a comment like: I agree, ChicagoPizza is awesome and
 deserves its own class.
 
-Let’s address this comment by creating a new subclass of NamedPizza.
+Let's address this comment by creating a new subclass of NamedPizza.
 Select NamedPizza in the Class Hierarchy view. Note the icon in the
 upper right corner of this view that looks similar to this: O+. When you
 hover over this icon it should say Create. You can use this icon to
@@ -3642,9 +3620,9 @@ that at the top of the Project Feed there should be a new entry for your
 action of creating this new class.
 
 You might be tempted to resolve this thread (note the Resolve link at
-the top of the initial comment) however, we aren’t really done. Remember
+the top of the initial comment) however, we aren't really done. Remember
 that we need to not just create the class but also define the axiom that
-a ChicagoPizza must have a DeepPanBase. Since we can’t add axioms in Web
+a ChicagoPizza must have a DeepPanBase. Since we can't add axioms in Web
 Protégé we need to export our ontology back to Protégé. Typically, we
 would collect many more comments and changes before exporting but we
 want to demonstrate how round-trip editing works between Protégé and Web
@@ -3670,7 +3648,7 @@ to limit the network traffic for large ontologies. Select the
 appropriate place to save the Zip archive file on the machine where you
 have Protégé. Do the standard things you would do to unzip the file and
 load it into Protégé. Note that when you unzip the file it will create a
-directory as well, so the file won’t be directly under whatever
+directory as well, so the file won't be directly under whatever
 directory you save it to. Instead, there will be a directory titled
 something like pizza-with-data-ontologies-owl-REVISION-2 that the OWL
 file will be in.
@@ -3723,7 +3701,7 @@ Chapter 13 Conclusion: Some Personal Thoughts and Opinions
   things”.
 
 The term knowledge graph itself can be used in different ways. The best
-definition I’ve heard is that an ontology provides the vocabulary (i.e.,
+definition I've heard is that an ontology provides the vocabulary (i.e.,
 essentially the T-Box) and a knowledge graph is an ontology combined
 with data (A-Box). Although in the corporate world I often hear people
 simply talk about knowledge graphs without much interest in the
@@ -3732,24 +3710,24 @@ distinction between the vocabulary and the data.
 There are a number of vendors emerging who are using the technology in
 very productive ways and are providing the foundation for federated
 knowledge graphs that can scale to hundreds of millions of triples or
-more and provide a framework for all corporate data. I’ve listed several
-in the bibliography but those are only the ones I’ve had some experience
-with. I’m sure there are many others. One of the products I’ve had the
+more and provide a framework for all corporate data. I've listed several
+in the bibliography but those are only the ones I've had some experience
+with. I'm sure there are many others. One of the products I've had the
 best experience with is the AllegroGraph triplestore and the Gruff
 visualization tool from Franz Inc. Although Allegro is a commercial
 tool, the free version supports most of the core capabilities of the
-commercial version. I’ve found the Allegro triplestore easy to use on a
+commercial version. I've found the Allegro triplestore easy to use on a
 Windows PC with the Docker tool to emulate a Linux server.
 
 I first started working with classification-based languages when I
 worked at the Information Sciences Institute (ISI) and used the Loom
 language [Macgregor 91] to develop B2B systems for the US Department of
-Defense and their contractors. Since then, I’ve followed the progress of
+Defense and their contractors. Since then, I've followed the progress of
 the technology, especially the DARPA knowledge sharing initiative
 [Neches 91] and always thought there was great promise in the
 technology. When I first discovered Protégé it was a great experience.
-It is one of the best supported and most usable free tools I’ve ever
-seen, and it always surprised me that there weren’t more corporate users
+It is one of the best supported and most usable free tools I've ever
+seen, and it always surprised me that there weren't more corporate users
 leveraging it in major ways. I think we are finally starting to see this
 happen and I hope this tutorial helps in a small way to accelerate the
 adoption of this powerful and robust tool.
@@ -3771,7 +3749,7 @@ Open World Assumption (OWA) presentation by Nick Drummond and Rob Shearer: http:
 Protégé: https://protege.stanford.edu/
 Protégé Best Practices. Summary page on my blog for all my articles on Protégé, OWL, SWRL, etc.: https://www.michaeldebellis.com/post/best-practices-for-new-protege-users
 SHACL Playground: https://shacl.org/playground/
-SWRL Presentation by Martin O’Connor: https://protege.stanford.edu/conference/2009/slides/SWRL2009ProtegeConference.pdf
+SWRL Presentation by Martin O'Connor: https://protege.stanford.edu/conference/2009/slides/SWRL2009ProtegeConference.pdf
 WebProtégé: https://webprotege.stanford.edu/
 WebVOWL: Web-based Visualization of Ontologies: http://vowl.visualdataweb.org/webvowl.html
 14.3 Papers
@@ -3782,7 +3760,7 @@ Noy, Natasha (2019). Industry-Scale Knowledge Graphs: Lessons and Challenges. Wi
 M. J. O'Connor (2012). A Pair of OWL 2 RL Reasoners. With A.K. Das. OWL: Experiences and Directions (OWLED), 9th International Workshop, Heraklion, Greece, 2012. http://ceur-ws.org/Vol-849/paper_31.pdf
 Singhal, Amit. (2012). Introducing the Knowledge Graph: things, not strings. Google SVP, Engineering. May 16, 2012. https://www.blog.google/products/search/introducing-knowledge-graph-things-not/
 14.4 Books
-DuCharme, Bob (2011). Learning SPARQL. O’Reilly Media
+DuCharme, Bob (2011). Learning SPARQL. O'Reilly Media
 Lewis, Harry. (1997). Elements of the Theory of Computation. With Christos Papadimitriou. Prentice-Hall; 2nd edition (August 7, 1997). ISBN-13: 978-0132624787
 Segaran, Toby (2009). Programming the Semantic Web: Build Flexible Applications with Graph Data. With Colin Evans and Jamie Taylor. O'Reilly Media; 1st edition (July 28, 2009).
 14.5 Vendors
@@ -3981,12 +3959,6 @@ Top Quadrant: https://www.topquadrant.com/
 
 
 
-
-.. _chap5:
-
-*********
-Chapter 5
-*********
 
 .. _chap6:
 
