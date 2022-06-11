@@ -2032,7 +2032,7 @@ instance also means that instances take up more space and can be slower
 to process than simple datatypes. For that reason, OWL comes with a
 large library of pre-existing datatypes that are mostly imported from
 XML. That is why many of the predefined datatypes in Protégé have a
-prefix of *xsd* for example xsd:string and xsd:integer. It is also
+prefix of *xsd* for example ``xsd:string and xsd:integer``. It is also
 possible to create new basic datatypes. However, for the majority of use
 cases, if one needs a datatype that doesn't map to one of the predefined
 types the best solution is to usually just define a class.
@@ -2046,103 +2046,94 @@ analogous to the distinction between relations and attributes in
 entity-relation modeling. A relation in an E/R model is similar to an
 object property in OWL and an attribute is similar to a datatype
 property. Because datatypes don't have all the power of OWL objects,
-many of the capabilities for object properties described in section 4.8
+many of the capabilities for object properties described in
+`section 4.8 <#owl-object-property-characteristics>`_
 such as having an inverse or being transitive aren't available for
 datatype properties.
 
-| 5.1 Defining a Data Property
-| As with other OWL entities, datatype properties can be defined either
-  via the Data properties tab in the Entities tab or in the Data
-  properties tab available via the Window>Tabs>Data properties option.
+Defining a Data Property
+========================
+As with other OWL entities, datatype properties can be defined either
+via the `Data properties` tab in the `Entities` tab or in the
+`Data properties` tab available via the `Window>Tabs>Data properties` option.
 
 We will use datatype properties to describe the calorie content of
 pizzas. We will then use some numeric ranges to broadly classify
 particular pizzas as high or low calorie. In order to do this we need to
 complete the following steps:
 
-   1.Create a datatype property hasCaloricContent, which will be used to
-   state the calorie content
+1. Create a datatype property ``hasCaloricContent``, which will be used to
+   state the calorie content of particular pizzas.
 
-   of particular pizzas.
+2. Create several example ``Pizza`` individuals with specific calorie contents.
 
-   2.Create several example Pizza individuals with specific calorie
-   contents.
-
-   3.Create two classes broadly categorizing pizzas as low or high
-   calorie.
+3. Create two classes broadly categorizing pizzas as low or high calorie.
 
 **Exercise 27: Create a Datatype Property called hasCaloricContent**
 
-\____________________________________________________________________________________\_
-1. Open a Data properties tab. Select owl:topDataProperty.
+---------------
 
-2. Click on the Add sub property icon in the upper left corner. This
-works just the same as the UI for adding object properties.
+1. Open a `Data properties` tab. Select `owl:topDataProperty`.
 
-3. Name the new data property hasCaloricContent and select OK.
+2. Click on the `Add sub property` icon in the upper left corner. This
+   works just the same as the UI for adding object properties.
 
-4. Click on the (+) icon next to Domains in the Description view for
-hasCaloricContent. Use the Class hierarchy tab to select the Pizza class
-as the domain.
+3. Name the new data property `hasCaloricContent` and select `OK`.
 
-5. Click on the (+) icon next to Ranges in the Description view for
-hasCaloricContent. Select the Built in datatypes tab from the pop-up
-menu. Select xsd:integer7 from the rather long menu of possible built-in
-datatypes. This is the default datatype to use for integer data
-properties.
+4. Click on the `(+)` icon next to `Domains` in the `Description` view for
+   `hasCaloricContent`. Use the `Class hierarchy tab` to select the `Pizza` class
+   as the domain.
 
-6. Click the Functional check box next to the Description view. A Pizza
-can only have one caloric content and hence is functional. Data
-properties are often functional.
+5. Click on the `(+)` icon next to `Ranges` in the Description view for
+   `hasCaloricContent`. Select the `Built in datatypes` tab from the pop-up
+   menu. Select `xsd:integer7` from the rather long menu of possible built-in
+   datatypes. This is the default datatype to use for integer data
+   properties.
 
-5. Select OK and run the reasoner. Your UI should look similar to figure
-5.1.
+6. Click the `Functional` check box next to the `Description` view. A Pizza
+   can only have one caloric content and hence is functional. Data
+   properties are often functional.
 
-\____________________________________________________________________________________\_
+5. Select `OK` and run the reasoner. Your UI should look similar to figure 5.1.
 
-.. figure:: /_static/media/image81.png
-   :width: 6.5in
-   :height: 5.47917in
+---------------
 
-Figure 5.1 hasCaloricContent Data Property
+.. figure:: /_static/media/chap_5/1.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-7 For historic reasons there are many datatypes that are seldom used,
-e.g., xsd:int which is similar to xsd:Integer. For numbers, the default
-datatypes are xsd:integer for integers and xsd:decimal for real numbers.
-Unless you have a good reason to use a different numeric datatype it is
-best to stick with these default types. E.g., when you write a SWRL rule
-if you use a number SWRL will infer that any integers are xsd:integer
-and any rationals are xsd:decimal.
+   *Figure 5.1 hasCaloricContent Data Property*
 
 Note that as with object properties defining a domain and/or range is
 optional. In general, it is a good practice to do so as it can lead to
 finding errors in your ontology during the modeling phase rather than at
 run time.
 
-| 5.2 Customizing the Protégé User Interface
-| In order to demonstrate our new data property, we will need to create
-  some instances of the Pizza class and set the value of the data
-  property hasCaloricContent. One of the advantages of Protégé is that
-  it is highly customizable to your specific requirements and work
-  style. There are many views that are available that aren't included in
-  the default Protégé environment because it would be too cluttered. In
-  addition, all of the views that you have already used can be resized,
-  removed, or added to existing tabs. You can also create completely new
-  tabs of your own.
+Customizing the Protégé User Interface
+======================================
+In order to demonstrate our new data property, we will need to create
+some instances of the ``Pizza`` class and set the value of the data
+property ``hasCaloricContent``. One of the advantages of Protégé is that
+it is highly customizable to your specific requirements and work
+style. There are many views that are available that aren't included in
+the default Protégé environment because it would be too cluttered. In
+addition, all of the views that you have already used can be resized,
+removed, or added to existing tabs. You can also create completely new
+tabs of your own.
 
 As an example, we are going to first bring up a new major tab called
-Individuals by class. This tab can be useful to create individuals and
+`Individuals by class`. This tab can be useful to create individuals and
 to add or edit their object and data property values. We are going to
 customize this tab to make it easier to use by adding a new view to it.
 
-To begin use the menu option Window>Tabs>Individuals by class to bring
+To begin use the menu option `Window>Tabs>Individuals by class` to bring
 up this new tab. Of course, if it already exists in your UI simply
 select it.
 
 We want to make add a new view as an additional sub-tab in the view that
-currently has the Annotations and Usage, tabs near the upper right
-corner8. Once you are in the Individuals by class tab select
-Window>Views>Individual views>Individuals by type (inferred). This will
+currently has the `Annotations` and `Usage`, tabs near the upper right
+corner8. Once you are in the `Individuals by class` tab select
+`Window>Views>Individual views>Individuals by type (inferred)`. This will
 give you a blue outline of the new view. As you move the outline around
 the existing window it will change depending how you move it, indicating
 how it will fit into the existing tab after you click. When the blue
@@ -2151,7 +2142,7 @@ added as another sub-tab.
 
 After you click your UI should now look similar to figure 5.3. If you
 clicked somewhere else you can just go to the new view and delete it by
-clicking the X in the upper right corner of the view and then redo it
+clicking the `X` in the upper right corner of the view and then redo it
 and position it correctly. At first it may seem a bit unintuitive but
 after you do it a few times it becomes very easy to position new views.
 
@@ -2163,160 +2154,151 @@ we add more instances and as you deal with larger real ontologies in the
 future, this view can be very helpful to find specific instances of a
 class. Note that the UI just shows the most direct class (or classes)
 that the Individual is an instance of. For example, we currently just
-have three individuals, the three instances of Spiciness: Hot, Medium,
-and Mild. These are also instances of owl:Thing (as are *all* instances)
-however the UI only displays them as instances of Spiciness since it is
+have three individuals, the three instances of ``Spiciness``: ``Hot``, ``Medium``,
+and ``Mild``. These are also instances of ``owl:Thing`` (as are *all* instances)
+however the UI only displays them as instances of ``Spiciness`` since it is
 implicit that they are also instances of all the superclasses of
-Spiciness.
+``Spiciness``.
 
-8 Your particular Protégé UI may look slightly different than some of
-the screen snapshots depending on if your organization or another user
-has already customized the Protégé UI. If you ever want to return a
-major tab to its default configuration select that tab and use
-Window>Reset selected tab to default configuration.
 
-.. figure:: /_static/media/image82.png
-   :width: 6.5in
-   :height: 6.25278in
+.. figure:: /_static/media/chap_5/2.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 5.2 Adding a new view to the Individuals by class tab
+   *Figure 5.2 Adding a new view to the Individuals by class tab*
 
-   .. figure:: /_static/media/image83.png
-      :width: 6.5in
-      :height: 5.61528in
+.. figure:: /_static/media/chap_5/3.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 5.3 A Customized Individuals by class tab
+   *Figure 5.3 A Customized Individuals by class tab*
 
 **Exercise 28: Create Example Pizza Individuals**
 
-\____________________________________________________________________________________\_
-1. We will now add our first actual Pizza. Remain in the Individuals by
-class tab.
+---------------
 
-2. Use the Class hierarchy view in the upper left to navigate to
-MargheritaPizza and select it. There is a view directly under the Class
-hierarchy tab called Direct instances. Click the little diamond in that
-view. This will prompt you for the name of your new individual. Call it
-MargheritaPizza1.
+1. We will now add our first actual Pizza.
+   Remain in the `Individuals by class` tab.
+
+2. Use the `Class hierarchy` view in the upper left to navigate to
+   `MargheritaPizza` and select it. There is a view directly under the `Class hierarchy tab`
+   called `Direct instances`. Click the little diamond in that
+   view. This will prompt you for the name of your new individual. Call it
+   `MargheritaPizza1`.
 
 3. Your UI should now look similar to figure 5.4.
 
-\____________________________________________________________________________________\_
+---------------
 
-.. figure:: /_static/media/image84.png
-   :width: 6.5in
-   :height: 4.98333in
+.. figure:: /_static/media/chap_5/4.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 5.4 Creating Our First Pizza
+   *Figure 5.4 Creating Our First Pizza*
 
 **Exercise 29: Assign a Data Property Values**
 
-\____________________________________________________________________________________\_
+---------------
 
-1. Remain in the Individuals by class tab. Click on MargheritaPizza1.
-You should see in the Description view that it is an instance of
-MargheritaPizza. Now you will use the Property assertions view to set
-the caloric content of MargheritaPizza1. This view can be used to set
-object and data properties.
+1. Remain in the `Individuals by class` tab. Click on `MargheritaPizza1`.
+   You should see in the Description view that it is an instance of
+   ``MargheritaPizza``. Now you will use the `Property assertions` view to set
+   the caloric content of ``MargheritaPizza1``. This view can be used to set
+   object and data properties.
 
-2. Click on the (+) icon next to Data property assertions in the
-Property assertions view in the lower right.
+2. Click on the `(+)` icon next to `Data property assertions` in the
+   `Property assertions` view in the lower right.
 
-3. Use the pop-up window to select the data property hasCaloricContent.
-Then enter 263 as the value and use the menu at the bottom to define the
-value's datatype to be xsd:integer. Note: this is different than what
-you did in exercise 27. In exercise 27 you defined the datatype for the
-*property*. Here you are defining the datatype for *a specific value*.
-It would be nice if Protégé could just infer the datatypes for you but
-because datatype definitions can be complex this is harder than it might
-seem so you need to make sure to explicitly define the datatype for each
-value. As you get into more realistic ontologies you will often use
-tools such as Cellfie (described in chapter 8) to load your individual
-data automatically and those tools can automatically add datatype
-information for each individual as part of the loading process.
+3. Use the pop-up window to select the data property `hasCaloricContent`.
+   Then enter 263 as the value and use the menu at the bottom to define the
+   value's datatype to be `xsd:integer`. Note: this is different than what
+   you did in exercise 27. In exercise 27 you defined the datatype for the
+   *property*. Here you are defining the datatype for *a specific value*.
+   It would be nice if Protégé could just infer the datatypes for you but
+   because datatype definitions can be complex this is harder than it might
+   seem so you need to make sure to explicitly define the datatype for each
+   value. As you get into more realistic ontologies you will often use
+   tools such as Cellfie (described in :ref:`Chapter 8 <chap8>`) to load your individual
+   data automatically and those tools can automatically add datatype
+   information for each individual as part of the loading process.
 
-   4. Your UI should now look similar to figure 5.5. Select OK to enter
+4. Your UI should now look similar to figure 5.5. Select `OK` to enter
    the new value. Run the reasoner.
-   \____________________________________________________________________________________\_
 
-   .. figure:: /_static/media/image85.png
-      :width: 6.5in
-      :height: 2.96528in
+---------------
 
-Figure 5.5 hasCaloricContent for MargheritaPizza1
+.. figure:: /_static/media/chap_5/5.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-.. figure:: /_static/media/image86.png
-   :width: 0.48611in
-   :height: 0.43056in
+   *Figure 5.5 hasCaloricContent for MargheritaPizza1*
 
-+----------------------------------------------------------------------+
-|    One of the most common sources of errors in ontologies is to have |
-|    the wrong datatype for data property values. The sooner you catch |
-|    these errors, the easier they are to debug so it is a good idea   |
-|    to run the reasoner frequently after you enter any values. Note   |
-|    that in some versions of Protégé 5.5. there is a minor bug where  |
-|    the UI may lock up due to an inconsistent data value (e.g., a     |
-|    string value in a property typed for integer). If this happens    |
-|    the best thing to do is save your work if possible, quit Protégé, |
-|    and then restart it. When you restart it fix the datatype errors  |
-|    *before* you run the reasoner and then run the reasoner to make   |
-|    sure you actually have fixed the error.                           |
-+----------------------------------------------------------------------+
+.. admonition:: Warning
+   :class: pitfall
 
-.. figure:: /_static/media/image87.png
-   :width: 6.18333in
-   :height: 1.72093in
+   One of the most common sources of errors in ontologies is to have
+   the wrong datatype for data property values. The sooner you catch
+   these errors, the easier they are to debug so it is a good idea
+   to run the reasoner frequently after you enter any values. Note
+   that in some versions of Protégé 5.5. there is a minor bug where
+   the UI may lock up due to an inconsistent data value (e.g., a
+   string value in a property typed for integer). If this happens
+   the best thing to do is save your work if possible, quit Protégé,
+   and then restart it. When you restart it fix the datatype errors
+   *before* you run the reasoner and then run the reasoner to make
+   sure you actually have fixed the error.
 
 **Exercise 30: Create More Instances and Data Property Values**
 
-\____________________________________________________________________________________\_
+---------------
 
-1. Remain in the Individuals by class tab. Click on other Pizzas and
-create instances of them (apx. 5-10) and then fill in their caloric
-content with values ranging from 200 to 800. Try to have about half
-of your pizzas higher than 400 calories and half less than 400. The
-UI retains the datatype from the previous use so once you define the
-first caloric content you shouldn't need to set the datatype again
-but it is always a good idea to make sure it is correct, in this
-case: xsd:integer.
+1. Remain in the `Individuals by class` tab. Click on other ``Pizzas`` and
+   create instances of them (apx. 5-10) and then fill in their caloric
+   content with values ranging from 200 to 800. Try to have about half
+   of your pizzas higher than 400 calories and half less than 400. The
+   UI retains the datatype from the previous use so once you define the
+   first caloric content you shouldn't need to set the datatype again
+   but it is always a good idea to make sure it is correct, in this
+   case: ``xsd:integer``.
 
 2. It is a good idea to adhere to an intuitive naming standard for
-your instances such as <Class Name><Number> as we did for
-MargheritaPizza1. Depending on the classes you instantiate your
-pizzas should have names like MargheritaPizza2, SohoPizza1, etc.
+   your instances such as <Class Name><Number> as we did for
+   ``MargheritaPizza1``. Depending on the classes you instantiate your
+   pizzas should have names like ``MargheritaPizza2``, ``SohoPizza1``, etc.
 
-3. Make sure to create an instance of AmericanaPizza called
-AmericanaPizza1 that hasCaloricContent 723.
+3. Make sure to create an instance of ``AmericanaPizza`` called
+   ``AmericanaPizza1`` that ``hasCaloricContent`` 723.
 
 4. Make sure to run the reasoner after creating all your instances.
 
-\____________________________________________________________________________________\_
+---------------
 
 **Exercise 31: Create a Datatype Restriction that Every Pizza hasCaloricContent**
 
-\____________________________________________________________________________________\_
-1. Navigate to the Classes major tab.
+---------------
 
-2. Select the Pizza class.
+1. Navigate to the `Classes` major tab.
 
-3 Click on the (+) icon next to the SubClass Of field in the Description
-view. This time let's use the Data restriction tab. Navigate to and
-select hasCaloricContent in the Restricted property view. In the
-Restriction filler view scroll down to xsd:integer and select it. The
-Restriction type should be set to the default which is Some. If it isn't
-use the menu to change it. Your UI should look like figure 5.6. Click
-OK.
+2. Select the `Pizza` class.
 
-4. Note that you also could have selected Exactly 1 because a Pizza can
-only have one caloric content but since you already defined the property
-to be functional this isn't necessary and either Some or Exactly 1 have
-the same effect. Just as Protégé usually provides several ways to enter
-the same information in the user interface OWL often provides different
-ways to provide the same information in your model. The nice thing is
-the reasoner lets you not worry so much about which way you do it, as
-long as your definitions are consistent.
+3. Click on the `(+)` icon next to the `SubClass Of` field in the `Description`
+   view. This time let's use the `Data restriction` tab. Navigate to and
+   select `hasCaloricContent` in the `Restricted property` view. In the
+   `Restriction filler` view scroll down to `xsd:integer` and select it. The
+   Restriction type should be set to the default which is `Some`. If it isn't
+   use the menu to change it. Your UI should look like figure 5.6. Click
+   `OK`.
 
-\____________________________________________________________________________________\_
+4. Note that you also could have selected `Exactly 1` because a Pizza can
+   only have one caloric content but since you already defined the property
+   to be functional this isn't necessary and either `Some` or `Exactly 1` have
+   the same effect. Just as Protégé usually provides several ways to enter
+   the same information in the user interface OWL often provides different
+   ways to provide the same information in your model. The nice thing is
+   the reasoner lets you not worry so much about which way you do it, as
+   long as your definitions are consistent.
+
+---------------
 
 We have now stated that every PizzahasCaloricContent and that content
 must be an integer. In addition to using the predefined set of datatypes
@@ -2324,125 +2306,123 @@ we can further specialize the use of a datatype by specifying
 restrictions on the possible values. For example, it is easy to specify
 a range of values for a number.
 
-   .. figure:: /_static/media/image88.png
-      :width: 6.32361in
-      :height: 5.30278in
+.. figure:: /_static/media/chap_5/6.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 5.6 Defining the hasCaloricContent data property restriction
+   *Figure 5.6 Defining the hasCaloricContent data property restriction*
 
 Using the datatype property, we have created, we will now create defined
 classes that specify a range of interesting values. We will define a
-HighCaloriePizza to be any pizza that has a calorific value equal to or
+``HighCaloriePizza`` to be any pizza that has a calorific value equal to or
 higher than 400.
 
 **Exercise 32: Create a HighCaloriePizza Defined Class**
 
-\____________________________________________________________________________________\_
-1. Navigate to the Classes tab.
+---------------
 
-2. Select the Pizza class. Create a subclass of Pizza called
-HighCaloriePizza.
+1. Navigate to the `Classes` tab.
 
-3 Make sure HighCaloriePizza is selected. Click on the (+) icon next to
-the SubClass Of field in the Description view. In the Class expression
-editor type hasCaloricContent some xsd:integer[>= 400] and click OK.
+2. Select the `Pizza` class. Create a subclass of `Pizza` called `HighCaloriePizza`.
 
-4. Make sure HighCaloriePizza is still selected and use Edit>Convert to
-defined class to make it a defined class.
+3. Make sure `HighCaloriePizza` is selected. Click on the `(+)` icon next to
+   the `SubClass Of` field in the `Description` view. In the Class expression
+   editor type `hasCaloricContent some xsd:integer[>= 400]` and click `OK`.
 
-5. Repeat steps 1-4 but this time create a subclass of Pizza called
-LowCaloriePizza and make its definition be: hasCaloricContent some
-xsd:integer[< 400].
+4. Make sure `HighCaloriePizza` is still selected and use
+   `Edit>Convert to defined class` to make it a defined class.
 
-6. Run the reasoner. You should now see that each instance of Pizza that
-hasCaloricContent greater than or equal to 400 is classified as a
-HighCaloriePizza and similarly those with less than 400 as
-LowCaloriePizza. See the Description view in figure 5.7.
+5. Repeat steps 1-4 but this time create a subclass of ``Pizza`` called
+   `LowCaloriePizza` and make its definition be: `hasCaloricContent some xsd:integer[< 400]`.
 
-\____________________________________________________________________________________\_
+6. Run the reasoner. You should now see that each instance of ``Pizza`` that
+   ``hasCaloricContent`` greater than or equal to 400 is classified as a
+   ``HighCaloriePizza`` and similarly those with less than 400 as
+   ``LowCaloriePizza``. See the `Description` view in figure 5.7.
 
-.. figure:: /_static/media/image89.png
-   :width: 6.5in
-   :height: 4.25417in
+---------------
 
-Figure 5.7 High Calorie Pizzas
+.. figure:: /_static/media/chap_5/7.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Chapter 6 Adding Order to an Enumerated Class
+   *Figure 5.7 High Calorie Pizzas*
+
+.. _chap6:
+
+***********************************
+Adding Order to an Enumerated Class
+***********************************
 
 In this chapter we will expand on the enumerated class that we created
-to model spiciness in chapter 4.14.
+to model spiciness in `section 4.14 <#defining-an-enumerated-class>`_.
+This chapter will highlight some of the power of object properties in
+OWL. We are going to create an ordering for the instances of
+``Spiciness``. I.e., ``Hot isSpicierThan Medium`` which ``isSpicierThan Mild.`` To
+start go to the `Object properties` tab. Create a new property that is a
+sub-property of
+`owl:topObjectProperty`. Call this property `isSpicierThan`. Make its
+domain and range the `Spiciness` class. Make the property transitive.
+Transitive means that if X ``isSpicierThan`` Y and Y ``isSpicierThan`` Z then
+X ``isSpicierThan`` Z. This is of course similar to the greater than and
+less than relations in math. Create another property called
+`isMilderThan`. Make one property the inverse of the other. It doesn't
+matter which one, you only have to specify that one property is the
+inverse of another, and the reasoner will realize that both are
+inverses. Run the reasoner. You will see that the reasoner has
+inferred the domain and range for ``isMilderThan`` than as well as the
+fact that it is transitive and the inverse of ``isSpicierThan``.
 
-| This chapter will highlight some of the power of object properties in
-  OWL. We are going to create an ordering for the instances of
-  Spiciness. I.e., Hot isSpicierThan Medium which isSpicierThan Mild. To
-  start go to the Object properties tab. Create a new property that is a
-  sub-property of
-| owl:topObjectProperty. Call this property isSpicierThan. Make its
-  domain and range the Spiciness class. Make the property transitive.
-  Transitive means that if X isSpicierThan Y and Y isSpicierThan Z then
-  X isSpicierThan Z. This is of course similar to the greater than and
-  less than relations in math. Create another property called
-  isMilderThan. Make one property the inverse of the other. It doesn't
-  matter which one, you only have to specify that one property is the
-  inverse of another, and the reasoner will realize that both are
-  inverses. Run the reasoner. You will see that the reasoner has
-  inferred the domain and range for isMilderThan than as well as the
-  fact that it is transitive and the inverse of isSpicierThan.
+.. figure:: /_static/media/chap_6/1.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-.. figure:: /_static/media/image90.png
-   :width: 6.5in
-   :height: 5.02083in
+   *Figure 6.1 Setting isSpicierThan property in the Individuals by class tab*
 
-Figure 6.1 Setting isSpicierThan property in the Individuals by class
-tab
-
-.. figure:: /_static/media/image92.png
-   :width: 6.18333in
-   :height: 1.39075in
-
-| Next go back to the Individuals by class tab. Go to the Individuals by
-  type (inferred) view. You should see the individuals that exist right
-  now. So far we have the example Pizzas you created and the instances
-  of Spiciness: Hot, Medium, and Mild. Click on Hot. Notice that in the
-  Property assertions view in the lower right corner the title should
-  now say: Property assertions: Hot. Click on the (+) icon next to
-  Object property assertions. You will be prompted with a form with two
-  areas to input values. The name of the property goes in the left hand
-  side and the value in the right hand side (see figure 6.1). Type in
-| isSpicierThan as the name of the property. Remember you can use
-  auto-complete so you should only need to type *isS* and type
-  <control><space> and Protégé will fill in the name of the property.
-  Enter Medium as the value. Your UI should look similar to figure 6.1.
-  Select OK. Now click on Medium and set its isSpicierThan value to be
-  Mild. That is all the data entry you need to do. Now run the reasoner
-  again and click on the Hot, Medium, and Mild individuals. You should
-  see that all the additional isSpicierThan and isMilderThan values have
-  been filled in for you because the reasoner knows that the two
-  properties are inverses and transitive. For example, Mild, which we
-  didn't edit at all, should have two values for isMilderThan filled in
-  by the reasoner.
+Next go back to the `Individuals by class` tab. Go to the `Individuals by type (inferred)` view.
+You should see the individuals that exist right
+now. So far we have the example Pizzas you created and the instances
+of Spiciness: ``Hot``, ``Medium``, and ``Mild``. Click on `Hot`. Notice that in the
+Property assertions view in the lower right corner the title should
+now say: `Property assertions: Hot`. Click on the `(+)` icon next to
+`Object property assertions`. You will be prompted with a form with two
+areas to input values. The name of the property goes in the left hand
+side and the value in the right hand side (see figure 6.1). Type in
+`isSpicierThan` as the name of the property. Remember you can use
+auto-complete so you should only need to type *isS* and type
+`<control><space>` and Protégé will fill in the name of the property.
+Enter `Medium` as the value. Your UI should look similar to figure 6.1.
+Select `OK`. Now click on `Medium` and set its ``isSpicierThan`` value to be
+``Mild``. That is all the data entry you need to do. Now run the reasoner
+again and click on the ``Hot``, ``Medium``, and ``Mild`` individuals. You should
+see that all the additional ``isSpicierThan`` and ``isMilderThan`` values have
+been filled in for you because the reasoner knows that the two
+properties are inverses and transitive. For example, ``Mild``, which we
+didn't edit at all, should have two values for ``isMilderThan`` filled in
+by the reasoner.
 
 We can use these properties in various ways to reason about the relative
-spiciness of things. We will show some examples in chapter 8.
+spiciness of things. We will show some examples in :ref:`Chapter 8 <chap8>`.
 
-   .. figure:: /_static/media/image91.png
-      :width: 0.51389in
-      :height: 0.51389in
+.. admonition:: Notes
+   :class: notes
 
-+----------------------------------------------------------------------+
-|    This concludes the basics of designing classes and properties     |
-|    with Protégé. There is also a web version of Protégé available at |
-|    https://webprotege.stanford.edu/# This takes you to a page where  |
-|    you can create an account by providing an email and creating a    |
-|    password. Web Protégé supports multiple users and has extra       |
-|    capabilities such as threaded discussions for collaborative       |
-|    development of ontologies. However, it currently does not support |
-|    any reasoners, so it is a good idea to bring ontologies developed |
-|    in WebProtégé into the desktop version to run the reasoner and    |
-|    validate the ontology. See chapter 12 for more on Web Protégé.    |
-+----------------------------------------------------------------------+
+   This concludes the basics of designing classes and properties
+   with Protégé. There is also a web version of Protégé available at
+   https://webprotege.stanford.edu/# This takes you to a page where
+   you can create an account by providing an email and creating a
+   password. Web Protégé supports multiple users and has extra
+   capabilities such as threaded discussions for collaborative
+   development of ontologies. However, it currently does not support
+   any reasoners, so it is a good idea to bring ontologies developed
+   in WebProtégé into the desktop version to run the reasoner and
+   validate the ontology. See :ref:`Chapter 12 <chap12>` for more on Web Protégé.
 
-Chapter 7 Names: IRI's, Labels, and Namespaces
+.. _chap7:
+
+************************************
+Names: IRI's, Labels, and Namespaces
+************************************
 
 In exercise 2 we set up some parameters regarding new entity names and
 rendering without much of an explanation. The concept of a *name* in OWL
@@ -3959,18 +3939,6 @@ Top Quadrant: https://www.topquadrant.com/
 
 
 
-
-.. _chap6:
-
-*********
-Chapter 6
-*********
-
-.. _chap7:
-
-*********
-Chapter 7
-*********
 
 .. _chap8:
 
