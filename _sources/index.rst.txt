@@ -265,8 +265,8 @@ Individuals represent objects in the domain of interest. An important
 difference between OWL and most programming and knowledge representation
 languages is that OWL does not use the Unique Name Assumption (UNA).
 This means that two different names could actually refer to the same
-individual. For example, “Queen Elizabeth”, “The Queen” and “Elizabeth
-Windsor” might all refer to the same individual. In OWL, it must be
+individual. For example, “Queen Elizabeth", “The Queen" and “Elizabeth
+Windsor" might all refer to the same individual. In OWL, it must be
 explicitly stated that individuals are the same as each other, or
 different from each other. Figure 3.1 shows a representation of some
 individuals in a domain of people, nations, and relations — in this
@@ -377,7 +377,7 @@ Pizzas because it is something almost everyone is familiar with.
    entire ontology. Protégé always opens with a new untitled ontology
    you can start with. Your ontology should have an IRI something like:
    http://www.semanticweb.org/yourname/ontologies/2020/4/untitled-ontology-27
-   Edit the name of the ontology (the part after the last “/” in this
+   Edit the name of the ontology (the part after the last “/" in this
    case `untitled-ontology-27`) and change it to something like
    `PizzaTutorial`. Note: the Pizza ontology IRIs shown below (e.g.,
    figure 4.3) show the IRI after I edited the default that Protégé
@@ -756,7 +756,7 @@ subclasses of ``PizzaTopping``.
    *all* instances of ``VegetableTopping`` are also instances of
    ``PizzaTopping``. It is for this reason that we try to have
    standards such as having all
-   ``PizzaTopping`` classes end with the word “Topping”. Otherwise, it
+   ``PizzaTopping`` classes end with the word “Topping". Otherwise, it
    might seem we are saying that anything that is a kind of *Ham*
    like the *Ham* in your sandwich is a kind of ``MeatTopping`` or
    ``PizzaTopping`` which is not what we mean. For large ontologies
@@ -1579,7 +1579,7 @@ kind of ``CheeseTopping``.
    Note that if you just type a few characters, the number of
    possible completions may be large resulting in an unwieldy menu.
    Also, Protégé doesn't do things like type checking on possible
-   completions. For example, if you type “Chee” and do
+   completions. For example, if you type “Chee" and do
    <control><space> you will be prompted with ``CheeseTopping`` and
    ``CheesyPizza`` as possible completions even though a ``Pizza`` is not in
    the range of ``hasTopping``. This is where the reasoner can also
@@ -2027,7 +2027,7 @@ languages OWL also has the capability to define properties with the
 range of a simple datatype such as a string or integer. Object purists
 will argue that everything should be an object. However, to borrow a
 quote from The Amazing Spiderman: “with great power comes great
-overhead”. I.e., the extra capabilities that one has with a class and an
+overhead". I.e., the extra capabilities that one has with a class and an
 instance also means that instances take up more space and can be slower
 to process than simple datatypes. For that reason, OWL comes with a
 large library of pre-existing datatypes that are mostly imported from
@@ -2435,19 +2435,20 @@ URL. In fact, a URL is a kind of IRI. I.e., all URLs are IRIs but many
 IRIs are not URLs. A URL is typically meant to identify a specific page
 meant to be viewed in a browser. An IRI is often at a smaller level of
 granularity and for *any* kind of resource, not only those meant to be
-viewed in a browser. If you go to the Active ontology tab in Protégé you
-will see the Ontology IRI for your ontology. This is the base IRI that
+viewed in a browser. If you go to the `Active ontology` tab in Protégé you
+will see the `Ontology IRI` for your ontology. This is the base IRI that
 all entities have in common. In addition, each entity has a subsequent
 part that comes after the base IRI that uniquely identifies the IRI for
 the entity.
 
 You can see this by clicking on any entity and starting (but don't
-complete) the Refactor>Rename entity command. Click on the Pizza class.
-Then select Refactor>Rename entity. You will get a pop-up window with
-the current name: Pizza. However, this is only the final part of the
+complete) the `Refactor>Rename entity` command. Click on the `Pizza` class.
+Then select `Refactor>Rename entity`. You will get a pop-up window with
+the current name: `Pizza`. However, this is only the final part of the
 IRI. To see the full IRI click on the check box in the lower right
-corner that says: Show full IRI. Your full IRI will be different but it
-will look something like: Uncheck the Show f
+corner that says: `Show full IRI`. Your full IRI will be different but it
+will look something like: `http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#Pizza`.
+Uncheck the `Show full IRI` box and then `Cancel` the rename command.
 
 If you recall from exercise 2 there are two options when you create a
 new entity. One is to use a user supplied name. That is the option that
@@ -2457,7 +2458,7 @@ option creates a Universally Unique Identifier (UUID) for the IRI of
 each entity. A UUID is an ID that is generated by an algorithm and is
 guaranteed to be unique. There are also two ways to display an entity.
 One way is to use the last part of the IRI that typically comes after a
-# sign as in the Pizza example above. The other is to use an annotation
+# sign as in the ``Pizza`` example above. The other is to use an annotation
 property called a label. An annotation property is meant to provide
 meta-data about an entity.
 
@@ -2465,13 +2466,13 @@ meta-data about an entity.
   However, since all entities have meta-data annotation properties can
   be asserted on to any entity. There are some annotation properties
   that are included by default with any Protégé ontology. You can see
-  these by looking at the Annotation properties tab. Note that just as
+  these by looking at the `Annotation properties` tab. Note that just as
   with other properties you can also add your own annotation properties
   but they should be used for meta-data not for regular data. You will
-  see rdfs:label is one of the default annotation properties. When you
+  see ``rdfs:label`` is one of the default annotation properties. When you
   use UUIDs for your entity IRIs then by default Protégé will
 | automatically use the name you type in for a new entity in the
-  rdfs:label annotation property.
+  ``rdfs:label`` annotation property.
 
 Although you can also configure Protégé to use other properties if you
 wish, using the same dialog for entity rendering that you used in
@@ -2479,7 +2480,7 @@ exercise 2.
 
 There are advantages and disadvantages to both options and there are
 options in between such as using both user supplied names for IRIs and
-using rdfs:label for more intuitive names. The details can get
+using ``rdfs:label`` for more intuitive names. The details can get
 complicated and there also isn't universal agreement within the
 community as to which is generally better. For your first ontology and
 since you will be using SPARQL I chose to use user supplied entity names
@@ -2489,30 +2490,29 @@ next section. Which option you choose for your ontology will depend on
 the specific requirements you have as well as the standards established
 by your organization or organizations that you work with.
 
-| Finally, another name related concept you should be aware of is the
-  concept of a namespace. If you have worked with most modern
-  programming languages such as Python or Java, you are already familiar
-  with the concept of a namespace. The concept is identical in OWL. A
-  namespace is used to avoid naming conflicts between different
-  ontologies. For example, you may have a class called Network in an
-  ontology about telecommunications. You might also have a class called
-  Network in an ontology about graph theory. The two concepts are
-  related but are different. Just as with programming languages you use
-  namespace prefixes to determine what specific namespace a name refers
-  to. E.g., in this example you might have the prefix tc for the Telecom
-  ontology and gt for the Graph Theory ontology. Thus, when you referred
-  to the Network class for the Telecom ontology you would use tc:Network
-  and
-| gt:Network for the graph theory class.
+Finally, another name related concept you should be aware of is the
+concept of a namespace. If you have worked with most modern
+programming languages such as Python or Java, you are already familiar
+with the concept of a namespace. The concept is identical in OWL. A
+namespace is used to avoid naming conflicts between different
+ontologies. For example, you may have a class called ``Network`` in an
+ontology about telecommunications. You might also have a class called
+``Network`` in an ontology about graph theory. The two concepts are
+related but are different. Just as with programming languages you use
+namespace prefixes to determine what specific namespace a name refers
+to. E.g., in this example you might have the prefix ``tc`` for the Telecom
+ontology and ``gt`` for the Graph Theory ontology. Thus, when you referred
+to the Network class for the Telecom ontology you would use ``tc:Network``
+and ``gt:Network`` for the graph theory class.
 
 Note that you already have some experience with other namespaces. The
-OWL namespace prefix is owl and is used to refer to classes such as
-owl:Thing and owl:Nothing. The Resource Description Framework Schema
+OWL namespace prefix is ``owl`` and is used to refer to classes such as
+``owl:Thing`` and ``owl:Nothing``. The Resource Description Framework Schema
 (RDFS) is a model that OWL is built on top of and thus some properties
-that ontologies use such as rdfs:label leverage this namespace.
+that ontologies use such as ``rdfs:label`` leverage this namespace.
 
-In the bottom view of the Active ontology tab there is a tab called
-Ontology Prefixes. This tab shows all the current namespace mappings in
+In the bottom view of the `Active ontology` tab there is a tab called
+`Ontology Prefixes`. This tab shows all the current namespace mappings in
 your ontology. There are certain concepts from OWL, RDF, RDFS, XML and
 XSD that are required for every ontology, so those namespaces are by
 default mapped in every new Protégé ontology. There is also a mapping to
@@ -2520,12 +2520,17 @@ the empty string for whatever the namespace is for your ontology. This
 allows you to display and refer to entities in your ontology without
 entering a namespace prefix. If you look at that tab now you should see
 a row where the first column is blank, and the second column has the
-base IRI for your ontology. It should be the same IRI as the Ontology
-IRI at the top of the Active ontology tab, except it also has a # sign
+base IRI for your ontology. It should be the same IRI as the
+`Ontology IRI `at the top of the Active ontology tab, except it also has a # sign
 at the end. E.g., the Pizza tutorial developed for this tutorial has an
-IRI of: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial and the row that has a blank first column in Ontology Prefixes has the IRI: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#.
+IRI of: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial
+and the row that has a blank first column in Ontology Prefixes has the IRI: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#.
 
-Chapter 8 A Larger Ontology with some Individuals
+.. _chap8:
+
+***************************************
+A Larger Ontology with some Individuals
+***************************************
 
 The rest of the tutorial requires some data loaded into your ontology.
 So far, we have mostly been dealing with defining classes and
@@ -2541,81 +2546,54 @@ can take data from spreadsheets and upload it into an ontology mapping
 the table-based data into objects and property values. For a tutorial on
 Cellfie see: https://github.com/protegeproject/cellfie-plugin/wiki/Grocery-Tutorial
 
-In addition to using Cellfie, you can use the Individuals by class tab introduced in chapter 5
+In addition to using Cellfie, you can use the `Individuals by class` tab introduced in chapter 5
 to create new instances and to create object and
-data property values for those instances as you did with the Hot and
-Medium individuals in chapter 6. However, that can be tedious so to
+data property values for those instances as you did with the ``Hot`` and
+``Medium`` individuals in :ref:`Chapter 6 <chap6>`. However, that can be tedious so to
 spare you that uninteresting work I've developed a version of the Pizza
 ontology that has many individuals already created. That ontology should
 be identical to the ontology you have developed so far except with many
 additional individuals.
-
 You can find this populated Pizza ontology at: https://tinyurl.com/PizzaWDataV2
-Go to this URL and
-download the file to your local machine and that, it is probably a good
+Go to this URL and download the file to your local machine and then use `File>Open`.
+Before you do that, it is probably a good
 idea to close the current file so that there is no possible confusion
 between the Pizza ontology you developed and the new one with extra
 data.
 
-8.1 Get Familiar with the Larger Ontology
+Get Familiar with the Larger Ontology
+=====================================
 
-   .. figure:: /_static/media/image93.png
-      :width: 6.07361in
-      :height: 6.02083in
+.. figure:: /_static/media/chap_8/1.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 8.1 Graph of Some of the New Ontology Classes and Individuals
+   *Figure 8.1 Graph of Some of the New Ontology Classes and Individuals*
 
-Figure 8.1 uses the OntoGraf tab to visualize some of the new additions
-to the ontology. There is a new class called Person with subclasses
-Employee and Customer. Employee has 5 individuals: Manager, Chef,
-Waiter1, and Waiter2. Customer has 10 instances.
+Figure 8.1 uses the `OntoGraf` tab to visualize some of the new additions
+to the ontology. There is a new class called ``Person`` with subclasses
+``Employee`` and ``Customer``. Employee has 5 individuals: ``Manager``, ``Chef``,
+``Waiter1``, and ``Waiter2``. Customer has 10 instances.
 
-In addition, if you look at the Object properties tab you will see there
+In addition, if you look at the `Object properties` tab you will see there
 are some new properties:
 
-+---+-----------------------------------------------------------------+
-| • | The property purchasedByCustomer has domain Pizza and range     |
-|   | Customer. It maps from                                          |
-+===+=================================================================+
-| • |    an individual Pizza to the Customer that purchased it. It    |
-|   |    has an inverse called                                        |
-+---+-----------------------------------------------------------------+
-|   |    purchasedPizza.                                              |
-+---+-----------------------------------------------------------------+
-|   | The property hasSpicinessPreference has domain Customer and     |
-|   | range Spiciness. It                                             |
-+---+-----------------------------------------------------------------+
-|   |    records the preference the Customer has for how spicy they   |
-|   |    usually like their Pizza.                                    |
-+---+-----------------------------------------------------------------+
+* The property ``purchasedByCustomer`` has domain ``Pizza`` and range
+  ``Customer``. It maps from an individual ``Pizza`` to the ``Customer`` that purchased it.
+  It has an inverse called ``purchasedPizza``.
+* The property ``hasSpicinessPreference`` has domain ``Customer`` and range ``Spiciness``.
+  It records the preference the ``Customer`` has for how spicy they usually like their ``Pizza``.
 
-The Data properties tab also shows some new properties:
+The `Data properties` tab also shows some new properties:
 
-+---+-----------------------------------------------------------------+
-| • |    The hasDiscount data property has a domain of Customer and a |
-|   |    range of xsd:decimal. This                                   |
-+===+=================================================================+
-| • |    records the discount (if any) that the Customer will get on  |
-|   |    their next purchase.                                         |
-+---+-----------------------------------------------------------------+
-|   |    The numberOfPizzasPurchased data property has a domain of    |
-|   |    Customer and a range of                                      |
-+---+-----------------------------------------------------------------+
-| • |    xsd:integer. It records the number of Pizzas that each       |
-|   |    customer has purchased.                                      |
-+---+-----------------------------------------------------------------+
-|   |    The ssn property has a domain of Employee and a range of     |
-|   |    xsd:string. It maps from an                                  |
-+---+-----------------------------------------------------------------+
-| • |    Employee to their social security number. In the United      |
-|   |    States this is a number that all employers                   |
-+---+-----------------------------------------------------------------+
-|   |    must have in order to process things such as insurance       |
-|   |    contributions and tax information.                           |
-+---+-----------------------------------------------------------------+
-|   |    The hasPhone data property has a domain of Person and a      |
-|   |    range of xsd:string.                                         |
-+---+-----------------------------------------------------------------+
+* The ``hasDiscount`` data property has a domain of ``Customer`` and a range of ``xsd:decimal``.
+  This records the discount (if any) that the ``Customer`` will get on their next purchase.
+* The ``numberOfPizzasPurchased`` data property has a domain of ``Customer`` and a range of
+  ``xsd:integer``. It records the number of ``Pizzas`` that each customer has purchased.
+* The ssn property has a domain of ``Employee`` and a range of ``xsd:string``.
+  It maps from an ``Employee`` to their social security number. In the United States this is a number that all employers
+  must have in order to process things such as insurance contributions and tax information.
+* The ``hasPhone`` data property has a domain of ``Person`` and a range of ``xsd:string``.
 
 Most of these data properties have additional constraints in addition to
 their ranges. For example, a discount can only be between 0 and 1 and a
@@ -2632,98 +2610,102 @@ and integrity constraints and the distinction is by nature a fuzzy one.
 However, there are guidelines that we will discuss in the section on
 SHACL which we hope will help shed some light on the difference.
 
-Finally, viewing the Individuals by class tab will help to understand
+Finally, viewing the `Individuals by class` tab will help to understand
 the additional data in the ontology. If you go to that tab, you will see
-many new individuals. In addition to Employees and Customers there are
-instances of the Pizza class. You can see all these individuals in the
-Individuals by type (inferred) view in the upper right corner.
+many new individuals. In addition to ``Employees`` and ``Customers`` there are
+instances of the ``Pizza`` class. You can see all these individuals in the
+`Individuals by type (inferred)` view in the upper right corner.
 
-| Now with more instances you can see the value of the Individuals by
-  type (inferred) view. You can expand and contract various classes and
-  see the instances for them. Notice that the 4
-| HighCaloriePizzas are also instances of Pizza but they aren't shown
-  under Pizza because all instances of HighCaloriePizza are always
-  instances of the Pizza class. There is only one instance of the Pizza
-  class displayed because all the other instances of Pizza are also
-  instances of subclasses of Pizza so they are shown under those
-  subclasses rather than under Pizza. If there are two or more classes
-  that an Individual is an instance of that aren't subclasses of each
-  other then they will all be shown. For example, MargheritaPizza1 is an
-  instance of both MargheritaPizza and LowCaloriePizza and it shows up
-  under each class because neither is a subclass of the other. It is
-  possible for a Pizza to be a LowCaloriePizza and not be a
-  MargheritaPizza and vice-versa.
+Now with more instances you can see the value of the `Individuals by type (inferred)` view.
+You can expand and contract various classes and
+see the instances for them. Notice that the 4
+``HighCaloriePizzas`` are also instances of ``Pizza`` but they aren't shown
+under ``Pizza`` because all instances of ``HighCaloriePizza`` are always
+instances of the ``Pizza`` class. There is only one instance of the ``Pizza``
+class displayed because all the other instances of ``Pizza`` are also
+instances of subclasses of ``Pizza`` so they are shown under those
+subclasses rather than under ``Pizza``. If there are two or more classes
+that an Individual is an instance of that aren't subclasses of each
+other then they will all be shown. For example, ``MargheritaPizza1`` is an
+instance of both ``MargheritaPizza`` and ``LowCaloriePizza`` and it shows up
+under each class because neither is a subclass of the other. It is
+possible for a ``Pizza`` to be a ``LowCaloriePizza`` and not be a
+``MargheritaPizza`` and vice-versa.
 
-.. figure:: /_static/media/image94.png
-   :width: 6.5in
-   :height: 5.21389in
+.. figure:: /_static/media/chap_8/2.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-   Figure 8.2 Viewing the New Instances in the Individuals by Class tab
+   *Figure 8.2 Viewing the New Instances in the Individuals by Class tab*
 
-| Chapter 9 Queries: Description Logic and SPARQL
-| Now that we have some individuals in our ontology, we can do some
-  interesting queries. There are several tools for doing queries in
-  Protégé.
+.. _chap9:
 
-| 9.1 Description Logic Queries
-| To start with the most straight forward one based on what you have
-  already learned are Description Logic (DL) queries. These are
-  essentially the same kind of statements you have been using to define
-  classes. However, in addition to using such statements to define a
-  class you can use it as a query.
+*************************************
+Queries: Description Logic and SPARQL
+*************************************
+Now that we have some individuals in our ontology, we can do some
+interesting queries. There are several tools for doing queries in
+Protégé.
+
+Description Logic Queries
+=========================
+To start with the most straight forward one based on what you have
+already learned are Description Logic (DL) queries. These are
+essentially the same kind of statements you have been using to define
+classes. However, in addition to using such statements to define a
+class you can use it as a query.
 
 **Exercise 33: Try Some Description Logic Queries**
 
-\____________________________________________________________________________________\_
+---------------
 
 1. To begin with navigate to the DL Query tab. If it doesn't exist
-create it using: Window>Tabs>DL Query.
+   create it using: `Window>Tabs>DL` Query.
 
-2. At the top right of this tab you should see a view that says DL
-query: and below it Query (class expression).
+2. At the top right of this tab you should see a view that says
+   `DL query:` and below it `Query (class expression)`.
 
-3 You can enter any DL statement you want in this box and then see all
-the entities that are subclasses, superclasses, and instances of it. As
-an example, enter: Customer and purchasedPizza some (hasTopping some
-(hasSpiciness value Hot)). I.e., all Customers who have purchased a
-Pizza that hasSpiciness Hot. At first you may not see anything but don't
-worry there is one more step.
+3. You can enter any DL statement you want in this box and then see all
+   the entities that are subclasses, superclasses, and instances of it. As
+   an example, enter: `Customer and purchasedPizza some (hasTopping some (hasSpiciness value Hot))`.
+   I.e., all ``Customers`` who have purchased a
+   ``Pizza`` that ``hasSpiciness Hot``. At first you may not see anything but don't
+   worry there is one more step.
 
-4. Look at the check boxes on the right under Query for. Check
-Superclasses, Subclasses (although it should already be checked by
-default) and Instances. Now your UI should look like figure 9.1. You may
-notice that owl:Nothing shows up as a subclass. Don't worry that is
-actually expected. Remember that owl:Nothing is the empty set and the
-empty set is a subset of every set (including itself) so just as
-owl:Thing is a superclass of every class owl:Nothing is a subclass of
-every class. If you don't want to see owl:Nothing you can uncheck the
-box toward the bottom right that says Display owl:Nothing.
+4. Look at the check boxes on the right under `Query for`. Check
+   `Superclasses`, `Subclasses` (although it should already be checked by
+   default) and `Instances`. Now your UI should look like figure 9.1. You may
+   notice that ``owl:Nothing`` shows up as a subclass. Don't worry that is
+   actually expected. Remember that ``owl:Nothing`` is the empty set and the
+   empty set is a subset of every set (including itself) so just as
+   ``owl:Thing`` is a superclass of every class ``owl:Nothing`` is a subclass of
+   every class. If you don't want to see ``owl:Nothing`` you can uncheck the
+   box toward the bottom right that says `Display owl:Nothing`.
 
-| 5. Try some additional DL queries such as: hasTopping some
-  (hasSpiciness value Hot) and
-| VegetarianPizza and (hasTopping some (hasSpiciness some (isMilderThan
-  value Hot))). Note that with this last query you are taking advantage
-  of the transitive order you defined for the instances of the Spiciness
-  class in chapter 6.
+5. Try some additional DL queries such as:
+   `hasTopping some (hasSpiciness value Hot) and VegetarianPizza and (hasTopping some (hasSpiciness some (isMilderThan value Hot)))`.
+   Note that with this last query you are taking advantage
+   of the transitive order you defined for the instances of the ``Spiciness``
+   class in :ref:`Chapter 6 <chap6>`.
 
 6. You can also do queries for strings in the names of your entities.
-For example, first do a query simply with Pizza in the query window.
-Then type in Hot in the Name contains field. This should give you all
-the classes and individuals with *Hot* in their name.
+   For example, first do a query simply with `Pizza` in the query window.
+   Then type in Hot in the `Name contains` field. This should give you all
+   the classes and individuals with *Hot* in their name.
 
-\____________________________________________________________________________________\_
+---------------
 
-.. figure:: /_static/media/image95.png
-   :width: 6.5in
-   :height: 4.12639in
+.. figure:: /_static/media/chap_9/1.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 9.1 The DL Query Tab
+   *Figure 9.1 The DL Query Tab*
 
-| 9.2 SPARQL Queries
-| SPARQL is a powerful language, and one could write a whole book about
-  it. In fact, there are books written about it. The best one I have
-  seen is the O'Reilly book Learning SPARQL by Bob DuCharme.
-
+SPARQL Queries
+==============
+SPARQL is a powerful language, and one could write a whole book about
+it. In fact, there are books written about it. The best one I have
+seen is the O'Reilly book Learning SPARQL by Bob DuCharme.
 This is an excellent book that not only goes into SPARQL but into topics
 such as RDF/RDFS and how triples are used to represent all information
 in OWL. I will only touch on those issues here, there is much more to
@@ -2740,26 +2722,27 @@ support the statements such as INSERT for entering new data so we will
 just cover the basics of using SPARQL as a query language but keep in
 mind there is a lot more to it than what we briefly cover here.
 
-| 9.21 Some SPARQL Pizza Queries
-| To start with go to the SPARQL Query tab. If it isn't already there
-  you can as always add it using Window>Tabs>SPARQL Query. This tab
-  consists of two views, the top which holds the query and the bottom
-  which holds the results. There should be some text already there. It
-  may look confusing, but we'll explain it. Just to start with hit the
-  Execute button at the bottom of the tab. You should see a bunch of
-  classes and class expressions returned.
+Some SPARQL Pizza Queries
+-------------------------
+To start with go to the `SPARQL Query` tab. If it isn't already there
+you can as always add it using `Window>Tabs>SPARQL Query`. This tab
+consists of two views, the top which holds the query and the bottom
+which holds the results. There should be some text already there. It
+may look confusing, but we'll explain it. Just to start with hit the
+`Execute` button at the bottom of the tab. You should see a bunch of
+classes and class expressions returned.
 
 To understand what is going on you first need to understand that each
 SPARQL query consists of two parts. The first part at the beginning
 consists of several namespace prefixes. These statements consist of the
 prefix used for a particular namespace as well as the IRI associated
 with this namespace. Recall that these concepts were described in
-chapter 7. You may be wondering where all these prefixes came from since
+:ref:`Chapter 7 <chap7>`. You may be wondering where all these prefixes came from since
 you didn't add them to your ontology. The answer is that every OWL
 ontology comes with a set of namespaces and prefixes that are required
 to define the ontology.
 
-Also, to understand SPARQL you need to “peak under the hood” of OWL. So
+Also, to understand SPARQL you need to "peak under the hood" of OWL. So
 far, we have been discussing concepts in purely logical and set
 theoretic terms, i.e., at the semantic level. However, like any language
 or database there is a lower level that describes how the concepts are
@@ -2775,20 +2758,20 @@ predicate, and object. This results in what is called an undirected or
 network graph because objects can be subjects and vice versa. Whenever
 you define a property in OWL you are defining a predicate. An individual
 can be a subject or an object (or both). E.g., in our ontology
-Customer1purchasedPizzaAmericanaHotPizza1. In this example Customer1 is
-the subject, purchasedPizza is the predicate and AmericanaHotPizza1 is
+``Customer1 purchasedPizza AmericanaHotPizza1``. In this example ``Customer1`` is
+the subject, ``purchasedPizza`` is the predicate and ``AmericanaHotPizza1`` is
 the object.
 
 However, classes and properties themselves are also represented as
-triples. So for example, when you create the class Pizza what Protégé
-does for you is to add the triple: Pizza rdf:type owl:Class to the
-ontology. I.e., the Pizza entity is of type (is an instance of)
-owl:Class. Similarly when you add NamedPizza as a subclass of Pizza,
-Protégé adds the triple: NamedPizza rdfs:**s**\ ubClassOf Pizza.
+triples. So for example, when you create the class ``Pizza`` what Protégé
+does for you is to add the triple: ``Pizza rdf:type owl:Class`` to the
+ontology. I.e., the ``Pizza`` entity is of type (is an instance of)
+``owl:Class``. Similarly when you add ``NamedPizza`` as a subclass of ``Pizza``,
+Protégé adds the triple: ``NamedPizza rdfs:subClassOf Pizza``.
 
 Hopefully, now you can make some sense of this initial query. The query
 is looking for all the entities that are the subjects of triples where
-the predicate is rdfs:**s**\ ubClassOf and the object is any other
+the predicate is ``rdfs:subClassOf`` and the object is any other
 entity. The *?* before a name indicates that the name is a wildcard that
 can match anything that fits with the rest of the pattern. This is part
 of the power of SPARQL, one can match a Subject, an Object, a Predicate
@@ -2806,40 +2789,39 @@ to display everything matched in the WHERE clause you can just use a \*
 for the SELECT clause. The initial default query in this tab is set up
 with no knowledge of the specific ontology. I.e., it will return all the
 classes that are subclasses of other classes regardless of the ontology.
-To get information about Pizzas the first thing we need to do is to add
+To get information about ``Pizzas`` the first thing we need to do is to add
 another prefix to the beginning of the query. In our case the Pizza
 ontology has been set up with a mapping to the prefix pizza (you can see
 this in the ontology prefixes tab in the Active ontology tab discussed
-in chapter 7). So, add the following to the SPARQL query after the last
+in :ref:`Chapter 7 <chap7>`). So, add the following to the SPARQL query after the last
 PREFIX statement:
 
-PREFIX pizza: <http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#>
+`PREFIX pizza: <http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#>`
 
 We are almost ready to query the actual ontology. For our first query
 let's find all the Pizzas purchased by a Customer. The SPARQL code for
 this is:
 
-SELECT \* WHERE { ?customer pizza:purchasedPizza ?pizza }
+`SELECT * WHERE { ?customer pizza:purchasedPizza ?pizza }`
 
 Type that into the query window underneath the prefixes (of course
-remove the existing query). Hit Execute. Your screen should look similar
+remove the existing query). Hit `Execute`. Your screen should look similar
 to figure 9.2.
 
-.. figure:: /_static/media/image96.png
-   :width: 6.5in
-   :height: 4.59444in
+.. figure:: /_static/media/chap_9/2.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 9.2 A SPARQL Query
+   *Figure 9.2 A SPARQL Query*
 
-If you examine the output carefully you may notice an issue. Customer4
+If you examine the output carefully you may notice an issue. ``Customer4``
 only seems to have purchased 2 Pizzas. However, if you examine the data
-in the Individuals by class tab you will see that she purchased 3.
-
+in the `Individuals by class` tab you will see that she purchased 3.
 The reason that one of them doesn't show up is that when the data was
-entered, I typically entered it on the Customer instances. However, for
-one of Customer4'sPizzas I entered the data on the Pizza instead. I.e.,
-I asserted on HotVeggiePizza2 that it was purchasedByCustomerCustomer4.
-Since purchasedPizza and purchasedByCustomer are inverses, the reasoner
+entered, I typically entered it on the ``Customer`` instances. However, for
+one of ``Customer4's Pizzas`` I entered the data on the ``Pizza`` instead. I.e.,
+I asserted on ``HotVeggiePizza2`` that it was ``purchasedByCustomer Customer4``.
+Since ``purchasedPizza`` and ``purchasedByCustomer`` are inverses, the reasoner
 filled in the additional information for me. However, SPARQL doesn't pay
 attention to information asserted by the reasoner only information
 asserted by the user. Note: this depends on the implementation of
@@ -2852,74 +2834,76 @@ information asserted by the reasoner. This is an issue for other plugins
 for Protégé as well such as the Individuals matrix. Luckily, there is a
 simple work around for this issue where information asserted by the
 reasoner can be saved and reloaded so that it is the same as user
-defined data. This workaround is described in my blog in the article: https://www.michaeldebellis.com/post/export-inferred-axioms
+defined data. This workaround is described in my blog in the article:
+https://www.michaeldebellis.com/post/export-inferred-axioms
 
 To further see this, replace the current query (make sure to keep all the prefixes) with:
 
-SELECT \* WHERE { ?pizza pizza:purchasedByCustomer ?customer}
+`SELECT * WHERE { ?pizza pizza:purchasedByCustomer ?customer}`
 
 This will show you the two pizzas where the purchase relation was
 asserted on the instance of Pizza rather than on the instance of
 Customer.
 
 Suppose you wanted to see all of the things that are objects of
-Customer? With a couple of new constructs this is simple. First, in
+``Customer``? With a couple of new constructs this is simple. First, in
 SPARQL a shortcut to identify the type of any entity is to use the
-keyword a as the predicate. This is just shorthand for rdf:type. Second,
+keyword a as the predicate. This is just shorthand for ``rdf:type``. Second,
 when you have multiple statements in a WHERE clause you need to end each
 one with a period.
 
-| Replace the current query with the following:
-| SELECT \*
-| WHERE { ?customer a pizza:Customer.
+Replace the current query with the following:
 
-| ?customer ?relation ?relatedToCustomer.}
-| This will provide a long list of everything in the graph that is an
-  object of some instance of the Customer class. I.e., any entity that
-  is the object of a predicate with a Customer as the subject.
+| `SELECT *`
+| `WHERE { ?customer a pizza:Customer.`
+| `?customer ?relation ?relatedToCustomer.}`
+
+This will provide a long list of everything in the graph that is an
+object of some instance of the Customer class. I.e., any entity that
+is the object of a predicate with a ``Customer`` as the subject.
 
 Suppose you wanted to count the number of Pizzas purchased by Customers
 so far. For this you use the SPARQL function COUNT. Here is what it
 would look like:
 
-| SELECT (COUNT(?pizza) AS ?pcount)
-| WHERE {?customer pizza:purchasedPizza ?pizza}
-| Paste that into the SPARQL query view and hit Execute and you should
-  see the returned value: 15. However, remember this isn't really all
-  the Pizzas because a few of the purchases were recorded on the Pizza
-  rather than on the Customer. To get the full number we can take
-  advantage of the fact that we have recorded the number of pizzas that
-  each customer has purchased and use the SPARQL SUM function. That
-  query would be:
+| `SELECT (COUNT(?pizza) AS ?pcount)`
+| `WHERE {?customer pizza:purchasedPizza ?pizza}`
 
-| SELECT (SUM(?pnumber) AS ?psum)
-| WHERE { ?customer pizza:numberOfPizzasPurchased ?pnumber} This should
-  give you the correct number of 17.
+Paste that into the SPARQL query view and hit `Execute` and you should
+see the returned value: 15. However, remember this isn't really all
+the ``Pizzas`` because a few of the purchases were recorded on the ``Pizza``
+rather than on the ``Customer``. To get the full number we can take
+advantage of the fact that we have recorded the number of pizzas that
+each customer has purchased and use the SPARQL SUM function. That
+query would be:
 
-| 9.22 SPARQL and IRI Names
-| If you recall, at the beginning of the tutorial we changed the
-  preference for creating new entities to *user supplied name* rather
-  than *auto-generated name* which is the default. Now that you have
-  seen examples of using SPARQL we can explain why. With auto-generated
-  names rather than have names such as Customer or purchasedByCustomer
-  our entities would have names such as
-| OWLPropertyA4257yri73ff90rmbx and OWLClass23gkb0tk5kd30tm. Thus, the
-  first query would be something like:
+| `SELECT (SUM(?pnumber) AS ?psum)`
+| `WHERE { ?customer pizza:numberOfPizzasPurchased ?pnumber}`
 
-SELECT \* WHERE {?customer pizza:OWLPropertyA4257yri73ff90rmbx ?pizza}
+This should give you the correct number of 17.
+
+SPARQL and IRI Names
+--------------------
+If you recall, at the beginning of the tutorial we changed the
+preference for creating new entities to *user supplied name* rather
+than *auto-generated name* which is the default. Now that you have
+seen examples of using SPARQL we can explain why. With auto-generated
+names rather than have names such as ``Customer`` or ``purchasedByCustomer``
+our entities would have names such as
+``OWLPropertyA4257yri73ff90rmbx`` and ``OWLClass23gkb0tk5kd30tm``. Thus, the
+first query would be something like:
+
+``SELECT * WHERE {?customer pizza:OWLPropertyA4257yri73ff90rmbx ?pizza}``
 
 and the second query would be:
 
-SELECT \*
-
-WHERE {?customer a pizza:OWLClass23gkb0tk5kd30tm.
-
-   ?customer ?relation ?relatedToCustomer.}
+| ``SELECT *``
+| ``WHERE {?customer a pizza:OWLClass23gkb0tk5kd30tm.``
+| ``?customer ?relation ?relatedToCustomer.}``
 
 This would be much less intuitive than the user defined names. There are
 good reasons to use autogenerated names, especially for large ontologies
 that are implemented in multiple natural languages.
-
 However, for new users, especially those who plan to use SPARQL and
 SHACL, I think it is more intuitive to start with user supplied names
 and then progress to auto-generated names if and when the requirements
@@ -2938,35 +2922,39 @@ the bibliography.
 
 One final point: features of OWL and SWRL that new users frequently find
 frustrating are the Open World Assumption (OWA) and lack of
-non-monotonic reasoning. The OWA was discussed in chapter 4.13.
-Non-monotonic reasoning will be discussed in section 11.1. For now,
-though remember that SPARQL is *not* subject to *either* of these
+non-monotonic reasoning. The OWA was discussed in `section 4.13 <#automated-classification-and-open-world-reasoning>`_.
+Non-monotonic reasoning will be discussed in `section 11.1 <#owa-and-monotonic-reasoning>`_.
+For now, though remember that SPARQL is *not* subject to *either* of these
 restrictions. With SPARQL one can do non-monotonic reasoning and
 leverage the more common Closed World Assumption (CWA). E.g., one can
 test if the value for a property on a specific instance exists or not
 and can take actions if that property does not exist.
 
-| To perform non-monotonic reasoning simply requires a combination of
-  INSERT and DELETE in the same query. One deletes the existing triple
-  and inserts a triple with the same subject and predicate but a
-  different object. Unfortunately, this is not possible to currently
-  demonstrate in Protégé because neither of the implementations in
-  Protégé support INSERT or DELETE. I plan to add some SPARQL utilities
-  to my blog at some point in the future that provide examples of this.
-  For an example of how SPARQL can be used to get around the OWA see the
-  ontology and instructions I recently added to my blog at: https://www.michaeldebellis.com/post/the-people_example-ontology
-| In that example I show how the HermitPersonial relations can't be
-  recognized by the reasoner due to the OWA. However, a simple SPARQL
-  query can both recognize instances of the People class with no social
-  relations and can change the type of such instances (?p) by adding the
-  triple: ?p rdf:type :Hermit. This new post also has a much more
-  interesting example SPARQL query developed with Franz Inc. and their
-  AllegroGraph product. The query utilizes linked data to find the
-  median income for the area that Barack Obama was born by querying
-  several different public knowledge graphs such as DBpedia and
-  Geonames.
+To perform non-monotonic reasoning simply requires a combination of
+INSERT and DELETE in the same query. One deletes the existing triple
+and inserts a triple with the same subject and predicate but a
+different object. Unfortunately, this is not possible to currently
+demonstrate in Protégé because neither of the implementations in
+Protégé support INSERT or DELETE. I plan to add some SPARQL utilities
+to my blog at some point in the future that provide examples of this.
+For an example of how SPARQL can be used to get around the OWA see the
+ontology and instructions I recently added to my blog at: https://www.michaeldebellis.com/post/the-people_example-ontology
+In that example I show how the defined class ``Hermit`` defined as a ``Person`` with a maximum of 0 social relations can't be
+recognized by the reasoner due to the OWA. However, a simple SPARQL
+query can both recognize instances of the ``People`` class with no social
+relations and can change the type of such instances (``?p``) by adding the
+triple: ``?p rdf:type :Hermit``. This new post also has a much more
+interesting example SPARQL query developed with Franz Inc. and their
+AllegroGraph product. The query utilizes linked data to find the
+median income for the area that Barack Obama was born by querying
+several different public knowledge graphs such as DBpedia and
+Geonames.
 
-Chapter 10 SWRL and SQWRL
+.. _chap10:
+
+**************
+SWRL and SQWRL
+**************
 
 The Semantic Web Rule Language (SWRL) was created because there are
 certain kinds of inferences that can't be done by Description Logic (DL)
@@ -3246,7 +3234,7 @@ Assumption (OWA) and Monotonic reasoning.
   the OWA. The OWA means that there may be a social security number out
   there somewhere in the Internet but that the system just hasn't found
   it yet. While this is true, to validate the integrity of corporate
-  data just saying “well it is out there somewhere” won't do. To
+  data just saying “well it is out there somewhere" won't do. To
   validate data integrity we need to be able to fire off warnings when
   required data isn't there so we need to use the Closed World
   Assumption (CWA).
@@ -3315,7 +3303,7 @@ the actual constraints such as the minimum or maximum number of values
 and the datatype. In the following example, a Target is the Employee
 class in the Pizza ontology. An example constraint is that the ssn
 property must have exactly one value. Another example constraint is that
-the format of the ssn value must be a string of the form: “NNN-NN-NNNN”
+the format of the ssn value must be a string of the form: “NNN-NN-NNNN"
 where each N must be an integer. For more on SHACL see the references in
 the bibliography.
 
@@ -3668,7 +3656,7 @@ Chapter 13 Conclusion: Some Personal Thoughts and Opinions
   experience for most large US corporations the excitement around
   Machine Learning seemed for a while to eclipse serious interest in
   OWL, SPARQL, and other Semantic Web technologies in the United States.
-  Then Google [Singhal 2012] coined the term “knowledge graph”. After
+  Then Google [Singhal 2012] coined the term “knowledge graph". After
   that, Facebook [Olanof 2013], Amazon [Neptune 2017], and many other
   technology leaders started to embrace the technology [Noy 2019]. The
   corporate world is finally realizing that machine learning and
@@ -3678,7 +3666,7 @@ Chapter 13 Conclusion: Some Personal Thoughts and Opinions
 | knowledge graphs contributed to combatting the Covid-19 pandemic the
   vast majority of the systems developed with knowledge graphs utilized
   machine learning for tasks such as converting from “strings to
-  things”.
+  things".
 
 The term knowledge graph itself can be used in different ways. The best
 definition I've heard is that an ontology provides the vocabulary (i.e.,
@@ -3938,25 +3926,6 @@ Top Quadrant: https://www.topquadrant.com/
    :height: 1.52082in
 
 
-
-
-.. _chap8:
-
-*********
-Chapter 8
-*********
-
-.. _chap9:
-
-*********
-Chapter 9
-*********
-
-.. _chap10:
-
-**********
-Chapter 10
-**********
 
 .. _chap11:
 

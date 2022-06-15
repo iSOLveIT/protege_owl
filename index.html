@@ -543,22 +543,75 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-8" class="md-nav__link">
-    <span class="md-ellipsis">8.<wbr>   Chapter 8</span>
+  <a href="#a-larger-ontology-with-some-individuals" class="md-nav__link">
+    <span class="md-ellipsis">8.<wbr>   A Larger Ontology with some Individuals</span>
   </a>
+  
+    <nav class="md-nav" aria-label="8.   A Larger Ontology with some Individuals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-familiar-with-the-larger-ontology" class="md-nav__link">
+    <span class="md-ellipsis">8.<wbr>1.<wbr>   Get Familiar with the Larger Ontology</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-9" class="md-nav__link">
-    <span class="md-ellipsis">9.<wbr>   Chapter 9</span>
+  <a href="#queries-description-logic-and-sparql" class="md-nav__link">
+    <span class="md-ellipsis">9.<wbr>   Queries:<wbr> Description Logic and SPARQL</span>
   </a>
+  
+    <nav class="md-nav" aria-label="9.   Queries: Description Logic and SPARQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#description-logic-queries" class="md-nav__link">
+    <span class="md-ellipsis">9.<wbr>1.<wbr>   Description Logic Queries</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sparql-queries" class="md-nav__link">
+    <span class="md-ellipsis">9.<wbr>2.<wbr>   SPARQL Queries</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.2.   SPARQL Queries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#some-sparql-pizza-queries" class="md-nav__link">
+    <span class="md-ellipsis">9.<wbr>2.<wbr>1.<wbr>   Some SPARQL Pizza Queries</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sparql-and-iri-names" class="md-nav__link">
+    <span class="md-ellipsis">9.<wbr>2.<wbr>2.<wbr>   SPARQL and IRI Names</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#chapter-10" class="md-nav__link">
-    <span class="md-ellipsis">10.<wbr>   Chapter 10</span>
+  <a href="#swrl-and-sqwrl" class="md-nav__link">
+    <span class="md-ellipsis">10.<wbr>   SWRL and SQWRL</span>
   </a>
   
 </li>
@@ -638,7 +691,7 @@ Gruff for this tutorial and for a new tutorial available at: <a class="reference
 <a class="reference external" href="https://www.michaeldebellis.com/post/new-protege-pizza-tutorial">https://www.michaeldebellis.com/post/new-protege-pizza-tutorial</a> to make sure you have the latest version.</p>
 </div>
 <p>If you have questions or comments, feel free to contact me at <a class="reference external" href="mailto:mdebellissf&#37;&#52;&#48;gmail&#46;com">mdebellissf<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
-<h1 id="introduction"><span id="chap1"></span><span class="sectnum">1.</span> Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<h1 id="introduction"><span id="chap1"></span><span class="sectnum">1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h1>
 <p>This introduces Protégé 5 for creating OWL ontologies as well as various
 plugins. If you have questions specific to this tutorial, please feel
 free to email me directly: <a class="reference external" href="mailto:mdebellissf&#37;&#52;&#48;gmail&#46;com">mailto:mdebellissf<span>&#64;</span>gmail<span>&#46;</span>com</a>
@@ -673,13 +726,13 @@ Language (SWRL) and walks you through creating SWRL and SQWRL rules.
 discusses the difference between defining logical axioms in Description
 Logic and data integrity constraints in SHACL. <a class="reference internal" href="#chap12"><span class="std std-ref">Chapter 12</span></a> has some
 concluding thoughts and opinions and <a class="reference internal" href="#chap13"><span class="std std-ref">Chapter 13</span></a> provides a bibliography.</p>
-<h2 id="licensing"><span class="sectnum">1.1.</span> Licensing<a class="headerlink" href="#licensing" title="Permalink to this headline">¶</a></h2>
+<h2 id="licensing"><span class="sectnum">1.1. </span>Licensing<a class="headerlink" href="#licensing" title="Permalink to this heading">¶</a></h2>
 <p>This document is freely available under the Creative Commons
 Attribution-ShareAlike 4.0 International Public License. I typically
 distribute it as a PDF but if you want to make your own version send
 me an email and I will send you the Word version. For details on
 licensing see: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a></p>
-<h2 id="conventions"><span class="sectnum">1.2.</span> Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline">¶</a></h2>
+<h2 id="conventions"><span class="sectnum">1.2. </span>Conventions<a class="headerlink" href="#conventions" title="Permalink to this heading">¶</a></h2>
 <p>Class, property, rule, and individual names are written in Consolas font
 like this. The term used for any such construct in Protégé and in this
 document is an <em>Entity</em>. Individuals and classes can also be referred to
@@ -732,7 +785,7 @@ this</em>.</div>
 <p class="admonition-title">Vocab</p>
 <p>Vocabulary explanations and alternative names are presented like this.</p>
 </div>
-<h1 id="requirements-and-the-protege-user-interface"><span id="chap2"></span><span class="sectnum">2.</span> Requirements and the Protégé User Interface<a class="headerlink" href="#requirements-and-the-protege-user-interface" title="Permalink to this headline">¶</a></h1>
+<h1 id="requirements-and-the-protege-user-interface"><span id="chap2"></span><span class="sectnum">2. </span>Requirements and the Protégé User Interface<a class="headerlink" href="#requirements-and-the-protege-user-interface" title="Permalink to this heading">¶</a></h1>
 <p>In order to follow this tutorial, you must have Protégé 5, which is
 available from the Protégé website,1 and some of the Protégé Plugins
 which will be described in more detail below. For now, just make sure
@@ -760,7 +813,7 @@ that can be added via the <cite>Window&gt;Views</cite> option. The additional vi
 are divided into various categories such as
 <cite>Window&gt;Views&gt;Individual views</cite>. <a class="reference external" href="#customizing-the-protégé-user-interface">Section 5.2</a> will show an example of
 adding a new view to a major tab.</p>
-<h1 id="what-are-owl-ontologies"><span id="chap3"></span><span class="sectnum">3.</span> What are OWL Ontologies?<a class="headerlink" href="#what-are-owl-ontologies" title="Permalink to this headline">¶</a></h1>
+<h1 id="what-are-owl-ontologies"><span id="chap3"></span><span class="sectnum">3. </span>What are OWL Ontologies?<a class="headerlink" href="#what-are-owl-ontologies" title="Permalink to this heading">¶</a></h1>
 <p>Ontologies are used to capture knowledge about some domain of interest.
 An ontology describes the concepts in the domain and also the
 relationships that hold between those concepts. Different ontology
@@ -778,7 +831,7 @@ than one parent. The reasoner can also infer additional information. For
 example, if two properties are inverses only one value needs to be
 asserted by the user and the inverse value will be automatically
 inferred by the reasoner.</p>
-<h2 id="components-of-owl-ontologies"><span class="sectnum">3.1.</span> Components of OWL Ontologies<a class="headerlink" href="#components-of-owl-ontologies" title="Permalink to this headline">¶</a></h2>
+<h2 id="components-of-owl-ontologies"><span class="sectnum">3.1. </span>Components of OWL Ontologies<a class="headerlink" href="#components-of-owl-ontologies" title="Permalink to this heading">¶</a></h2>
 <p>An OWL ontology consists of Classes, Properties, and Individuals. OWL
 ontologies are an implementation of Description Logic (DL) which is a decidable subset
 of First Order Logic. A class in OWL is a set, a property is a binary
@@ -793,7 +846,7 @@ their knowledge on logic and set theory. A good source is the first 3
 chapters in Elements of the Theory of Computation by Lewis and
 Papadamitrious. Another good source is the PDF document <em>Overview of Set
 Theory</em> available at: <a class="reference external" href="https://www.michaeldebellis.com/post/owl-theoretical-basics">https://www.michaeldebellis.com/post/owl-theoretical-basics</a></p>
-<h3 id="individuals"><span class="sectnum">3.1.1.</span> Individuals<a class="headerlink" href="#individuals" title="Permalink to this headline">¶</a></h3>
+<h3 id="individuals"><span class="sectnum">3.1.1. </span>Individuals<a class="headerlink" href="#individuals" title="Permalink to this heading">¶</a></h3>
 <p>Individuals represent objects in the domain of interest. An important
 difference between OWL and most programming and knowledge representation
 languages is that OWL does not use the Unique Name Assumption (UNA).
@@ -804,18 +857,18 @@ explicitly stated that individuals are the same as each other, or
 different from each other. Figure 3.1 shows a representation of some
 individuals in a domain of people, nations, and relations — in this
 tutorial we represent individuals as diamonds.</p>
-<figure class="align-center align-default" id="id2">
+<figure class="align-center align-default" id="id6">
 <img alt="_images/1.png" class="no-scaled-link" src="_images/1.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 3.1: Representation of Individuals</em></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<em>Figure 3.1: Representation of Individuals</em></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<figure class="align-center align-default" id="id3">
+<figure class="align-center align-default" id="id7">
 <img alt="_images/2.png" class="no-scaled-link" src="_images/2.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 3.2: Representation of Properties</em></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<em>Figure 3.2: Representation of Properties</em></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="vocab admonition">
@@ -823,7 +876,7 @@ tutorial we represent individuals as diamonds.</p>
 <p>Individuals are also known as <em>instances</em>. Individuals can be
 referred to as <em>instances of classes</em>.</p>
 </div>
-<h3 id="properties"><span class="sectnum">3.1.2.</span> Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h3>
+<h3 id="properties"><span class="sectnum">3.1.2. </span>Properties<a class="headerlink" href="#properties" title="Permalink to this heading">¶</a></h3>
 <p>Properties are binary relations between individuals. I.e.,
 properties link two individuals together. For example, the property
 <code class="docutils literal notranslate"><span class="pre">hasFriend</span></code> might link the individual <code class="docutils literal notranslate"><span class="pre">Biswanath</span></code> to the individual
@@ -834,11 +887,11 @@ limited to having a single value – i.e., to being functional. They
 can also be transitive or symmetric. These property characteristics
 are explained in detail in <a class="reference external" href="#owl-object-property-characteristics">Section 4.8</a>. Figure 3.2 shows a
 representation of some properties.</p>
-<figure class="align-center align-default" id="id4">
+<figure class="align-center align-default" id="id8">
 <img alt="_images/3.png" class="no-scaled-link" src="_images/3.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 3.3: Representation of Classes containing Individuals</em></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<em>Figure 3.3: Representation of Classes containing Individuals</em></span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="vocab admonition">
@@ -850,7 +903,7 @@ is that OWL properties are first class entities that exist
 independent of classes. OOP developers are encouraged to read:
 <a class="reference external" href="https://www.w3.org/2001/sw/BestPractices/SE/ODSD/">https://www.w3.org/2001/sw/BestPractices/SE/ODSD/</a></p>
 </div>
-<h3 id="classes"><span class="sectnum">3.1.3.</span> Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h3>
+<h3 id="classes"><span class="sectnum">3.1.3. </span>Classes<a class="headerlink" href="#classes" title="Permalink to this heading">¶</a></h3>
 <p>OWL classes are sets that contain individuals. They are described
 using formal (mathematical) descriptions that rigorously define the requirements for membership
 of the class. For example, the class <code class="docutils literal notranslate"><span class="pre">Cat</span></code> would contain all the
@@ -875,7 +928,7 @@ represented as ovals, like sets in Venn diagrams.</p>
 conditions that must be satisﬁed by an individual for it to be a member
 of the class. How to formulate these descriptions will be explained as
 the tutorial progresses.</p>
-<h1 id="building-an-owl-ontology"><span id="chap4"></span><span class="sectnum">4.</span> Building an OWL Ontology<a class="headerlink" href="#building-an-owl-ontology" title="Permalink to this headline">¶</a></h1>
+<h1 id="building-an-owl-ontology"><span id="chap4"></span><span class="sectnum">4. </span>Building an OWL Ontology<a class="headerlink" href="#building-an-owl-ontology" title="Permalink to this heading">¶</a></h1>
 <p>This chapter describes how to create an ontology of Pizzas. We use
 Pizzas because it is something almost everyone is familiar with.</p>
 <p><strong>Exercise 1: Create a new OWL Ontology</strong></p>
@@ -949,25 +1002,25 @@ need to make sure that the preferences are set appropriately to work
 with the rest of the tutorial.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id5">
+<figure class="align-center align-default" id="id9">
 <img alt="_images/11.png" class="no-scaled-link" src="_images/11.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.1: The New entities tab</em></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+<em>Figure 4.1: The New entities tab</em></span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<figure class="align-center align-default" id="id6">
+<figure class="align-center align-default" id="id10">
 <img alt="_images/21.png" class="no-scaled-link" src="_images/21.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.2 Renderer tab</em></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<em>Figure 4.2 Renderer tab</em></span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<figure class="align-center align-default" id="id7">
+<figure class="align-center align-default" id="id11">
 <img alt="_images/31.png" class="no-scaled-link" src="_images/31.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.3: The Active Ontology Tab with a New Comment</em></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+<em>Figure 4.3: The Active Ontology Tab with a New Comment</em></span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p><strong>Exercise 3: Add a Comment Annotation to Your Ontology</strong></p>
@@ -983,14 +1036,14 @@ the right. Something like <cite>A tutorial ontology for the Pizza domain</cite>.
 <li><p>Click <cite>OK</cite>. Your Active Ontology tab should like Figure 4.3.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id8">
+<figure class="align-center align-default" id="id12">
 <img alt="_images/4.png" class="no-scaled-link" src="_images/4.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.4: The Class Hierarchy View Options</em></span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+<em>Figure 4.4: The Class Hierarchy View Options</em></span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<h2 id="named-classes"><span class="sectnum">4.1.</span> Named Classes<a class="headerlink" href="#named-classes" title="Permalink to this headline">¶</a></h2>
+<h2 id="named-classes"><span class="sectnum">4.1. </span>Named Classes<a class="headerlink" href="#named-classes" title="Permalink to this heading">¶</a></h2>
 <p>The main building blocks of an OWL ontology are classes. In Protégé 5,
 editing of classes can be done in the <cite>Entities</cite> tab. The <cite>Entities</cite> tab
 has a number of sub-tabs. When you select it, the default should be
@@ -1017,11 +1070,11 @@ the classes are highlighted in red. That is because the reasoner hasn’t
 run yet. We will address this shortly.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id9">
+<figure class="align-center align-default" id="id13">
 <img alt="_images/5.png" class="no-scaled-link" src="_images/5.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.5 The Classes Sub-Tab in the Entities Tab</em></span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+<em>Figure 4.5 The Classes Sub-Tab in the Entities Tab</em></span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="suggest admonition">
@@ -1037,7 +1090,7 @@ contain spaces. This is known as CamelBack notation. For example:
 class names are always singular rather than plural. E.g., <code class="docutils literal notranslate"><span class="pre">Pizza</span></code>
 rather than <code class="docutils literal notranslate"><span class="pre">Pizzas</span></code>, <code class="docutils literal notranslate"><span class="pre">PizzaTopping</span></code> rather than <code class="docutils literal notranslate"><span class="pre">PizzaToppings</span></code>.</p>
 </div>
-<h2 id="using-a-reasoner"><span class="sectnum">4.2.</span> Using a Reasoner<a class="headerlink" href="#using-a-reasoner" title="Permalink to this headline">¶</a></h2>
+<h2 id="using-a-reasoner"><span class="sectnum">4.2. </span>Using a Reasoner<a class="headerlink" href="#using-a-reasoner" title="Permalink to this heading">¶</a></h2>
 <p>You may notice that one or more of your classes is highlighted in red
 as in Figure 4.5. This is because we haven’t run the reasoner yet so
 Protégé has not been able to verify that our new classes have no
@@ -1094,7 +1147,7 @@ take a lot of time, but you can ignore those since your ontology will be
 small.</p></li>
 </ol>
 <hr class="docutils" />
-<h2 id="disjoint-classes"><span class="sectnum">4.3.</span> Disjoint Classes<a class="headerlink" href="#disjoint-classes" title="Permalink to this headline">¶</a></h2>
+<h2 id="disjoint-classes"><span class="sectnum">4.3. </span>Disjoint Classes<a class="headerlink" href="#disjoint-classes" title="Permalink to this heading">¶</a></h2>
 <p>Having added the classes <code class="docutils literal notranslate"><span class="pre">Pizza</span></code>, <code class="docutils literal notranslate"><span class="pre">PizzaTopping</span></code>, and <code class="docutils literal notranslate"><span class="pre">PizzaBase</span></code> to the
 ontology, we now want to say that these classes are <em>disjoint</em>. I.e.,
 no individual can be an instance of more than one of those classes. In
@@ -1118,11 +1171,11 @@ disjoint axioms defined to indicate that each of these classes is
 disjoint with the other two.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id10">
+<figure class="align-center align-default" id="id14">
 <img alt="_images/6.png" class="no-scaled-link" src="_images/6.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.6: The Disjoint Option in the Class Description View</em></span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+<em>Figure 4.6: The Disjoint Option in the Class Description View</em></span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="explain admonition">
@@ -1137,14 +1190,14 @@ not disjoint and then make them disjoint once the model is more
 fully fleshed out as it is not always obvious which classes are
 disjoint from the beginning.</p>
 </div>
-<h2 id="using-create-class-hierarchy"><span class="sectnum">4.4.</span> Using Create Class Hierarchy<a class="headerlink" href="#using-create-class-hierarchy" title="Permalink to this headline">¶</a></h2>
+<h2 id="using-create-class-hierarchy"><span class="sectnum">4.4. </span>Using Create Class Hierarchy<a class="headerlink" href="#using-create-class-hierarchy" title="Permalink to this heading">¶</a></h2>
 <p>In this section we will use <cite>Tools&gt;Create class hierarchy</cite> to create
 multiple classes at once.</p>
-<figure class="align-center align-default" id="id11">
+<figure class="align-center align-default" id="id15">
 <img alt="_images/7.png" class="no-scaled-link" src="_images/7.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.7: The Create class hierarchy wizard</em></span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+<em>Figure 4.7: The Create class hierarchy wizard</em></span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p><strong>Exercise 7: Use the Create class hierarchy tool to create subclasses of PizzaBase</strong></p>
@@ -1168,14 +1221,14 @@ deep pan and thin) so just select <cite>Finish</cite>. Synchronize the reasoner.
 class hierarchy should now look like figure 4.8.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id12">
+<figure class="align-center align-default" id="id16">
 <img alt="_images/8.png" class="no-scaled-link" src="_images/8.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.8: The New Class Hierarchy</em></span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+<em>Figure 4.8: The New Class Hierarchy</em></span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<h2 id="create-a-pizzatopping-hierarchy"><span class="sectnum">4.5.</span> Create a PizzaTopping Hierarchy<a class="headerlink" href="#create-a-pizzatopping-hierarchy" title="Permalink to this headline">¶</a></h2>
+<h2 id="create-a-pizzatopping-hierarchy"><span class="sectnum">4.5. </span>Create a PizzaTopping Hierarchy<a class="headerlink" href="#create-a-pizzatopping-hierarchy" title="Permalink to this heading">¶</a></h2>
 <p>We will use <cite>Tools&gt;Create class hierarchy</cite> again but this time to create
 a more interesting hierarchy with additional subclasses to model the
 subclasses of <code class="docutils literal notranslate"><span class="pre">PizzaTopping</span></code>.</p>
@@ -1194,18 +1247,18 @@ checked and click <cite>Finish</cite>. Synchronize the reasoner. Your class hier
 should now look like figure 4.10.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id13">
+<figure class="align-center align-default" id="id17">
 <img alt="_images/9.png" class="no-scaled-link" src="_images/9.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.9 Using Create class hierarchy to create PizzaTopping subclasses</em></span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+<em>Figure 4.9 Using Create class hierarchy to create PizzaTopping subclasses</em></span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<figure class="align-center align-default" id="id14">
+<figure class="align-center align-default" id="id18">
 <img alt="_images/10.png" class="no-scaled-link" src="_images/10.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.10 The New PizzaTopping Class Hierarchy</em></span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id14" title="Permalink to this image">¶</a></p>
+<em>Figure 4.10 The New PizzaTopping Class Hierarchy</em></span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="explain admonition">
@@ -1226,7 +1279,7 @@ like the <em>Ham</em> in your sandwich is a kind of <code class="docutils litera
 strict attention to the naming of classes and other entities
 can prevent potential confusion and bugs.</p>
 </div>
-<h2 id="owl-properties"><span class="sectnum">4.6.</span> OWL Properties<a class="headerlink" href="#owl-properties" title="Permalink to this headline">¶</a></h2>
+<h2 id="owl-properties"><span class="sectnum">4.6. </span>OWL Properties<a class="headerlink" href="#owl-properties" title="Permalink to this heading">¶</a></h2>
 <p>OWL Properties represent relationships. There are three types of
 properties, Object properties, Data properties and Annotation
 properties. Object properties are relationships between two
@@ -1284,14 +1337,14 @@ similar to attributes. Object properties are similar to
 properties with a range of some class in OOP and data properties
 are similar to OOP properties with a range that is a datatype.</p>
 </div>
-<figure class="align-center align-default" id="id15">
+<figure class="align-center align-default" id="id19">
 <img alt="_images/111.png" class="no-scaled-link" src="_images/111.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.11 Adding Some Object Properties</em></span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+<em>Figure 4.11 Adding Some Object Properties</em></span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<h2 id="inverse-properties"><span class="sectnum">4.7.</span> Inverse Properties<a class="headerlink" href="#inverse-properties" title="Permalink to this headline">¶</a></h2>
+<h2 id="inverse-properties"><span class="sectnum">4.7. </span>Inverse Properties<a class="headerlink" href="#inverse-properties" title="Permalink to this heading">¶</a></h2>
 <p>Each object property may have a corresponding inverse property. If
 some property links individual a to individual b then its inverse
 property will link individual b to individual a. For example, in
@@ -1323,14 +1376,14 @@ unchecked and select <cite>Finish</cite>. Repeat step 2 to make <code class="doc
 inverse of <code class="docutils literal notranslate"><span class="pre">hasTopping</span></code> and <code class="docutils literal notranslate"><span class="pre">isBaseOf</span></code> the inverse of <code class="docutils literal notranslate"><span class="pre">hasBase</span></code>.</p></li>
 <li><p>Synchronize the reasoner. Your window should now look like figure 4.12.</p></li>
 </ol>
-<figure class="align-center align-default" id="id16">
+<figure class="align-center align-default" id="id20">
 <img alt="_images/12.png" class="no-scaled-link" src="_images/12.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.12 Inverse Properties</em></span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
+<em>Figure 4.12 Inverse Properties</em></span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<h2 id="owl-object-property-characteristics"><span class="sectnum">4.8.</span> OWL Object Property Characteristics<a class="headerlink" href="#owl-object-property-characteristics" title="Permalink to this headline">¶</a></h2>
+<h2 id="owl-object-property-characteristics"><span class="sectnum">4.8. </span>OWL Object Property Characteristics<a class="headerlink" href="#owl-object-property-characteristics" title="Permalink to this heading">¶</a></h2>
 <p>OWL allows the meaning of properties to be enriched through the use of
 property characteristics. The following sections discuss the various
 characteristics that properties may have. If you are familiar with
@@ -1338,7 +1391,7 @@ basic concepts of relations in set theory these characteristics will
 already be familiar to you. In figure 4.12 you can see the
 <cite>Characteristics</cite>: view for a property as a list of check boxes:
 <cite>Functional</cite>, <cite>Inverse functional</cite>, <cite>Transitive</cite>, etc.</p>
-<h3 id="functional-properties"><span class="sectnum">4.8.1.</span> Functional Properties<a class="headerlink" href="#functional-properties" title="Permalink to this headline">¶</a></h3>
+<h3 id="functional-properties"><span class="sectnum">4.8.1. </span>Functional Properties<a class="headerlink" href="#functional-properties" title="Permalink to this heading">¶</a></h3>
 <p>If a property is functional, for a given individual, there can be at
 most one individual that is related to the individual via the
 property. For example the property <code class="docutils literal notranslate"><span class="pre">hasBirthMother</span></code> – someone can only
@@ -1364,7 +1417,7 @@ value. For example, the <code class="docutils literal notranslate"><span class="
 any number <code class="docutils literal notranslate"><span class="pre">X</span></code> many (in fact an infinite number) can be <code class="docutils literal notranslate"><span class="pre">greaterThan</span></code> <code class="docutils literal notranslate"><span class="pre">X</span></code> but
 the <code class="docutils literal notranslate"><span class="pre">plusOne</span></code> relation is functional since for any number <code class="docutils literal notranslate"><span class="pre">X</span></code> <code class="docutils literal notranslate"><span class="pre">plusOne</span></code> always
 results in one unique value.</p>
-<h3 id="inverse-functional-properties"><span class="sectnum">4.8.2.</span> Inverse Functional Properties<a class="headerlink" href="#inverse-functional-properties" title="Permalink to this headline">¶</a></h3>
+<h3 id="inverse-functional-properties"><span class="sectnum">4.8.2. </span>Inverse Functional Properties<a class="headerlink" href="#inverse-functional-properties" title="Permalink to this heading">¶</a></h3>
 <p>If a property is inverse functional then it means that the inverse
 property is functional. For a given individual, there can be at most
 one individual related to that individual via the property. Following
@@ -1372,8 +1425,8 @@ our example from <a class="reference external" href="#functional-properties">sec
 <code class="docutils literal notranslate"><span class="pre">isBirthMotherOf</span></code>. The <code class="docutils literal notranslate"><span class="pre">isBirthMotherOf</span></code> property would not be functional
 since a woman can be the birth mother of several children. However, it
 would be inverse functional since each person has exactly one mother.</p>
-<h3 id="transitive-properties"><span class="sectnum">4.8.3.</span> Transitive Properties<a class="headerlink" href="#transitive-properties" title="Permalink to this headline">¶</a></h3>
-<table class="colwidths-given docutils data align-default">
+<h3 id="transitive-properties"><span class="sectnum">4.8.3. </span>Transitive Properties<a class="headerlink" href="#transitive-properties" title="Permalink to this heading">¶</a></h3>
+<table class="docutils data align-default">
 <colgroup>
 <col style="width: 30%" />
 <col style="width: 70%" />
@@ -1402,7 +1455,7 @@ will see an example of this in <a class="reference internal" href="#chap6"><span
 </tr>
 </tbody>
 </table>
-<h3 id="symmetric-and-asymmetric-properties"><span class="sectnum">4.8.4.</span> Symmetric and Asymmetric Properties<a class="headerlink" href="#symmetric-and-asymmetric-properties" title="Permalink to this headline">¶</a></h3>
+<h3 id="symmetric-and-asymmetric-properties"><span class="sectnum">4.8.4. </span>Symmetric and Asymmetric Properties<a class="headerlink" href="#symmetric-and-asymmetric-properties" title="Permalink to this heading">¶</a></h3>
 <p>If a property P is symmetric, and the property relates individual a to
 individual b then individual b is also related to individual a via
 property P. The <code class="docutils literal notranslate"><span class="pre">hasSibling</span></code> property or <code class="docutils literal notranslate"><span class="pre">hasSpouse</span></code> are examples of symmetric properties.
@@ -1413,7 +1466,7 @@ values. If a property P is asymmetric then if a is related to b via that propert
 related to a via that property. An example of an asymmetric property
 is <code class="docutils literal notranslate"><span class="pre">hasBirthMother</span></code>. If <code class="docutils literal notranslate"><span class="pre">Diya</span> <span class="pre">hasBirthMother</span> <span class="pre">Fatima</span></code>, then it can’t be the
 case that <code class="docutils literal notranslate"><span class="pre">Fatima</span> <span class="pre">hasBirthMother</span> <span class="pre">Diya</span></code>.</p>
-<h3 id="reflexive-and-irreflexive-properties"><span class="sectnum">4.8.5.</span> Reflexive and Irreflexive Properties<a class="headerlink" href="#reflexive-and-irreflexive-properties" title="Permalink to this headline">¶</a></h3>
+<h3 id="reflexive-and-irreflexive-properties"><span class="sectnum">4.8.5. </span>Reflexive and Irreflexive Properties<a class="headerlink" href="#reflexive-and-irreflexive-properties" title="Permalink to this heading">¶</a></h3>
 <p>A reflexive property is a property that always relates an individual
 to itself. If a property P is reflexive then for all individuals a P
 will always relate a to a. Equality is the most common example of a
@@ -1429,7 +1482,7 @@ that means its domain is <code class="docutils literal notranslate"><span class=
 reflexive property and declare its domain to be some class such as
 <code class="docutils literal notranslate"><span class="pre">Person</span></code> the reasoner will infer that <code class="docutils literal notranslate"><span class="pre">Person</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">owl:Thing</span></code>
 which can cause problems.</p>
-<h3 id="reasoners-automatically-enforce-property-characteristics"><span class="sectnum">4.8.6.</span> Reasoners Automatically Enforce Property Characteristics<a class="headerlink" href="#reasoners-automatically-enforce-property-characteristics" title="Permalink to this headline">¶</a></h3>
+<h3 id="reasoners-automatically-enforce-property-characteristics"><span class="sectnum">4.8.6. </span>Reasoners Automatically Enforce Property Characteristics<a class="headerlink" href="#reasoners-automatically-enforce-property-characteristics" title="Permalink to this heading">¶</a></h3>
 <p>The reasoners that work with Protégé automatically enforce all the
 characteristics that are described above. For example, if the user
 enters the fact that <code class="docutils literal notranslate"><span class="pre">Diya</span> <span class="pre">hasBirthMother</span> <span class="pre">Fatima</span></code> and <code class="docutils literal notranslate"><span class="pre">isBirthMotherOf</span></code>
@@ -1437,7 +1490,7 @@ is the inverse of <code class="docutils literal notranslate"><span class="pre">h
 infer that <code class="docutils literal notranslate"><span class="pre">Fatima</span> <span class="pre">isBirthMotherOf</span> <span class="pre">Diya</span></code>. These types of characteristics
 can significantly reduce the amount of effort needed to populate an
 ontology with data about individuals.</p>
-<h2 id="owl-property-domains-and-ranges"><span class="sectnum">4.9.</span> OWL Property Domains and Ranges<a class="headerlink" href="#owl-property-domains-and-ranges" title="Permalink to this headline">¶</a></h2>
+<h2 id="owl-property-domains-and-ranges"><span class="sectnum">4.9. </span>OWL Property Domains and Ranges<a class="headerlink" href="#owl-property-domains-and-ranges" title="Permalink to this heading">¶</a></h2>
 <p>Properties may have a <em>domain</em> and <em>range</em> defined. These terms have
 the same meaning in OWL as they do in mathematics and set theory. The
 domain of a property is the set of all objects that can have that
@@ -1489,18 +1542,18 @@ highlighted in yellow. Any information supplied by the reasoner rather
 than by the user is highlighted in this way.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id17">
+<figure class="align-center align-default" id="id21">
 <img alt="_images/14.png" class="no-scaled-link" src="_images/14.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.14 Defining the Domain for hasTopping</em></span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id17" title="Permalink to this image">¶</a></p>
+<em>Figure 4.14 Defining the Domain for hasTopping</em></span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<figure class="align-center align-default" id="id18">
+<figure class="align-center align-default" id="id22">
 <img alt="_images/15.png" class="no-scaled-link" src="_images/15.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.15 Domain and Range inferred by the reasoner</em></span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id18" title="Permalink to this image">¶</a></p>
+<em>Figure 4.15 Domain and Range inferred by the reasoner</em></span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="pitfall admonition">
@@ -1539,7 +1592,7 @@ the class <cite>PizzaBase</cite> as the range.</p></li>
 <p>4. Synchronize the reasoner. Now select <cite>isBaseOf</cite> You should see that the
 Domain and Range for <code class="docutils literal notranslate"><span class="pre">isBaseOf</span></code> have been filled in by the reasoner.</p>
 <hr class="docutils" />
-<h2 id="describing-and-defining-classes"><span class="sectnum">4.10.</span> Describing and Defining Classes<a class="headerlink" href="#describing-and-defining-classes" title="Permalink to this headline">¶</a></h2>
+<h2 id="describing-and-defining-classes"><span class="sectnum">4.10. </span>Describing and Defining Classes<a class="headerlink" href="#describing-and-defining-classes" title="Permalink to this heading">¶</a></h2>
 <p>Now that we have defined some properties, we can use these properties
 to define some more interesting classes. There are 3 types of classes
 in OWL:</p>
@@ -1567,7 +1620,7 @@ expressions. For example, if you define the range of a property to be
 <code class="docutils literal notranslate"><span class="pre">PizzaTopping</span></code> or <code class="docutils literal notranslate"><span class="pre">PizzaBase</span></code> then the reasoner will create an anonymous
 class representing the intersection of those two classes.</p></li>
 </ol>
-<h3 id="property-restrictions"><span class="sectnum">4.10.1.</span> Property restrictions<a class="headerlink" href="#property-restrictions" title="Permalink to this headline">¶</a></h3>
+<h3 id="property-restrictions"><span class="sectnum">4.10.1. </span>Property restrictions<a class="headerlink" href="#property-restrictions" title="Permalink to this heading">¶</a></h3>
 <p>In OWL properties define binary relations with the same semantics and
 characteristics as binary relations in First Order Logic. There are
 two types of OWL properties for describing a domain: Object properties
@@ -1650,7 +1703,7 @@ user rather than deduced by the reasoner. As described above, in
 Protégé all axioms are shown in normal font whereas all
 inferences inferred by the reasoner are highlighted in yellow.</p>
 </div>
-<h3 id="existential-restrictions"><span class="sectnum">4.10.2.</span> Existential Restrictions<a class="headerlink" href="#existential-restrictions" title="Permalink to this headline">¶</a></h3>
+<h3 id="existential-restrictions"><span class="sectnum">4.10.2. </span>Existential Restrictions<a class="headerlink" href="#existential-restrictions" title="Permalink to this heading">¶</a></h3>
 <p>An existential restriction describes a class of individuals that have
 at least one (some) relationship along a specified property to an
 individual that is a member of a specified class or datatype. For
@@ -1678,18 +1731,18 @@ should close the window. Run the reasoner to make sure things are
 consistent. Your main window should now look like figure 4.17.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id19">
+<figure class="align-center align-default" id="id23">
 <img alt="_images/16.png" class="no-scaled-link" src="_images/16.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.16 The Object Restriction Creator Tab</em></span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id19" title="Permalink to this image">¶</a></p>
+<em>Figure 4.16 The Object Restriction Creator Tab</em></span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<figure class="align-center align-default" id="id20">
+<figure class="align-center align-default" id="id24">
 <img alt="_images/17.png" class="no-scaled-link" src="_images/17.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.17 The Pizza Class with hasBase Restriction</em></span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id20" title="Permalink to this image">¶</a></p>
+<em>Figure 4.17 The Pizza Class with hasBase Restriction</em></span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>We have described the class <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> to be to be a subclass of <code class="docutils literal notranslate"><span class="pre">Thing</span></code> and a
@@ -1700,7 +1753,7 @@ everything is a member of the class Thing) and <em>necessary</em> for it to
 have a kind of <code class="docutils literal notranslate"><span class="pre">PizzaBase</span></code>. More formally, for something to be a <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> it
 is necessary for it to be in a relationship with an individual that is a
 member of the class <code class="docutils literal notranslate"><span class="pre">PizzaBase</span></code> via the property <code class="docutils literal notranslate"><span class="pre">hasBase</span></code>.</p>
-<h3 id="creating-subclasses-of-pizza"><span class="sectnum">4.10.3.</span> Creating Subclasses of Pizza<a class="headerlink" href="#creating-subclasses-of-pizza" title="Permalink to this headline">¶</a></h3>
+<h3 id="creating-subclasses-of-pizza"><span class="sectnum">4.10.3. </span>Creating Subclasses of Pizza<a class="headerlink" href="#creating-subclasses-of-pizza" title="Permalink to this heading">¶</a></h3>
 <p>It’s now time to add some different kinds of pizzas to our ontology.
 We will start off by adding a <code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code>, which is a pizza that
 has toppings of mozzarella and tomato. In order to keep our ontology
@@ -1755,11 +1808,11 @@ Synchronize the reasoner to make sure things are consistent. Your UI
 should now look similar to figure 4.18.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id21">
+<figure class="align-center align-default" id="id25">
 <img alt="_images/18.png" class="no-scaled-link" src="_images/18.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.18 Definition for the class MargheritaPizza</em></span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id21" title="Permalink to this image">¶</a></p>
+<em>Figure 4.18 Definition for the class MargheritaPizza</em></span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Note in figure 4.18 the two classes listed under <cite>Disjoint With</cite> and
@@ -1835,14 +1888,14 @@ axioms showing up on each subclass of NamedPizza. Synchronize the
 reasoner. Your UI should look similar to figure 4.19 now.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id22">
+<figure class="align-center align-default" id="id26">
 <img alt="_images/19.png" class="no-scaled-link" src="_images/19.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.19 Subclasses of NamedPizza are Disjoint</em></span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id22" title="Permalink to this image">¶</a></p>
+<em>Figure 4.19 Subclasses of NamedPizza are Disjoint</em></span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<h3 id="detecting-a-class-that-can-t-have-members"><span class="sectnum">4.10.4.</span> Detecting a Class that can’t Have Members<a class="headerlink" href="#detecting-a-class-that-can-t-have-members" title="Permalink to this headline">¶</a></h3>
+<h3 id="detecting-a-class-that-can-t-have-members"><span class="sectnum">4.10.4. </span>Detecting a Class that can’t Have Members<a class="headerlink" href="#detecting-a-class-that-can-t-have-members" title="Permalink to this heading">¶</a></h3>
 <p>Next, we are going to use the reasoner to detect a class with a
 definition that means it can never have any members. In the current
 version of Protégé when the reasoner detects an inconsistency or
@@ -1885,14 +1938,14 @@ class icon at the top of the classes view (see figure 4.4).</p></li>
 <li><p>Synchronize the reasoner.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id23">
+<figure class="align-center align-default" id="id27">
 <img alt="_images/20.png" class="no-scaled-link" src="_images/20.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.20 Explanation for why ProbeInconsistentTopping is equivalent to owl:Nothing</em></span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id23" title="Permalink to this image">¶</a></p>
+<em>Figure 4.20 Explanation for why ProbeInconsistentTopping is equivalent to owl:Nothing</em></span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<h2 id="primitive-and-defined-classes-necessary-and-sufficient-axioms"><span class="sectnum">4.11.</span> Primitive and Defined Classes (Necessary and Sufficient Axioms)<a class="headerlink" href="#primitive-and-defined-classes-necessary-and-sufficient-axioms" title="Permalink to this headline">¶</a></h2>
+<h2 id="primitive-and-defined-classes-necessary-and-sufficient-axioms"><span class="sectnum">4.11. </span>Primitive and Defined Classes (Necessary and Sufficient Axioms)<a class="headerlink" href="#primitive-and-defined-classes-necessary-and-sufficient-axioms" title="Permalink to this heading">¶</a></h2>
 <p>All of the classes that we have created so far have only used
 necessary axioms to describe them. Necessary axioms can be read as,
 <em>If something is a member of this class then it is necessary to fulfil
@@ -1982,21 +2035,21 @@ expand the <code class="docutils literal notranslate"><span class="pre">CheesyPi
 similar to figure 4.22. As you should see in the inferred tab the
 reasoner has inferred that all the <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> classes with a cheese
 topping are subclasses of <code class="docutils literal notranslate"><span class="pre">CheesyPizza</span></code>.</p>
-<figure class="align-center align-default" id="id24">
+<figure class="align-center align-default" id="id28">
 <img alt="_images/211.png" class="no-scaled-link" src="_images/211.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<strong>Figure 4.21 CheesyPizza as a Defined Class</strong></span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id24" title="Permalink to this image">¶</a></p>
+<strong>Figure 4.21 CheesyPizza as a Defined Class</strong></span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<figure class="align-center align-default" id="id25">
+<figure class="align-center align-default" id="id29">
 <img alt="_images/22.png" class="no-scaled-link" src="_images/22.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<strong>Figure 4.22 Classes Inferred by the Reasoner to be subclasses of CheesyPizza</strong></span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+<strong>Figure 4.22 Classes Inferred by the Reasoner to be subclasses of CheesyPizza</strong></span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<h2 id="universal-restrictions"><span class="sectnum">4.12.</span> Universal Restrictions<a class="headerlink" href="#universal-restrictions" title="Permalink to this headline">¶</a></h2>
+<h2 id="universal-restrictions"><span class="sectnum">4.12. </span>Universal Restrictions<a class="headerlink" href="#universal-restrictions" title="Permalink to this heading">¶</a></h2>
 <p>All of the restrictions we have created so far have been existential
 restrictions (defined using the <code class="docutils literal notranslate"><span class="pre">some</span></code> DL keyword). Existential
 restrictions specify the existence of at least one relationship along
@@ -2086,7 +2139,7 @@ equivalent to one restriction with a filler that is the
 intersection of <code class="docutils literal notranslate"><span class="pre">MozzarellaTopping</span></code> <em>and</em> <code class="docutils literal notranslate"><span class="pre">TomatoTopping</span></code>— as
 explained above this would have been logically incorrect.</p>
 </div>
-<h2 id="automated-classification-and-open-world-reasoning"><span class="sectnum">4.13.</span> Automated Classification and Open World Reasoning<a class="headerlink" href="#automated-classification-and-open-world-reasoning" title="Permalink to this headline">¶</a></h2>
+<h2 id="automated-classification-and-open-world-reasoning"><span class="sectnum">4.13. </span>Automated Classification and Open World Reasoning<a class="headerlink" href="#automated-classification-and-open-world-reasoning" title="Permalink to this heading">¶</a></h2>
 <p>Make sure that the reasoner is synchronized (the little text in the
 lower right corner should say <cite>Reasoner active</cite>). Now switch from the
 <cite>Class hierarchy</cite> tab to the <cite>Class hierarchy (inferred)`tab. You may
@@ -2164,14 +2217,14 @@ click on some of the <cite>?</cite>
 icons next to these inferences to see the explanations generated by the
 reasoner. As you develop more complex ontologies this is a powerful tool
 to debug and design your ontology.</p>
-<figure class="align-center align-default" id="id26">
+<figure class="align-center align-default" id="id30">
 <img alt="_images/23.png" class="no-scaled-link" src="_images/23.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.23 The Reasoner Inferred that Margherita and Soho Pizzas are subclasses of VegetarianPizza</em></span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
+<em>Figure 4.23 The Reasoner Inferred that Margherita and Soho Pizzas are subclasses of VegetarianPizza</em></span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<h2 id="defining-an-enumerated-class"><span class="sectnum">4.14.</span> Defining an Enumerated Class<a class="headerlink" href="#defining-an-enumerated-class" title="Permalink to this headline">¶</a></h2>
+<h2 id="defining-an-enumerated-class"><span class="sectnum">4.14. </span>Defining an Enumerated Class<a class="headerlink" href="#defining-an-enumerated-class" title="Permalink to this heading">¶</a></h2>
 <p>A powerful tool in the object-oriented programming (OOP) community is
 the concept of design patterns. The idea of a design pattern is to
 capture a reusable model that is at a higher level of abstraction than
@@ -2219,14 +2272,14 @@ class and all three individuals: <code class="docutils literal notranslate"><spa
 instances of that class.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id27">
+<figure class="align-center align-default" id="id31">
 <img alt="_images/24.png" class="no-scaled-link" src="_images/24.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.24 Creating Individuals for an Enumerated Class</em></span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id27" title="Permalink to this image">¶</a></p>
+<em>Figure 4.24 Creating Individuals for an Enumerated Class</em></span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<h2 id="adding-spiciness-as-a-property"><span class="sectnum">4.15.</span> Adding Spiciness as a Property<a class="headerlink" href="#adding-spiciness-as-a-property" title="Permalink to this headline">¶</a></h2>
+<h2 id="adding-spiciness-as-a-property"><span class="sectnum">4.15. </span>Adding Spiciness as a Property<a class="headerlink" href="#adding-spiciness-as-a-property" title="Permalink to this heading">¶</a></h2>
 <p>Next we need to add a property that will define the spiciness of a <code class="docutils literal notranslate"><span class="pre">PizzaTopping</span></code>.</p>
 <p><strong>Exercise 25: Create and Use the hasSpiciness Property</strong></p>
 <hr class="docutils" />
@@ -2259,7 +2312,7 @@ topping that <code class="docutils literal notranslate"><span class="pre">hasSpi
 figure 4.25). You should see that <code class="docutils literal notranslate"><span class="pre">AmericanHotPizza</span></code> is now classified as
 a subclass of <code class="docutils literal notranslate"><span class="pre">SpicyPizza</span></code> because it has a topping
 (<code class="docutils literal notranslate"><span class="pre">JalapenoPepperTopping</span></code>) that has a spiciness value of <code class="docutils literal notranslate"><span class="pre">Hot</span></code>.</p>
-<h2 id="cardinality-restrictions"><span class="sectnum">4.16.</span> Cardinality Restrictions<a class="headerlink" href="#cardinality-restrictions" title="Permalink to this headline">¶</a></h2>
+<h2 id="cardinality-restrictions"><span class="sectnum">4.16. </span>Cardinality Restrictions<a class="headerlink" href="#cardinality-restrictions" title="Permalink to this heading">¶</a></h2>
 <p>In OWL we can describe the class of individuals that have at least, at
 most, or exactly a specified number of relationships with other
 individuals or datatype values. The restrictions that describe these
@@ -2276,11 +2329,11 @@ relationships are different from each other.</p>
 <p>Let’s add a cardinality restriction to our Pizza Ontology. We will
 create a new subclass of <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> called <code class="docutils literal notranslate"><span class="pre">InterestingPizza</span></code> which will be
 defined to have 3 or more toppings.</p>
-<figure class="align-center align-default" id="id28">
+<figure class="align-center align-default" id="id32">
 <img alt="_images/25.png" class="no-scaled-link" src="_images/25.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 4.25 AmericanHotPizza classified as SpicyPizza</em></span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id28" title="Permalink to this image">¶</a></p>
+<em>Figure 4.25 AmericanHotPizza classified as SpicyPizza</em></span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p><strong>Exercise 26: Create an InterestingPizza that has at least three toppings</strong></p>
@@ -2300,7 +2353,7 @@ into a defined class.</p></li>
 <cite>InterestingPizza</cite>. You should see that there are three <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> classes that
 are classified as interesting: <cite>AmericanaHotPizza</cite>, <cite>AmericanaPizza</cite>, and
 <cite>SohoPizza</cite>.</p>
-<h1 id="datatype-properties"><span id="chap5"></span><span class="sectnum">5.</span> Datatype Properties<a class="headerlink" href="#datatype-properties" title="Permalink to this headline">¶</a></h1>
+<h1 id="datatype-properties"><span id="chap5"></span><span class="sectnum">5. </span>Datatype Properties<a class="headerlink" href="#datatype-properties" title="Permalink to this heading">¶</a></h1>
 <p>So far we have been describing object properties. These are properties
 that have a range that is some class. As with most other object-oriented
 languages OWL also has the capability to define properties with the
@@ -2329,7 +2382,7 @@ many of the capabilities for object properties described in
 <a class="reference external" href="#owl-object-property-characteristics">section 4.8</a>
 such as having an inverse or being transitive aren’t available for
 datatype properties.</p>
-<h2 id="defining-a-data-property"><span class="sectnum">5.1.</span> Defining a Data Property<a class="headerlink" href="#defining-a-data-property" title="Permalink to this headline">¶</a></h2>
+<h2 id="defining-a-data-property"><span class="sectnum">5.1. </span>Defining a Data Property<a class="headerlink" href="#defining-a-data-property" title="Permalink to this heading">¶</a></h2>
 <p>As with other OWL entities, datatype properties can be defined either
 via the <cite>Data properties</cite> tab in the <cite>Entities</cite> tab or in the
 <cite>Data properties</cite> tab available via the <cite>Window&gt;Tabs&gt;Data properties</cite> option.</p>
@@ -2366,18 +2419,18 @@ properties are often functional.</p></li>
 <li><p>Select <cite>OK</cite> and run the reasoner. Your UI should look similar to figure 5.1.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id29">
+<figure class="align-center align-default" id="id33">
 <img alt="_images/110.png" class="no-scaled-link" src="_images/110.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 5.1 hasCaloricContent Data Property</em></span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id29" title="Permalink to this image">¶</a></p>
+<em>Figure 5.1 hasCaloricContent Data Property</em></span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Note that as with object properties defining a domain and/or range is
 optional. In general, it is a good practice to do so as it can lead to
 finding errors in your ontology during the modeling phase rather than at
 run time.</p>
-<h2 id="customizing-the-protege-user-interface"><span class="sectnum">5.2.</span> Customizing the Protégé User Interface<a class="headerlink" href="#customizing-the-protege-user-interface" title="Permalink to this headline">¶</a></h2>
+<h2 id="customizing-the-protege-user-interface"><span class="sectnum">5.2. </span>Customizing the Protégé User Interface<a class="headerlink" href="#customizing-the-protege-user-interface" title="Permalink to this heading">¶</a></h2>
 <p>In order to demonstrate our new data property, we will need to create
 some instances of the <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> class and set the value of the data
 property <code class="docutils literal notranslate"><span class="pre">hasCaloricContent</span></code>. One of the advantages of Protégé is that
@@ -2421,18 +2474,18 @@ and <code class="docutils literal notranslate"><span class="pre">Mild</span></co
 however the UI only displays them as instances of <code class="docutils literal notranslate"><span class="pre">Spiciness</span></code> since it is
 implicit that they are also instances of all the superclasses of
 <code class="docutils literal notranslate"><span class="pre">Spiciness</span></code>.</p>
-<figure class="align-center align-default" id="id30">
+<figure class="align-center align-default" id="id34">
 <img alt="_images/26.png" class="no-scaled-link" src="_images/26.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 5.2 Adding a new view to the Individuals by class tab</em></span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id30" title="Permalink to this image">¶</a></p>
+<em>Figure 5.2 Adding a new view to the Individuals by class tab</em></span><a class="headerlink" href="#id34" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id34" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<figure class="align-center align-default" id="id31">
+<figure class="align-center align-default" id="id35">
 <img alt="_images/32.png" class="no-scaled-link" src="_images/32.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 5.3 A Customized Individuals by class tab</em></span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id31" title="Permalink to this image">¶</a></p>
+<em>Figure 5.3 A Customized Individuals by class tab</em></span><a class="headerlink" href="#id35" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id35" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p><strong>Exercise 28: Create Example Pizza Individuals</strong></p>
@@ -2448,11 +2501,11 @@ view. This will prompt you for the name of your new individual. Call it
 <li><p>Your UI should now look similar to figure 5.4.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id32">
+<figure class="align-center align-default" id="id36">
 <img alt="_images/41.png" class="no-scaled-link" src="_images/41.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 5.4 Creating Our First Pizza</em></span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id32" title="Permalink to this image">¶</a></p>
+<em>Figure 5.4 Creating Our First Pizza</em></span><a class="headerlink" href="#id36" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id36" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p><strong>Exercise 29: Assign a Data Property Values</strong></p>
@@ -2481,11 +2534,11 @@ information for each individual as part of the loading process.</p></li>
 the new value. Run the reasoner.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id33">
+<figure class="align-center align-default" id="id37">
 <img alt="_images/51.png" class="no-scaled-link" src="_images/51.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 5.5 hasCaloricContent for MargheritaPizza1</em></span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id33" title="Permalink to this image">¶</a></p>
+<em>Figure 5.5 hasCaloricContent for MargheritaPizza1</em></span><a class="headerlink" href="#id37" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id37" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="pitfall admonition">
@@ -2549,11 +2602,11 @@ must be an integer. In addition to using the predefined set of datatypes
 we can further specialize the use of a datatype by specifying
 restrictions on the possible values. For example, it is easy to specify
 a range of values for a number.</p>
-<figure class="align-center align-default" id="id34">
+<figure class="align-center align-default" id="id38">
 <img alt="_images/61.png" class="no-scaled-link" src="_images/61.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 5.6 Defining the hasCaloricContent data property restriction</em></span><a class="headerlink" href="#id34" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id34" title="Permalink to this image">¶</a></p>
+<em>Figure 5.6 Defining the hasCaloricContent data property restriction</em></span><a class="headerlink" href="#id38" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id38" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Using the datatype property, we have created, we will now create defined
@@ -2578,14 +2631,14 @@ editor type <cite>hasCaloricContent some xsd:integer[&gt;= 400]</cite> and click
 <code class="docutils literal notranslate"><span class="pre">LowCaloriePizza</span></code>. See the <cite>Description</cite> view in figure 5.7.</p></li>
 </ol>
 <hr class="docutils" />
-<figure class="align-center align-default" id="id35">
+<figure class="align-center align-default" id="id39">
 <img alt="_images/71.png" class="no-scaled-link" src="_images/71.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 5.7 High Calorie Pizzas</em></span><a class="headerlink" href="#id35" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id35" title="Permalink to this image">¶</a></p>
+<em>Figure 5.7 High Calorie Pizzas</em></span><a class="headerlink" href="#id39" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id39" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<h1 id="adding-order-to-an-enumerated-class"><span id="chap6"></span><span class="sectnum">6.</span> Adding Order to an Enumerated Class<a class="headerlink" href="#adding-order-to-an-enumerated-class" title="Permalink to this headline">¶</a></h1>
+<h1 id="adding-order-to-an-enumerated-class"><span id="chap6"></span><span class="sectnum">6. </span>Adding Order to an Enumerated Class<a class="headerlink" href="#adding-order-to-an-enumerated-class" title="Permalink to this heading">¶</a></h1>
 <p>In this chapter we will expand on the enumerated class that we created
 to model spiciness in <a class="reference external" href="#defining-an-enumerated-class">section 4.14</a>.
 This chapter will highlight some of the power of object properties in
@@ -2604,11 +2657,11 @@ inverse of another, and the reasoner will realize that both are
 inverses. Run the reasoner. You will see that the reasoner has
 inferred the domain and range for <code class="docutils literal notranslate"><span class="pre">isMilderThan</span></code> than as well as the
 fact that it is transitive and the inverse of <code class="docutils literal notranslate"><span class="pre">isSpicierThan</span></code>.</p>
-<figure class="align-center align-default" id="id36">
+<figure class="align-center align-default" id="id40">
 <img alt="_images/112.png" class="no-scaled-link" src="_images/112.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-<em>Figure 6.1 Setting isSpicierThan property in the Individuals by class tab</em></span><a class="headerlink" href="#id36" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id36" title="Permalink to this image">¶</a></p>
+<em>Figure 6.1 Setting isSpicierThan property in the Individuals by class tab</em></span><a class="headerlink" href="#id40" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id40" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Next go back to the <cite>Individuals by class</cite> tab. Go to the <cite>Individuals by type (inferred)</cite> view.
@@ -2647,7 +2700,7 @@ any reasoners, so it is a good idea to bring ontologies developed
 in WebProtégé into the desktop version to run the reasoner and
 validate the ontology. See <a class="reference internal" href="#chap12"><span class="std std-ref">Chapter 12</span></a> for more on Web Protégé.</p>
 </div>
-<h1 id="names-iri-s-labels-and-namespaces"><span id="chap7"></span><span class="sectnum">7.</span> Names: IRI’s, Labels, and Namespaces<a class="headerlink" href="#names-iri-s-labels-and-namespaces" title="Permalink to this headline">¶</a></h1>
+<h1 id="names-iri-s-labels-and-namespaces"><span id="chap7"></span><span class="sectnum">7. </span>Names: IRI’s, Labels, and Namespaces<a class="headerlink" href="#names-iri-s-labels-and-namespaces" title="Permalink to this heading">¶</a></h1>
 <p>In exercise 2 we set up some parameters regarding new entity names and
 rendering without much of an explanation. The concept of a <em>name</em> in OWL
 is a little complex so we wanted to wait until you had a basic grasp of
@@ -2658,18 +2711,19 @@ URL. In fact, a URL is a kind of IRI. I.e., all URLs are IRIs but many
 IRIs are not URLs. A URL is typically meant to identify a specific page
 meant to be viewed in a browser. An IRI is often at a smaller level of
 granularity and for <em>any</em> kind of resource, not only those meant to be
-viewed in a browser. If you go to the Active ontology tab in Protégé you
-will see the Ontology IRI for your ontology. This is the base IRI that
+viewed in a browser. If you go to the <cite>Active ontology</cite> tab in Protégé you
+will see the <cite>Ontology IRI</cite> for your ontology. This is the base IRI that
 all entities have in common. In addition, each entity has a subsequent
 part that comes after the base IRI that uniquely identifies the IRI for
 the entity.</p>
 <p>You can see this by clicking on any entity and starting (but don’t
-complete) the Refactor&gt;Rename entity command. Click on the Pizza class.
-Then select Refactor&gt;Rename entity. You will get a pop-up window with
-the current name: Pizza. However, this is only the final part of the
+complete) the <cite>Refactor&gt;Rename entity</cite> command. Click on the <cite>Pizza</cite> class.
+Then select <cite>Refactor&gt;Rename entity</cite>. You will get a pop-up window with
+the current name: <cite>Pizza</cite>. However, this is only the final part of the
 IRI. To see the full IRI click on the check box in the lower right
-corner that says: Show full IRI. Your full IRI will be different but it
-will look something like: Uncheck the Show f</p>
+corner that says: <cite>Show full IRI</cite>. Your full IRI will be different but it
+will look something like: <cite>http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#Pizza</cite>.
+Uncheck the <cite>Show full IRI</cite> box and then <cite>Cancel</cite> the rename command.</p>
 <p>If you recall from exercise 2 there are two options when you create a
 new entity. One is to use a user supplied name. That is the option that
 you should have selected at the beginning of the tutorial and that
@@ -2678,7 +2732,7 @@ option creates a Universally Unique Identifier (UUID) for the IRI of
 each entity. A UUID is an ID that is generated by an algorithm and is
 guaranteed to be unique. There are also two ways to display an entity.
 One way is to use the last part of the IRI that typically comes after a
-# sign as in the Pizza example above. The other is to use an annotation
+# sign as in the <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> example above. The other is to use an annotation
 property called a label. An annotation property is meant to provide
 meta-data about an entity.</p>
 <div class="line-block">
@@ -2686,20 +2740,20 @@ meta-data about an entity.</p>
 However, since all entities have meta-data annotation properties can
 be asserted on to any entity. There are some annotation properties
 that are included by default with any Protégé ontology. You can see
-these by looking at the Annotation properties tab. Note that just as
+these by looking at the <cite>Annotation properties</cite> tab. Note that just as
 with other properties you can also add your own annotation properties
 but they should be used for meta-data not for regular data. You will
-see rdfs:label is one of the default annotation properties. When you
+see <code class="docutils literal notranslate"><span class="pre">rdfs:label</span></code> is one of the default annotation properties. When you
 use UUIDs for your entity IRIs then by default Protégé will</div>
 <div class="line">automatically use the name you type in for a new entity in the
-rdfs:label annotation property.</div>
+<code class="docutils literal notranslate"><span class="pre">rdfs:label</span></code> annotation property.</div>
 </div>
 <p>Although you can also configure Protégé to use other properties if you
 wish, using the same dialog for entity rendering that you used in
 exercise 2.</p>
 <p>There are advantages and disadvantages to both options and there are
 options in between such as using both user supplied names for IRIs and
-using rdfs:label for more intuitive names. The details can get
+using <code class="docutils literal notranslate"><span class="pre">rdfs:label</span></code> for more intuitive names. The details can get
 complicated and there also isn’t universal agreement within the
 community as to which is generally better. For your first ontology and
 since you will be using SPARQL I chose to use user supplied entity names
@@ -2708,30 +2762,27 @@ queries as you will see in the
 next section. Which option you choose for your ontology will depend on
 the specific requirements you have as well as the standards established
 by your organization or organizations that you work with.</p>
-<div class="line-block">
-<div class="line">Finally, another name related concept you should be aware of is the
+<p>Finally, another name related concept you should be aware of is the
 concept of a namespace. If you have worked with most modern
 programming languages such as Python or Java, you are already familiar
 with the concept of a namespace. The concept is identical in OWL. A
 namespace is used to avoid naming conflicts between different
-ontologies. For example, you may have a class called Network in an
+ontologies. For example, you may have a class called <code class="docutils literal notranslate"><span class="pre">Network</span></code> in an
 ontology about telecommunications. You might also have a class called
-Network in an ontology about graph theory. The two concepts are
+<code class="docutils literal notranslate"><span class="pre">Network</span></code> in an ontology about graph theory. The two concepts are
 related but are different. Just as with programming languages you use
 namespace prefixes to determine what specific namespace a name refers
-to. E.g., in this example you might have the prefix tc for the Telecom
-ontology and gt for the Graph Theory ontology. Thus, when you referred
-to the Network class for the Telecom ontology you would use tc:Network
-and</div>
-<div class="line">gt:Network for the graph theory class.</div>
-</div>
+to. E.g., in this example you might have the prefix <code class="docutils literal notranslate"><span class="pre">tc</span></code> for the Telecom
+ontology and <code class="docutils literal notranslate"><span class="pre">gt</span></code> for the Graph Theory ontology. Thus, when you referred
+to the Network class for the Telecom ontology you would use <code class="docutils literal notranslate"><span class="pre">tc:Network</span></code>
+and <code class="docutils literal notranslate"><span class="pre">gt:Network</span></code> for the graph theory class.</p>
 <p>Note that you already have some experience with other namespaces. The
-OWL namespace prefix is owl and is used to refer to classes such as
-owl:Thing and owl:Nothing. The Resource Description Framework Schema
+OWL namespace prefix is <code class="docutils literal notranslate"><span class="pre">owl</span></code> and is used to refer to classes such as
+<code class="docutils literal notranslate"><span class="pre">owl:Thing</span></code> and <code class="docutils literal notranslate"><span class="pre">owl:Nothing</span></code>. The Resource Description Framework Schema
 (RDFS) is a model that OWL is built on top of and thus some properties
-that ontologies use such as rdfs:label leverage this namespace.</p>
-<p>In the bottom view of the Active ontology tab there is a tab called
-Ontology Prefixes. This tab shows all the current namespace mappings in
+that ontologies use such as <code class="docutils literal notranslate"><span class="pre">rdfs:label</span></code> leverage this namespace.</p>
+<p>In the bottom view of the <cite>Active ontology</cite> tab there is a tab called
+<cite>Ontology Prefixes</cite>. This tab shows all the current namespace mappings in
 your ontology. There are certain concepts from OWL, RDF, RDFS, XML and
 XSD that are required for every ontology, so those namespaces are by
 default mapped in every new Protégé ontology. There is also a mapping to
@@ -2739,11 +2790,12 @@ the empty string for whatever the namespace is for your ontology. This
 allows you to display and refer to entities in your ontology without
 entering a namespace prefix. If you look at that tab now you should see
 a row where the first column is blank, and the second column has the
-base IRI for your ontology. It should be the same IRI as the Ontology
-IRI at the top of the Active ontology tab, except it also has a # sign
+base IRI for your ontology. It should be the same IRI as the
+<a href="#id2"><span class="problematic" id="id3">`</span></a>Ontology IRI <a href="#id4"><span class="problematic" id="id5">`</span></a>at the top of the Active ontology tab, except it also has a # sign
 at the end. E.g., the Pizza tutorial developed for this tutorial has an
-IRI of: <a class="reference external" href="http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial">http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial</a> and the row that has a blank first column in Ontology Prefixes has the IRI: <a class="reference external" href="http://www.semanticweb.org/pizzatutorial/ontologies/2020">http://www.semanticweb.org/pizzatutorial/ontologies/2020</a>/PizzaTutorial#.</p>
-<p>Chapter 8 A Larger Ontology with some Individuals</p>
+IRI of: <a class="reference external" href="http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial">http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial</a>
+and the row that has a blank first column in Ontology Prefixes has the IRI: <a class="reference external" href="http://www.semanticweb.org/pizzatutorial/ontologies/2020">http://www.semanticweb.org/pizzatutorial/ontologies/2020</a>/PizzaTutorial#.</p>
+<h1 id="a-larger-ontology-with-some-individuals"><span id="chap8"></span><span class="sectnum">8. </span>A Larger Ontology with some Individuals<a class="headerlink" href="#a-larger-ontology-with-some-individuals" title="Permalink to this heading">¶</a></h1>
 <p>The rest of the tutorial requires some data loaded into your ontology.
 So far, we have mostly been dealing with defining classes and
 properties. This type of information is known in the semantic web
@@ -2757,123 +2809,52 @@ this tutorial that is useful is called Cellfie. Cellfie is a tool that
 can take data from spreadsheets and upload it into an ontology mapping
 the table-based data into objects and property values. For a tutorial on
 Cellfie see: <a class="reference external" href="https://github.com/protegeproject/cellfie-plugin/wiki/Grocery-Tutorial">https://github.com/protegeproject/cellfie-plugin/wiki/Grocery-Tutorial</a></p>
-<p>In addition to using Cellfie, you can use the Individuals by class tab introduced in chapter 5
+<p>In addition to using Cellfie, you can use the <cite>Individuals by class</cite> tab introduced in chapter 5
 to create new instances and to create object and
-data property values for those instances as you did with the Hot and
-Medium individuals in chapter 6. However, that can be tedious so to
+data property values for those instances as you did with the <code class="docutils literal notranslate"><span class="pre">Hot</span></code> and
+<code class="docutils literal notranslate"><span class="pre">Medium</span></code> individuals in <a class="reference internal" href="#chap6"><span class="std std-ref">Chapter 6</span></a>. However, that can be tedious so to
 spare you that uninteresting work I’ve developed a version of the Pizza
 ontology that has many individuals already created. That ontology should
 be identical to the ontology you have developed so far except with many
-additional individuals.</p>
-<p>You can find this populated Pizza ontology at: <a class="reference external" href="https://tinyurl.com/PizzaWDataV2">https://tinyurl.com/PizzaWDataV2</a>
-Go to this URL and
-download the file to your local machine and that, it is probably a good
+additional individuals.
+You can find this populated Pizza ontology at: <a class="reference external" href="https://tinyurl.com/PizzaWDataV2">https://tinyurl.com/PizzaWDataV2</a>
+Go to this URL and download the file to your local machine and then use <cite>File&gt;Open</cite>.
+Before you do that, it is probably a good
 idea to close the current file so that there is no possible confusion
 between the Pizza ontology you developed and the new one with extra
 data.</p>
-<p>8.1 Get Familiar with the Larger Ontology</p>
-<blockquote>
-<div><figure class="align-default">
-<a class="reference internal image-reference" href="_images/image93.png"><img alt="_images/image93.png" src="_images/image93.png" style="width: 6.07361in; height: 6.02083in;" /></a>
+<h2 id="get-familiar-with-the-larger-ontology"><span class="sectnum">8.1. </span>Get Familiar with the Larger Ontology<a class="headerlink" href="#get-familiar-with-the-larger-ontology" title="Permalink to this heading">¶</a></h2>
+<figure class="align-center align-default" id="id41">
+<img alt="_images/113.png" class="no-scaled-link" src="_images/113.png" />
+<figcaption>
+<p><span class="caption-text"><span class="caption-text">
+<em>Figure 8.1 Graph of Some of the New Ontology Classes and Individuals</em></span><a class="headerlink" href="#id41" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id41" title="Permalink to this image">¶</a></p>
+</figcaption>
 </figure>
-</div></blockquote>
-<p>Figure 8.1 Graph of Some of the New Ontology Classes and Individuals</p>
-<p>Figure 8.1 uses the OntoGraf tab to visualize some of the new additions
-to the ontology. There is a new class called Person with subclasses
-Employee and Customer. Employee has 5 individuals: Manager, Chef,
-Waiter1, and Waiter2. Customer has 10 instances.</p>
-<p>In addition, if you look at the Object properties tab you will see there
+<p>Figure 8.1 uses the <cite>OntoGraf</cite> tab to visualize some of the new additions
+to the ontology. There is a new class called <code class="docutils literal notranslate"><span class="pre">Person</span></code> with subclasses
+<code class="docutils literal notranslate"><span class="pre">Employee</span></code> and <code class="docutils literal notranslate"><span class="pre">Customer</span></code>. Employee has 5 individuals: <code class="docutils literal notranslate"><span class="pre">Manager</span></code>, <code class="docutils literal notranslate"><span class="pre">Chef</span></code>,
+<code class="docutils literal notranslate"><span class="pre">Waiter1</span></code>, and <code class="docutils literal notranslate"><span class="pre">Waiter2</span></code>. Customer has 10 instances.</p>
+<p>In addition, if you look at the <cite>Object properties</cite> tab you will see there
 are some new properties:</p>
-<table class="docutils data align-default">
-<colgroup>
-<col style="width: 4%" />
-<col style="width: 96%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><ul class="simple">
-<li></li>
+<ul class="simple">
+<li><p>The property <code class="docutils literal notranslate"><span class="pre">purchasedByCustomer</span></code> has domain <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> and range
+<code class="docutils literal notranslate"><span class="pre">Customer</span></code>. It maps from an individual <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> to the <code class="docutils literal notranslate"><span class="pre">Customer</span></code> that purchased it.
+It has an inverse called <code class="docutils literal notranslate"><span class="pre">purchasedPizza</span></code>.</p></li>
+<li><p>The property <code class="docutils literal notranslate"><span class="pre">hasSpicinessPreference</span></code> has domain <code class="docutils literal notranslate"><span class="pre">Customer</span></code> and range <code class="docutils literal notranslate"><span class="pre">Spiciness</span></code>.
+It records the preference the <code class="docutils literal notranslate"><span class="pre">Customer</span></code> has for how spicy they usually like their <code class="docutils literal notranslate"><span class="pre">Pizza</span></code>.</p></li>
 </ul>
-</th>
-<th class="head"><p>The property purchasedByCustomer has domain Pizza and range
-Customer. It maps from</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><ul class="simple">
-<li></li>
+<p>The <cite>Data properties</cite> tab also shows some new properties:</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">hasDiscount</span></code> data property has a domain of <code class="docutils literal notranslate"><span class="pre">Customer</span></code> and a range of <code class="docutils literal notranslate"><span class="pre">xsd:decimal</span></code>.
+This records the discount (if any) that the <code class="docutils literal notranslate"><span class="pre">Customer</span></code> will get on their next purchase.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">numberOfPizzasPurchased</span></code> data property has a domain of <code class="docutils literal notranslate"><span class="pre">Customer</span></code> and a range of
+<code class="docutils literal notranslate"><span class="pre">xsd:integer</span></code>. It records the number of <code class="docutils literal notranslate"><span class="pre">Pizzas</span></code> that each customer has purchased.</p></li>
+<li><p>The ssn property has a domain of <code class="docutils literal notranslate"><span class="pre">Employee</span></code> and a range of <code class="docutils literal notranslate"><span class="pre">xsd:string</span></code>.
+It maps from an <code class="docutils literal notranslate"><span class="pre">Employee</span></code> to their social security number. In the United States this is a number that all employers
+must have in order to process things such as insurance contributions and tax information.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">hasPhone</span></code> data property has a domain of <code class="docutils literal notranslate"><span class="pre">Person</span></code> and a range of <code class="docutils literal notranslate"><span class="pre">xsd:string</span></code>.</p></li>
 </ul>
-</td>
-<td><p>an individual Pizza to the Customer that purchased it. It
-has an inverse called</p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p>purchasedPizza.</p></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p>The property hasSpicinessPreference has domain Customer and
-range Spiciness. It</p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p>records the preference the Customer has for how spicy they
-usually like their Pizza.</p></td>
-</tr>
-</tbody>
-</table>
-<p>The Data properties tab also shows some new properties:</p>
-<table class="docutils data align-default">
-<colgroup>
-<col style="width: 4%" />
-<col style="width: 96%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><ul class="simple">
-<li></li>
-</ul>
-</th>
-<th class="head"><p>The hasDiscount data property has a domain of Customer and a
-range of xsd:decimal. This</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><p>records the discount (if any) that the Customer will get on
-their next purchase.</p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p>The numberOfPizzasPurchased data property has a domain of
-Customer and a range of</p></td>
-</tr>
-<tr class="row-even"><td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><p>xsd:integer. It records the number of Pizzas that each
-customer has purchased.</p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p>The ssn property has a domain of Employee and a range of
-xsd:string. It maps from an</p></td>
-</tr>
-<tr class="row-even"><td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><p>Employee to their social security number. In the United
-States this is a number that all employers</p></td>
-</tr>
-<tr class="row-odd"><td></td>
-<td><p>must have in order to process things such as insurance
-contributions and tax information.</p></td>
-</tr>
-<tr class="row-even"><td></td>
-<td><p>The hasPhone data property has a domain of Person and a
-range of xsd:string.</p></td>
-</tr>
-</tbody>
-</table>
 <p>Most of these data properties have additional constraints in addition to
 their ranges. For example, a discount can only be between 0 and 1 and a
 phone number and social security number must correspond to a certain
@@ -2887,94 +2868,88 @@ course, this begs the question what is the difference between reasoning
 and integrity constraints and the distinction is by nature a fuzzy one.
 However, there are guidelines that we will discuss in the section on
 SHACL which we hope will help shed some light on the difference.</p>
-<p>Finally, viewing the Individuals by class tab will help to understand
+<p>Finally, viewing the <cite>Individuals by class</cite> tab will help to understand
 the additional data in the ontology. If you go to that tab, you will see
-many new individuals. In addition to Employees and Customers there are
-instances of the Pizza class. You can see all these individuals in the
-Individuals by type (inferred) view in the upper right corner.</p>
-<div class="line-block">
-<div class="line">Now with more instances you can see the value of the Individuals by
-type (inferred) view. You can expand and contract various classes and
-see the instances for them. Notice that the 4</div>
-<div class="line">HighCaloriePizzas are also instances of Pizza but they aren’t shown
-under Pizza because all instances of HighCaloriePizza are always
-instances of the Pizza class. There is only one instance of the Pizza
-class displayed because all the other instances of Pizza are also
-instances of subclasses of Pizza so they are shown under those
-subclasses rather than under Pizza. If there are two or more classes
+many new individuals. In addition to <code class="docutils literal notranslate"><span class="pre">Employees</span></code> and <code class="docutils literal notranslate"><span class="pre">Customers</span></code> there are
+instances of the <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> class. You can see all these individuals in the
+<cite>Individuals by type (inferred)</cite> view in the upper right corner.</p>
+<p>Now with more instances you can see the value of the <cite>Individuals by type (inferred)</cite> view.
+You can expand and contract various classes and
+see the instances for them. Notice that the 4
+<code class="docutils literal notranslate"><span class="pre">HighCaloriePizzas</span></code> are also instances of <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> but they aren’t shown
+under <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> because all instances of <code class="docutils literal notranslate"><span class="pre">HighCaloriePizza</span></code> are always
+instances of the <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> class. There is only one instance of the <code class="docutils literal notranslate"><span class="pre">Pizza</span></code>
+class displayed because all the other instances of <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> are also
+instances of subclasses of <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> so they are shown under those
+subclasses rather than under <code class="docutils literal notranslate"><span class="pre">Pizza</span></code>. If there are two or more classes
 that an Individual is an instance of that aren’t subclasses of each
-other then they will all be shown. For example, MargheritaPizza1 is an
-instance of both MargheritaPizza and LowCaloriePizza and it shows up
+other then they will all be shown. For example, <code class="docutils literal notranslate"><span class="pre">MargheritaPizza1</span></code> is an
+instance of both <code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code> and <code class="docutils literal notranslate"><span class="pre">LowCaloriePizza</span></code> and it shows up
 under each class because neither is a subclass of the other. It is
-possible for a Pizza to be a LowCaloriePizza and not be a
-MargheritaPizza and vice-versa.</div>
-</div>
-<figure class="align-default" id="id37">
-<a class="reference internal image-reference" href="_images/image94.png"><img alt="_images/image94.png" src="_images/image94.png" style="width: 6.5in; height: 5.21389in;" /></a>
+possible for a <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> to be a <code class="docutils literal notranslate"><span class="pre">LowCaloriePizza</span></code> and not be a
+<code class="docutils literal notranslate"><span class="pre">MargheritaPizza</span></code> and vice-versa.</p>
+<figure class="align-center align-default" id="id42">
+<img alt="_images/27.png" class="no-scaled-link" src="_images/27.png" />
 <figcaption>
 <p><span class="caption-text"><span class="caption-text">
-Figure 8.2 Viewing the New Instances in the Individuals by Class tab</span><a class="headerlink" href="#id37" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id37" title="Permalink to this image">¶</a></p>
+<em>Figure 8.2 Viewing the New Instances in the Individuals by Class tab</em></span><a class="headerlink" href="#id42" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id42" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<div class="line-block">
-<div class="line">Chapter 9 Queries: Description Logic and SPARQL</div>
-<div class="line">Now that we have some individuals in our ontology, we can do some
+<h1 id="queries-description-logic-and-sparql"><span id="chap9"></span><span class="sectnum">9. </span>Queries: Description Logic and SPARQL<a class="headerlink" href="#queries-description-logic-and-sparql" title="Permalink to this heading">¶</a></h1>
+<p>Now that we have some individuals in our ontology, we can do some
 interesting queries. There are several tools for doing queries in
-Protégé.</div>
-</div>
-<div class="line-block">
-<div class="line">9.1 Description Logic Queries</div>
-<div class="line">To start with the most straight forward one based on what you have
+Protégé.</p>
+<h2 id="description-logic-queries"><span class="sectnum">9.1. </span>Description Logic Queries<a class="headerlink" href="#description-logic-queries" title="Permalink to this heading">¶</a></h2>
+<p>To start with the most straight forward one based on what you have
 already learned are Description Logic (DL) queries. These are
 essentially the same kind of statements you have been using to define
 classes. However, in addition to using such statements to define a
-class you can use it as a query.</div>
-</div>
+class you can use it as a query.</p>
 <p><strong>Exercise 33: Try Some Description Logic Queries</strong></p>
-<p>_____________________________________________________________________________________</p>
-<p>1. To begin with navigate to the DL Query tab. If it doesn’t exist
-create it using: Window&gt;Tabs&gt;DL Query.</p>
-<p>2. At the top right of this tab you should see a view that says DL
-query: and below it Query (class expression).</p>
-<p>3 You can enter any DL statement you want in this box and then see all
+<hr class="docutils" />
+<ol class="arabic simple">
+<li><p>To begin with navigate to the DL Query tab. If it doesn’t exist
+create it using: <cite>Window&gt;Tabs&gt;DL</cite> Query.</p></li>
+<li><p>At the top right of this tab you should see a view that says
+<cite>DL query:</cite> and below it <cite>Query (class expression)</cite>.</p></li>
+<li><p>You can enter any DL statement you want in this box and then see all
 the entities that are subclasses, superclasses, and instances of it. As
-an example, enter: Customer and purchasedPizza some (hasTopping some
-(hasSpiciness value Hot)). I.e., all Customers who have purchased a
-Pizza that hasSpiciness Hot. At first you may not see anything but don’t
-worry there is one more step.</p>
-<p>4. Look at the check boxes on the right under Query for. Check
-Superclasses, Subclasses (although it should already be checked by
-default) and Instances. Now your UI should look like figure 9.1. You may
-notice that owl:Nothing shows up as a subclass. Don’t worry that is
-actually expected. Remember that owl:Nothing is the empty set and the
+an example, enter: <cite>Customer and purchasedPizza some (hasTopping some (hasSpiciness value Hot))</cite>.
+I.e., all <code class="docutils literal notranslate"><span class="pre">Customers</span></code> who have purchased a
+<code class="docutils literal notranslate"><span class="pre">Pizza</span></code> that <code class="docutils literal notranslate"><span class="pre">hasSpiciness</span> <span class="pre">Hot</span></code>. At first you may not see anything but don’t
+worry there is one more step.</p></li>
+<li><p>Look at the check boxes on the right under <cite>Query for</cite>. Check
+<cite>Superclasses</cite>, <cite>Subclasses</cite> (although it should already be checked by
+default) and <cite>Instances</cite>. Now your UI should look like figure 9.1. You may
+notice that <code class="docutils literal notranslate"><span class="pre">owl:Nothing</span></code> shows up as a subclass. Don’t worry that is
+actually expected. Remember that <code class="docutils literal notranslate"><span class="pre">owl:Nothing</span></code> is the empty set and the
 empty set is a subset of every set (including itself) so just as
-owl:Thing is a superclass of every class owl:Nothing is a subclass of
-every class. If you don’t want to see owl:Nothing you can uncheck the
-box toward the bottom right that says Display owl:Nothing.</p>
-<div class="line-block">
-<div class="line">5. Try some additional DL queries such as: hasTopping some
-(hasSpiciness value Hot) and</div>
-<div class="line">VegetarianPizza and (hasTopping some (hasSpiciness some (isMilderThan
-value Hot))). Note that with this last query you are taking advantage
-of the transitive order you defined for the instances of the Spiciness
-class in chapter 6.</div>
-</div>
-<p>6. You can also do queries for strings in the names of your entities.
-For example, first do a query simply with Pizza in the query window.
-Then type in Hot in the Name contains field. This should give you all
-the classes and individuals with <em>Hot</em> in their name.</p>
-<p>_____________________________________________________________________________________</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image95.png"><img alt="_images/image95.png" src="_images/image95.png" style="width: 6.5in; height: 4.12639in;" /></a>
+<code class="docutils literal notranslate"><span class="pre">owl:Thing</span></code> is a superclass of every class <code class="docutils literal notranslate"><span class="pre">owl:Nothing</span></code> is a subclass of
+every class. If you don’t want to see <code class="docutils literal notranslate"><span class="pre">owl:Nothing</span></code> you can uncheck the
+box toward the bottom right that says <cite>Display owl:Nothing</cite>.</p></li>
+<li><p>Try some additional DL queries such as:
+<cite>hasTopping some (hasSpiciness value Hot) and VegetarianPizza and (hasTopping some (hasSpiciness some (isMilderThan value Hot)))</cite>.
+Note that with this last query you are taking advantage
+of the transitive order you defined for the instances of the <code class="docutils literal notranslate"><span class="pre">Spiciness</span></code>
+class in <a class="reference internal" href="#chap6"><span class="std std-ref">Chapter 6</span></a>.</p></li>
+<li><p>You can also do queries for strings in the names of your entities.
+For example, first do a query simply with <cite>Pizza</cite> in the query window.
+Then type in Hot in the <cite>Name contains</cite> field. This should give you all
+the classes and individuals with <em>Hot</em> in their name.</p></li>
+</ol>
+<hr class="docutils" />
+<figure class="align-center align-default" id="id43">
+<img alt="_images/114.png" class="no-scaled-link" src="_images/114.png" />
+<figcaption>
+<p><span class="caption-text"><span class="caption-text">
+<em>Figure 9.1 The DL Query Tab</em></span><a class="headerlink" href="#id43" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id43" title="Permalink to this image">¶</a></p>
+</figcaption>
 </figure>
-<p>Figure 9.1 The DL Query Tab</p>
-<div class="line-block">
-<div class="line">9.2 SPARQL Queries</div>
-<div class="line">SPARQL is a powerful language, and one could write a whole book about
+<h2 id="sparql-queries"><span class="sectnum">9.2. </span>SPARQL Queries<a class="headerlink" href="#sparql-queries" title="Permalink to this heading">¶</a></h2>
+<p>SPARQL is a powerful language, and one could write a whole book about
 it. In fact, there are books written about it. The best one I have
-seen is the O’Reilly book Learning SPARQL by Bob DuCharme.</div>
-</div>
-<p>This is an excellent book that not only goes into SPARQL but into topics
+seen is the O’Reilly book Learning SPARQL by Bob DuCharme.
+This is an excellent book that not only goes into SPARQL but into topics
 such as RDF/RDFS and how triples are used to represent all information
 in OWL. I will only touch on those issues here, there is much more to
 say about them and DuCharme’s book is a great place to learn more. If
@@ -2988,22 +2963,20 @@ current SPARQL plugins for Protégé are somewhat limited and don’t
 support the statements such as INSERT for entering new data so we will
 just cover the basics of using SPARQL as a query language but keep in
 mind there is a lot more to it than what we briefly cover here.</p>
-<div class="line-block">
-<div class="line">9.21 Some SPARQL Pizza Queries</div>
-<div class="line">To start with go to the SPARQL Query tab. If it isn’t already there
-you can as always add it using Window&gt;Tabs&gt;SPARQL Query. This tab
+<h3 id="some-sparql-pizza-queries"><span class="sectnum">9.2.1. </span>Some SPARQL Pizza Queries<a class="headerlink" href="#some-sparql-pizza-queries" title="Permalink to this heading">¶</a></h3>
+<p>To start with go to the <cite>SPARQL Query</cite> tab. If it isn’t already there
+you can as always add it using <cite>Window&gt;Tabs&gt;SPARQL Query</cite>. This tab
 consists of two views, the top which holds the query and the bottom
 which holds the results. There should be some text already there. It
 may look confusing, but we’ll explain it. Just to start with hit the
-Execute button at the bottom of the tab. You should see a bunch of
-classes and class expressions returned.</div>
-</div>
+<cite>Execute</cite> button at the bottom of the tab. You should see a bunch of
+classes and class expressions returned.</p>
 <p>To understand what is going on you first need to understand that each
 SPARQL query consists of two parts. The first part at the beginning
 consists of several namespace prefixes. These statements consist of the
 prefix used for a particular namespace as well as the IRI associated
 with this namespace. Recall that these concepts were described in
-chapter 7. You may be wondering where all these prefixes came from since
+<a class="reference internal" href="#chap7"><span class="std std-ref">Chapter 7</span></a>. You may be wondering where all these prefixes came from since
 you didn’t add them to your ontology. The answer is that every OWL
 ontology comes with a set of namespaces and prefixes that are required
 to define the ontology.</p>
@@ -3022,18 +2995,18 @@ predicate, and object. This results in what is called an undirected or
 network graph because objects can be subjects and vice versa. Whenever
 you define a property in OWL you are defining a predicate. An individual
 can be a subject or an object (or both). E.g., in our ontology
-Customer1purchasedPizzaAmericanaHotPizza1. In this example Customer1 is
-the subject, purchasedPizza is the predicate and AmericanaHotPizza1 is
+<code class="docutils literal notranslate"><span class="pre">Customer1</span> <span class="pre">purchasedPizza</span> <span class="pre">AmericanaHotPizza1</span></code>. In this example <code class="docutils literal notranslate"><span class="pre">Customer1</span></code> is
+the subject, <code class="docutils literal notranslate"><span class="pre">purchasedPizza</span></code> is the predicate and <code class="docutils literal notranslate"><span class="pre">AmericanaHotPizza1</span></code> is
 the object.</p>
 <p>However, classes and properties themselves are also represented as
-triples. So for example, when you create the class Pizza what Protégé
-does for you is to add the triple: Pizza rdf:type owl:Class to the
-ontology. I.e., the Pizza entity is of type (is an instance of)
-owl:Class. Similarly when you add NamedPizza as a subclass of Pizza,
-Protégé adds the triple: NamedPizza rdfs:<strong>s</strong>ubClassOf Pizza.</p>
+triples. So for example, when you create the class <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> what Protégé
+does for you is to add the triple: <code class="docutils literal notranslate"><span class="pre">Pizza</span> <span class="pre">rdf:type</span> <span class="pre">owl:Class</span></code> to the
+ontology. I.e., the <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> entity is of type (is an instance of)
+<code class="docutils literal notranslate"><span class="pre">owl:Class</span></code>. Similarly when you add <code class="docutils literal notranslate"><span class="pre">NamedPizza</span></code> as a subclass of <code class="docutils literal notranslate"><span class="pre">Pizza</span></code>,
+Protégé adds the triple: <code class="docutils literal notranslate"><span class="pre">NamedPizza</span> <span class="pre">rdfs:subClassOf</span> <span class="pre">Pizza</span></code>.</p>
 <p>Hopefully, now you can make some sense of this initial query. The query
 is looking for all the entities that are the subjects of triples where
-the predicate is rdfs:<strong>s</strong>ubClassOf and the object is any other
+the predicate is <code class="docutils literal notranslate"><span class="pre">rdfs:subClassOf</span></code> and the object is any other
 entity. The <em>?</em> before a name indicates that the name is a wildcard that
 can match anything that fits with the rest of the pattern. This is part
 of the power of SPARQL, one can match a Subject, an Object, a Predicate
@@ -3050,32 +3023,35 @@ to display everything matched in the WHERE clause you can just use a *
 for the SELECT clause. The initial default query in this tab is set up
 with no knowledge of the specific ontology. I.e., it will return all the
 classes that are subclasses of other classes regardless of the ontology.
-To get information about Pizzas the first thing we need to do is to add
+To get information about <code class="docutils literal notranslate"><span class="pre">Pizzas</span></code> the first thing we need to do is to add
 another prefix to the beginning of the query. In our case the Pizza
 ontology has been set up with a mapping to the prefix pizza (you can see
 this in the ontology prefixes tab in the Active ontology tab discussed
-in chapter 7). So, add the following to the SPARQL query after the last
+in <a class="reference internal" href="#chap7"><span class="std std-ref">Chapter 7</span></a>). So, add the following to the SPARQL query after the last
 PREFIX statement:</p>
-<p>PREFIX pizza: &lt;<a class="reference external" href="http://www.semanticweb.org/pizzatutorial/ontologies/2020">http://www.semanticweb.org/pizzatutorial/ontologies/2020</a>/PizzaTutorial#&gt;</p>
+<p><cite>PREFIX pizza: &lt;http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#&gt;</cite></p>
 <p>We are almost ready to query the actual ontology. For our first query
 let’s find all the Pizzas purchased by a Customer. The SPARQL code for
 this is:</p>
-<p>SELECT * WHERE { ?customer pizza:purchasedPizza ?pizza }</p>
+<p><cite>SELECT * WHERE { ?customer pizza:purchasedPizza ?pizza }</cite></p>
 <p>Type that into the query window underneath the prefixes (of course
-remove the existing query). Hit Execute. Your screen should look similar
+remove the existing query). Hit <cite>Execute</cite>. Your screen should look similar
 to figure 9.2.</p>
-<figure class="align-default">
-<a class="reference internal image-reference" href="_images/image96.png"><img alt="_images/image96.png" src="_images/image96.png" style="width: 6.5in; height: 4.59444in;" /></a>
+<figure class="align-center align-default" id="id44">
+<img alt="_images/28.png" class="no-scaled-link" src="_images/28.png" />
+<figcaption>
+<p><span class="caption-text"><span class="caption-text">
+<em>Figure 9.2 A SPARQL Query</em></span><a class="headerlink" href="#id44" title="Permalink to this image">¶</a></span><a class="headerlink" href="#id44" title="Permalink to this image">¶</a></p>
+</figcaption>
 </figure>
-<p>Figure 9.2 A SPARQL Query</p>
-<p>If you examine the output carefully you may notice an issue. Customer4
+<p>If you examine the output carefully you may notice an issue. <code class="docutils literal notranslate"><span class="pre">Customer4</span></code>
 only seems to have purchased 2 Pizzas. However, if you examine the data
-in the Individuals by class tab you will see that she purchased 3.</p>
-<p>The reason that one of them doesn’t show up is that when the data was
-entered, I typically entered it on the Customer instances. However, for
-one of Customer4’sPizzas I entered the data on the Pizza instead. I.e.,
-I asserted on HotVeggiePizza2 that it was purchasedByCustomerCustomer4.
-Since purchasedPizza and purchasedByCustomer are inverses, the reasoner
+in the <cite>Individuals by class</cite> tab you will see that she purchased 3.
+The reason that one of them doesn’t show up is that when the data was
+entered, I typically entered it on the <code class="docutils literal notranslate"><span class="pre">Customer</span></code> instances. However, for
+one of <code class="docutils literal notranslate"><span class="pre">Customer4's</span> <span class="pre">Pizzas</span></code> I entered the data on the <code class="docutils literal notranslate"><span class="pre">Pizza</span></code> instead. I.e.,
+I asserted on <code class="docutils literal notranslate"><span class="pre">HotVeggiePizza2</span></code> that it was <code class="docutils literal notranslate"><span class="pre">purchasedByCustomer</span> <span class="pre">Customer4</span></code>.
+Since <code class="docutils literal notranslate"><span class="pre">purchasedPizza</span></code> and <code class="docutils literal notranslate"><span class="pre">purchasedByCustomer</span></code> are inverses, the reasoner
 filled in the additional information for me. However, SPARQL doesn’t pay
 attention to information asserted by the reasoner only information
 asserted by the user. Note: this depends on the implementation of
@@ -3087,70 +3063,67 @@ information asserted by the reasoner. This is an issue for other plugins
 for Protégé as well such as the Individuals matrix. Luckily, there is a
 simple work around for this issue where information asserted by the
 reasoner can be saved and reloaded so that it is the same as user
-defined data. This workaround is described in my blog in the article: <a class="reference external" href="https://www.michaeldebellis.com/post/export-inferred-axioms">https://www.michaeldebellis.com/post/export-inferred-axioms</a></p>
+defined data. This workaround is described in my blog in the article:
+<a class="reference external" href="https://www.michaeldebellis.com/post/export-inferred-axioms">https://www.michaeldebellis.com/post/export-inferred-axioms</a></p>
 <p>To further see this, replace the current query (make sure to keep all the prefixes) with:</p>
-<p>SELECT * WHERE { ?pizza pizza:purchasedByCustomer ?customer}</p>
+<p><cite>SELECT * WHERE { ?pizza pizza:purchasedByCustomer ?customer}</cite></p>
 <p>This will show you the two pizzas where the purchase relation was
 asserted on the instance of Pizza rather than on the instance of
 Customer.</p>
 <p>Suppose you wanted to see all of the things that are objects of
-Customer? With a couple of new constructs this is simple. First, in
+<code class="docutils literal notranslate"><span class="pre">Customer</span></code>? With a couple of new constructs this is simple. First, in
 SPARQL a shortcut to identify the type of any entity is to use the
-keyword a as the predicate. This is just shorthand for rdf:type. Second,
+keyword a as the predicate. This is just shorthand for <code class="docutils literal notranslate"><span class="pre">rdf:type</span></code>. Second,
 when you have multiple statements in a WHERE clause you need to end each
 one with a period.</p>
+<p>Replace the current query with the following:</p>
 <div class="line-block">
-<div class="line">Replace the current query with the following:</div>
-<div class="line">SELECT *</div>
-<div class="line">WHERE { ?customer a pizza:Customer.</div>
+<div class="line"><cite>SELECT *</cite></div>
+<div class="line"><cite>WHERE { ?customer a pizza:Customer.</cite></div>
+<div class="line"><cite>?customer ?relation ?relatedToCustomer.}</cite></div>
 </div>
-<div class="line-block">
-<div class="line">?customer ?relation ?relatedToCustomer.}</div>
-<div class="line">This will provide a long list of everything in the graph that is an
+<p>This will provide a long list of everything in the graph that is an
 object of some instance of the Customer class. I.e., any entity that
-is the object of a predicate with a Customer as the subject.</div>
-</div>
+is the object of a predicate with a <code class="docutils literal notranslate"><span class="pre">Customer</span></code> as the subject.</p>
 <p>Suppose you wanted to count the number of Pizzas purchased by Customers
 so far. For this you use the SPARQL function COUNT. Here is what it
 would look like:</p>
 <div class="line-block">
-<div class="line">SELECT (COUNT(?pizza) AS ?pcount)</div>
-<div class="line">WHERE {?customer pizza:purchasedPizza ?pizza}</div>
-<div class="line">Paste that into the SPARQL query view and hit Execute and you should
+<div class="line"><cite>SELECT (COUNT(?pizza) AS ?pcount)</cite></div>
+<div class="line"><cite>WHERE {?customer pizza:purchasedPizza ?pizza}</cite></div>
+</div>
+<p>Paste that into the SPARQL query view and hit <cite>Execute</cite> and you should
 see the returned value: 15. However, remember this isn’t really all
-the Pizzas because a few of the purchases were recorded on the Pizza
-rather than on the Customer. To get the full number we can take
+the <code class="docutils literal notranslate"><span class="pre">Pizzas</span></code> because a few of the purchases were recorded on the <code class="docutils literal notranslate"><span class="pre">Pizza</span></code>
+rather than on the <code class="docutils literal notranslate"><span class="pre">Customer</span></code>. To get the full number we can take
 advantage of the fact that we have recorded the number of pizzas that
 each customer has purchased and use the SPARQL SUM function. That
-query would be:</div>
-</div>
+query would be:</p>
 <div class="line-block">
-<div class="line">SELECT (SUM(?pnumber) AS ?psum)</div>
-<div class="line">WHERE { ?customer pizza:numberOfPizzasPurchased ?pnumber} This should
-give you the correct number of 17.</div>
+<div class="line"><cite>SELECT (SUM(?pnumber) AS ?psum)</cite></div>
+<div class="line"><cite>WHERE { ?customer pizza:numberOfPizzasPurchased ?pnumber}</cite></div>
 </div>
-<div class="line-block">
-<div class="line">9.22 SPARQL and IRI Names</div>
-<div class="line">If you recall, at the beginning of the tutorial we changed the
+<p>This should give you the correct number of 17.</p>
+<h3 id="sparql-and-iri-names"><span class="sectnum">9.2.2. </span>SPARQL and IRI Names<a class="headerlink" href="#sparql-and-iri-names" title="Permalink to this heading">¶</a></h3>
+<p>If you recall, at the beginning of the tutorial we changed the
 preference for creating new entities to <em>user supplied name</em> rather
 than <em>auto-generated name</em> which is the default. Now that you have
 seen examples of using SPARQL we can explain why. With auto-generated
-names rather than have names such as Customer or purchasedByCustomer
-our entities would have names such as</div>
-<div class="line">OWLPropertyA4257yri73ff90rmbx and OWLClass23gkb0tk5kd30tm. Thus, the
-first query would be something like:</div>
-</div>
-<p>SELECT * WHERE {?customer pizza:OWLPropertyA4257yri73ff90rmbx ?pizza}</p>
+names rather than have names such as <code class="docutils literal notranslate"><span class="pre">Customer</span></code> or <code class="docutils literal notranslate"><span class="pre">purchasedByCustomer</span></code>
+our entities would have names such as
+<code class="docutils literal notranslate"><span class="pre">OWLPropertyA4257yri73ff90rmbx</span></code> and <code class="docutils literal notranslate"><span class="pre">OWLClass23gkb0tk5kd30tm</span></code>. Thus, the
+first query would be something like:</p>
+<p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">*</span> <span class="pre">WHERE</span> <span class="pre">{?customer</span> <span class="pre">pizza:OWLPropertyA4257yri73ff90rmbx</span> <span class="pre">?pizza}</span></code></p>
 <p>and the second query would be:</p>
-<p>SELECT *</p>
-<p>WHERE {?customer a pizza:OWLClass23gkb0tk5kd30tm.</p>
-<blockquote>
-<div><p>?customer ?relation ?relatedToCustomer.}</p>
-</div></blockquote>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">*</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">WHERE</span> <span class="pre">{?customer</span> <span class="pre">a</span> <span class="pre">pizza:OWLClass23gkb0tk5kd30tm.</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">?customer</span> <span class="pre">?relation</span> <span class="pre">?relatedToCustomer.}</span></code></div>
+</div>
 <p>This would be much less intuitive than the user defined names. There are
 good reasons to use autogenerated names, especially for large ontologies
-that are implemented in multiple natural languages.</p>
-<p>However, for new users, especially those who plan to use SPARQL and
+that are implemented in multiple natural languages.
+However, for new users, especially those who plan to use SPARQL and
 SHACL, I think it is more intuitive to start with user supplied names
 and then progress to auto-generated names if and when the requirements
 show a true need for them. This approach to developing software
@@ -3166,15 +3139,14 @@ of the many SPARQL tools and tutorials on the web. Some of these are in
 the bibliography.</p>
 <p>One final point: features of OWL and SWRL that new users frequently find
 frustrating are the Open World Assumption (OWA) and lack of
-non-monotonic reasoning. The OWA was discussed in chapter 4.13.
-Non-monotonic reasoning will be discussed in section 11.1. For now,
-though remember that SPARQL is <em>not</em> subject to <em>either</em> of these
+non-monotonic reasoning. The OWA was discussed in <a class="reference external" href="#automated-classification-and-open-world-reasoning">section 4.13</a>.
+Non-monotonic reasoning will be discussed in <a class="reference external" href="#owa-and-monotonic-reasoning">section 11.1</a>.
+For now, though remember that SPARQL is <em>not</em> subject to <em>either</em> of these
 restrictions. With SPARQL one can do non-monotonic reasoning and
 leverage the more common Closed World Assumption (CWA). E.g., one can
 test if the value for a property on a specific instance exists or not
 and can take actions if that property does not exist.</p>
-<div class="line-block">
-<div class="line">To perform non-monotonic reasoning simply requires a combination of
+<p>To perform non-monotonic reasoning simply requires a combination of
 INSERT and DELETE in the same query. One deletes the existing triple
 and inserts a triple with the same subject and predicate but a
 different object. Unfortunately, this is not possible to currently
@@ -3182,19 +3154,18 @@ demonstrate in Protégé because neither of the implementations in
 Protégé support INSERT or DELETE. I plan to add some SPARQL utilities
 to my blog at some point in the future that provide examples of this.
 For an example of how SPARQL can be used to get around the OWA see the
-ontology and instructions I recently added to my blog at: <a class="reference external" href="https://www.michaeldebellis.com/post/the-people_example-ontology">https://www.michaeldebellis.com/post/the-people_example-ontology</a></div>
-<div class="line">In that example I show how the HermitPersonial relations can’t be
+ontology and instructions I recently added to my blog at: <a class="reference external" href="https://www.michaeldebellis.com/post/the-people_example-ontology">https://www.michaeldebellis.com/post/the-people_example-ontology</a>
+In that example I show how the defined class <code class="docutils literal notranslate"><span class="pre">Hermit</span></code> defined as a <code class="docutils literal notranslate"><span class="pre">Person</span></code> with a maximum of 0 social relations can’t be
 recognized by the reasoner due to the OWA. However, a simple SPARQL
-query can both recognize instances of the People class with no social
-relations and can change the type of such instances (?p) by adding the
-triple: ?p rdf:type :Hermit. This new post also has a much more
+query can both recognize instances of the <code class="docutils literal notranslate"><span class="pre">People</span></code> class with no social
+relations and can change the type of such instances (<code class="docutils literal notranslate"><span class="pre">?p</span></code>) by adding the
+triple: <code class="docutils literal notranslate"><span class="pre">?p</span> <span class="pre">rdf:type</span> <span class="pre">:Hermit</span></code>. This new post also has a much more
 interesting example SPARQL query developed with Franz Inc. and their
 AllegroGraph product. The query utilizes linked data to find the
 median income for the area that Barack Obama was born by querying
 several different public knowledge graphs such as DBpedia and
-Geonames.</div>
-</div>
-<p>Chapter 10 SWRL and SQWRL</p>
+Geonames.</p>
+<h1 id="swrl-and-sqwrl"><span id="chap10"></span><span class="sectnum">10. </span>SWRL and SQWRL<a class="headerlink" href="#swrl-and-sqwrl" title="Permalink to this heading">¶</a></h1>
 <p>The Semantic Web Rule Language (SWRL) was created because there are
 certain kinds of inferences that can’t be done by Description Logic (DL)
 axioms. Also, in my experience there are also times where an inference
@@ -3904,12 +3875,9 @@ Ontotext: https://www.ontotext.com/
 Pool Party: https://www.poolparty.biz/
 Stardog: https://www.stardog.com/
 Top Quadrant: https://www.topquadrant.com/</p>
-<h1 id="chapter-8"><span id="chap8"></span><span class="sectnum">8.</span> Chapter 8<a class="headerlink" href="#chapter-8" title="Permalink to this headline">¶</a></h1>
-<h1 id="chapter-9"><span id="chap9"></span><span class="sectnum">9.</span> Chapter 9<a class="headerlink" href="#chapter-9" title="Permalink to this headline">¶</a></h1>
-<h1 id="chapter-10"><span id="chap10"></span><span class="sectnum">10.</span> Chapter 10<a class="headerlink" href="#chapter-10" title="Permalink to this headline">¶</a></h1>
-<h1 id="chapter-11"><span id="chap11"></span><span class="sectnum">11.</span> Chapter 11<a class="headerlink" href="#chapter-11" title="Permalink to this headline">¶</a></h1>
-<h1 id="chapter-12"><span id="chap12"></span><span class="sectnum">12.</span> Chapter 12<a class="headerlink" href="#chapter-12" title="Permalink to this headline">¶</a></h1>
-<h1 id="chapter-13"><span id="chap13"></span><span class="sectnum">13.</span> Chapter 13<a class="headerlink" href="#chapter-13" title="Permalink to this headline">¶</a></h1>
+<h1 id="chapter-11"><span id="chap11"></span><span class="sectnum">11. </span>Chapter 11<a class="headerlink" href="#chapter-11" title="Permalink to this heading">¶</a></h1>
+<h1 id="chapter-12"><span id="chap12"></span><span class="sectnum">12. </span>Chapter 12<a class="headerlink" href="#chapter-12" title="Permalink to this heading">¶</a></h1>
+<h1 id="chapter-13"><span id="chap13"></span><span class="sectnum">13. </span>Chapter 13<a class="headerlink" href="#chapter-13" title="Permalink to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
 
@@ -3943,7 +3911,7 @@ Top Quadrant: https://www.topquadrant.com/</p>
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    4.5.0.
+    5.0.1.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -3962,6 +3930,7 @@ Top Quadrant: https://www.topquadrant.com/</p>
     
     
       <script src="_static/javascripts/bundle.37d1338f.min.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/clipboard.min.js"></script>
         <script src="_static/copybutton.js"></script>
         <script src="_static/design-tabs.js"></script>
