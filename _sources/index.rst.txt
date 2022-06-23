@@ -4,17 +4,21 @@
    contain the root `toctree` directive.
 
 
-.. centered:: A Practical Guide to Building OWL Ontologies
+.. raw:: html
 
-.. centered:: Using Protégé 5.5 and Plugins
+   <h2 style="text-align:center;">A Practical Guide to Building OWL Ontologies</h2>
+   <h2 style="text-align:center; margin-top:5px;">Using Protégé 5.5 and Plugins</h2>
+   <h4 style="text-align:center;">Edition 3.2</h4>
 
-.. centered:: Edition 3.2
+   <h3>Credits</h3>
 
 **Author:** Michael DeBellis
 
-**Organization:** Ontomatica
+**Publisher:** Ontomatica
 
 **Revision:** 8th October, 2021
+
+**Editor**: Duodu Randy
 
 ---------------
 
@@ -2511,8 +2515,8 @@ OWL namespace prefix is ``owl`` and is used to refer to classes such as
 (RDFS) is a model that OWL is built on top of and thus some properties
 that ontologies use such as ``rdfs:label`` leverage this namespace.
 
-In the bottom view of the `Active ontology` tab there is a tab called
-`Ontology Prefixes`. This tab shows all the current namespace mappings in
+In the bottom view of the `Active ontology` tab there is a tab called `Ontology Prefixes`.
+This tab shows all the current namespace mappings in
 your ontology. There are certain concepts from OWL, RDF, RDFS, XML and
 XSD that are required for every ontology, so those namespaces are by
 default mapped in every new Protégé ontology. There is also a mapping to
@@ -2521,7 +2525,7 @@ allows you to display and refer to entities in your ontology without
 entering a namespace prefix. If you look at that tab now you should see
 a row where the first column is blank, and the second column has the
 base IRI for your ontology. It should be the same IRI as the
-`Ontology IRI `at the top of the Active ontology tab, except it also has a # sign
+`Ontology IRI` at the top of the Active ontology tab, except it also has a # sign
 at the end. E.g., the Pizza tutorial developed for this tutorial has an
 IRI of: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial
 and the row that has a blank first column in Ontology Prefixes has the IRI: http://www.semanticweb.org/pizzatutorial/ontologies/2020/PizzaTutorial#.
@@ -2971,241 +2975,238 @@ will be slightly different in the Rules view. For an overview of the
 Rules view see the SWRL Process Modeling tutorial listed at the end of
 this chapter.
 
-| Like all rule systems, SWRL consists of a left-hand side (called the
-  antecedent) and a right-hand side (called the consequent). The two are
-  separated by an arrow created with a dash and a greater than character
-  like this: ->. Each expression in a SWRL rule is separated by a ^
-  sign. The consequent of the rule fires if and only if *every*
-  expression in the antecedent is satisfied. Since the antecedent can be
-  satisfied multiple times, this means that SWRL rules can do iteration.
-  They will fire for every
-| combination of values that can satisfy the antecedent. All parameters
-  (variables that are wildcards and get bound dynamically as the rule
-  fires) are preceded by a ?.
+Like all rule systems, SWRL consists of a left-hand side (called the
+antecedent) and a right-hand side (called the consequent). The two are
+separated by an arrow created with a dash and a greater than character
+like this: ->. Each expression in a SWRL rule is separated by a ^
+sign. The consequent of the rule fires if and only if *every*
+expression in the antecedent is satisfied. Since the antecedent can be
+satisfied multiple times, this means that SWRL rules can do iteration.
+They will fire for every
+combination of values that can satisfy the antecedent. All parameters
+(variables that are wildcards and get bound dynamically as the rule
+fires) are preceded by a ?.
 
-| SWRL expressions consist of 3 types:
-| 1.Class expressions. This is the name of a class followed by
-  parentheses with a parameter inside.
+SWRL expressions consist of 3 types:
 
+1. Class expressions. This is the name of a class followed by
+   parentheses with a parameter inside.
    For example Customer(?c) will bind ?c to an instance of the class
    Customer and (assuming the rest of the antecedent is satisfied) will
    iterate over each instance of the Customer class.
 
-   2.Property expressions. This is the name of a property followed by
+2. Property expressions. This is the name of a property followed by
    parentheses and two parameters: the first for the individual that is
    being tested and the second to bind to the value of that property for
    that individual. Note that since individuals can have more than one
    value for a property this can also create iteration, where the rules
    will iterate over every property value for each individual.
-
-   E.g., purchasedPizza(?c, ?p) will bind ?p to each Pizza purchased by
+   E.g., ``purchasedPizza(?c, ?p)`` will bind ?p to each Pizza ``purchased by``
    each customer ?c.
 
-   | 3.Built-in functions. SWRL has a number of built-in functions for
-     doing mathematical tests, string tests, etc. The SWRL built-ins are
-     documented here: https://www.w3.org/Submission/SWRL/
-     All SWRL built-ins are prefaced by the swrlb prefix. E.g., the math built-in
-   | swrlb:greaterThan(?np, 1) succeeds if the value of ?np is greater
-     than 1.
+3. Built-in functions. SWRL has a number of built-in functions for
+   doing mathematical tests, string tests, etc. The SWRL built-ins are
+   documented here: https://www.w3.org/Submission/SWRL/
+   All SWRL built-ins are prefaced by the ``swrlb`` prefix. E.g., the math built-in
+   ``swrlb:greaterThan(?np, 1)`` succeeds if the value of ``?np`` is greater
+   than 1.
 
 We are going to add two simple SWRL rules to our Pizza ontology to
-compute discounts for some Customers. We are assuming that our Pizza
+compute discounts for some Customers. We are assuming that our ``Pizza``
 restaurant hasn't been in business long, so they want to give a discount
-to anyone who has purchased more than one Pizza. Also, their manager
+to anyone who has purchased more than one ``Pizza``. Also, their manager
 overestimated the love of spicy ingredients of their customers, and they
 have a lot of Jalapeno peppers that they want to use before they go bad,
 so they are offering a larger discount to customers who prefer Hot
-pizzas rather than those who prefer Medium or Mild.
+pizzas rather than those who prefer ``Medium`` or ``Mild``.
 
 To begin with let's write the first rule to give a 20% discount to all
 customers who have purchased more than 2 Pizzas and prefer Hot Pizzas.
 
 **Exercise 34: Write Your First SWRL Rule**
 
-\____________________________________________________________________________________\_
+---------------
 
-| 1. To begin with navigate to or create the SWRLTab. If it doesn't
-  already exist use
-| Window>Tabs>SWRLTab to create and select it. If you don't have the
-  SWRLTab under the
-| Window>Tabs menu then use File>Check for plugins and select the
-  SWRLTab plugin. Remember if you do this you need to restart Protégé
-  for the plugin to be available.
+1. To begin with navigate to or create the `SWRLTab`. If it doesn't
+   already exist use `Window>Tabs>SWRLTab` to create and select it. If you don't have the
+   SWRLTab under the Window>Tabs menu then use `File>Check for plugins` and select the
+   SWRLTab plugin. Remember if you do this you need to restart Protégé
+   for the plugin to be available.
 
 2. The SWRLTab is divided into two main views and then some buttons on
-the bottom of the tab that relate to DROOLS. The question of when and
-how to use DROOLS confuses many new users but there is a simple answer:
-don't use it! As you get more experience with SWRL you will start to
-understand how and when DROOLS is used but for beginners the answer is
-simple. Think of all those DROOLS buttons as things for power users
-only. You don't need to use them at all. That is why we installed the
-Pellet reasoner in section 4.2. The Pellet reasoner supports SWRL and
-when you run the reasoner it will also automatically run any SWRL rules
-you have. See the bibliography for a paper on DROOLS.
+   the bottom of the tab that relate to DROOLS. The question of when and
+   how to use DROOLS confuses many new users but there is a simple answer:
+   don't use it! As you get more experience with SWRL you will start to
+   understand how and when DROOLS is used but for beginners the answer is
+   simple. Think of all those DROOLS buttons as things for power users
+   only. You don't need to use them at all. That is why we installed the
+   Pellet reasoner in `section 4.2 <#using-a-reasoner>`_. The Pellet reasoner supports SWRL and
+   when you run the reasoner it will also automatically run any SWRL rules
+   you have. See the bibliography for a paper on DROOLS.
 
-3. Click on the New button at the bottom of the top view. The other
-buttons should be grayed out since they only apply if you have at least
-one rule written. This will give you a new pop-up window to write your
-rule. In the Name field at the top call the rule: HotDiscountRule. You
-can skip the comment but if you want to add a comment it is a good habit
-to get into and you can write something like: Provide a special discount
-for customers who prefer hot pizzas.
+3. Click on the `New` button at the bottom of the top view. The other
+   buttons should be grayed out since they only apply if you have at least
+   one rule written. This will give you a new pop-up window to write your
+   rule. In the `Name` field at the top call the rule: `HotDiscountRule`. You
+   can skip the comment but if you want to add a comment it is a good habit
+   to get into and you can write something like:
+   `Provide a special discount for customers who prefer hot pizzas`.
 
-| 4. Now go to the bottom part of the rule window and start writing the
-  rule. To start you want to bind a parameter to each instance of the
-  Customer class. To do this all you need to do is to write:
-| Customer(?c). Note that auto-complete should work in this window but
-  sometimes it may not and you may need to type the complete name. Also,
-  you will see various hints or error messages in the Status field as
-  you type which you can mostly ignore for now. E.g., as you type out
-  Customer you will see messages like: Invalid SWRL atom predicate ‘Cus'
-  until you complete the name of the Customer class. Those messages can
-  help you understand why your rule won't parse as you develop more
-  rules but for now you should be able to ignore them.
+4. Now go to the bottom part of the rule window and start writing the
+   rule. To start you want to bind a parameter to each instance of the
+   Customer class. To do this all you need to do is to write:
+   `Customer(?c)`. Note that auto-complete should work in this window but
+   sometimes it may not and you may need to type the complete name. Also,
+   you will see various hints or error messages in the `Status` field as
+   you type which you can mostly ignore for now. E.g., as you type out
+   Customer you will see messages like: `Invalid SWRL atom predicate 'Cus'`
+   until you complete the name of the Customer class. Those messages can
+   help you understand why your rule won't parse as you develop more
+   rules but for now you should be able to ignore them.
 
-5. Now you want to bind a parameter to the number of Pizzas that each
-customer has ordered so far. To do that you first add a ^ character.
-This stands for the logical *and*. I.e., the rule will fire for every
-set of bindings that satisfy *all* of the expressions in the antecedent.
-To test the number of Pizzas you use the data property
-numberOfPizzasPurchased. So at this point your rule should look like:
-Customer(?c) ^ numberOfPizzasPurchased(?c, ?np).
+5. Now you want to bind a parameter to the number of ``Pizzas`` that each
+   customer has ordered so far. To do that you first add a `^` character.
+   This stands for the logical *and*. I.e., the rule will fire for every
+   set of bindings that satisfy *all* of the expressions in the antecedent.
+   To test the number of ``Pizzas`` you use the data property
+   ``numberOfPizzasPurchased``. So at this point your rule should look like:
+   `Customer(?c) ^ numberOfPizzasPurchased(?c, ?np)`.
 
-6. Now we want to test the object property hasSpicinessPreference. The
-first parameter will also be ?c. I.e., we are iterating through each
-instance of Customer, binding it to ?c and then testing the values of
-these properties. However, in this case rather than binding the
-spiciness preference to a parameter we just want to test if it is equal
-to the instance of SpicinessHot. So we directly reference that instance
-in the expression resulting in: ^ hasSpicinessPreference(?c, Hot).
+6. Now we want to test the object property ``hasSpicinessPreference``. The
+   first parameter will also be ``?c``. I.e., we are iterating through each
+   instance of ``Customer``, binding it to ``?c`` and then testing the values of
+   these properties. However, in this case rather than binding the
+   spiciness preference to a parameter we just want to test if it is equal
+   to the instance of ``Spiciness Hot``. So we directly reference that instance
+   in the expression resulting in: `^ hasSpicinessPreference(?c, Hot)`.
 
 7. As the last part of the antecedent we want to test that the Customer
-has purchased more than 1 Pizza. We can use the SWRL math built-in
-swrlb:greaterThan. Add ^ swrlb:greaterThan(?np, 1) That is the last
-part of the antecedent so we write -> to signal the beginning of the
-consequent. At this point your rule should look like: Customer(?c) ^
-numberOfPizzasPurchased(?c, ?np) ^ hasSpicinessPreference(?c, Hot) ^
-swrlb:greaterThan(?np, 1) ->
+   has purchased more than 1 ``Pizza``. We can use the SWRL math built-in
+   `swrlb:greaterThan`. Add `^ swrlb:greaterThan(?np, 1)` That is the last
+   part of the antecedent so we write `->` to signal the beginning of the
+   consequent. At this point your rule should look like:
+   `Customer(?c) ^ numberOfPizzasPurchased(?c, ?np) ^ hasSpicinessPreference(?c, Hot) ^ swrlb:greaterThan(?np, 1) ->`
 
 8. Finally, we write the consequent of the rule, the part after the
-arrow that signifies what to do each time the rule succeeds. We want to
-give these customers a 20% discount so we write: hasDiscount(?c, 0.2).
-Whereas the expressions on the left hand side are tests to see if the
-rule should fire, the expression on the right is an assertion of a new
-value to be added to the ontology. For those with a logic background the
-simple way to think of this is that the antecedent is implicitly
-universally quantified whereas the consequent is implicitly
-existentially quantified.
+   arrow that signifies what to do each time the rule succeeds. We want to
+   give these customers a 20% discount so we write: `hasDiscount(?c, 0.2)`.
+   Whereas the expressions on the left hand side are tests to see if the
+   rule should fire, the expression on the right is an assertion of a new
+   value to be added to the ontology. For those with a logic background the
+   simple way to think of this is that the antecedent is implicitly
+   universally quantified whereas the consequent is implicitly
+   existentially quantified.
 
-9. Thus the whole rule should look like: Customer(?c) ^
-numberOfPizzasPurchased(?c, ?np) ^ hasSpicinessPreference(?c, Hot) ^
-swrlb:greaterThan(?np, 1) -> hasDiscount(?c, 0.2). Take note that the OK
-button at the bottom is only possible to select when the rule has a
-valid syntax. It should be selectable now so select it. You should see
-the new rule show up at the top of the top most view.
+9. Thus the whole rule should look like:
+   `Customer(?c) ^ numberOfPizzasPurchased(?c, ?np) ^ hasSpicinessPreference(?c, Hot) ^ swrlb:greaterThan(?np, 1) -> hasDiscount(?c, 0.2)`.
+   Take note that the `OK` button at the bottom is only possible to select when the rule has a
+   valid syntax. It should be selectable now so select it. You should see
+   the new rule show up at the top of the top most view.
 
-\____________________________________________________________________________________\_
+---------------
 
 Note that there is a minor bug in SWRL where sometimes the prefix for
 the current ontology will be added to all the expressions without a
 prefix. So at some point you may see that your expressions end up
-looking like this: pizza:Customer(?c). If this happens don't worry it
+looking like this: `pizza:Customer(?c)`. If this happens don't worry it
 won't affect the way the rule works at all. If at some point this
 happens and you want to remove the prefixes there is a way to do this
-described in my blog:
+described in my blog: https://www.michaeldebellis.com/post/removing-ontology-prefixes-from-swrl-rules
 
-Next, we we Pizza but don't prefer Hot Pizzas.
+Next, we want to write a second SWRL rule for other customers who have ordered more than one Pizza
+but don't prefer Hot Pizzas.
 
 **Exercise 35: Write Another SWRL Rule**
 
-\____________________________________________________________________________________\_
+---------------
 
-1. Make sure you are still in the SWRLTab. Click on the HotDiscountRule
-and select Clone
+1. Make sure you are still in the SWRLTab. Click on the `HotDiscountRule` and select `Clone`
 
 2. This should bring up the same window you used to create your first
-rule with the code for that rule in the window. Change the name of this
-rule from S1 to LessSpicyDiscountRule.
+   rule with the code for that rule in the window. Change the name of this
+   rule from `S1` to `LessSpicyDiscountRule`.
 
 3. Next edit the test for the Customer's spiciness preference. Rather
-than just testing if it is Hot we want to test this time if it
-isMilderThan Hot. This is an example of using the order relation we
-defined in chapter 6. Change hasSpicinessPreference(?c, Hot) to
-hasSpicinessPreference(?c, ?spr). Rather than just test if it is equal
-to Hot we need to bind the preference value to the parameter ?spr. Then
-after this add the usual and character and the new test, so you should
-add: ^ isMilderThan(?spr, Hot)
+   than just testing if it is ``Hot`` we want to test this time if it
+   ``isMilderThan Hot``. This is an example of using the order relation we
+   defined in :ref:`Chapter 6 <chap6>`. Change `hasSpicinessPreference(?c, Hot)` to
+   `hasSpicinessPreference(?c, ?spr)`. Rather than just test if it is equal
+   to ``Hot`` we need to bind the preference value to the parameter ``?spr``. Then
+   after this add the usual and character and the new test, so you should
+   add: `^ isMilderThan(?spr, Hot)`
 
 4. Finally, we want to change the discount for these Customers to be 10%
-rather than 20%. So change the consequent to be: hasDiscount(?c, 0.1).
+   rather than 20%. So change the consequent to be: `hasDiscount(?c, 0.1)`.
 
-5. Thus the whole rule should look like: Customer(?c) ^
-numberOfPizzasPurchased(?c, ?np) ^ hasSpicinessPreference(?c, ?spr) ^
-isMilderThan(?spr, Hot) ^ swrlb:greaterThan(?np, 1) -> hasDiscount(?c,
-0.1).
+5. Thus the whole rule should look like:
+   `Customer(?c) ^ numberOfPizzasPurchased(?c, ?np) ^ hasSpicinessPreference(?c, ?spr) ^ isMilderThan(?spr, Hot) ^ swrlb:greaterThan(?np, 1) -> hasDiscount(?c, 0.1)`.
 
-\____________________________________________________________________________________\_
+---------------
 
 Now we want to run our rules. Remember there is no need to use those
 DROOLS buttons. Just synchronize the reasoner and your rules should fire
 just as other DL axioms that assert values based on
-inverses, defined classes, etc. Go back to the Individuals by class tab
-and look at various Customers. For example, Customer1 has ordered more
-than one Pizza and hasSpicinessPreference of Hot so she has a discount
+inverses, defined classes, etc. Go back to the `Individuals by class` tab
+and look at various Customers. For example, ``Customer1`` has ordered more
+than one ``Pizza`` and ``hasSpicinessPreference`` of ``Hot`` so she has a discount
 of .2. Note that as with any information asserted by the reasoner, there
-is a ? next to the assertion which you can click on and it will provide
+is a `?` next to the assertion which you can click on and it will provide
 an explanation about why the value was asserted. This explanation will
 list the appropriate rule that fired and the values that caused it to
-fire. If you look at Customer6, you will see that he has no discount
-because he has only purchased one Pizza. Finally, if you look at
-Customer2, she has a discount of .1 because she has purchased more than
-one Pizza but her spiciness preference isMilderThanHot.
+fire. If you look at ``Customer6``, you will see that he has no discount
+because he has only purchased one ``Pizza``. Finally, if you look at
+``Customer2``, she has a discount of .1 because she has purchased more than
+one Pizza but her spiciness preference ``isMilderThanHot``.
 
 In this case the consequent of our rule was to add a data property
 assertion to an individual. Another possible outcome is to make an
 individual be an instance of a new class. E.g., if we had a subclass of
-Customer called PreferredCustomer and we wanted the result of a rule be
-to make a Customer an instance of PreferredCustomer we could have ->
-PreferredCustomer(?c) as the consequent of the rule.
+``Customer`` called ``PreferredCustomer`` and we wanted the result of a rule be
+to make a ``Customer`` an instance of ``PreferredCustomer`` we could have ->
+``PreferredCustomer(?c)`` as the consequent of the rule.
 
 A tool that is useful to debug SWRL rules is the Semantic Query-Enhanced
 Web Rule Language or SQWRL (pronounced squirrel). SQWRL rules look just
-like SWRL rules except in the consequent there is a sqwrl:select
+like SWRL rules except in the consequent there is a ``sqwrl:select``
 statement that lists every parameter that we want to know the value of
 every time the rule fires.
 
 **Exercise 36: Write a SQWRL Rule**
 
-\____________________________________________________________________________________\_
+---------------
 
 1. Bring up the SQWRLTab if it doesn't already exist using
-Windows>Tabs>SQWRLTab. You will see it looks almost identical to the
-SWRLTab.
+   `Windows>Tabs>SQWRLTab`. You will see it looks almost identical to the
+   SWRLTab.
 
-2. Let's say we want to see how often the HotDiscountRule fires. We can
-find this out very easily. To start select the HotDiscountRule and clone
-it. This creates a copy of the rule called S1. Select that rule and then
-select the Edit button.
+2. Let's say we want to see how often the ``HotDiscountRule`` fires. We can
+   find this out very easily. To start select the `HotDiscountRule` and clone
+   it. This creates a copy of the rule called `S1`. Select that rule and then
+   select the `Edit` button.
 
-3. Change the name of the rule to TestHotDiscountRule. Replace the
-consequent (the expression after the arrow) with the following:
-sqwrl:select(?c, ?np) and select OK. Your SQWRL rule should look like:
-Customer(?c) ^ numberOfPizzasPurchased(?c, ?np) ^
-hasSpicinessPreference(?c, pizza:Hot) ^ swrlb:greaterThan(?np, 1) ->
-sqwrl:select(?c, ?np). Synchronize the reasoner.
+3. Change the name of the rule to `TestHotDiscountRule`. Replace the
+   consequent (the expression after the arrow) with the following:
+   `sqwrl:select(?c, ?np)` and select `OK`. Your SQWRL rule should look like:
+   `Customer(?c) ^ numberOfPizzasPurchased(?c, ?np) ^ hasSpicinessPreference(?c, pizza:Hot) ^ swrlb:greaterThan(?np, 1) -> sqwrl:select(?c, ?np)`.
+   Synchronize the reasoner.
 
-4. Select TestHotDiscountRule then select the Run button at the bottom
-of the tab. This will create a new tab in the lower view called
-TestHotDiscountRule. You should see that the rule fired 3 times with ?c
-equal to Customer4, Customer1, and Customer8 and with ?np equal to 3, 2,
-and 2.
+4. Select `TestHotDiscountRule` then select the `Run` button at the bottom
+   of the tab. This will create a new tab in the lower view called
+   `TestHotDiscountRule`. You should see that the rule fired 3 times with ?c
+   equal to Customer4, Customer1, and Customer8 and with ?np equal to 3, 2,
+   and 2.
 
-\____________________________________________________________________________________\_
+---------------
 
 This has been a very brief introduction to SWRL. For a somewhat more
 interesting example based on process modeling see: https://www.michaeldebellis.com/post/swrl_tutorial
 
-Chapter 11 SHACL
+.. _chap11:
+
+*****
+SHACL
+*****
+
 
 Next, we will look at a plugin for SHACL. SHACL stands for Shapes
 Constraint Language. Note that *shape* in this context has nothing to do
@@ -3432,7 +3433,11 @@ Figure 11.4 Gruff Visualization of the CustomerShape
   presentation:
 | more detail on SHACL.
 
-Chapter 12 Web Protégé
+.. _chap12:
+
+***********
+Web Protégé
+***********
 
 This tutorial has primarily focused on the desktop version of Protégé
 because as of this writing Web Protégé doesn't support any reasoners so
@@ -3647,7 +3652,11 @@ a subclass. Now that this has been done you can click on the Resolve
 link in the upper right corner of the comment thread and the comments
 will be removed from NamedPizza.
 
-Chapter 13 Conclusion: Some Personal Thoughts and Opinions
+.. _chap13:
+
+***********************************
+Some Personal Thoughts and Opinions
+***********************************
 
 | This tutorial is just the entry point to a technology that is entering
   the *Slope of Enlightenment* in the Gartner technology hype cycle
@@ -3700,46 +3709,48 @@ leveraging it in major ways. I think we are finally starting to see this
 happen and I hope this tutorial helps in a small way to accelerate the
 adoption of this powerful and robust tool.
 
-Chapter 14 Bibliography
-Rather than a standard bibliography, this section is divided into various categories based on resources that will be valuable for future exploration of the technologies and methods described in this tutorial.
-14.1 W3C Documents
-OWL 2 Primer: https://www.w3.org/TR/owl2-primer/
-OWL 2 Specification: https://www.w3.org/TR/owl2-overview/
-Semantic Web Primer for Object-Oriented Software Developers: https://www.w3.org/TR/sw-oosd-primer/
-SPARQL Specification: https://www.w3.org/TR/sparql11-query/
-SWRL Specification and Built-ins: https://www.w3.org/Submission/SWRL/
-14.2 Web Sites, Tools, And Presentations.
-Agile Alliance: https://www.agilealliance.org/agile101/
-Cellfie: https://github.com/protegeproject/cellfie-plugin/wiki/Grocery-Tutorial
-Gartner Hype Cycle: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
-Jena: Open Source Java Framework for Semantic Web and Linked Data Applications: https://jena.apache.org/
-Open World Assumption (OWA) presentation by Nick Drummond and Rob Shearer: http://www.cs.man.ac.uk/~drummond/presentations/OWA.pdf
-Protégé: https://protege.stanford.edu/
-Protégé Best Practices. Summary page on my blog for all my articles on Protégé, OWL, SWRL, etc.: https://www.michaeldebellis.com/post/best-practices-for-new-protege-users
-SHACL Playground: https://shacl.org/playground/
-SWRL Presentation by Martin O'Connor: https://protege.stanford.edu/conference/2009/slides/SWRL2009ProtegeConference.pdf
-WebProtégé: https://webprotege.stanford.edu/
-WebVOWL: Web-based Visualization of Ontologies: http://vowl.visualdataweb.org/webvowl.html
-14.3 Papers
-Berners-Lee (2001). The Semantic Web: A new form of Web content that is meaningful to computers will unleash a revolution of new possibilities. With James Hendler and Ora Lassila. Scientific American, May 17, 2001. https://tinyurl.com/BernersLeeSemanticWeb
-MacGregor, Robert (1991). "Using a description classifier to enhance knowledge representation". IEEE Expert. 6 (3): 41–46. doi:10.1109/64.87683 https://tinyurl.com/MacGregorLoom
-Neches, Robert (1991). Enabling Technology for Knowledge Sharing. With Richard Fikes, Tim Finin, Thomas Gruber, Ramesh Patil, Ted Senator, and William T. Swartout. AI Magazine. Volume 12 Number 3 (1991). https://tinyurl.com/DARPAKnowledgeSharing
-Noy, Natasha (2019). Industry-Scale Knowledge Graphs: Lessons and Challenges. With Yuqing Gao, Anshu Jain, Anant Narayanan, Alan Patterson, Jamie Taylor. Communications of the ACM. Vol. 62. No. 8. August 2019. https://tinyurl.com/ACMKnowledgeGraphs
-M. J. O'Connor (2012). A Pair of OWL 2 RL Reasoners. With A.K. Das. OWL: Experiences and Directions (OWLED), 9th International Workshop, Heraklion, Greece, 2012. http://ceur-ws.org/Vol-849/paper_31.pdf
-Singhal, Amit. (2012). Introducing the Knowledge Graph: things, not strings. Google SVP, Engineering. May 16, 2012. https://www.blog.google/products/search/introducing-knowledge-graph-things-not/
-14.4 Books
-DuCharme, Bob (2011). Learning SPARQL. O'Reilly Media
-Lewis, Harry. (1997). Elements of the Theory of Computation. With Christos Papadimitriou. Prentice-Hall; 2nd edition (August 7, 1997). ISBN-13: 978-0132624787
-Segaran, Toby (2009). Programming the Semantic Web: Build Flexible Applications with Graph Data. With Colin Evans and Jamie Taylor. O'Reilly Media; 1st edition (July 28, 2009).
-14.5 Vendors
-AllegroGraph Triplestore (Franz Inc.): https://franz.com/
-Amazon Neptune: https://aws.amazon.com/neptune/
-Docker: https://www.docker.com/
-Dynaccurate: https://www.dynaccurate.com/
-Ontotext: https://www.ontotext.com/
-Pool Party: https://www.poolparty.biz/
-Stardog: https://www.stardog.com/
-Top Quadrant: https://www.topquadrant.com/
+.. Chapter 14 Bibliography
+   Rather than a standard bibliography, this section is divided into various categories based on resources
+   that will be valuable for future exploration of the technologies and methods described in this tutorial.
+   14.1 W3C Documents
+   OWL 2 Primer: https://www.w3.org/TR/owl2-primer/
+   OWL 2 Specification: https://www.w3.org/TR/owl2-overview/
+   Semantic Web Primer for Object-Oriented Software Developers: https://www.w3.org/TR/sw-oosd-primer/
+   SPARQL Specification: https://www.w3.org/TR/sparql11-query/
+   SWRL Specification and Built-ins: https://www.w3.org/Submission/SWRL/
+   14.2 Web Sites, Tools, And Presentations.
+   Agile Alliance: https://www.agilealliance.org/agile101/
+   Cellfie: https://github.com/protegeproject/cellfie-plugin/wiki/Grocery-Tutorial
+   Gartner Hype Cycle: https://www.gartner.com/en/research/methodologies/gartner-hype-cycle
+   Jena: Open Source Java Framework for Semantic Web and Linked Data Applications: https://jena.apache.org/
+   Open World Assumption (OWA) presentation by Nick Drummond and Rob Shearer: http://www.cs.man.ac.uk/~drummond/presentations/OWA.pdf
+   Protégé: https://protege.stanford.edu/
+   Protégé Best Practices. Summary page on my blog for all my articles on Protégé, OWL, SWRL, etc.: https://www.michaeldebellis.com/post/best-practices-for-new-protege-users
+   SHACL Playground: https://shacl.org/playground/
+   SWRL Presentation by Martin O'Connor: https://protege.stanford.edu/conference/2009/slides/SWRL2009ProtegeConference.pdf
+   WebProtégé: https://webprotege.stanford.edu/
+   WebVOWL: Web-based Visualization of Ontologies: http://vowl.visualdataweb.org/webvowl.html
+   14.3 Papers
+   Berners-Lee (2001). The Semantic Web: A new form of Web content that is meaningful to computers will unleash a revolution of new possibilities. With James Hendler and Ora Lassila. Scientific American, May 17, 2001. https://tinyurl.com/BernersLeeSemanticWeb
+   MacGregor, Robert (1991). "Using a description classifier to enhance knowledge representation". IEEE Expert. 6 (3): 41–46. doi:10.1109/64.87683 https://tinyurl.com/MacGregorLoom
+   Neches, Robert (1991). Enabling Technology for Knowledge Sharing. With Richard Fikes, Tim Finin, Thomas Gruber, Ramesh Patil, Ted Senator, and William T. Swartout. AI Magazine. Volume 12 Number 3 (1991). https://tinyurl.com/DARPAKnowledgeSharing
+   Noy, Natasha (2019). Industry-Scale Knowledge Graphs: Lessons and Challenges. With Yuqing Gao, Anshu Jain, Anant Narayanan, Alan Patterson, Jamie Taylor. Communications of the ACM. Vol. 62. No. 8. August 2019. https://tinyurl.com/ACMKnowledgeGraphs
+   M. J. O'Connor (2012). A Pair of OWL 2 RL Reasoners. With A.K. Das. OWL: Experiences and Directions (OWLED), 9th International Workshop, Heraklion, Greece, 2012. http://ceur-ws.org/Vol-849/paper_31.pdf
+   Singhal, Amit. (2012). Introducing the Knowledge Graph: things, not strings. Google SVP, Engineering. May 16, 2012. https://www.blog.google/products/search/introducing-knowledge-graph-things-not/
+   14.4 Books
+   DuCharme, Bob (2011). Learning SPARQL. O'Reilly Media
+   Lewis, Harry. (1997). Elements of the Theory of Computation. With Christos Papadimitriou. Prentice-Hall; 2nd edition (August 7, 1997). ISBN-13: 978-0132624787
+   Segaran, Toby (2009). Programming the Semantic Web: Build Flexible Applications with Graph Data. With Colin Evans and Jamie Taylor. O'Reilly Media; 1st edition (July 28, 2009).
+   14.5 Vendors
+   AllegroGraph Triplestore (Franz Inc.): https://franz.com/
+   Amazon Neptune: https://aws.amazon.com/neptune/
+   Docker: https://www.docker.com/
+   Dynaccurate: https://www.dynaccurate.com/
+   Ontotext: https://www.ontotext.com/
+   Pool Party: https://www.poolparty.biz/
+   Stardog: https://www.stardog.com/
+   Top Quadrant: https://www.topquadrant.com/
+
 
 .. |image1| image:: /_static/media/image5.png
    :width: 6.18333in
@@ -3924,26 +3935,6 @@ Top Quadrant: https://www.topquadrant.com/
 .. |image61| image:: /_static/media/image40.png
    :width: 6.18333in
    :height: 1.52082in
-
-
-
-.. _chap11:
-
-**********
-Chapter 11
-**********
-
-.. _chap12:
-
-**********
-Chapter 12
-**********
-
-.. _chap13:
-
-**********
-Chapter 13
-**********
 
 
 .. toctree::
