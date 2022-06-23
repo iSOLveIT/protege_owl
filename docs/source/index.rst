@@ -269,7 +269,7 @@ Individuals represent objects in the domain of interest. An important
 difference between OWL and most programming and knowledge representation
 languages is that OWL does not use the Unique Name Assumption (UNA).
 This means that two different names could actually refer to the same
-individual. For example, “Queen Elizabeth", “The Queen" and “Elizabeth
+individual. For example, "Queen Elizabeth", "The Queen" and "Elizabeth
 Windsor" might all refer to the same individual. In OWL, it must be
 explicitly stated that individuals are the same as each other, or
 different from each other. Figure 3.1 shows a representation of some
@@ -381,7 +381,7 @@ Pizzas because it is something almost everyone is familiar with.
    entire ontology. Protégé always opens with a new untitled ontology
    you can start with. Your ontology should have an IRI something like:
    http://www.semanticweb.org/yourname/ontologies/2020/4/untitled-ontology-27
-   Edit the name of the ontology (the part after the last “/" in this
+   Edit the name of the ontology (the part after the last "/" in this
    case `untitled-ontology-27`) and change it to something like
    `PizzaTutorial`. Note: the Pizza ontology IRIs shown below (e.g.,
    figure 4.3) show the IRI after I edited the default that Protégé
@@ -760,7 +760,7 @@ subclasses of ``PizzaTopping``.
    *all* instances of ``VegetableTopping`` are also instances of
    ``PizzaTopping``. It is for this reason that we try to have
    standards such as having all
-   ``PizzaTopping`` classes end with the word “Topping". Otherwise, it
+   ``PizzaTopping`` classes end with the word "Topping". Otherwise, it
    might seem we are saying that anything that is a kind of *Ham*
    like the *Ham* in your sandwich is a kind of ``MeatTopping`` or
    ``PizzaTopping`` which is not what we mean. For large ontologies
@@ -1583,7 +1583,7 @@ kind of ``CheeseTopping``.
    Note that if you just type a few characters, the number of
    possible completions may be large resulting in an unwieldy menu.
    Also, Protégé doesn't do things like type checking on possible
-   completions. For example, if you type “Chee" and do
+   completions. For example, if you type "Chee" and do
    <control><space> you will be prompted with ``CheeseTopping`` and
    ``CheesyPizza`` as possible completions even though a ``Pizza`` is not in
    the range of ``hasTopping``. This is where the reasoner can also
@@ -2030,7 +2030,7 @@ that have a range that is some class. As with most other object-oriented
 languages OWL also has the capability to define properties with the
 range of a simple datatype such as a string or integer. Object purists
 will argue that everything should be an object. However, to borrow a
-quote from The Amazing Spiderman: “with great power comes great
+quote from The Amazing Spiderman: "with great power comes great
 overhead". I.e., the extra capabilities that one has with a class and an
 instance also means that instances take up more space and can be slower
 to process than simple datatypes. For that reason, OWL comes with a
@@ -3207,7 +3207,6 @@ interesting example based on process modeling see: https://www.michaeldebellis.c
 SHACL
 *****
 
-
 Next, we will look at a plugin for SHACL. SHACL stands for Shapes
 Constraint Language. Note that *shape* in this context has nothing to do
 with geometric shapes. SHACL is somewhat newer than the other
@@ -3220,25 +3219,26 @@ Logic or SWRL which are more high level and a bit easier to use. So why
 even bother with SHACL? There are two reasons that SHACL is essential
 for real world use of Semantic Web and Knowledge Graph technology:
 
-1.The need to define constraints that aren't limited by the Open World
-Assumption (OWA) and Monotonic reasoning.
+1. The need to define constraints that aren't limited by the Open World Assumption (OWA) and Monotonic reasoning.
 
-2.The fact that real world data is *messy!*
+2. The fact that real world data is *messy!*
 
-| 11.1 OWA and Monotonic Reasoning
-| As described in section 4.13 OWL uses the Open World Assumption (OWA)
-  because it was designed for the Internet. However, the OWA makes
-  certain kinds of constraint validation difficult or impossible. For
-  example, it is common to have a data integrity constraint that all
-  employees must have a social security number. While such an axiom can
-  be defined in OWL it will seldom work when we want it to because of
-  the OWA. The OWA means that there may be a social security number out
-  there somewhere in the Internet but that the system just hasn't found
-  it yet. While this is true, to validate the integrity of corporate
-  data just saying “well it is out there somewhere" won't do. To
-  validate data integrity we need to be able to fire off warnings when
-  required data isn't there so we need to use the Closed World
-  Assumption (CWA).
+OWA and Monotonic Reasoning
+===========================
+
+As described in `section 4.13 <#automated-classification-and-open-world-reasoning>`_
+OWL uses the Open World Assumption (OWA) because it was designed for the Internet.
+However, the OWA makes certain kinds of constraint validation difficult or impossible.
+For example, it is common to have a data integrity constraint that all
+employees must have a social security number. While such an axiom can
+be defined in OWL it will seldom work when we want it to because of
+the OWA. The OWA means that there may be a social security number out
+there somewhere in the Internet but that the system just hasn't found
+it yet. While this is true, to validate the integrity of corporate
+data just saying "well it is out there somewhere" won't do. To
+validate data integrity we need to be able to fire off warnings when
+required data isn't there so we need to use the Closed World
+Assumption (CWA).
 
 Monotonic reasoning is a byproduct of the fact that OWL and SWRL are
 based on logic. The OWL reasoners are essentially theorem provers. If
@@ -3250,20 +3250,25 @@ have one value. This is why SWRL rules can only add values to variables
 rather than change them. For more on this see the excellent presentation
 on SWRL by Martin O'Connor: https://protege.stanford.edu/conference/2009/slides/SWRL2009ProtegeConference.pdf
 
-This is why SPARQL often needs to be used rather than SWRL even though SWRL is more abstract and powerful. SWRL does not support non-monotonic reasoning whereas SPARQL does. Similarly, when validating data, we may want to take actions to change it, e.g., to coerce it into a proper standard format. To do that we need to change rather than add a value, i.e., we need non-monotonic reasoning.
+This is why SPARQL often needs to be used rather than SWRL even though SWRL is more abstract and powerful.
+SWRL does not support non-monotonic reasoning whereas SPARQL does.
+Similarly, when validating data, we may want to take actions to change it,
+e.g., to coerce it into a proper standard format. To do that we need to change rather than add a value,
+i.e., we need non-monotonic reasoning.
 
-| 11.2 The Real World is Messy
-| The other reason for SHACL is that real world data is messy. Over the
-  span of this tutorial, you may have experienced a point where you made
-  an error, and the reasoner marked your ontology as invalid. If you
-  haven't, congratulations, but as you work with Protégé more you will
-  experience it. This is another by product of using a logic-based
-  language. Simply having one inconsistency makes the entire model
-  invalid. For small examples this is not a problem. When one has tens,
-  hundreds, or even thousands of individuals it isn't that difficult to
-  find the problem and fix it. However, when dealing with Big Data where
-  one has tens of thousands, millions, or more individuals the
-  prevalence of bad data may be huge.
+The Real World is Messy
+=======================
+The other reason for SHACL is that real world data is messy. Over the
+span of this tutorial, you may have experienced a point where you made
+an error, and the reasoner marked your ontology as invalid. If you
+haven't, congratulations, but as you work with Protégé more you will
+experience it. This is another by product of using a logic-based
+language. Simply having one inconsistency makes the entire model
+invalid. For small examples this is not a problem. When one has tens,
+hundreds, or even thousands of individuals it isn't that difficult to
+find the problem and fix it. However, when dealing with Big Data where
+one has tens of thousands, millions, or more individuals the
+prevalence of bad data may be huge.
 
 I.e., it might be the case that we never get the data to satisfy every
 integrity constraint which would mean the reasoner is never of any use
@@ -3272,166 +3277,166 @@ except to tell us that the ontology is not consistent.
 Thus, SHACL provides a way to define data integrity constraints that
 overlap to some degree with what can be defined in OWL and SWRL. For
 example, both can define the number of values allowed for a specific
-property. E.g., that each instance of Employee must have one and only
-one social security number (ssn). If this were defined as a DL axiom,
-then the axiom would never fire for employees that had no ssn because of
-the OWA. On the other hand, if an Employee accidentally had 2 ssn values
+property. E.g., that each instance of ``Employee`` must have one and only
+one social security number (``ssn``). If this were defined as a DL axiom,
+then the axiom would never fire for employees that had no ``ssn`` because of
+the OWA. On the other hand, if an ``Employee`` accidentally had 2 ``ssn`` values
 then the entire ontology would be inconsistent until one value was
 removed. SHACL on the other hand can handle both these examples and
 rather than making the entire ontology inconsistent it simply logs
 warnings at various levels of severity.
 
-| 11.3 Basic SHACL Concepts
-| To understand SHACL recall that the language underlying OWL is RDF
-  which describes graphs as triples of the form: Subject Predicate
-  Object. SHACL also works at the level of RDF because some developers
-  may want to simply use that lower level for reasons of efficiency.
-  Thus, RDF can validate an RDF graph as well as an OWL ontology.
-  Fundamentally, SHACL consists of two components:
+Basic SHACL Concepts
+====================
+To understand SHACL recall that the language underlying OWL is RDF
+which describes graphs as triples of the form: Subject Predicate
+Object. SHACL also works at the level of RDF because some developers
+may want to simply use that lower level for reasons of efficiency.
+Thus, RDF can validate an RDF graph as well as an OWL ontology.
+Fundamentally, SHACL consists of two components:
 
-   1. An RDF vocabulary for defining data constraints on RDF graphs
+1. An RDF vocabulary for defining data constraints on RDF graphs
    (which includes OWL since an OWL ontology is an RDF graph).
 
-   2. A reasoner for applying the constraints defined in 1 to a specified data graph such as the Pizza ontology.
+2. A reasoner for applying the constraints defined in 1 to a specified data graph such as the Pizza ontology.
 
 One of the most important classes in 1 is a SHACL Shape. An instance of
-the SHACL Shape class consists of a set of Targets and Constraints. A
+the SHACL ``Shape`` class consists of a set of Targets and Constraints. A
 Target defines which nodes in the RDF graph that the data constraints
 apply to. For OWL ontologies this is typically the name of a class which
 indicates that the constraints apply to all instances of that class. The
 Constraints define the specific property for the constraint as well as
 the actual constraints such as the minimum or maximum number of values
-and the datatype. In the following example, a Target is the Employee
-class in the Pizza ontology. An example constraint is that the ssn
+and the datatype. In the following example, a Target is the ``Employee``
+class in the Pizza ontology. An example constraint is that the ``ssn``
 property must have exactly one value. Another example constraint is that
-the format of the ssn value must be a string of the form: “NNN-NN-NNNN"
+the format of the ``ssn`` value must be a string of the form: "NNN-NN-NNNN"
 where each N must be an integer. For more on SHACL see the references in
 the bibliography.
 
-| 11.4 The Protégé SHACL Plug-In
-| To start go to Windows>Tabs and see if you have SHACL Editor as an
-  option. If you don't then go to File>Check for plugins and select the
-  SHACL4Protege Constraint Validator. You need to restart Protégé to see
-  the new plugin so save your work and then quit and start Protégé and
-  load the Pizza ontology with data.
+The Protégé SHACL Plug-In
+=========================
+To start go to `Windows>Tabs` and see if you have `SHACL Editor` as an
+option. If you don't then go to `File>Check for plugins` and select the
+`SHACL4Protege Constraint Validator`. You need to restart Protégé to see
+the new plugin so save your work and then quit and start Protégé and
+load the Pizza ontology with data.
 
 Because editing SHACL is a bit more complex for this version of the
 tutorial we are only going to view some already written SHACL
 constraints and see how the validator processes them rather than writing
 additional constraints. First download the PizzaShapes.txt file to your
 local hard drive. This file can be found at: https://tinyurl.com/pizzatshapes
-Once you have downloaded the file open the SHACL Editor: Window>
+Once you have downloaded the file open the SHACL Editor: `Window>Tabs>SHACL Editor`
 
 You will see an example shapes file in the editor when it opens but that
 isn't the shapes file you are looking for. From the editor click on the
-Open button at the top of the tab and navigate to the PizzaShapes.txt
+`Open` button at the top of the tab and navigate to the PizzaShapes.txt
 file you downloaded.
 
-There are two shapes in this file, one for the Employee class and one
-for the Customer class. So, we want to expand only the Person class in
-the Class hierarchy view. We will start with the Employee class so
-select that class which should result in all the instances of Employee
+There are two shapes in this file, one for the ``Employee`` class and one
+for the ``Customer`` class. So, we want to expand only the ``Person`` class in
+the `Class hierarchy` view. We will start with the ``Employee`` class so
+select that class which should result in all the instances of ``Employee``
 being displayed in the view below it.
 
 For the SHACL Editor we want the bottom view in the middle to take up as
 much screen real estate as possible. So, to start we can delete the two
-views on the far right side of the tab by clicking on the X at the top
+views on the far right side of the tab by clicking on the `X` at the top
 of each tab.
 
 Then drag the SHACL Editor view over to the left just enough so you can
-see the Employee and Customer classes and their instances. Your UI
+see the ``Employee`` and ``Customer`` classes and their instances. Your UI
 should look similar to figure 11.1.
 
 To begin examine the code in the SHACL Editor view. Note that at the
 beginning there are a list of namespaces, similar to the namespace
 prefixes in the SPARQL editor. After the prefixes there is the first
-actual shape which is the EmployeeShape. This shape constrains values of
-properties on instances of Employee. The sh:targetClass identifies the
+actual shape which is the `EmployeeShape`. This shape constrains values of
+properties on instances of Employee. The `sh:targetClass` identifies the
 class that this shape is for. Beneath that are various nodes (as in
 nodes in a graph, SHACL is also represented as triples) that constrain
-various properties that apply to the Employee class. The first node
-constrains the cardinality of the ssn property to be exactly one
-(minCount 1 and maxCount1). The next also applies to ssn and constrains
+various properties that apply to the ``Employee`` class. The first node
+constrains the cardinality of the ``ssn`` property to be exactly one
+(`minCount 1 and maxCount1`). The next also applies to ssn and constrains
 the data further than just saying it must be a string. It must be a
-string that matches the pattern: "^\\d{3}-\\d{2}-\\d{4}$" This is a
+string that matches the pattern: ``"^\\d{3}-\\d{2}-\\d{4}$"`` This is a
 regex expression that means the pattern must be 3 digits (numeric
 characters from 0-9), followed by a dash, followed by 2 digits, followed
 by a dash, followed by 4 digits.
 
-The next 2 nodes deal with the hasPhone data property. This property
+The next 2 nodes deal with the ``hasPhone`` data property. This property
 must have at least one value (although possibly more) and must also
 conform to a similar pattern of 3 digits followed by a dash followed by
 3 digits followed by a dash followed by 4 digits. Of course, actual
 phone numbers can be more complex and varied but this is just a simple
 example.
 
-.. figure:: /_static/media/image97.png
-   :width: 6.5in
-   :height: 4.40417in
+.. figure:: /_static/media/chap_11/1.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 11.1 The SHACL Editor
+   *Figure 11.1 The SHACL Editor*
 
-Now hit the Validate button. You should see several messages displayed
-in the long SHACL constraint violations view at the bottom. If you had
-the Employee class selected when you clicked on Validate, then this view
-should now read: SHACL constraint violations: 5/8. This means that there
+Now hit the `Validate` button. You should see several messages displayed
+in the long `SHACL constraint violations` view at the bottom. If you had
+the ``Employee`` class selected when you clicked on `Validate`, then this view
+should now read: `SHACL constraint violations: 5/8`. This means that there
 were 8 constraint violations and 5 of them were on instances of the
-Employee class. You can see the violations that apply to each Employee
+``Employee`` class. You can see the violations that apply to each ``Employee``
 by clicking on each individual. You can resize the various columns in
 this view which is helpful to view the information you need. The most
-useful data is in the Message, Path, and Value columns. All the other
-columns such as Severity and Source can be made as small as possible to
+useful data is in the `Message`, `Path`, and `Value` columns. All the other
+columns such as `Severity` and `Source` can be made as small as possible to
 make more room for those other columns. If you do this and click on the
-Chef individual you will see that she has one constraint violation. See
+`Chef` individual you will see that she has one constraint violation. See
 figure 11.2.
 
-You can see that the Chef individual has 2 values for the ssn property
-which is more than allowed. If you examine the Chef individual in the
-Individuals by class view you will see that this is indeed the case.
+You can see that the ``Chef`` individual has 2 values for the ``ssn`` property
+which is more than allowed. If you examine the ``Chef`` individual in the
+`Individuals by class view` you will see that this is indeed the case.
 
-.. figure:: /_static/media/image98.png
-   :width: 6.5in
-   :height: 4.42361in
+.. figure:: /_static/media/chap_11/2.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 11.2 Constraint Violation for the Chef Individual
+   *Figure 11.2 Constraint Violation for the Chef Individual*
 
-If you click on the Manager individual, you will see that he has a
+If you click on the `Manager` individual, you will see that he has a
 constraint violation because his phone number is not in the proper
-format. Waiter1 has a similar problem. Waiter2 has missing data. Her
-hasPhone and ssn data properties both must have values but don't.
+format. `Waiter1` has a similar problem. `Waiter2` has missing data. Her
+``hasPhone`` and ``ssn`` data properties both must have values but don't.
 
-If you move your focus to the Customer class, you can see the remaining
+If you move your focus to the `Customer` class, you can see the remaining
 3 constraint violations.
-
-Customer10'shasDiscount property is greater than 1 which is not allowed.
-This is defined by the CustomerShape in the hasDiscount node with
-sh:minInclusive 0.0 and sh:maxInclusive 1.0. This is the way you define
+``Customer10's hasDiscount`` property is greater than 1 which is not allowed.
+This is defined by the `CustomerShape` in the ``hasDiscount`` node with
+``sh:minInclusive 0.0`` and ``sh:maxInclusive 1.0``. This is the way you define
 a minimum and maximum value for a numeric property (note: this applies
-to the value not to the number of values). Customer2 also has a hasPhone
-value that doesn't match the defined format and finally Customer3 does
-not have a value for hasPhone when at least one is required.
+to the value not to the number of values). `Customer2` also has a `hasPhone`
+value that doesn't match the defined format and finally `Customer3` does
+not have a value for `hasPhone` when at least one is required.
 
 Recall that the SHACL constraints themselves are essentially RDF graphs.
-Figures 11.3 and 11.4 illustrate the Employee shape and the Customer
+Figures 11.3 and 11.4 illustrate the ``Employee`` shape and the ``Customer``
 shape used in the above example as graphed in the Gruff tool from
 AllegroGraph.
 
-   .. figure:: /_static/media/image99.png
-      :width: 4.85417in
-      :height: 4.41389in
+.. figure:: /_static/media/chap_11/3.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 11.3 Gruff Visualization of the EmployeeShape
+   *Figure 11.3 Gruff Visualization of the EmployeeShape*
 
-   .. figure:: /_static/media/image100.png
-      :width: 5.125in
-      :height: 3.725in
+.. figure:: /_static/media/chap_11/4.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 11.4 Gruff Visualization of the CustomerShape
+   *Figure 11.4 Gruff Visualization of the CustomerShape*
 
-| This is just the most basic introduction to SHACL. For a more
-  sophisticated tutorial see the Top Quadrant tutorial: Also, this
-  presentation:
-| more detail on SHACL.
+This is just the most basic introduction to SHACL. For a more sophisticated tutorial see the
+`Top Quadrant tutorial <https://www.topquadrant.com/technology/shacl/tutorial/>`_. Also, this presentation:
+https://www.slideshare.net/jelabra/shacl-by-example gives much more detail on SHACL.
 
 .. _chap12:
 
@@ -3464,23 +3469,23 @@ development of an ontology by 2 or more people.
 
 To begin there are two options for Web Protégé:
 
-   | 1.Use the Stanford server at *webprotege.stanford.edu*
-   | 2.Download and install the Web Protégé software on your own local
-     server.
+1. Use the Stanford server at `webprotege.stanford.edu <https://webprotege.stanford.edu/>`_
+2. Download and install the Web Protégé software on your own local server.
 
-.. figure:: /_static/media/image101.png
-   :width: 5.19861in
-   :height: 3.03056in
+.. figure:: /_static/media/chap_12/1.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 12.1 Web Protégé Projects
+   *Figure 12.1 Web Protégé Projects*
 
 Unless you have security requirements at your organization that prohibit
 you from using the hosted version at Stanford it is best to start with
 the Stanford server. I won't go into the details of how to install a
 local Web Protégé server because either way the functionality is the
 same. To start, let's create a project in Web Protégé for the Pizza
-tutorial with data ontology. When you first go to
-*webprotege.stanford.edu* you will be prompted to create a user ID (your email address) and a
+tutorial with data ontology.
+When you first go to `webprotege.stanford.edu <https://webprotege.stanford.edu/>`_
+you will be prompted to create a user ID (your email address) and a
 password. Once you do that you should have a fresh Web Protégé
 workspace. Figure 12.1 shows what my Web Protégé workspace currently
 looks like. Most of the projects are owned by me although note that the
@@ -3488,25 +3493,25 @@ CODO project is owned by my colleague Biswanath Dutta. However, I still
 have complete access to that ontology due to the way Biswanath has
 configured my access as being able to both view and edit the ontology.
 
-To upload the Pizza ontology, select the large Create New Project
+To upload the Pizza ontology, select the large `Create New Project`
 button. This will bring up the window shown in figure 12.2. Fill out the
 project name and description, then select the Choose File button and
 navigate to where you have the latest version of the Pizza tutorial with
 data. Note that in the figure I have already done this navigation so
 there is a value for the file to load. You can leave the Language field
 blank. Once you have all the fields set up similar to figure 12.2 click
-the Create New Project button on this dialog (note this is a different
+the `Create New Project` button on this dialog (note this is a different
 button than the one you started from).
 
-.. figure:: /_static/media/image102.png
-   :width: 5.11667in
-   :height: 4.34306in
+.. figure:: /_static/media/chap_12/2.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 12.2 The Create New Project Dialog
+   *Figure 12.2 The Create New Project Dialog*
 
 Your workspace should now include your first project. Click on the three
 horizontal bars at the far right of the project. This should bring up a
-pop-up menu. Select the Open option. This should bring you into the main
+pop-up menu. Select the `Open` option. This should bring you into the main
 Web Protégé UI to browse an ontology.
 
 Before you make changes to the ontology you need to make sure the
@@ -3514,88 +3519,87 @@ settings for new entities and rendering are consistent with the settings
 you used for the Pizza ontology. The default in Web Protégé as with
 Protégé is to use Auto-Generated UUIDs rather than user supplied names.
 If you aren't sure about these settings you can go back to exercise 2 at
-the beginning of chapter 4 and chapter 7 to refresh your memory. There
+the beginning of :ref:`Chapter 4 <chap4>` and :ref:`Chapter 7 <chap7>` to refresh your memory. There
 are excellent reasons to use auto-generated UUIDs but for beginners,
 especially for those who want to learn SPARQL, I think they make
 learning the basics more difficult so we have been using the alternative
 of user supplied names. At the top of the Web Protégé UI in the right
-corner there are various links: Display, Project, Share,… Click on Project. This will
-give you a dropdown menu. Select Settings from that menu. Scroll down to
-New Entity Settings. Change IRI Suffix from Auto-generated Universally
-Unique ID (UUID) to Supplied name. Leave the rest of the settings as
-they are and select the Apply button at the bottom right corner of the
+corner there are various links: `Display`, `Project`, `Share`,… Click on Project. This will
+give you a dropdown menu. Select `Settings` from that menu. Scroll down to
+`New Entity Settings`. Change IRI Suffix from `Auto-generated Universally Unique ID (UUID)`
+to `Supplied name`. Leave the rest of the settings as
+they are and select the `Apply` button at the bottom right corner of the
 screen.
 
-When you select Apply, you should return to the main Web Protégé view
-with the Class hierarchy tab selected. If it doesn't select that tab.
-Select the Pizza class. Your UI should look like figure 12.3.
+When you select `Apply`, you should return to the main Web Protégé view
+with the `Class hierarchy` tab selected. If it doesn't select that tab.
+Select the `Pizza` class. Your UI should look like figure 12.3.
 
-.. figure:: /_static/media/image103.png
-   :width: 6.5in
-   :height: 4.43472in
+.. figure:: /_static/media/chap_12/3.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 12.3 Browsing the Pizza Ontology in Web Protégé
+   *Figure 12.3 Browsing the Pizza Ontology in Web Protégé*
 
 Note that the axioms for the Pizza class are there but they are not
 editable. Protégé uses the reasoner even when entering or editing axioms
 to ensure that any axioms have the proper syntax so since there is no
 reasoner in Web Protégé it is not possible to edit axioms (since one
 might introduce syntactically incorrect axioms) only delete them using
-the X at the right of each axiom.
+the `X` at the right of each axiom.
 
-Also note the panels on the right: Comments and Project Feed. These are
+Also note the panels on the right: `Comments` and `Project Feed`. These are
 new capabilities in Web Protégé to facilitate collaborative design of
 ontologies. We will demonstrate that shortly. First, you can navigate
 the class hierarchy by clicking on the triangles at the left of each
 class that has at least one subclass. This will expand the class and
-show its subclasses. Click on Pizza to see its subclasses. For our
+show its subclasses. Click on `Pizza` to see its subclasses. For our
 scenario imagine we are opening a new branch of our pizza store in
 Chicago and we are dealing with a domain expert in Chicago pizza. As
 they examine the hierarchy, they are appalled to see that there is no
-class for ChicagoPizza, a type of deep dish Pizza that first became
-popular in Chicago. Click on NamedPizza. Then click on the icon at the
+class for ``ChicagoPizza``, a type of deep dish ``Pizza`` that first became
+popular in Chicago. Click on `NamedPizza`. Then click on the icon at the
 left corner of the Comments view. If you hover the mouse over this icon
-you should see the prompt Start new thread indicating the functionality of
-this icon. Make sure NamedPizza is still selected and then click on the
-icon to start a new thread. This will bring up a window titled Edit
-where you can begin a new thread. Type something like: We need a
-subclass of NamedPizza called ChicagoPizza. It should have an axiom that
-requires it to have a DeepPanBase. Then hit the OK button. Your UI
-should look similar to figure 12.4.
+you should see the prompt `Start new thread` indicating the functionality of
+this icon. Make sure `NamedPizza` is still selected and then click on the
+icon to start a new thread. This will bring up a window titled `Edit`
+where you can begin a new thread. Type something like: 
+`We need a subclass of NamedPizza called ChicagoPizza. It should have an axiom that requires it to have a DeepPanBase.`
+Then hit the `OK` button. Your UI should look similar to figure 12.4.
 
-.. figure:: /_static/media/image104.png
-   :width: 6.5in
-   :height: 4.43889in
+.. figure:: /_static/media/chap_12/4.png
+   :figclass: align-center
+   :class: no-scaled-link
 
-Figure 12.4 Creating a Discussion Thread
+   *Figure 12.4 Creating a Discussion Thread*
 
-Note the new comment in the Comments view and the update in the Project
-Feed view. The Comments view captures comments made on any entity in the
-ontology. The Project Feed view captures each change made to the
+Note the new comment in the `Comments` view and the update in the 
+`Project Feed` view. The `Comments` view captures comments made on any entity in the
+ontology. The `Project Feed` view captures each change made to the
 ontology.
 
 To see what threaded discussions look like click on the new comment and
-select Reply. Add a comment like: I agree, ChicagoPizza is awesome and
-deserves its own class.
+select `Reply`. Add a comment like: 
+`I agree, ChicagoPizza is awesome and deserves its own class.`
 
-Let's address this comment by creating a new subclass of NamedPizza.
-Select NamedPizza in the Class Hierarchy view. Note the icon in the
-upper right corner of this view that looks similar to this: O+. When you
-hover over this icon it should say Create. You can use this icon to
-create new classes and subclasses. Make sure NamedPizza is still
-selected and click on this icon to create a new subclass of NamedPizza.
-This will bring up a dialog titled Create Classes. In the Class names
-field enter the name ChicagoPizza.
+Let's address this comment by creating a new subclass of ``NamedPizza``.
+Select `NamedPizza` in the `Class Hierarchy` view. Note the icon in the
+upper right corner of this view that looks similar to this: `O+`. When you
+hover over this icon it should say `Create`. You can use this icon to
+create new classes and subclasses. Make sure `NamedPizza` is still
+selected and click on this icon to create a new subclass of ``NamedPizza``.
+This will bring up a dialog titled `Create Classes`. In the `Class names`
+field enter the name `ChicagoPizza`.
 
-You can leave the Language Tag field empty. Click on the Create button.
-You should now see ChicagoPizza as a new subclass of NamedPizza. Note
-that at the top of the Project Feed there should be a new entry for your
+You can leave the `Language Tag` field empty. Click on the `Create` button.
+You should now see ``ChicagoPizza`` as a new subclass of ``NamedPizza``. Note
+that at the top of the `Project Feed` there should be a new entry for your
 action of creating this new class.
 
-You might be tempted to resolve this thread (note the Resolve link at
+You might be tempted to resolve this thread (note the `Resolve` link at
 the top of the initial comment) however, we aren't really done. Remember
 that we need to not just create the class but also define the axiom that
-a ChicagoPizza must have a DeepPanBase. Since we can't add axioms in Web
+a ``ChicagoPizza`` must have a ``DeepPanBase``. Since we can't add axioms in Web
 Protégé we need to export our ontology back to Protégé. Typically, we
 would collect many more comments and changes before exporting but we
 want to demonstrate how round-trip editing works between Protégé and Web
@@ -3607,13 +3611,13 @@ comments and changes. Luckily, there is a better way to do it.
 
 To start we need to export the ontology to a file. Note that one of the
 tabs at the top is History. Select that tab. This tab shows a list of
-each version of the ontology. There should be 2 versions labelled R1 and
-R2 (in the right corner of each version). The most recent version is
+each version of the ontology. There should be 2 versions labelled `R1` and
+`R2` (in the right corner of each version). The most recent version is
 always at the top since that is typically what you want although it is
 also possible to roll back changes to previous versions. We want to
-export the latest version R2. Click on the R2 icon. This should give you
-a drop-down menu with two options: Revert changes in revision 2 and
-Download revision 2. Select Download revision 2. This will prompt you
+export the latest version R2. Click on the `R2` icon. This should give you
+a drop-down menu with two options: `Revert changes in revision 2` and
+`Download revision 2`. Select `Download revision 2`. This will prompt you
 with the standard file browser for your OS to save a zip file with the
 new ontology. The ontology is saved with a zip file because ontologies
 can be large and since Web Protégé is working over a network we may want
@@ -3626,31 +3630,31 @@ directory you save it to. Instead, there will be a directory titled
 something like pizza-with-data-ontologies-owl-REVISION-2 that the OWL
 file will be in.
 
-| Load the downloaded file into Protégé. Go to the Class hierarchy tab
-  and navigate to the new
-| ChicagoPizza class under NamedPizza. Add the axiom (refer back to
-  chapter 4 if you need to remember how to add axioms to classes)
-  hasBase some DeepPanBase. Save the file. Now go back to Web Protégé
-  and your version of the Pizza ontology there. Note that in the upper
-  right corner of the window there are links (drop down menus) such as
-  Display and Project. Select Project and from the drop down menu select
-  Apply External Edits. This will give you a small dialog titled Upload
-  ontologies with a little button to Choose File. Click on Choose File.
-  That will give you the standard OS dialog for selecting a file.
-  Navigate to the file you saved from Protégé and select that then
-  choose OK. That should result in a new pop-up window titled Merge
-  ontologies where you will see the changes (in this case only the
-  addition of the ChicagoPizza axiom) and a text box where you can
-  describe the changes. Add an appropriate Commit message or just take
-  the default and select OK. You should get a message that says the
-  changes were successfully applied.
+Load the downloaded file into Protégé. Go to the `Class hierarchy` tab
+and navigate to the new
+`ChicagoPizza` class under `NamedPizza`. Add the axiom (refer back to
+:ref:`Chapter 4 <chap4>` if you need to remember how to add axioms to classes)
+`hasBase some DeepPanBase`. Save the file. Now go back to Web Protégé
+and your version of the Pizza ontology there. Note that in the upper
+right corner of the window there are links (drop down menus) such as
+`Display` and `Project`. Select `Project` and from the drop down menu select
+`Apply External Edits`. This will give you a small dialog titled 
+`Upload ontologies` with a little button to `Choose File`. Click on `Choose File`.
+That will give you the standard OS dialog for selecting a file.
+Navigate to the file you saved from Protégé and select that then
+choose `OK`. That should result in a new pop-up window titled `Merge ontologies` 
+where you will see the changes (in this case only the
+addition of the ``ChicagoPizza`` axiom) and a text box where you can
+describe the changes. Add an appropriate Commit message or just take
+the default and select `OK`. You should get a message that says the
+changes were successfully applied.
 
-If you navigate back to ChicagoPizza you should see that it now has that
-axiom. You can also navigate back to NamedPizza. In the right most
-column, you should see the comments about needing to add ChicagoPizza as
-a subclass. Now that this has been done you can click on the Resolve
+If you navigate back to `ChicagoPizza` you should see that it now has that
+axiom. You can also navigate back to `NamedPizza`. In the right most
+column, you should see the comments about needing to add ``ChicagoPizza`` as
+a subclass. Now that this has been done you can click on the `Resolve`
 link in the upper right corner of the comment thread and the comments
-will be removed from NamedPizza.
+will be removed from ``NamedPizza``.
 
 .. _chap13:
 
@@ -3658,24 +3662,23 @@ will be removed from NamedPizza.
 Some Personal Thoughts and Opinions
 ***********************************
 
-| This tutorial is just the entry point to a technology that is entering
-  the *Slope of Enlightenment* in the Gartner technology hype cycle
-  [Gartner Hype Cycle]. Tim Berners-Lee published his paper on the
-  Semantic Web [Berners-Lee 2001] way back in 2001. At least in my
-  experience for most large US corporations the excitement around
-  Machine Learning seemed for a while to eclipse serious interest in
-  OWL, SPARQL, and other Semantic Web technologies in the United States.
-  Then Google [Singhal 2012] coined the term “knowledge graph". After
-  that, Facebook [Olanof 2013], Amazon [Neptune 2017], and many other
-  technology leaders started to embrace the technology [Noy 2019]. The
-  corporate world is finally realizing that machine learning and
-  knowledge graphs are complementary not competitive technologies. In an
-  article I recently wrote with Biswanath Dutta (publication pending) on
-  how
-| knowledge graphs contributed to combatting the Covid-19 pandemic the
-  vast majority of the systems developed with knowledge graphs utilized
-  machine learning for tasks such as converting from “strings to
-  things".
+This tutorial is just the entry point to a technology that is entering
+the *Slope of Enlightenment* in the Gartner technology hype cycle
+[Gartner Hype Cycle]. Tim Berners-Lee published his paper on the
+Semantic Web [Berners-Lee 2001] way back in 2001. At least in my
+experience for most large US corporations the excitement around
+Machine Learning seemed for a while to eclipse serious interest in
+OWL, SPARQL, and other Semantic Web technologies in the United States.
+Then Google [Singhal 2012] coined the term "knowledge graph". After
+that, Facebook [Olanof 2013], Amazon [Neptune 2017], and many other
+technology leaders started to embrace the technology [Noy 2019]. The
+corporate world is finally realizing that machine learning and
+knowledge graphs are complementary not competitive technologies. In an
+article I recently wrote with Biswanath Dutta (publication pending) on
+how knowledge graphs contributed to combating the Covid-19 pandemic the
+vast majority of the systems developed with knowledge graphs utilized
+machine learning for tasks such as converting from "strings to
+things".
 
 The term knowledge graph itself can be used in different ways. The best
 definition I've heard is that an ontology provides the vocabulary (i.e.,
@@ -3750,191 +3753,6 @@ adoption of this powerful and robust tool.
    Pool Party: https://www.poolparty.biz/
    Stardog: https://www.stardog.com/
    Top Quadrant: https://www.topquadrant.com/
-
-
-.. |image1| image:: /_static/media/image5.png
-   :width: 6.18333in
-   :height: 0.31017in
-.. |image2| image:: /_static/media/image5.png
-   :width: 6.18333in
-   :height: 0.31017in
-.. |image3| image:: /_static/media/image5.png
-   :width: 6.18333in
-   :height: 0.31017in
-.. |image4| image:: /_static/media/image5.png
-   :width: 6.18333in
-   :height: 0.31017in
-.. |image5| image:: /_static/media/image5.png
-   :width: 6.18333in
-   :height: 0.31017in
-.. |image6| image:: /_static/media/image6.png
-   :width: 0.25in
-   :height: 0.30556in
-.. |image7| image:: /_static/media/image7.png
-   :width: 0.25in
-   :height: 0.30556in
-.. |image8| image:: /_static/media/image8.png
-   :width: 0.25in
-   :height: 0.30556in
-.. |image9| image:: /_static/media/image9.png
-   :width: 0.25in
-   :height: 0.30556in
-.. |image10| image:: /_static/media/image10.png
-   :width: 0.25in
-   :height: 0.30556in
-.. |image11| image:: /_static/media/image11.png
-   :width: 0.25in
-   :height: 0.30556in
-.. |image12| image:: /_static/media/image13.png
-   :width: 0.93333in
-   :height: 0.31111in
-.. |image13| image:: /_static/media/image14.png
-   :width: 0.92917in
-   :height: 0.30473in
-.. |image14| image:: /_static/media/image13.png
-   :width: 0.93333in
-   :height: 0.31111in
-.. |image15| image:: /_static/media/image15.png
-   :width: 0.92917in
-   :height: 0.3114in
-.. |image16| image:: /_static/media/image13.png
-   :width: 0.93333in
-   :height: 0.31111in
-.. |image17| image:: /_static/media/image15.png
-   :width: 0.93056in
-   :height: 0.31186in
-.. |image18| image:: /_static/media/image13.png
-   :width: 0.93333in
-   :height: 0.31111in
-.. |image19| image:: /_static/media/image16.png
-   :width: 3.48611in
-   :height: 0.3101in
-.. |image20| image:: /_static/media/image13.png
-   :width: 0.93333in
-   :height: 0.31111in
-.. |image21| image:: /_static/media/image17.png
-   :width: 2.05556in
-   :height: 1.76389in
-.. |image22| image:: /_static/media/image18.png
-   :width: 0.22222in
-   :height: 0.38889in
-.. |image23| image:: /_static/media/image14.png
-   :width: 0.92917in
-   :height: 0.30473in
-.. |image24| image:: /_static/media/image19.png
-   :width: 1.07222in
-   :height: 0.31064in
-.. |image25| image:: /_static/media/image15.png
-   :width: 0.93056in
-   :height: 0.31186in
-.. |image26| image:: /_static/media/image14.png
-   :width: 0.93056in
-   :height: 0.30518in
-.. |image27| image:: /_static/media/image20.png
-   :width: 3.48333in
-   :height: 0.3103in
-.. |image28| image:: /_static/media/image21.png
-   :width: 6.17917in
-   :height: 0.31021in
-.. |image29| image:: /_static/media/image23.png
-   :width: 6.18333in
-   :height: 0.84045in
-.. |image30| image:: /_static/media/image24.png
-   :width: 5.30556in
-   :height: 3.38889in
-.. |image31| image:: /_static/media/image25.png
-   :width: 0.92917in
-   :height: 0.28974in
-.. |image32| image:: /_static/media/image25.png
-   :width: 0.93333in
-   :height: 0.29104in
-.. |image33| image:: /_static/media/image25.png
-   :width: 0.93333in
-   :height: 0.29104in
-.. |image34| image:: /_static/media/image26.png
-   :width: 0.80694in
-   :height: 0.2907in
-.. |image35| image:: /_static/media/image26.png
-   :width: 0.80694in
-   :height: 0.2907in
-.. |image36| image:: /_static/media/image25.png
-   :width: 0.92917in
-   :height: 0.28974in
-.. |image37| image:: /_static/media/image25.png
-   :width: 0.93333in
-   :height: 0.29104in
-.. |image38| image:: /_static/media/image26.png
-   :width: 0.80972in
-   :height: 0.2917in
-.. |image39| image:: /_static/media/image26.png
-   :width: 0.80694in
-   :height: 0.2907in
-.. |image40| image:: /_static/media/image25.png
-   :width: 0.93333in
-   :height: 0.29104in
-.. |image41| image:: /_static/media/image26.png
-   :width: 0.81111in
-   :height: 0.2922in
-.. |image42| image:: /_static/media/image27.png
-   :width: 0.63055in
-   :height: 0.29258in
-.. |image43| image:: /_static/media/image25.png
-   :width: 0.93333in
-   :height: 0.29104in
-.. |image44| image:: /_static/media/image28.png
-   :width: 4.75694in
-   :height: 0.30512in
-.. |image45| image:: /_static/media/image33.png
-   :width: 5.5125in
-   :height: 4.48889in
-.. |image46| image:: /_static/media/image35.png
-   :width: 1.10972in
-   :height: 0.31132in
-.. |image47| image:: /_static/media/image36.png
-   :width: 1.36111in
-   :height: 0.31025in
-.. |image48| image:: /_static/media/image37.png
-   :width: 1.1625in
-   :height: 0.31067in
-.. |image49| image:: /_static/media/image38.png
-   :width: 6.5in
-   :height: 3.75417in
-.. |image50| image:: /_static/media/image46.png
-   :width: 6.5in
-   :height: 7.15556in
-.. |image51| image:: /_static/media/image50.png
-   :width: 0.56944in
-   :height: 0.41667in
-.. |image52| image:: /_static/media/image53.png
-   :width: 1.06667in
-   :height: 0.31049in
-.. |image53| image:: /_static/media/image54.png
-   :width: 1in
-   :height: 0.31in
-.. |image54| image:: /_static/media/image55.png
-   :width: 0.97222in
-   :height: 2.65278in
-.. |image55| image:: /_static/media/image56.png
-   :width: 0.97778in
-   :height: 0.31088in
-.. |image56| image:: /_static/media/image57.png
-   :width: 0.70694in
-   :height: 0.31086in
-.. |image57| image:: /_static/media/image15.png
-   :width: 0.92639in
-   :height: 0.31047in
-.. |image58| image:: /_static/media/image58.png
-   :width: 0.61667in
-   :height: 0.30583in
-.. |image59| image:: /_static/media/image59.png
-   :width: 1.63333in
-   :height: 0.50603in
-.. |image60| image:: /_static/media/image40.png
-   :width: 6.18333in
-   :height: 1.52082in
-.. |image61| image:: /_static/media/image40.png
-   :width: 6.18333in
-   :height: 1.52082in
 
 
 .. toctree::
